@@ -1,0 +1,39 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_navigation}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_navigation}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_jsdmodule_pidinrootline}">
+    {data_item.data.tx_jsdmodule_pidinrootline}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_pages}">
+    {data_item.data.tx_jsdmodule_pages}<br />
+</f:if>
+
+<f:if condition="{data_item.data_tx_jsdmodule_image}">
+    <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data_tx_jsdmodule_content_element}">
+    <f:for each="{data_item.data_tx_jsdmodule_content_element}" as="content_item">
+        <f:cObject typoscriptObjectPath="tt_content" data="{content_item.data}" table="tt_content" /><br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_navigation_loginsimplespeak}">
+    {data_item.data.tx_jsdmodule_navigation_loginsimplespeak}<br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

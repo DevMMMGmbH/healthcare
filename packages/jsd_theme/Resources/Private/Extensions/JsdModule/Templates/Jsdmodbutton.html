@@ -1,0 +1,7 @@
+<f:if condition="{data.header} && {data.header_link}">
+    <div class="mod_button{f:if(condition: '{data.subheader}', then: ' {data.subheader}')}" id="c{data.uid}">
+        <div class="content">
+            <f:link.typolink parameter="{data.header_link}">{data.header}</f:link.typolink>
+        </div>
+    </div>
+</f:if>

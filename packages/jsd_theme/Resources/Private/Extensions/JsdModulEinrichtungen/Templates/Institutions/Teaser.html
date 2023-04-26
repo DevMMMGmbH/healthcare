@@ -1,0 +1,109 @@
+<f:layout name="Default" />
+<f:section name="content">
+
+<f:if condition="{settings.teaserOption}==1">
+    <f:then>
+        <f:variable name="slick">slick</f:variable>
+        <f:variable name="viewType">teaser-slider</f:variable>
+    </f:then>
+    <f:else>
+        <f:variable name="viewType">teaser-liste</f:variable>
+    </f:else>
+</f:if>
+<div class="mod_einrichtungsteaser {viewType}" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content">
+        <div class="col-xs-12 offset-xs-2">
+            <h2 class="header">{settings.teaserHeader}</h2>
+        </div>
+        <div class="col-16 {slick}" data-slick-class="slick-c{data.uid}">
+            <f:if condition="{institutions}">
+                <f:then>
+                    <div class="row slick-c{data.uid}" data-slick='{"autoplay":false, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                        <f:for each="{institutions}" as="item" iteration="iterator">
+                            <div class="col-16"><div class="row" itemscope itemtype="https://schema.org/Organization">
+                                <div class="col-xs-12 offset-xs-2 col-md-6 offset-md-1 col-lg-5 image">
+                                    <f:if condition="{item.image}">
+                                        <f:render partial="MediaImage" arguments="{data_image:item.image.originalResource, w-xs:240, w-sm:288, w-md:264, w-lg:288, w-xl:361, notTreatIdAsReference:1}" />
+                                        <span class="d-none" itemprop="logo" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                            <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin{item.image.originalResource.originalFile.identifier}</span>
+                                        </span>
+                                    </f:if>
+                                </div>
+                                <div class="col-xs-12 offset-xs-2 col-md-8 offset-md-0">
+                                    <div class="type bold">{item.typ.title}</div>
+                                    <h3 class="header color_dpurple">{item.title}</h3>
+                                    <span class="d-none" itemprop="name">{item.title}</span>
+                                    <div class="address">
+                                        <f:variable name="mapsUrl"><f:format.urlencode>{item.title},{item.street} {item.houseNumber},{item.zip} {item.stadt.title}</f:format.urlencode></f:variable>
+                                        <f:link.external uri="https://maps.google.com/?q={mapsUrl}" target="_blank" title="{item.title} bei Google Maps" class="googleMap color_dpurple bold">{item.street} {item.houseNumber}, {item.zip} {item.stadt.title}</f:link.external>
+                                        <div class="d-none" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                                            <span itemprop="streetAddress">{item.street} {item.houseNumber}</span>
+                                            <span itemprop="postalCode">{item.zip}</span>
+                                            <span itemprop="addressLocality">{item.stadt.title}</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{item.description}</f:format.html>
+                                        <span class="d-none" itemprop="slogan"><f:format.stripTags>{item.description}</f:format.stripTags></span>
+                                    </div>
+                                    <div class="row">
+                                        <f:if condition="{item.phone}">
+                                        <div class="col-xs-16 col-lg-8">
+                                        <a class="phone color_dpurple bold" target="_blank" href="tel:{item.phone}">{item.phone}</a>
+                                        <span class="d-none" itemprop="telephone">{item.phone}</span>
+                                        </div>
+                                        </f:if>
+                                        <f:if condition="{item.email}">
+                                        <div class="col-xs-16 col-lg-8">
+                                        <f:link.typolink parameter="{item.email}" class="email color_dpurple bold">{item.email}</f:link.typolink>
+                                        <span class="d-none" itemprop="email">{item.email}</span>
+                                        </div>
+                                        </f:if>
+                                        <f:if condition="{item.rootpage}">
+                                        <div class="col-16">
+                                        <f:link.typolink parameter="{item.rootpage}" title="{item.title} Startseite" class="rootlink color_dpurple bold"><f:translate key="modEinrichtungen.toFacility" extensionName="jsd_theme"/></f:link.typolink>
+                                        <span class="d-none" itemprop="url"><f:uri.typolink parameter="{item.rootpage}" absolute="1" /></span>
+                                        </div>
+                                        </f:if>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-lg-13 border-b"></div>
+                            </div></div>
+                        </f:for>
+                    </div>
+                    <f:if condition="{slick}">
+                        <f:then>
+                            <div class="carousel-indicators d-md-none slick-dots-c{data.uid}"></div>
+                            <div class="carousel-control-prev-next d-none d-md-inline-block slick-c{data.uid}-navi">
+                                <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                                </button>
+                                <span class="count">
+                                    <b><span class="num"></span></b>/{institutions -> f:count()}
+                                </span>
+                                <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" onclick="jump('comments-{data.uid}')" ><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                                </button>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <f:if condition="{settings.teaserListlink}">
+                                <div class="row justify-content-between more">
+                                    <div class="col-xs-12 offset-xs-2 col-md-8 offset-md-1 order-xs-2 order-md-1">
+                                        <f:link.typolink parameter="{settings.teaserListlink}" class="btn all button-dpurple_0-2 css-trans_all" parts-as="parts" title="{parts.title}"><f:translate key="modEinrichtungen.moreFacilities" extensionName="jsd_theme"/></f:link.typolink>
+                                    </div>
+                                </div>
+                            </f:if>
+                        </f:else>
+                    </f:if>
+                </f:then>
+                <f:else><f:translate key="modEinrichtungen.emptyResults" extensionName="jsd_theme"/></f:else>
+            </f:if>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+</f:section>

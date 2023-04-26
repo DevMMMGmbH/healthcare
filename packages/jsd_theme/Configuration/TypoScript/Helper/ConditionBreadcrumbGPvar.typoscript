@@ -1,0 +1,18 @@
+########################################################
+#### BREADCRUMB GP VAR CONDITION FOR USAGE IN FLUID ####
+########################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.conditionBreadcrumbGPvar" />
+#
+#################
+lib.conditionBreadcrumbGPvar = TEXT
+lib.conditionBreadcrumbGPvar.value = 1
+lib.conditionBreadcrumbGPvar.if {
+    isTrue.cObject = COA
+    isTrue.cObject {
+        10 = TEXT
+        10.data = GP:tx_news_pi1|news
+    }
+}

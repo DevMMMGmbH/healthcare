@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="ar" datatype="plaintext" original="messages" date="2023-04-17UTC09:15:100">
+        <header>
+            <authorName>Robert Heyduck</authorName>
+            <authorEmail>mail@typo-script.de</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="page.projekt">
+                <target>LLL: JDI</target>
+            </trans-unit>
+            <trans-unit id="page.print">
+                <target>LLL: Seite drucken</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox">
+                <target>LLL: Seite teilen</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.close">
+                <target>LLL: Sharebox schliessen</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.before">
+                <target>LLL: Diese Seite oder Artikel bei</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.after">
+                <target>LLL: teilen</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.facebook">
+                <target>LLL: Facebook</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.twitter">
+                <target>LLL: Twitter</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.linkedin">
+                <target>LLL: LinkedIn</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.xing">
+                <target>LLL: Xing</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.whatsapp">
+                <target>LLL: WhatsApp</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.email">
+                <target>LLL: E-Mail</target>
+            </trans-unit>
+            <trans-unit id="page.sharebox.at.email.title">
+                <target>LLL: Diese Seite oder Artikel als E-Mail versenden</target>
+            </trans-unit>
+            <trans-unit id="page.prev">
+                <target>LLL: Previous</target>
+            </trans-unit>
+            <trans-unit id="page.next">
+                <target>LLL: Next</target>
+            </trans-unit>
+            <trans-unit id="page.skip.navi">
+                <target>LLL: Navigation überspringen</target>
+            </trans-unit>
+            <trans-unit id="page.logo.title">
+                <target>LLL: Zur Johannestift Diakonie Startseite</target>
+            </trans-unit>
+            <trans-unit id="page.menu.main">
+                <target>LLL: Hauptnavigation</target>
+            </trans-unit>
+            <trans-unit id="page.menu.to">
+                <target>LLL: Zur</target>
+            </trans-unit>
+            <trans-unit id="page.menu.overview">
+                <target>LLL: Übersicht</target>
+            </trans-unit>
+            <trans-unit id="page.menu.show">
+                <target>LLL: Menü einblenden</target>
+            </trans-unit>
+            <trans-unit id="page.menu.lang.button">
+                <target>LLL: Sprache</target>
+            </trans-unit>
+            <trans-unit id="page.menu.menu.title">
+                <target>LLL: Menü einblenden</target>
+            </trans-unit>
+            <trans-unit id="page.menu.menu.text">
+                <target>LLL: Menü</target>
+            </trans-unit>
+            <trans-unit id="page.to.top">
+                <target>LLL: Zum Anfang der Seite</target>
+            </trans-unit>
+            <trans-unit id="page.search.close.title">
+                <target>LLL: Menü schließen</target>
+            </trans-unit>
+            <trans-unit id="page.search.close.button">
+                <target>LLL: Schließen</target>
+            </trans-unit>
+            
+
+            <trans-unit id="modEinrichtungen.toFacility">
+                <target>LLL: Zur Einrichtungsseite</target>
+            </trans-unit>
+            <trans-unit id="modEinrichtungen.moreFacilities">
+                <target>LLL: Weitere Einnrichtungen</target>
+            </trans-unit>
+            <trans-unit id="modEinrichtungen.emptyResults">
+                <target>LLL: Keine Einrichtung gefunden.</target>
+            </trans-unit>
+
+            <trans-unit id="news.toarticle">
+                <target>LLL: Zur Meldung</target>
+            </trans-unit>
+            <trans-unit id="news.morearticle">
+                <target>LLL: Weitere Meldungen</target>
+            </trans-unit>
+            <trans-unit id="news.datum">
+                <target>LLL: Datum</target>
+            </trans-unit>
+            <trans-unit id="news.einrichtung">
+                <target>LLL: Einrichtung</target>
+            </trans-unit>
+            
+            <trans-unit id="ansprechpartner.toprofile">
+                <target>LLL: Zum Profil</target>
+            </trans-unit>
+            <trans-unit id="ansprechpartner.toprofilefrom">
+                <target>LLL: von</target>
+            </trans-unit>
+            <trans-unit id="ansprechpartner.noresults">
+                <target>LLL: Keine Ansprechpartner gefunden.</target>
+            </trans-unit>
+
+            <trans-unit id="mods.readmore">
+                <target>LLL: Mehr erfahren</target>
+            </trans-unit>
+            
+            <trans-unit id="mods.dsgvo.header">
+                <target>LLL: Empfohlener redaktioneller Inhalt</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.teaser.before.provider">
+                <target>LLL: An dieser Stelle finden Sie einen externen Inhalt von</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.teaser.after.provider">
+                <target>LLL: , der die Seite ergänzt. Sie können ihn mit einem Klick anzeigen lassen.</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.text">
+                <target>LLL: Datenschutzerklärung</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.smalltext">
+                <target>LLL: Ich bin damit einverstanden, dass mir externe Inhalte angezeigt werden. Damit können personenbezogene Daten an Drittplattformen übermittelt werden. Mehr dazu in unserer</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.provider.youtube">
+                <target>LLL&#58; YouTube</target>
+            </trans-unit>
+            <trans-unit id="mods.dsgvo.provider.googlemaps">
+                <target>LLL&#58; Google Maps</target>
+            </trans-unit>
+
+            <trans-unit id="footer.followus">
+                <target>LLL: Folgen Sie uns</target>
+            </trans-unit>
+            <trans-unit id="footer.dsgvo">
+                <target>LLL: Datenschutz</target>
+            </trans-unit>
+            <trans-unit id="footer.imprint">
+                <target>LLL: Impressum</target>
+            </trans-unit>
+            <trans-unit id="footer.compliance">
+                <target>LLL: Compliance</target>
+            </trans-unit>
+            <trans-unit id="footer.simplespeak">
+                <target>LLL: Leichte Sprache</target>
+            </trans-unit>
+            <trans-unit id="footer.login">
+                <target>LLL: Mitarbeiter-Login</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

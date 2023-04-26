@@ -1,0 +1,132 @@
+<f:if condition="{data_tx_jsdmodule_navigationeinrichtung}">
+    <div class="mod_navieinrichtung {f:if(condition: '{data_tx_jsdmodule_navigationeinrichtung.0.data.tx_jsdmodule_einrichtungbereich}==2', then: 'subnavi', else: 'main')}" id="c{data.uid}">
+        <f:for each="{data_tx_jsdmodule_navigationeinrichtung}" as="data_item">
+        <div class="row">
+            <f:if condition="{data_item.data.tx_jsdmodule_einrichtungbereich}==1">
+                <div class="col-xs-16 header-img">
+                    <f:for each="{data_item.data_tx_jsdmodule_einrichtungimage}" as="file">
+                        <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, cropVariant-xs:'specialMobile', w-sm:384, cropVariant-sm:'specialMobile', w-md:768, w-lg:1024, w-xl:1280, tabindex: 2}" />
+                    </f:for>
+                </div>
+            </f:if>
+        </div>
+        <div class="row menu-e-div">
+                <f:comment>
+                    <!-- Anzeige nur bei Einrichtungsstartseite -->
+                </f:comment>
+
+                <div class="col-xs-9 col-md-3 logo-e">
+                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_einrichtunglink}" title="{data_item.data.tx_jsdmodule_einrichtungtitle}">
+                        <f:for each="{data_item.data_tx_jsdmodule_einrichtunglogo}" as="file">
+                            <f:render partial="MediaImage" arguments="{data_image:file}" />
+                        </f:for>
+                    </f:link.typolink>
+                </div>
+                <div class="col-xs-7 col-md-12 menu-e">
+
+                        <div class="row justify-content-end" role="navigation" aria-label="Einrichtungsnavigation">
+                            <div class="col menu_lists">
+                                <f:if condition="{data_item.einrichtunglinks_a} || {data_item.einrichtunglinks_b} || {data_item.einrichtunglinks_c} || {data_item.einrichtunglinks_d} || {data_item.einrichtunglinks_extra}">
+                                    <f:then>
+                                    <ul role="tablist" class="menu-e-tabs">
+                                        <li class="d-block d-lg-none hasSub">
+                                            <ul class="list" role="navigation" aria-labelledby="menu-head_mob-{data.uid}">
+                                                <li>
+                                                    <span id="menu-head_mob-{data.uid}" class="menu-head color_white small">Einrichtungs-Menü</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <f:if condition="{data_item.einrichtunglinks_a}">
+                                        <f:render partial="Menu/ItemEinrichtungenHeader" arguments="{cssclass: 'd-none d-lg-block',dataUid: data.uid, mItem: 'a', links: data_item.einrichtunglinks_a, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_a_title, link: data_item.data.tx_jsdmodule_einrichtungslink_a_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_b}">
+                                        <f:render partial="Menu/ItemEinrichtungenHeader" arguments="{cssclass: 'd-none d-lg-block',dataUid: data.uid, mItem: 'b', links: data_item.einrichtunglinks_b, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_b_title, link: data_item.data.tx_jsdmodule_einrichtungslink_b_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_c}">
+                                        <f:render partial="Menu/ItemEinrichtungenHeader" arguments="{cssclass: 'd-none d-lg-block',dataUid: data.uid, mItem: 'c', links: data_item.einrichtunglinks_c, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_c_title, link: data_item.data.tx_jsdmodule_einrichtungslink_c_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_d}">
+                                        <f:render partial="Menu/ItemEinrichtungenHeader" arguments="{cssclass: 'd-none d-lg-block',dataUid: data.uid, mItem: 'd', links: data_item.einrichtunglinks_d, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_d_title, link: data_item.data.tx_jsdmodule_einrichtungslink_d_link}" />
+                                        </f:if>
+                                    </ul>
+                                    <div class="tabcontent">
+                                        <f:if condition="{data_item.einrichtunglinks_a}">
+                                        <f:render partial="Menu/ItemEinrichtungenContent" arguments="{dataUid: data.uid, mItem: 'a', links: data_item.einrichtunglinks_a, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_a_title, link: data_item.data.tx_jsdmodule_einrichtungslink_a_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_b}">
+                                        <f:render partial="Menu/ItemEinrichtungenContent" arguments="{dataUid: data.uid, mItem: 'b', links: data_item.einrichtunglinks_b, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_b_title, link: data_item.data.tx_jsdmodule_einrichtungslink_b_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_c}">
+                                        <f:render partial="Menu/ItemEinrichtungenContent" arguments="{dataUid: data.uid, mItem: 'c', links: data_item.einrichtunglinks_c, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_c_title, link: data_item.data.tx_jsdmodule_einrichtungslink_c_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_d}">
+                                        <f:render partial="Menu/ItemEinrichtungenContent" arguments="{dataUid: data.uid, mItem: 'd', links: data_item.einrichtunglinks_d, linkTitle: data_item.data.tx_jsdmodule_einrichtungslink_d_title, link: data_item.data.tx_jsdmodule_einrichtungslink_d_link}" />
+                                        </f:if>
+                                        <f:if condition="{data_item.einrichtunglinks_extra}">
+                                            <ul class="extra">
+                                                <li class="d-lg-none"></li>
+                                                <f:for each="{data_item.einrichtunglinks_extra}" as="link_item" iteration="i">
+                                                    <f:render partial="Menu/Item" arguments="{item: link_item, cssclass: 'links_{mItem} submenu', htmlDecode: 1}" /></li>
+                                                </f:for>
+                                            </ul>
+                                        </f:if>
+                                    </div>
+                                    </f:then>
+                                    <f:else></f:else>
+                                </f:if>
+
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <f:comment>
+                    <!-- Anzeige nur bei Einrichtungsunterseite -->
+                </f:comment>
+                <f:if condition="{data_item.data.tx_jsdmodule_einrichtungbereich}==2">
+                    <div class="col green-bg {f:if(condition: '{data_item.data_tx_jsdmodule_einrichtungimage} || {data_item.data.tx_jsdmodule_einrichtungvideo}', then: 'haveImg', else: 'noImg')}">
+                        <div class="row">
+                            <div class="{f:if(condition: '{data_item.data_tx_jsdmodule_einrichtungimage} || {data_item.data.tx_jsdmodule_einrichtungvideo}', then: 'order-xs-2 order-md-1 col-xs-11 offset-xs-2 col-md-6 offset-md-1 text', else: 'col-xs-11 offset-xs-2 col-md-8 offset-md-1 text')}">
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.eventname')}">
+                                    <f:then>
+                                        <h1 class="headline">Online-Anmeldung: <f:cObject typoscriptObjectPath="lib.eventname" /></h1>
+                                    </f:then>
+                                    <f:else><f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:1, htmlDecode: 1}" /></f:else>
+                                </f:if>
+                                <p class="subline bold color_dpurple">{data.subheader}</p>
+                            </div>
+                            <f:if condition="{data_item.data_tx_jsdmodule_einrichtungimage}">
+                                <div class="order-xs-1 order-md-2 col-xs-15 offset-xs-0 col-md-7 offset-md-1">
+                                    <f:for each="{data_item.data_tx_jsdmodule_einrichtungimage}" as="file">
+                                        <f:render partial="MediaImage"
+                                            arguments="{data_image:file, w-xs:300, w-sm:360, w-md:337, w-lg:448, w-xl:560}" />
+                                    </f:for>
+                                </div>
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_einrichtungvideo}">
+                                <div class="order-xs-1 order-md-2 col-xs-15 offset-xs-0 col-md-7 offset-md-1 is-vid i_dsgvo g-7-16" data-url="https://www.youtube-nocookie.com/embed/{data_item.data.tx_jsdmodule_einrichtungvideo}?rel=0">
+                                    <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                                    <f:render section="data-police" arguments="{provider: 'YouTube'}" />
+                                </div>
+                            </f:if>
+                        </div>
+                    </div>
+                </f:if>
+            </div>
+        </f:for>
+    </div>
+</f:if>
+
+<f:section name="data-police">
+    <div class="datapolice position-absolute d-flex align-items-center row">
+        <div>
+            <h5>Empfohlener redaktioneller Inhalt</h5>
+            <p>An dieser Stelle finden Sie einen externen Inhalt von {provider}, der die Seite ergänzt. Sie können ihn mit einem Klick anzeigen lassen.</p>
+            <label class="switch">
+                <input type="checkbox"><span class="slider round"></span>
+            </label>
+            <p class="small">Ich bin damit einverstanden, dass mir externe Inhalte angezeigt werden. Damit können personenbezogene Daten an Drittplattformen übermittelt werden. Mehr dazu in unserer <a href="https://www.johannesstift-diakonie.de/datenschutz/">Datenschutzerklärung</a>.</p>
+        </div>
+    </div>
+</f:section>

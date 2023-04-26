@@ -1,0 +1,89 @@
+##########################
+#### IMPORTANT CONFIG ####
+##########################
+config {
+    #cat=page/config/02; type=boolean; label= boolean: no_cache
+    no_cache = 0
+    #cat=page/config/03; type=boolean; label= boolean: debug
+    debug = 0
+    #cat=page/config/04; type=boolean; label= boolean: admPanel
+    admPanel = 0
+    #cat=page/config/05; type=boolean; label= boolean: 0 = On / 1 = Off
+    contentObjectExceptionHandler = 0
+}
+
+
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+
+##############################
+#### FLUID STYLED CONTENT ####
+##############################
+styles {
+    templates {
+        layoutRootPath = EXT:jsd_theme/Resources/Private/Layouts/FluidStyledContent/
+        partialRootPath = EXT:jsd_theme/Resources/Private/Partials/FluidStyledContent/
+        templateRootPath = EXT:jsd_theme/Resources/Private/Templates/FluidStyledContent/
+    }
+}
+
+
+####################
+#### EXTENSIONS ####
+####################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jsd_theme/Configuration/TypoScript/Extensions/constants.txt">
+
+
+############
+### PAGE ###
+############
+page {
+    fluidtemplate {
+        layoutRootPath = EXT:jsd_theme/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:jsd_theme/Resources/Private/Partials/Page/
+        templateRootPath = EXT:jsd_theme/Resources/Private/Templates/Page/
+    }
+    meta {
+        viewport = width=device-width, initial-scale=1
+        apple-mobile-web-app-capable = no
+        compatible = IE=edge
+        fb-admins = 100004326393302
+    }
+}
+
+glob_settings {
+    page {
+        # customsubcategory=logo=Logo
+        # cat=page/logo/01; type=int+; label= int+: RootPageUid
+        uid = 3421
+        # cat=page/logo/02; type=string; label= string: RootPageUid Title
+        title = JDI
+        # cat=page/logo/03; type=string; label= string: Logo Path
+        logo = EXT:jsd_theme/Resources/Public/Images/Logos/Johannesstift_Diakonie.svg
+        # cat=page/logo/04; type=string; label= string: Logo Path lila Logo
+        logo_lila = EXT:jsd_theme/Resources/Public/Images/Logos/Johannesstift_Diakonie_lila.svg
+        # cat=page/logo/05; type=int+; label= int+: SysFolder in dem die Locations (von Einrichtungen) und Einrichtungstypen liegen
+        sysFolderLocationsInstitutiontypes =
+        # cat=page/logo/06; type=int+; label= int+: Global Suche Seite
+        searchTargetPage = 3515
+        # cat=page/logo/06; type=int+; label= int+: Global DSGVO Seite
+        pidDsgvo = 32
+    }
+}
+
+plugin.tx_jsdmodule.view.templateRootPath = EXT:jsd_theme/Resources/Private/Extensions/JsdModule/Templates
+plugin.tx_jsdmodule.view.partialRootPath =  EXT:jsd_theme/Resources/Private/Extensions/JsdModule/Partials
+plugin.tx_jsdmodule.view.layoutRootPath =   EXT:jsd_theme/Resources/Private/Extensions/JsdModule/Layouts
+
+
+
+plugin.tx_jsdmodeinrichtungen_teaser {
+    view {
+        templateRootPaths.10 = EXT:jsd_theme/Resources/Private/Extensions/JsdModulEinrichtungen/Templates/
+        partialRootPaths.10 = EXT:jsd_theme/Resources/Private/Extensions/JsdModule/Partials
+    }
+}
+

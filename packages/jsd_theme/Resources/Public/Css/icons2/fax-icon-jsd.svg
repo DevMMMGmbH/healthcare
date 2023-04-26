@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.8 102.8">
+  <defs>
+    <style>.cls-1{fill:#d4d1e4;}.cls-2{fill:none;stroke:#24195d;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style>
+  </defs>
+  <g id="kreis">
+    <circle class="cls-1" cx="51.4" cy="51.4" r="51.4"></circle>
+  </g>
+  <g id="Ebene_1" data-name="Ebene 1">
+    <path class="cls-2" d="M65.39,57.87H39.1L35.34,76.65H69.15Z" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M66.89,65.38h9.77a3.75,3.75,0,0,0,3.75-3.76v-15H24.08v15a3.75,3.75,0,0,0,3.75,3.76H37.6" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M39.1,31.58H33.91a3.75,3.75,0,0,0-3.36,2.07l-6.47,13H80.41l-6.47-13a3.75,3.75,0,0,0-3.36-2.07H65.39" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M39.1,20.31H65.39V39.09H39.1Z" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M73.84,54.11a.94.94,0,1,0,.94.94.94.94,0,0,0-.94-.94h0" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M46.61,69.14H57.88" transform="translate(-0.08 -0.14)"></path>
+  </g>
+</svg>

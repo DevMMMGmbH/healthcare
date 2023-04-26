@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-14T14:04:03Z" product-name="pgdcontactperson">
+		<header/>
+		<body>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="firstname.description">
+				<source>firstname</source>
+			</trans-unit>
+			<trans-unit id="lastname.description">
+				<source>lastname</source>
+			</trans-unit>
+			<trans-unit id="phone.description">
+				<source>phone</source>
+			</trans-unit>
+			<trans-unit id="mobil.description">
+				<source>mobil</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>fax</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="institution.description">
+				<source>institution</source>
+			</trans-unit>
+			<trans-unit id="area.description">
+				<source>area</source>
+			</trans-unit>
+			<trans-unit id="room.description">
+				<source>room</source>
+			</trans-unit>
+			<trans-unit id="therapie1label.description">
+				<source>therapie1label</source>
+			</trans-unit>
+			<trans-unit id="therapie1link.description">
+				<source>therapie1link</source>
+			</trans-unit>
+			<trans-unit id="therapie2label.description">
+				<source>therapie2label</source>
+			</trans-unit>
+			<trans-unit id="therapie2link.description">
+				<source>therapie2link</source>
+			</trans-unit>
+			<trans-unit id="therapie3label.description">
+				<source>therapie3label</source>
+			</trans-unit>
+			<trans-unit id="therapie3link.description">
+				<source>therapie3link</source>
+			</trans-unit>
+			<trans-unit id="therapie4label.description">
+				<source>therapie4label</source>
+			</trans-unit>
+			<trans-unit id="therapie4link.description">
+				<source>therapie4link</source>
+			</trans-unit>
+			<trans-unit id="refposition.description">
+				<source>refposition</source>
+			</trans-unit>
+			<trans-unit id="reftitle.description">
+				<source>reftitle</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

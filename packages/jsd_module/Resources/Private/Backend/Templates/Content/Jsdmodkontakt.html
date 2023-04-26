@@ -1,0 +1,32 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.header_layout}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.type" /></strong>
+    {processedRow.header_layout.0} (raw={row.header_layout})<br>
+</f:if>
+<f:if condition="{processedRow.image}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.images" /></strong>
+<br><f:for each="{processedRow.image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>
+<f:if condition="{processedRow.tx_jsdmodule_kontakt}">
+    <strong><f:translate key="LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tt_content.tx_jsdmodule_kontakt" /></strong>
+<br><f:for each="{processedRow.tx_jsdmodule_kontakt}" as="item">
+    <ul>
+        <li>
+            <f:translate key="LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tx_jsdmodule_kontakt.tx_jsdmodule_kontakt_header" /> {item.tx_jsdmodule_kontakt_header} (id={item.uid})<br/>
+        </li>
+    </ul>
+</f:for>
+</f:if>

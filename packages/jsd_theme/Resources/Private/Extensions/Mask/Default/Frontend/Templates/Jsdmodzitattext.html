@@ -1,0 +1,41 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_zitattext}">
+    <ul>
+        <f:for each="{data.tx_mask_zitattext}" as="data_item">
+            <li>
+                <f:variable name="shortversion" value="{data_item.tx_mask_shortversion}"/>
+                <f:if condition="{shortversion}">
+                    <f:then>
+                        <f:comment><!-- Do this, if checked --></f:comment>
+                    </f:then>
+                    <f:else>
+                        <f:comment><!-- Else do this --></f:comment>
+                    </f:else>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_zitat}">
+                    {data_item.tx_mask_zitat -> f:format.html()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_zitatcopy}">
+                    {data_item.tx_mask_zitatcopy}
+                </f:if>
+                <f:variable name="options" value="{data_item.tx_mask_options}"/>
+                <f:switch expression="{options}">
+                    <f:case value="1">
+                        {options}
+                    </f:case>
+                    <f:case value="2">
+                        {options}
+                    </f:case>
+                </f:switch>
+                <f:if condition="{data_item.tx_mask_text}">
+                    {data_item.tx_mask_text -> f:format.html()}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

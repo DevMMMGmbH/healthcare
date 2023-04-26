@@ -1,0 +1,171 @@
+# Load via: typo3conf/AdditionalConfiguration.php
+# <?php
+# $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'path_to/ck_editor/default.yaml';
+
+# Load default processing options
+imports:
+    # Import default RTE config (for example)
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    # Import the image plugin configuration
+    # - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
+
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+
+    allowedContent: true
+    # contentsCss: [ '../fileadmin/config/css/bootstrap/css/bootstrap.min.css','../fileadmin/config/css/main.min.css' ]
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:jsd_theme/Configuration/TsConfig/Page/Rte.css"]
+    # contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css"]
+    # contentsCss: [ '../fileadmin/config/ts/ckeditor.css','' ]
+    width: "100%"
+    resize_enabled: true
+    resize_dir: 'both'
+    resize_maxWidth: 750
+    resize_minWidth: 400
+    uiColor: "#F8F8F8"
+
+    format_tags: "p;h1;h2;h3;h4;h5"
+
+    stylesSet:
+      - { name: "Zitat rechts", element: "blockquote", attributes: { 'class': 'float-right' } }
+      - { name: "Zitat links", element: "blockquote", attributes: { 'class': 'float-left' } }
+
+      # table styles
+      # - { name: "BT table-bordered", element: ['table'], attributes: { 'class': 'table table-bordered' }}
+      # - { name: "BT table-condensed", element: ['table'], attributes: { 'class': 'table table-condensed' }}
+      # - { name: "BT table-hover", element: ['table'], attributes: { 'class': 'table table-hover' }}
+      # - { name: "BT table-striped", element: ['table'], attributes: { 'class': 'table table-striped' }}
+
+    toolbarGroups:
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar ] }
+      - { name: document, groups: [ mode ] }
+      - { name: styles, groups: [ styles, format ] }
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      # - justify
+      # - specialchar
+      - showblocks
+      # - div
+      # - codesnippet
+      # - embed
+      # - autoembed
+      # - image2
+      # - embedbase
+      # - embedsemantic
+      # - iframe
+      # - smiley
+      # - widget
+      # - widgetselection
+
+    # codeSnippet_theme: 'monokai_sublime'
+
+    removePlugins:
+      - image
+      - specialchar
+      - wsc
+      - scayt
+
+    removeButtons:
+      - Anchor
+      # - Underline
+      - Strike
+      - Subscript
+      - Superscript
+      - Outdent
+      - Indent
+      - Blockquote
+      - CreateDiv
+      - HorizontalRule
+      - Styles
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u
+    - div
+    - iframe
+    - embed
+    - oembed
+
+# Button config and defaults
+buttons:
+  link:
+    relAttribute:
+      enabled: true
+    properties:
+      class:
+        allowedClasses: 'internal-link,internal-link-new-window,external-link,external-link-new-window,download,mail,phone'
+    page:
+      properties:
+        class:
+          default: 'internal-link'
+    file:
+      properties:
+        class:
+          default: 'download'
+    # folder:
+    #   properties:
+    #     class:
+    #       default: 'link-folder'
+    url:
+      properties:
+        class:
+          default: 'external-link-new-window'
+    mail:
+      properties:
+        class:
+          default: 'mail'
+    telephone:
+      properties:
+        class:
+          default: 'phone'
+
+# Classes config
+classesAnchor:
+  internalLink:
+    class: 'internal-link'
+    type: 'page'
+  internalLinkNewWindow:
+    class: 'internal-link-new-window'
+    type: 'page'
+    target: '_blank'
+  download:
+    class: 'download'
+    type: 'file'
+  # linkFolder:
+  #   class: 'link-folder'
+  #   type: 'folder'
+  externalLink:
+    class: 'external-link'
+    type: 'url'
+  externalLinkNewWindow:
+    class: 'external-link-new-window'
+    type: 'url'
+    target: '_blank'
+  mail:
+    class: 'mail'
+    type: 'mail'
+  phone:
+    class: 'phone'
+    type: 'url'
+  telephone:
+    class: 'phone'
+    type: 'telephone'

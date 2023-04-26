@@ -1,0 +1,40 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:for each="{data.assets}" as="file">
+    <f:media file="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:variable name="modpopupClosePos" value="{data.tx_mask_modpopup_close_pos}"/>
+<f:switch expression="{modpopupClosePos}">
+    <f:case value="">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="oben links">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="oben rechts">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="unten links">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="unten rechts">
+        {modpopupClosePos}
+    </f:case>
+</f:switch>
+<f:variable name="modpopupDisplay" value="{data.tx_mask_modpopup_display}"/>
+<f:switch expression="{modpopupDisplay}">
+    <f:case value="">
+        {modpopupDisplay}
+    </f:case>
+    <f:case value="page_load">
+        {modpopupDisplay}
+    </f:case>
+    <f:case value="page_scroll">
+        {modpopupDisplay}
+    </f:case>
+</f:switch>
+<f:if condition="{data.tx_mask_mod_popup_time_delay}">
+    {data.tx_mask_mod_popup_time_delay}
+</f:if>

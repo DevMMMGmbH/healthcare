@@ -1,0 +1,15 @@
+
+plugin.tx_jsdsprechstunden_sprechstunden {
+    view {
+        # cat=plugin.tx_jsdsprechstunden_sprechstunden/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:jsd_sprechstunden/Resources/Private/Templates/
+        # cat=plugin.tx_jsdsprechstunden_sprechstunden/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:jsd_sprechstunden/Resources/Private/Partials/
+        # cat=plugin.tx_jsdsprechstunden_sprechstunden/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:jsd_sprechstunden/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_jsdsprechstunden_sprechstunden//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

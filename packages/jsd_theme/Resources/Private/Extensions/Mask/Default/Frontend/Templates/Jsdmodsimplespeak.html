@@ -1,0 +1,27 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.tx_mask_leichtsprache}">
+    <ul>
+        <f:for each="{data.tx_mask_leichtsprache}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_bodytext}">
+                    {data_item.tx_mask_bodytext -> f:format.html()}
+                </f:if>
+                <f:for each="{data_item.tx_mask_image}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:variable name="imageOption" value="{data_item.tx_mask_image_option}"/>
+                <f:if condition="{imageOption}">
+                    <f:then>
+                        <f:comment><!-- Do this, if checked --></f:comment>
+                    </f:then>
+                    <f:else>
+                        <f:comment><!-- Else do this --></f:comment>
+                    </f:else>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

@@ -1,0 +1,51 @@
+<f:if condition="{data_tx_jsdmodule_leichtsprache}">
+
+    <div class="row mod_simplespeak" id="c{data.uid}">
+        <f:for each="{data_tx_jsdmodule_leichtsprache}" as="data_item">
+            
+            <f:if condition="!{data_item.data_tx_jsdmodule_image}">
+                <f:then><f:variable name="displayText">col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-8 offset-lg-4</f:variable></f:then>
+                <f:else>
+                    <f:if condition="{data_item.data.tx_jsdmodule_image_option}">
+                        <f:then><f:variable name="displayText">col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-6 offset-lg-2</f:variable></f:then>
+                        <f:else><f:variable name="displayText">col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-6 offset-lg-1 order-lg-2</f:variable></f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+            <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                <f:if condition="{data_item.data.tx_jsdmodule_image_option}">
+                    <f:then><f:variable name="displayImage">col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-5 offset-lg-1</f:variable></f:then>
+                    <f:else><f:variable name="displayImage">col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-5 offset-lg-2 order-lg-1</f:variable></f:else>
+                </f:if>
+            </f:if>
+
+            <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                <f:then>
+                    <div class="row">
+                        <div class="{displayText}">
+                            <div class="bodytext">
+                                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_bodytext}</f:format.html>
+                            </div>
+                        </div>
+                </f:then>
+                <f:else>
+                    <div class="{displayText}">
+                        <div class="bodytext">
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_bodytext}</f:format.html>
+                        </div>
+                    </div>
+                </f:else>
+            </f:if>
+            <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                    <div class="{displayImage} image">
+                        <f:render partial="MediaImage" arguments="{data_image:data_item.data_tx_jsdmodule_image.0, w-xs:320, w-sm:384, w-md:576, w-lg:320, w-xl:400}" />
+                    </div>
+                </div>
+            </f:if>
+
+            <div class="col-16 spacer"><br></div>
+
+        </f:for>
+    </div>
+
+</f:if>

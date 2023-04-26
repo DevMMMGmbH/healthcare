@@ -1,0 +1,58 @@
+html:lang(ar-AE) {
+
+    .mod_bild-slider *,
+    .mod_ankerliste *,
+    .mod_aktuelles-teaser *,
+    .mod_einrichtungsteaser *,
+    .mod_sprechstunde *,
+    .mod_zahltext .header,
+    .mod_zahltext .teasertext,
+    .mod_linkliste .headline,
+    .mod_linkliste .items,
+    .mod_leistungen .headline,
+    .mod_leistungen .flip-card,
+    .mod_leistungen .flip-card-front button,
+    // .mod_kontakt *,
+    .mod_infobox *,
+    .mod_bild-text-teaser *,
+    .mod_highlight-teaser *,
+    .mod_downloads *,
+    .mod_buehnezwei *,
+    .mod_3-er-teaser *,
+    .mod_akkordeon *,
+    .mod_bildergalerie *
+    {
+        text-align: right;
+    }
+
+    .mod_linkliste .icon {
+        background-position: 0 50%;
+        padding: 20px 0 25px 20px;
+    }
+
+    .mod_downloads {
+        a { padding: 0 0 0 25px; }
+        p { background-position: 0 2px; }
+    }
+
+    .mod_akkordeon .card-header button, .mod_akkordeon .card-header button[aria-expanded="true"] {
+        background-position: 4% 50%;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 1023px) {
+
+        .mod_leistungen .flip-card-front button,
+        .mod_leistungen .flip-card-front button[aria-expanded="true"] {
+            background-position: 4% 50%;
+        }
+
+        .mod_leistungen .flip-card-back a.button-dpurple {
+            margin: 5px 28px 30px 0;
+        }
+
+        .mod_kontakt .toggle-bt button,
+        .mod_kontakt .toggle-bt button[aria-expanded="true"] {
+            background-position: 0 50%;
+        }
+    }
+}

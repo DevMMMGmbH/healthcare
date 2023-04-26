@@ -1,0 +1,18 @@
+tx_news.templateLayouts {
+    aktuelles-teaser = Aktuelles-Teaser
+    // aktuelles-teaser-slider = Aktuelles-Teaser Slider
+    // aktuelles-liste = Aktuelles Liste
+    // blick-in-die-presse = Blick in die Presse
+    // blick-in-die-presse-teaser = Blick in die Presse Teaser
+    // story-teaser = Story-Teaser
+    // story-teaser-slider = Story-Teaser Slider
+    // story-liste = Story Liste
+    // story-detail = Story Detailansicht
+}
+
+// Zeige in Ansicht: In allen als default
+TCAdefaults {
+    sys_file_reference {
+        showinpreview = 1
+    }
+}

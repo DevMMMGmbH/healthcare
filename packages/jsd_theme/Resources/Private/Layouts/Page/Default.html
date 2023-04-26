@@ -1,0 +1,64 @@
+<f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Einrichtungen' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='EinrichtungenSubpage' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Defaultnewsdetailpage'">
+    <f:then><f:variable name="cssclass_layout">layout_einrichtungen</f:variable></f:then>
+    <f:else><f:variable name="cssclass_layout">layout_default</f:variable></f:else>
+</f:if>
+<f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayoutSlide')}=='Einrichtungen' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayoutSlide')}=='EinrichtungenSubpage'">
+    <f:then><f:variable name="cssclass_slide">layout_slide</f:variable></f:then>
+    <f:else><f:variable name="cssclass_slide">layout_noslide</f:variable></f:else>
+</f:if>
+
+<f:comment>
+<f:if condition="{f:cObject(typoscriptObjectPath: 'lib.dynamicContent', data: '{pageUid: \'{data.uid}\', colPos: \'4\', wrap: \'\'}')}">
+    <f:then>
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '4', wrap: ''}" />
+    </f:then>
+    <f:else>
+        <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{colPos: '4'}" />
+    </f:else>
+</f:if>
+</f:comment>
+
+<div class="container uid-{data.uid} pid-{data.pid} position-relative {cssclass_layout} {cssclass_slide}">
+    <f:link.page pageUid="{data.uid}#content" class="skiplink"><f:translate key="page.skip.navi" extensionName="jsd_theme" /></f:link.page>
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Einrichtungen' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='EinrichtungenSubpage' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Defaultsubpageholding' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Defaultnewsdetailpage'">
+        <f:then>
+            <section class="header">
+                <f:render section="header" />
+            </section>
+            <div class="position-sticky sticky-menu-cta css-trans_all float-left">
+                <f:link.page pageUid="{settings.page.uid}" class="logo" title="{f:translate(key: 'page.logo.title',  extensionName='jsd_theme')}
+"></f:link.page>
+            </div>
+            <div class="position-sticky sticky-menu-cta css-trans_all float-right">
+                <a href="#" class="main-navigation css-trans_all menu mm_open" title="{f:translate(key: 'page.menu.show',  extensionName='jsd_theme')}
+" aria-label="{f:translate(key: 'page.menu.show',  extensionName='jsd_theme')}
+"
+                    aria-expanded="false"></a>
+            </div>
+            <section class="subheader">
+                <f:render section="subheader" />
+            </section>
+        </f:then>
+        <f:else>
+            <section class="header">
+                <f:render section="header" />
+            </section>
+            <div class="position-sticky sticky-menu-cta css-trans_all float-left">
+                <f:link.page pageUid="{settings.page.uid}" class="logo" title="{f:translate(key: 'page.logo.title',  extensionName='jsd_theme')}"></f:link.page>
+            </div>
+            <div class="position-sticky sticky-menu-cta css-trans_all float-right">
+                <a href="#" class="main-navigation css-trans_all menu mm_open" title="{f:translate(key: 'page.menu.show',  extensionName='jsd_theme')}" aria-label="{f:translate(key: 'page.menu.show',  extensionName='jsd_theme')}" aria-expanded="false"></a>
+            </div>
+        </f:else>
+    </f:if>
+    <section class="content" id="content">
+        <f:render section="body" />
+    </section>
+    <a id="btt-button" class="css-trans_all" aria-label="{f:translate(key: 'page.to.top',  extensionName='jsd_theme')}" title="{f:translate(key: 'page.to.top',  extensionName='jsd_theme')}" role="button"></a>
+</div>
+
+<div class="container-fluid">
+    <section class="footer" role="navigation" aria-label="Metanavigation">
+        <f:render section="footer" />
+    </section>
+</div>

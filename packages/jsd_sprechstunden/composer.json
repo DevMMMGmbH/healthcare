@@ -1,0 +1,29 @@
+{
+    "name": "robertheyduck/jsd-sprechstunden",
+    "description": "Sprechstunden der Krankenhäuser",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Robert Heyduck",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4||^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "RobertHeyduck\\JsdSprechstunden\\": "Classes"
+        }
+    },
+    "replace": {
+        "robertheyduck/jsd-sprechstunden": "self.version",
+        "typo3-ter/jsd-sprechstunden": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jsd_sprechstunden"
+        }
+    }
+}

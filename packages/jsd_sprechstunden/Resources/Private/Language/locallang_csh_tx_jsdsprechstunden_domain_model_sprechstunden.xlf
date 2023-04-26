@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:jsd_sprechstunden/Resources/Private/Language/locallang_csh" date="2021-02-10T08:35:02Z" product-name="jsd_sprechstunden">
+		<header/>
+		<body>
+			<trans-unit id="auswahlname.description" resname="auswahlname.description">
+				<source>Titel für die Auswahl</source>
+			</trans-unit>
+			<trans-unit id="title.description" resname="title.description">
+				<source>Titel der Sprechstunde</source>
+			</trans-unit>
+			<trans-unit id="einrichtung.description" resname="einrichtung.description">
+				<source>Einrichtung</source>
+			</trans-unit>
+			<trans-unit id="gglmaplink.description" resname="gglmaplink.description">
+				<source>Google Maps Link</source>
+			</trans-unit>
+			<trans-unit id="beschreibung.description" resname="beschreibung.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="termin_title.description" resname="termin_title.description">
+				<source>Terminevereinbarung - Titel</source>
+			</trans-unit>
+			<trans-unit id="termin_email_title.description" resname="termin_email_title.description">
+				<source>Terminevereinbarung -  E-Mail Titel</source>
+			</trans-unit>
+			<trans-unit id="termin_email_link.description" resname="termin_email_link.description">
+				<source>Terminevereinbarung - E-Mail Adresse</source>
+			</trans-unit>
+			<trans-unit id="termin_link_title.description" resname="termin_link_title.description">
+				<source>Terminevereinbarung - Link Titel</source>
+			</trans-unit>
+			<trans-unit id="termin_link.description" resname="termin_link.description">
+				<source>Terminevereinbarung - Link</source>
+			</trans-unit>
+			<trans-unit id="termin_tel_link.description" resname="termin_tel_link.description">
+				<source>Terminevereinbarung - Telefon Titel</source>
+			</trans-unit>
+			<trans-unit id="termin_tel.description" resname="termin_tel.description">
+				<source>Terminevereinbarung - Telefonnummer</source>
+			</trans-unit>
+			<trans-unit id="termin_zeiten_title.description" resname="termin_zeiten_title.description">
+				<source>Terminzeiten - Überschrift</source>
+			</trans-unit>
+			<trans-unit id="termin_zeiten.description" resname="termin_zeiten.description">
+				<source>Terminzeiten - Zeiten (Tabelle)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

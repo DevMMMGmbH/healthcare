@@ -1,0 +1,179 @@
+#############################################
+#### DYNAMIC LINK LIB FOR USAGE IN FLUID ####
+#############################################
+#
+#  EXAMPLE
+#  ---------------
+# {f:cObject(typoscriptObjectPath: 'lib.dynamicLinkShare', data: '{link: \'facebook\'}')}
+# <f:cObject typoscriptObjectPath="lib.dynamicLinkShare" data="{link: 'facebook'}" />
+#
+#
+lib.dynamicLinkShare = COA
+lib.dynamicLinkShare {
+
+    5 = LOAD_REGISTER
+    5 {
+        link.cObject = TEXT
+        link.cObject {
+            field = link
+            ifEmpty = 1
+        }
+    }
+
+    // facebook
+    10 = COA
+    10 {
+        if {
+            equals.data = register:link
+            value = facebook
+        }
+        10 = COA
+        10 {
+            10 = TEXT
+            10.value = https://www.facebook.com/sharer/sharer.php?s=100
+
+            20 = COA
+            20.wrap = &amp;u=|
+            20 {
+                10 = TEXT
+                10.data = getIndpEnv:TYPO3_REQUEST_URL
+                10.rawUrlEncode = 1
+            }
+            30 = TEXT
+            30.wrap = &amp;p[images][0]=&amp;p[title]=|
+            35 = TEXT
+            35.data = DB:sys_template:53:sitetitle
+            35.required = 1
+            35.stdWrap.rawUrlEncode = 1
+            40 = TEXT
+            40.wrap = &amp;p[summary]=|
+            40.data = page:nav_title // page:title // page:subtitle
+            40.required = 1
+            40.stdWrap.rawUrlEncode = 1
+
+        }
+    }
+
+    // twitter
+    // https://twitter.com/intent/tweet?text=How to add the Tweet button to your website&url=https://help.twitter.com/en/using-twitter/add-twitter-share-button&
+    20 < .10
+    20.if.value = twitter
+    20 {
+        10 >
+        20 = COA
+        20 {
+            10 = TEXT
+            10.value = https://twitter.com/intent/tweet?text=
+            20 = TEXT
+            20.data = DB:sys_template:53:sitetitle
+            20.required = 1
+            20.stdWrap.rawUrlEncode = 1
+            30 = TEXT
+            30.data = page:nav_title // page:title // page:subtitle
+            30.required = 1
+            30.stdWrap.rawUrlEncode = 1
+            // 30.wrap = %20-%20|%20
+            30.wrap = |%20-%20Johannesstift%20Diakonie&amp;url=
+            40 = TEXT
+            40.data = getIndpEnv:TYPO3_REQUEST_URL
+            40.rawUrlEncode = 1
+        }
+    }
+
+    // linkedin
+    30 < .10
+    30.if.value = linkedin
+    30 {
+        10 >
+        20 = COA
+        20 {
+            10 = TEXT
+            10.value = https://www.linkedin.com/shareArticle?mini=true&amp;source=
+            20 = TEXT
+            20.data = DB:sys_template:53:sitetitle
+            20.required = 1
+            20.stdWrap.rawUrlEncode = 1
+            30 = TEXT
+            30.data = page:nav_title // page:title // page:subtitle
+            30.required = 1
+            30.stdWrap.rawUrlEncode = 1
+            30.wrap = &amp;title=|
+            40 = TEXT
+            40.data = getIndpEnv:TYPO3_REQUEST_URL
+            40.rawUrlEncode = 1
+            40.wrap = &amp;url=|
+        }
+    }
+
+    // xing
+    40 < .10
+    40.if.value = xing
+    40 {
+        10 >
+        20 = COA
+        20 {
+            10 = TEXT
+            10.value = https://www.xing-share.com/app/user?op=share
+            20 = COA
+            20.wrap = ;sc_p=xing-share;url=|
+            20 {
+                10 = TEXT
+                10.data = getIndpEnv:TYPO3_REQUEST_URL
+                10.rawUrlEncode = 1
+            }
+        }
+    }
+
+    // whatsapp
+    50 < .10
+    50.if.value = whatsapp
+    50 {
+        10 >
+        20 = COA
+        20.htmlSpecialChars = 1
+        20 {
+            10 = TEXT
+            10.wrap = whatsapp://send?text=|
+            20 = TEXT
+            20.wrap = Ich%20habe%20diese%20Seite%20hier%20gefunden%20%22|%22.
+            20.data = page:title
+            20.rawUrlEncode = 1
+            30 = COA
+            30.wrap = %20Du%20kannst%20sie%20dir%20hier%20ansehen%3A%20|
+            30 {
+                10 = TEXT
+                10.data = getIndpEnv:TYPO3_REQUEST_URL
+                10.rawUrlEncode = 1
+            }
+        }
+    }
+
+    // mail
+    60 < .10
+    60.if.value = email
+    60 {
+        10 >
+        20 = COA
+        20.htmlSpecialChars = 1
+        20 {
+            10 = TEXT
+            10.wrap = mailto:?subject=%22|%22
+            10.data = page:title
+            10.rawUrlEncode = 1
+            20 = TEXT
+            20.wrap = &amp;body=Ich%20habe%20diese%20informative%20Seite%20hier%20gefunden.%0A%0A%22|%22
+            20.data = page:title
+            20.rawUrlEncode = 1
+            30 = COA
+            30.wrap = %0A%0AWeitere%20Details%20sind%20auf%20folgendem%20Link%3A%20|
+            30 {
+                10 = TEXT
+                10.data = getIndpEnv:TYPO3_REQUEST_URL
+                10.rawUrlEncode = 1
+            }
+        }
+    }
+
+    90 = RESTORE_REGISTER
+
+}

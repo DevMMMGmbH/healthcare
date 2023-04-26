@@ -1,0 +1,51 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data.header_layout}">
+    <f:switch expression="{data.header_layout}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_zitattext}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_zitattext}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_jsdmodule_shortversion}">
+    <f:then>
+        On<br />
+    </f:then>
+    <f:else>
+        Off<br />
+     </f:else>
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_zitat}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_zitat}</f:format.html><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_zitatcopy}">
+    {data_item.data.tx_jsdmodule_zitatcopy}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_options}">
+    <f:switch expression="{data_item.data.tx_jsdmodule_options}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_text}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_text}</f:format.html><br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

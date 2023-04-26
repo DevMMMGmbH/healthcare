@@ -1,0 +1,189 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+            jsdmod3erteaser {
+                iconIdentifier = tx_jsdmodule_jsdmod3erteaser
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmod3erteaser_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmod3erteaser_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmod3erteaser
+                }
+            }
+            jsdmodakkordeon {
+                iconIdentifier = tx_jsdmodule_jsdmodakkordeon
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodakkordeon_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodakkordeon_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodakkordeon
+                }
+            }
+            jsdmodankerliste {
+                iconIdentifier = tx_jsdmodule_jsdmodankerliste
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodankerliste_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodankerliste_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodankerliste
+                }
+            }
+            jsdmodbereichsteaser {
+                iconIdentifier = tx_jsdmodule_jsdmodbereichsteaser
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbereichsteaser_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbereichsteaser_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbereichsteaser
+                }
+            }
+            jsdmodbildergalerie {
+                iconIdentifier = tx_jsdmodule_jsdmodbildergalerie
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildergalerie_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildergalerie_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbildergalerie
+                }
+            }
+            jsdmodbilderkachel {
+                iconIdentifier = tx_jsdmodule_jsdmodbilderkachel
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbilderkachel_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbilderkachel_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbilderkachel
+                }
+            }
+            jsdmodbildslider {
+                iconIdentifier = tx_jsdmodule_jsdmodbildslider
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildslider_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildslider_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbildslider
+                }
+            }
+            jsdmodbildtextteaser {
+                iconIdentifier = tx_jsdmodule_jsdmodbildtextteaser
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildtextteaser_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbildtextteaser_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbildtextteaser
+                }
+            }
+            jsdmodbuehnedetailseite {
+                iconIdentifier = tx_jsdmodule_jsdmodbuehnedetailseite
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbuehnedetailseite_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodbuehnedetailseite_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodbuehnedetailseite
+                }
+            }
+            jsdmoddownload {
+                iconIdentifier = tx_jsdmodule_jsdmoddownload
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmoddownload_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmoddownload_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmoddownload
+                }
+            }
+            jsdmodfooter {
+                iconIdentifier = tx_jsdmodule_jsdmodfooter
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodfooter_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodfooter_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodfooter
+                }
+            }
+            jsdmodgmapbvgyoutube {
+                iconIdentifier = tx_jsdmodule_jsdmodgmapbvgyoutube
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodgmapbvgyoutube_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodgmapbvgyoutube_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodgmapbvgyoutube
+                }
+            }
+            jsdmodhighlightteaser {
+                iconIdentifier = tx_jsdmodule_jsdmodhighlightteaser
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodhighlightteaser_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodhighlightteaser_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodhighlightteaser
+                }
+            }
+            jsdmodinfobox {
+                iconIdentifier = tx_jsdmodule_jsdmodinfobox
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodinfobox_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodinfobox_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodinfobox
+                }
+            }
+            jsdmodkontakt {
+                iconIdentifier = tx_jsdmodule_jsdmodkontakt
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodkontakt_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodkontakt_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodkontakt
+                }
+            }
+            jsdmodleistungen {
+                iconIdentifier = tx_jsdmodule_jsdmodleistungen
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodleistungen_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodleistungen_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodleistungen
+                }
+            }
+            jsdmodlinkliste {
+                iconIdentifier = tx_jsdmodule_jsdmodlinkliste
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodlinkliste_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodlinkliste_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodlinkliste
+                }
+            }
+            jsdmodnavigation {
+                iconIdentifier = tx_jsdmodule_jsdmodnavigation
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodnavigation_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodnavigation_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodnavigation
+                }
+            }
+            jsdmodschnellzugriffsteaser {
+                iconIdentifier = tx_jsdmodule_jsdmodschnellzugriffsteaser
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodschnellzugriffsteaser_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodschnellzugriffsteaser_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodschnellzugriffsteaser
+                }
+            }
+            jsdmodseointrotext {
+                iconIdentifier = tx_jsdmodule_jsdmodseointrotext
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodseointrotext_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodseointrotext_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodseointrotext
+                }
+            }
+            jsdmodsimplespeak {
+                iconIdentifier = tx_jsdmodule_jsdmodsimplespeak
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodsimplespeak_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodsimplespeak_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodsimplespeak
+                }
+            }
+            jsdmodzahltext {
+                iconIdentifier = tx_jsdmodule_jsdmodzahltext
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodzahltext_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodzahltext_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodzahltext
+                }
+            }
+            jsdmodzitattext {
+                iconIdentifier = tx_jsdmodule_jsdmodzitattext
+                title = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodzitattext_title
+                description = LLL:EXT:jsd_module/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.jsdmodzitattext_description
+                tt_content_defValues {
+                    CType = jsdmodule_jsdmodzitattext
+                }
+            }
+    }
+    show := addToList(jsdmod3erteaser, jsdmodakkordeon, jsdmodankerliste, jsdmodbereichsteaser, jsdmodbildergalerie, jsdmodbilderkachel, jsdmodbildslider, jsdmodbildtextteaser, jsdmodbuehnedetailseite, jsdmoddownload, jsdmodfooter, jsdmodgmapbvgyoutube, jsdmodhighlightteaser, jsdmodinfobox, jsdmodkontakt, jsdmodleistungen, jsdmodlinkliste, jsdmodnavigation, jsdmodschnellzugriffsteaser, jsdmodseointrotext, jsdmodsimplespeak, jsdmodzahltext, jsdmodzitattext)
+}

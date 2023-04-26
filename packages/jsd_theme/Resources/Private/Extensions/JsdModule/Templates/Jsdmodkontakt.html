@@ -1,0 +1,79 @@
+<div class="mod_kontakt" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content">
+        <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+        </f:if>
+        <div class="col-16" id="k-parent-{data.uid}">
+            <div class="row">
+                <f:for each="{data_tx_jsdmodule_kontakt}" as="data_item" iteration="i">
+                        <f:if condition="{i.cycle}==1">
+                            <div class="col-md-6 order-md-2 order-lg-3 image">
+                                <f:if condition="{data_image}">
+                                    <f:for each="{data_image}" as="file">
+                                        <f:render partial="MediaImage"
+                                            arguments="{data_image:file, w-xs:320, cropVariant-xs:'specialMobileTwoOne', w-sm:384, cropVariant-sm:'specialMobileTwoOne', w-md:288, w-lg:384, w-xl:480}" />
+                                    </f:for>
+                                </f:if>
+                            </div>
+                            <div class="k-box box-{i.cycle} col-xs-16 offset-xs-0 col-md-6 offset-md-2 col-lg-4 offset-lg-1 order-md-1 order-lg-1 align-self-lg-end">
+                        </f:if>
+
+                        <f:if condition="{i.cycle}==2">
+                            <div class="k-box box-{i.cycle} col-md-6 offset-md-0 col-lg-4 offset-lg-0 order-md-4 order-lg-2 align-self-lg-end">
+                        </f:if>
+
+                        <f:if condition="{i.cycle}==3">
+                            <div class="k-box box-{i.cycle} col-xs-16 offset-xs-0 col-md-6 offset-md-2 col-lg-4 offset-lg-1 order-md-3 order-lg-4">
+                        </f:if>
+
+                        <f:if condition="{i.cycle}==4">
+                            <f:if condition="{i.cycle}<4">
+                                <f:then>
+                                    <div class="k-box box-{i.cycle} col-md-6 col-lg-4 order-md-5 order-lg-5">
+                                </f:then>
+                                <f:else>
+                                    <div class="k-box box-{i.cycle} col-md-6 col-lg-4 order-md-5 offset-md-8 offset-lg-0 order-lg-5">
+                                </f:else>
+                            </f:if>
+                        </f:if>
+
+                        <f:if condition="{i.cycle}==5">
+                            <div class="k-box box-{i.cycle} col-xs-16 offset-xs-0 col-md-6 offset-md-2 col-lg-4 offset-lg-0 order-md-5 order-lg-6">
+                        </f:if>
+
+                        <div class="d-md-none toggle-bt">
+                            <button data-toggle="collapse" data-target="#k-box-{data.uid}_{i.cycle}" class="color_white bold">{data_item.data.tx_jsdmodule_kontakt_header}</button>
+                        </div>
+                        <div class="text_button d-md-flex align-items-md-start flex-md-column collapse" id="k-box-{data.uid}_{i.cycle}" data-parent="#k-parent-{data.uid}">
+                            <div class="head">
+                                <f:if condition="{data_item.data.tx_jsdmodule_kontakt_header}">
+                                    <h3 class="header color_white d-none d-md-block">{data_item.data.tx_jsdmodule_kontakt_header}</h3>
+                                </f:if>
+                            </div>
+                            <f:if condition="{data_item.data.tx_jsdmodule_kontakt_rtetext}">
+                                <div class="text color_white">
+                                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_kontakt_rtetext}</f:format.html>
+                                </div>
+                            </f:if>
+
+                            <f:if condition="{data_item.data.tx_jsdmodule_kontakt_cta_link}">
+                                <div class="cta_button mt-md-auto">
+                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_kontakt_cta_link}" class="btn button-white css-trans_all" title="{data_item.data.tx_jsdmodule_kontakt_cta_text}">{data_item.data.tx_jsdmodule_kontakt_cta_text}</f:link.typolink>
+                                </div>
+                            </f:if>
+                        </div>
+
+                    </div>
+                </f:for>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>

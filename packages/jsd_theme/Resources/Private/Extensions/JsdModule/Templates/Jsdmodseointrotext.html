@@ -1,0 +1,27 @@
+<f:if condition="{data.header} || {data.bodytext}">
+<div class="mod_seo-intro-text" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t"></div>
+    </div>
+    <div class="row kk_content">
+        <div class="col-xs-16">
+            <div class="row">
+
+                <f:if condition="{data.header}">
+                    <div class="col-xs-12 offset-xs-2 col-md-10 offset-md-3 col-lg-5 offset-lg-2 offset-lg-1 header">
+                        <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+                    </div>
+                </f:if>
+                <f:if condition="{data.bodytext}">
+                    <div class="col-xs-12 offset-xs-2 col-md-10 offset-md-3 col-lg-6 offset-lg-1  bodytext">
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b"></div>
+    </div>
+</div>
+</f:if>

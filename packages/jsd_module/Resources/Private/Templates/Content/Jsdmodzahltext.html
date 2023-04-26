@@ -1,0 +1,34 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data.header_layout}">
+    <f:switch expression="{data.header_layout}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data.bodytext}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html><br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_zahltext}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_zahltext}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_jsdmodule_zahl}">
+    {data_item.data.tx_jsdmodule_zahl}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_text}">
+    {data_item.data.tx_jsdmodule_text}<br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

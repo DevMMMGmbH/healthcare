@@ -1,0 +1,29 @@
+<f:layout name="Default" />
+
+<f:section name="header">
+    <f:render partial="Language" arguments="{languagenavigation:languagenavigation}" />
+    <div class="row">
+        <div class="col-xs-16">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '1', wrap: ''}" />
+        </div>
+    </div>
+</f:section>
+
+<f:section name="body">
+    <!--TYPO3SEARCH_begin-->
+    <div class="row">
+        <div class="col-xs-16">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', wrap: ''}" />
+        </div>
+    </div>
+    <!--TYPO3SEARCH_end-->
+</f:section>
+
+<f:section name="footer">
+
+    <f:render partial="Footer/Shareprint" arguments="{_all}" />
+
+    <f:comment><!-- Global-Footer --></f:comment>
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '2', wrap: ''}" />
+
+</f:section>

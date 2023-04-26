@@ -1,0 +1,15 @@
+#############################################
+#### DYNAMIC YEAR LIB FOR USAGE IN FLUID ####
+#############################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicYear" />
+#
+#################
+lib.dynamicYear = TEXT
+lib.dynamicYear {
+    data = date : U
+    strftime = %Y
+    noTrimWrap = |||
+}

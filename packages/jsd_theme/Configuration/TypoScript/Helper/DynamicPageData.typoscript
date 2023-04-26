@@ -1,0 +1,57 @@
+##################################################
+#### DYNAMIC PAGE DATA LIB FOR USAGE IN FLUID ####
+##################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicPageData" data="{dataTable: 'table_name', dataUid: '123'}" />
+#
+#
+#  COLUMN NUMBERS
+#  ---------------
+#
+#  0  = main
+#  1  = left
+#  2  = right
+#  3  = border
+#
+#################
+lib.dynamicPageData = COA
+lib.dynamicPageData {
+    10 = LOAD_REGISTER
+    10 {
+        dataFromTable.cObject = TEXT
+        dataFromTable.cObject {
+            field = dataFromTable
+            ifEmpty =
+        }
+        dataUid.cObject = TEXT
+        dataUid.cObject {
+            field = dataUid
+            ifEmpty =
+        }
+        dataSysFolder.cObject = TEXT
+        dataSysFolder.cObject {
+            field = dataSysFolder
+            ifEmpty =
+        }
+    }
+
+    20 = CONTENT
+    20 {
+        if.isTrue.dataWrap = {register:dataFromTable}
+        table = {register:dataFromTable}
+        table.insertData = 1
+        select {
+            includeRecordsWithoutDefaultTranslation = 1
+            where = {#uid}={register:dataUid}
+            where.insertData = 1
+            pidInList = {register:dataSysFolder}
+            pidInList.insertData = 1
+        }
+        renderObj = TEXT
+        renderObj.field = title
+    }
+
+    90 = RESTORE_REGISTER
+}

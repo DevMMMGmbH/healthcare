@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-10T13:45:16Z" product-name="jsd_modeinrichtungen">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>Titel des Typs</source>
+			</trans-unit>
+			<trans-unit id="types.description">
+				<source>Zuordung des Typs zum Bereich</source>
+			</trans-unit>
+			<trans-unit id="bereich.description">
+				<source>Zuordnung Bereich zum Fachbereich</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

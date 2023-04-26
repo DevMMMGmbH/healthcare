@@ -1,0 +1,23 @@
+<f:if condition="{data_image}">
+    <div class="mod_2-bilder" id="c{data.uid}">
+        <div class="row">
+            <f:for each="{data_image}" as="data_image" iteration="iteration">
+                <f:if condition="{iteration.cycle}==1">
+                    <f:then>
+                        <div class="col-xs-14 col-md-12 bild-1">
+                            <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:280, w-sm:336, w-md:576, w-lg:768, w-xl:960}" />
+                        </div>
+                    </f:then>
+                </f:if>
+                <f:if condition="{iteration.cycle}==2">
+                    <f:then>
+                        <div class="col-md-6 offset-md-10 col-xs-12 offset-xs-4 bild-2">
+                            <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:180, w-sm:288, w-md:288, w-lg:384, w-xl:480}" />
+                        </div>
+                    </f:then>
+                </f:if>
+            </f:for>
+        </div>
+    </div>
+</f:if>
+

@@ -1,0 +1,21 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_downloads}">
+    <ul>
+        <f:for each="{data.tx_mask_downloads}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_description}">
+                    {data_item.tx_mask_description}
+                </f:if>
+                <f:for each="{data_item.tx_mask_file}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

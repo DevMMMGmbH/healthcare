@@ -1,0 +1,256 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+    <f:layout name="General" />
+    <!--
+        =====================
+            Templates/News/List.html
+    -->
+
+    <f:section name="content">
+        <!--TYPO3SEARCH_end-->
+        <f:if condition="{news}">
+            <f:then>
+                <f:if condition="{settings.templateLayout} == 'aktuelles-teaser' || {settings.templateLayout} == 'blick-in-die-presse-teaser' || {settings.templateLayout} == 'story-teaser'">
+                    <f:then>
+                        <div class="mod_aktuelles-teaser {f:if(condition: '{settings.templateLayout} == \'blick-in-die-presse-teaser\'', then: 'presseschauteaser', else: '')} {f:if(condition: '{settings.templateLayout} == \'story-teaser\'', then: 'storyteaser', else: '')}" id="c{contentObjectData.uid}">
+                            <div class="row">
+                                <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-blue"></div>
+                            </div>
+                            <div class="row kk_content">
+                                <div class="col-xs-12 offset-xs-2">
+                                    <f:render partial="../../JsdModule/Partials/HeaderLayout" arguments="{header:contentObjectData.header, header_layout:2, htmlDecode: 1, cssclass: 'header color_blue'}" />
+                                </div>
+                                <f:if condition="{settings.templateLayout} == 'blick-in-die-presse-teaser'">
+                                    <f:for each="{news}" as="newsItem" iteration="i">
+                                        <f:if condition="{i.cycle}%2">
+                                            <f:if condition="{i.isFirst}">
+                                                <f:then></f:then>
+                                                <f:else><div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 d-none d-md-block border-b"></div></f:else>
+                                            </f:if>
+                                        </f:if>
+                                        <div class="col-xs-12 offset-xs-2 col-md-6 offset-md-1">
+                                            <f:render partial="List/BlickInDiePresseListItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                        </div>
+                                        <div class="col-xs-12 offset-xs-2 d-xs-block d-md-none border-b"></div>
+                                        <f:if condition="{i.isLast}">
+                                            <div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 d-none d-md-block border-b"></div>
+                                        </f:if>
+                                    </f:for>
+                                </f:if>
+                                <f:if condition="{settings.templateLayout} == 'aktuelles-teaser' || {settings.templateLayout} == 'story-teaser'">
+                                    <f:for each="{news}" as="newsItem" iteration="iterator">
+                                        <f:if condition="{iterator.cycle} == 1">
+                                            <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-lg-13 offset-lg-1 border-b_lightblue padding">
+                                                <f:render partial="List/TeaserFirstItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                            </div>
+                                        </f:if>
+                                        <f:if condition="{iterator.cycle} == 2">
+                                            <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-lg-13 offset-lg-1 border-b_lightblue">
+                                                <div class="row">
+                                                    <div class="col-md-7 offset-md-0 f2-txt border-b_lightblue_2 padding">
+                                                        <f:render partial="List/Teaser" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                    </div>
+                                        </f:if>
+                                        <f:if condition="{iterator.cycle} == 3">
+                                                    <div class="col-md-7 offset-md-1 f2-txt f3-txt padding">
+                                                        <f:render partial="List/Teaser" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </f:if>
+                                    </f:for>
+                                </f:if>
+                                <f:if condition="{settings.backPid}">
+                                    <div class="news-backlink-wrap col-xs-12 offset-xs-2 col-md-13 offset-md-1">
+                                        <f:link.page pageUid="{settings.backPid}" class="btn teaser-all button-blue_0-2 css-trans_all color_blue">
+                                            <f:if condition="{settings.templateLayout} == 'blick-in-die-presse-teaser'">
+                                                <f:then>Weitere Beiträge</f:then>
+                                                <f:else>
+                                                    <f:if condition="{settings.templateLayout} == 'story-teaser'">
+                                                        <f:then>Weitere Stories</f:then>
+                                                        <f:else><f:translate key="news.morearticle" extensionName="jsd_theme" /></f:else>
+                                                    </f:if>
+                                                </f:else>
+                                            </f:if>
+                                        </f:link.page>
+                                    </div>
+                                </f:if>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-16 col-md-15 icon-b icon-b-blue"></div>
+                            </div>
+                        </div>
+                    </f:then>
+                    <f:else if="{settings.templateLayout} == 'aktuelles-teaser-slider' || {settings.templateLayout} == 'story-teaser-slider'">
+                        <div class="mod_aktuelles-teaser slider {f:if(condition: '{settings.templateLayout} == \'story-teaser-slider\'', then: 'stories', else: '')}" id="c{contentObjectData.uid}">
+                            <div class="row">
+                                <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-blue"></div>
+                            </div>
+                            <div class="row kk_content">
+
+                                <div class="col-xs-12 offset-xs-2">
+                                    <f:render partial="../../JsdModule/Partials/HeaderLayout" arguments="{header:contentObjectData.header, header_layout:2, htmlDecode: 1, cssclass: 'header color_blue'}" />
+                                </div>
+
+                                <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-lg-13 offset-lg-1">
+                                    <div class="row slick" data-slick-class="slick-c{contentObjectData.uid}">
+                                        <div class="col-xs-16">
+                                            <div class="row slick-c{contentObjectData.uid}" data-slick='{"autoplay":true, "prevArrow": "#c<f:format.raw>{contentObjectData.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{contentObjectData.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{contentObjectData.uid}</f:format.raw>"}}]}'>
+                                                <f:if condition="!{f:cObject(typoscriptObjectPath: 'lib.jobCat')}">
+                                                    <f:then>
+                                                        <f:for each="{news}" as="newsItem" iteration="iterator">
+                                                            <div class="col-xs-16">
+                                                                <f:render partial="List/TeaserSlider" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                            </div>
+                                                        </f:for>
+                                                    </f:then>
+                                                    <f:else>
+                                                        {f:variable(name: 'countCatItems', value: 0)}
+                                                        <f:for each="{news}" as="newsItem" iteration="iterator">
+                                                            <f:for each="{newsItem.categories}" as="newsCat" iteration="i">
+                                                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.jobCat')} == {newsCat.title}">
+                                                                    <f:variable name="countCatItems">{countCatItems + 1}</f:variable>
+                                                                </f:if>
+                                                            </f:for>
+                                                        </f:for>
+                                                        <f:if condition="!{countCatItems}">
+                                                            <f:then>
+                                                                <f:for each="{news}" as="newsItem" iteration="iterator">
+                                                                    <div class="col-xs-16">
+                                                                        <f:render partial="List/TeaserSlider" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                                    </div>
+                                                                </f:for>
+                                                            </f:then>
+                                                            <f:else>
+                                                                {f:variable(name: 'countFilteredItems', value: 0)}
+                                                                <f:for each="{news}" as="newsItem" iteration="iterator">
+                                                                    <f:for each="{newsItem.categories}" as="newsCat" iteration="i">
+                                                                        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.jobCat')} == {newsCat.title}">
+                                                                            <f:then>
+                                                                                <f:variable name="sliderPostJobCat">1</f:variable>
+                                                                            </f:then>
+                                                                            <f:else>
+                                                                                <f:variable name="sliderPostJobCat">0</f:variable>
+                                                                            </f:else>
+                                                                        </f:if>
+                                                                    </f:for>
+                                                                    <f:if condition="{sliderPostJobCat} == 1 && {countFilteredItems} < 4">
+                                                                        <f:then>
+                                                                            <div class="col-xs-16">
+                                                                                <f:render partial="List/TeaserSlider" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                                            </div>
+                                                                            <f:variable name="countFilteredItems">{countFilteredItems + 1}</f:variable>
+                                                                        </f:then>
+                                                                        <f:else></f:else>
+                                                                    </f:if>
+                                                                </f:for>
+                                                            </f:else>
+                                                        </f:if>
+                                                    </f:else>
+                                                </f:if>
+                                            </div>
+                                        </div>
+                                        <f:if condition="{settings.backPid} || {news -> f:count()} > 1 || {countFilteredItems} > 1">
+                                            <div class="col-xs-16">
+                                                <div class="border-b_lightblue padding"></div>
+                                                <div class="d-none d-xs-block d-md-none slick-dots-c{contentObjectData.uid}"></div>
+                                                <div class="row justify-content-between">
+                                                    <div class="col-xs-16 col-md-8">
+                                                        <f:link.page pageUid="{settings.backPid}" class="btn all button-blue_0-2 css-trans_all color_blue">
+                                                            <f:if condition="{settings.templateLayout} == 'story-teaser-slider'">
+                                                                <f:then>Weitere Stories</f:then>
+                                                                <f:else><f:translate key="news.morearticle" extensionName="jsd_theme" /></f:else>
+                                                            </f:if>
+                                                        </f:link.page>
+                                                    </div>
+
+                                                    <div class="col-md-5 d-xs-none d-md-block slick-c{contentObjectData.uid}-navi text-md-right navi-button-pad">
+                                                        <button class="carousel-control-prev-arrow btn button-blue_0-2 css-trans_all prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                                                        </button>
+                                                        <span class="count slick-count">
+                                                            <b><span class="num"></span></b>/<f:if condition="!{countFilteredItems}"><f:then>{news -> f:count()}</f:then><f:else>{countFilteredItems}</f:else></f:if>
+                                                        </span>
+                                                        <button class="carousel-control-next-arrow btn button-blue_0-2 css-trans_all next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </f:if>
+                                    </div>
+                                </div>
+                                <div class="col-xs-16 col-md-15 icon-b icon-b-blue"></div>
+                            </div>
+                        </div>
+                    </f:else>
+                    <f:else>
+                        <div class="mod_aktuelles-teaser list {f:if(condition: '{settings.templateLayout} == \'blick-in-die-presse\'', then: 'presseschau', else: '')}" id="c{contentObjectData.uid}">
+                            <div class="row">
+                                <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-blue"></div>
+                            </div>
+                            <div class="row kk_content">
+                                <div class="col-xs-12 offset-xs-2">
+                                    <f:render partial="../../JsdModule/Partials/HeaderLayout" arguments="{header:contentObjectData.header, header_layout:2, htmlDecode: 1, cssclass: 'header color_blue'}" />
+                                </div>
+                                <f:if condition="{settings.hidePagination}">
+                                    <f:then>
+                                        <f:for each="{news}" as="newsItem" iteration="iterator">
+                                            <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                        </f:for>
+                                    </f:then>
+                                    <f:else>
+
+                                            <f:if condition="{settings.templateLayout} == 'aktuelles-liste' || {settings.templateLayout} == 'story-liste'">
+                                                <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="i">
+                                                    <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-lg-13 offset-lg-1">
+                                                        <f:render partial="List/TeaserFirstItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                    </div>
+                                                    <f:if condition="{i.isLast}">
+                                                        <f:then><div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 border-b list last"></div></f:then>
+                                                        <f:else><div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 border-b list"></div></f:else>
+                                                    </f:if>
+                                                </f:for>
+                                                <f:if condition="{settings.list.paginate.insertBelow}">
+                                                    <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                                                </f:if>
+                                            </f:if>
+                                            <f:if condition="{settings.templateLayout} == 'blick-in-die-presse'">
+                                                <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="i">
+                                                    <f:if condition="{i.cycle}%2">
+                                                        <f:if condition="{i.isFirst}">
+                                                            <f:then></f:then>
+                                                            <f:else><div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 d-none d-md-block border-b"></div></f:else>
+                                                        </f:if>
+                                                    </f:if>
+                                                    <div class="col-xs-12 offset-xs-2 col-md-6 offset-md-1">
+                                                        <f:render partial="List/BlickInDiePresseListItem" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                                    </div>
+                                                    <div class="col-xs-12 offset-xs-2 d-xs-block d-md-none border-b"></div>
+                                                    <f:if condition="{i.isLast}">
+                                                        <div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 d-none d-md-block border-b"></div>
+                                                    </f:if>
+                                                </f:for>
+                                                <f:if condition="{settings.list.paginate.insertBelow}">
+                                                    <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                                                </f:if>
+                                            </f:if>
+
+                                    </f:else>
+                                </f:if>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-16 col-md-15 icon-b icon-b-blue"></div>
+                            </div>
+                        </div>
+                    </f:else>
+                </f:if>
+            </f:then>
+            <f:else>
+                <div class="no-news-found">
+                    <f:translate key="list_nonewsfound" />
+                </div>
+            </f:else>
+        </f:if>
+        <!--TYPO3SEARCH_begin-->
+    </f:section>
+</html>

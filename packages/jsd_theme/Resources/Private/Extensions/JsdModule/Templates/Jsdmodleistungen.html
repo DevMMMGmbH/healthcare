@@ -1,0 +1,87 @@
+<div class="mod_leistungen" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content" id="parent-{data.uid}">
+        <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2 col-lg-5">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+        </f:if>
+        <div class="col-md-12 offset-md-2 col-lg-8 offset-lg-0">
+            <div class="row row-1">
+                <f:for each="{data_tx_jsdmodule_leistungen}" as="data_item" iteration="i">
+                    <f:if condition="{i.cycle}<3">
+                        <f:then>
+                            <f:alias map="{cols: 8}">
+                                <f:render section="card_items" arguments="{_all}" />
+                            </f:alias>
+                        </f:then>
+                        <f:else></f:else>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+        <f:if condition="{data_tx_jsdmodule_leistungen -> f:count()} > 2">
+            <div class="col-md-12 offset-md-2 col-lg-13 offset-lg-2">
+                <div class="row row-2 justify-content-end">
+                    <f:for each="{data_tx_jsdmodule_leistungen}" as="data_item" iteration="i">
+                        <f:if condition="{i.cycle}>=3">
+                            <f:then>
+                                <f:if condition="{i.cycle}<6">
+                                    <f:then>
+                                    <f:alias map="{cols: 5}">
+                                        <f:render section="card_items" arguments="{_all}" />
+                                    </f:alias>
+                                    </f:then>
+                                    <f:else></f:else>
+                                </f:if>
+                            </f:then>
+                            <f:else></f:else>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+        </f:if>
+        <f:if condition="{data_tx_jsdmodule_leistungen -> f:count()} > 5">
+            <div class="col-md-12 offset-md-2 col-lg-13 offset-lg-2">
+                <div class="row row-3 justify-content-end {f:if(condition: '{data_tx_jsdmodule_leistungen -> f:count()}==7', then: 'seven', else: '')}">
+                    <f:for each="{data_tx_jsdmodule_leistungen}" as="data_item" iteration="i">
+                        <f:if condition="{i.cycle}>=6">
+                            <f:alias map="{cols: 5}">
+                                <f:render section="card_items" arguments="{_all}" />
+                            </f:alias>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+        </f:if>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 text-center pad-t">
+            <f:if condition="{data.header_link}">
+                <f:link.typolink parameter="{data.header_link}" class="btn button-dpurple_0-2 css-trans_all" additionalAttributes="{role:'button'}">{f:if(condition: data.subheader, then: data.subheader, else: '')}</f:link.typolink>
+            </f:if>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+
+<f:section name="card_items">
+    <div class="col-lg-{cols} flip-card card-{i.cycle}">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3 class="subheader color_white d-none d-lg-block">{data_item.data.tx_jsdmodule_title}</h3>
+                <button data-toggle="collapse" data-target="#item-card-{data.uid}_{i.cycle}" class="color_white bold d-lg-none">{data_item.data.tx_jsdmodule_title}</button>
+            </div>
+            <div class="flip-card-back collapse d-lg-block" id="item-card-{data.uid}_{i.cycle}" data-parent="#parent-{data.uid}">
+                <p class="color_dpurple"><f:format.nl2br>{data_item.data.tx_jsdmodule_teaser}</f:format.nl2br></p>
+                <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-dpurple css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'item-card-{data.uid}_{i.cycle}'}">{f:if(condition: data_item.data.tx_jsdmodule_link_text, then: data_item.data.tx_jsdmodule_link_text, else: '')}</f:link.typolink><br />
+                </f:if>
+            </div>
+        </div>
+    </div>
+</f:section>

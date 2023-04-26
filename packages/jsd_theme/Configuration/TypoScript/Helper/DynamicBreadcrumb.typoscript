@@ -1,0 +1,141 @@
+########################################################
+#### DYNAMIC BREADCRUMB MENU LIB FOR USAGE IN FLUID ####
+########################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicBreadcrumb" />
+#
+#
+#  COLUMN NUMBERS
+#  ---------------
+#
+#  0  = main
+#  1  = left
+#  2  = right
+#  3  = border
+#
+#################
+lib.dynamicBreadcrumb = COA
+lib.dynamicBreadcrumb {
+    10 = HMENU
+    10 {
+        special = rootline
+        special.range = 0|-1
+
+        // wrap = <div class="pageBreadcrumb">|
+
+        // TODO Ext. in breadcrumb aufnehmen
+        stdWrap.append = COA
+        stdWrap.append {
+            // 10 = COA
+            // 10 {
+            //     10 = TEXT
+            //     10.value = Suche
+            //     10.noTrimWrap = |<span class="raquo">&raquo;</span>||
+            //     10.if {
+            //         value = {$plugin.tx_indexedsearch.searchUID}
+            //         equals.data = TSFE:id
+            //     }
+            //     20 = TEXT
+            //     20.value = Details
+            //     20.noTrimWrap = |<span class="raquo">&raquo;</span>||
+            //     20.if.isTrue.data = GP:tx_ttnews|tt_news
+            //     20.if.isTrue.intval = 1
+            //     30 = TEXT
+            //     30.value = Details
+            //     30.noTrimWrap = |<span class="raquo">&raquo;</span>||
+            //     30.if {
+            //         value = event
+            //         equals.data = GP:tx_cal_controller|view
+            //     }
+            // }
+            // 20 = TEXT
+            // 20.value = </div>
+        }
+
+        1 = TMENU
+        1 {
+            noBlur = 1
+            wrap = <nav aria-label="Breadcrumb" class="jsdBreadcrumb"><ol class="list-unstyled list-inline wrap">|</ol></nav>
+            // wrap = |
+
+            NO {
+                stdWrap {
+                    replacement {
+                        10 {
+                            search = <br>
+                            replace.char = 32
+                        }
+                    }
+                    crop = 40|...
+                }
+                linkWrap = |
+                #ATagParams = itemprop="url"
+                ATagParams.cObject = COA
+                ATagParams.cObject {
+                    10 = TEXT
+                    10.value = |*| itemprop="url" |*|
+                    10.if.isFalse.field = tx_cooluri_exclude
+                    20 = TEXT
+                    20.value =
+                    20.if.isTrue.field = tx_cooluri_exclude
+                }
+                #stdWrap.wrap = <span itemprop="title">|</span>
+                stdWrap.wrap.cObject = COA
+                stdWrap.wrap.cObject {
+                    10 = TEXT
+                    # 10.value = |*| <span itemprop="title">|</span> |*|
+                    10.value = |*| <span itemprop="title" class="bold">|</span> |*| |
+                    10.if.isFalse.field = tx_cooluri_exclude
+                    20 = TEXT
+                    20.value = |
+                    20.if.isTrue.field = tx_cooluri_exclude
+                }
+                #allWrap = <span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">|</span>
+                allWrap.cObject = COA
+                allWrap.cObject {
+                    10 = TEXT
+                    # 10.value = |*| <span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">|</span> |*|
+                    10.value = |*| <li class="list-inline-item"><span itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">|</span></li> |*| |
+                    10.if.isFalse.field = tx_cooluri_exclude
+                    20 = TEXT
+                    20.value = |
+                    20.if.isTrue.field = tx_cooluri_exclude
+                }
+                ATagParams.insertData = 1
+                stdWrap.field = nav_title // title // subtitle // description
+                ATagTitle.field = title // subtitle // description
+                linkWrap = |<span class="raquo">›</span>|*||*| |
+                # doNotLinkIt = |*| 0 |*| 1
+                doNotLinkIt.cObject = COA
+                doNotLinkIt.cObject {
+                    10 = TEXT
+                    10.value = |*| 0 |*| 1
+                    10.if.isFalse.field = tx_cooluri_exclude
+                    20 = TEXT
+                    20.value = 1
+                    20.if.isTrue.field = tx_cooluri_exclude
+                }
+            }
+
+            CUR = 1
+            CUR {
+                stdWrap.replacement {
+                    10 {
+                        search = <br>
+                        replace = &nbsp;
+                    }
+                }
+                doNotLinkIt = 1
+                stdWrap.wrap = <li class="list-inline-item current" aria-current="page">|</li>
+            }
+        }
+    }
+}
+
+// die Breadcrumb wird ab mehr als 3. Punkten eingefaltet, und kann per Klick ausgefaltet werden
+// [treeLevel = 4,5,6]
+[tree.level in [4,5,6]]
+    lib.dynamicBreadcrumb.wrap = <div class="treelevel-wrap">|</div>
+[END]

@@ -1,0 +1,13 @@
+<li class="{cssclass} {f:if(condition: '{links}', then: 'hasSub', else: 'noSub')}">
+    <f:if condition="{links}">
+        <f:then>
+            <span id="menu-label_{mItem}-{dataUid}" aria-controls="menu-content_{mItem}-{dataUid}" class="menu-head color_white main-navigation" role="tab" aria-selected="false" data-toggle="tab">{linkTitle}</span>
+        </f:then>
+        <f:else>
+            <f:if condition="{link}">
+                <f:then><f:link.typolink parameter="{link}" title="{linkTitle}" additionalAttributes="{id:'menu-label_{mItem}-{dataUid}'}" class="menu-head color_white main-navigation">{linkTitle}</f:link.typolink></f:then>
+                <f:else><span id="menu-label_{mItem}-{dataUid}" class="menu-head color_white main-navigation">{linkTitle}</span></f:else>
+            </f:if>
+        </f:else>
+    </f:if>
+</li>

@@ -1,0 +1,55 @@
+<f:layout name="Default" />
+
+<f:section name="header">
+    <f:render partial="Language" arguments="{languagenavigation:languagenavigation}" />
+    <div class="row">
+        <div class="col-xs-16">
+            <f:if
+                condition="{f:cObject(typoscriptObjectPath: 'lib.dynamicContent', data: '{pageUid: \'{data.uid}\', colPos: \'1\', wrap: \'\'}')}">
+                <f:then>
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent"
+                        data="{pageUid: '{data.uid}', colPos: '1', wrap: ''}" />
+                </f:then>
+                <f:else>
+                    <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{colPos: '1'}" />
+                </f:else>
+            </f:if>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="subheader">
+    <div class="row">
+        <div class="col-xs-16">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3', wrap: ''}" />
+        </div>
+    </div>
+</f:section>
+
+<f:section name="body">
+    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBreadcrumbGPvar')}">
+        <f:then></f:then>
+        <f:else>
+            <f:render partial="Breadcrumb" arguments="{_all}" />
+        </f:else>
+    </f:if>
+    <!--TYPO3SEARCH_begin-->
+    <div class="row">
+        <div class="col-xs-16">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent"
+                data="{pageUid: '{data.uid}', colPos: '0', wrap: ''}" />
+        </div>
+    </div>
+    <!--TYPO3SEARCH_end-->
+</f:section>
+
+<f:section name="footer">
+
+    <f:render partial="Footer/Shareprint" arguments="{_all}" />
+
+    <f:comment>
+        <!-- Global-Footer-->
+    </f:comment>
+    <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{colPos: '2'}" />
+
+</f:section>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" xml:space="preserve" width="67.7334mm" height="67.7334mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6773 6773">
+ <defs>
+  <style type="text/css">
+   
+    .str0 {stroke:white;stroke-width:330.73;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <rect class="fil0" width="6773" height="6773"></rect>
+  <g id="_296390960">
+   <g>
+    <path class="fil0 str0" d="M2229 906l2315 0c731,0 1323,592 1323,1323l0 2315c0,731 -592,1323 -1323,1323l-2315 0c-731,0 -1323,-592 -1323,-1323l0 -2315c0,-731 592,-1323 1323,-1323z"></path>
+    <path class="fil0 str0" d="M3387 2284c609,0 1102,494 1102,1102 0,609 -494,1102 -1102,1102 -609,0 -1102,-494 -1102,-1102 0,-609 494,-1102 1102,-1102z"></path>
+    <path class="fil0 str0" d="M5007 1876c0,61 -49,110 -110,110 -61,0 -110,-49 -110,-110"></path>
+    <path class="fil0 str0" d="M4787 1876c0,-61 49,-110 110,-110 61,0 110,49 110,110"></path>
+   </g>
+  </g>
+ </g>
+</svg>

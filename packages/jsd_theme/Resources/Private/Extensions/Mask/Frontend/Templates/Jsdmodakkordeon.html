@@ -1,0 +1,22 @@
+<f:if condition="{data.header}">
+{data.header}<br />
+</f:if>
+
+<f:if condition="{data.tx_mask_akkordeon}">
+<ul>
+<f:for each="{data.tx_mask_akkordeon}" as="data_item">
+<li><f:if condition="{data_item.tx_mask_content}">
+<f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.tx_mask_content}</f:format.html><br />
+</f:if>
+
+
+<f:if condition="{data_item.tx_mask_title}">
+{data_item.tx_mask_title}<br />
+</f:if>
+
+
+</li>
+</f:for>
+</ul>
+</f:if>
+

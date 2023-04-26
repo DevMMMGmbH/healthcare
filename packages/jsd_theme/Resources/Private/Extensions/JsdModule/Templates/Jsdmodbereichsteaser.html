@@ -1,0 +1,104 @@
+<f:if condition="{data_tx_jsdmodule_bereichsteaser}">
+<div class="mod_bereichs-teaser" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content">
+        <div class="col-xs-14 offset-xs-2">
+            <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+        </div>
+        <f:for each="{data_tx_jsdmodule_bereichsteaser}" as="data_item" iteration="i">
+
+            <f:if condition="{i.cycle} == 1">
+                <div class="col-xs-16 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-1 col-lg-11 offset-lg-1 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.data_tx_jsdmodule_image, w-xs:320, w-sm:384, w-md:432, w-lg:704, w-xl:880}" />
+                        </div>
+                        <div class="col-xs-11 col-md-6 offset-md-9 col-lg-5 offset-lg-10 col-xl-4 offset-xl-11 b-2-{i.cycle}" id="bereichs-teaser-{data.uid}_{i.cycle}">
+                            <f:render section="link" arguments="{link: data_item.data.tx_jsdmodule_link, title: data_item.data.tx_jsdmodule_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.data.tx_jsdmodule_teaser}</p>
+                            <f:render section="button" arguments="{dataUid:data.uid, iCycle:i.cycle, link: data_item.data.tx_jsdmodule_link, text: data_item.data_item.data.tx_jsdmodule_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{i.cycle} == 2">
+                <div class="col-xs-16 col-lg-8 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-6 col-lg-12 offset-lg-2 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.data_tx_jsdmodule_image, w-xs:320, cropVariant-xs:'specialMobileTwoOne',w-sm:384, cropVariant-sm:'specialMobileTwoOne', w-md:432, cropVariant-md:'specialMobileTwoOne', w-lg:384, w-xl:480}" />
+                        </div>
+                        <div class="col-xs-11 offset-xs-5 col-md-6 offset-md-1 col-lg-10 offset-lg-6 col-xl-9 offset-xl-7 b-2-{i.cycle}" id="bereichs-teaser-{data.uid}_{i.cycle}">
+                            <f:render section="link"
+                                arguments="{link: data_item.data.tx_jsdmodule_link, title: data_item.data.tx_jsdmodule_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.data.tx_jsdmodule_teaser}</p>
+                            <f:render section="button"
+                                arguments="{dataUid:data.uid, iCycle:i.cycle, link: data_item.data.tx_jsdmodule_link, text: data_item.data_item.data.tx_jsdmodule_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{i.cycle} == 3">
+                <div class="col-xs-16 col-lg-8 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-1 col-lg-10 offset-lg-2 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.data_tx_jsdmodule_image, w-xs:320, cropVariant-xs:'specialMobileTwoOne', w-sm:384, cropVariant-sm:'specialMobileTwoOne', w-md:432, cropVariant-md:'specialMobileTwoOne', w-lg:320, w-xl:400}" />
+                        </div>
+                        <div class="col-xs-11 col-md-6 offset-md-9 col-lg-10 offset-lg-4 col-xl-8 offset-xl-6 b-2-{i.cycle}" id="bereichs-teaser-{data.uid}_{i.cycle}">
+                            <f:render section="link"
+                                arguments="{link: data_item.data.tx_jsdmodule_link, title: data_item.data.tx_jsdmodule_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.data.tx_jsdmodule_teaser}</p>
+                            <f:render section="button"
+                                arguments="{dataUid:data.uid, iCycle:i.cycle, link: data_item.data.tx_jsdmodule_link, text: data_item.data.tx_jsdmodule_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+
+        </f:for>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+</f:if>
+
+
+<f:section name="image">
+    <f:for each="{images}" as="data_image" iteration="i">
+        <f:if condition="{i.cycle}==1">
+            <f:then>
+                <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:w-xs, w-sm:w-sm, w-md:w-md, w-lg:w-lg, w-xl:w-xl, cropVariant-xs:cropVariant-xs, cropVariant-sm:cropVariant-sm, cropVariant-md:cropVariant-md}" />
+            </f:then>
+        </f:if>
+    </f:for>
+</f:section>
+
+<f:section name="link">
+    <f:if condition="{link}">
+        <f:then>
+            <h3 class="title">
+                <f:link.typolink parameter="{link}">
+                    {title -> f:format.htmlentitiesDecode()}
+                </f:link.typolink>
+            </h3>
+        </f:then>
+        <f:else>
+            <h3 class="title">
+                {title -> f:format.htmlentitiesDecode()}
+            </h3>
+        </f:else>
+    </f:if>
+</f:section>
+
+<f:section name="button">
+    <f:if condition="{link}">
+        <f:link.typolink parameter="{link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'bereichs-teaser-{dataUid}_{iCycle}'}">
+            <f:if condition="{text} != ''">
+                <f:then>{text}</f:then>
+                <f:else>{f:translate(key: 'mods.readmore',  extensionName='jsd_theme')}</f:else>
+            </f:if>
+        </f:link.typolink>
+    </f:if>
+</f:section>

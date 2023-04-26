@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 200 200" width="200" height="200">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(8.333333333333334,0,0,8.333333333333334,0,0)">
+    <path d="M 3,2.55c1.243,0,2.25,1.007,2.25,2.25S4.243,7.05,3,7.05S0.75,6.043,0.75,4.8S1.757,2.55,3,2.55z " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 21,2.55 c1.243,0,2.25,1.007,2.25,2.25S22.243,7.05,21,7.05s-2.25-1.007-2.25-2.25S19.757,2.55,21,2.55z " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 17.25,22.05H13.5l-0.75-9h0.75 " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 11.25,13.05h1.5 " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 21,22.05c-0.828,0-1.5-0.672-1.5-1.5v-6.91c-1.453,0.824-3.143,1.135-4.794,0.88 c-0.81-0.172-1.328-0.968-1.157-1.778c0.168-0.792,0.934-1.309,1.732-1.166c1.814,0.241,3.585-0.678,4.433-2.3 c0.426-0.71,1.348-0.94,2.058-0.514c0.452,0.271,0.728,0.759,0.728,1.286v10.5c0.001,0.828-0.67,1.501-1.498,1.502 C21.001,22.05,21.001,22.05,21,22.05z " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 3,22.05c-0.828,0-1.5-0.672-1.5-1.5v-10.5c0-0.828,0.671-1.5,1.5-1.5 c0.233,0,0.463,0.054,0.671,0.158C5.294,9.62,7.349,9.045,8.262,7.422c0.054-0.095,0.102-0.193,0.146-0.293 c0.371-0.741,1.272-1.042,2.013-0.671c0.741,0.371,1.042,1.272,0.671,2.013C9.897,10.966,7.247,12.424,4.5,12.1v8.45 C4.5,21.378,3.828,22.05,3,22.05z " stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 9.289,6.372l1.657-4.421L15.16,3.53l-2.106,5.619L11.111,8.42" stroke="#ffffff" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

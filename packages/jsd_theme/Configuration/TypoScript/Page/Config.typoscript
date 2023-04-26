@@ -1,0 +1,46 @@
+# Global page configuration
+config {
+    // baseURL = {$config.baseURL}
+    no_cache = {$config.no_cache}
+    // absRefPrefix = /
+    // Breaking: #62888
+    // uniqueLinkVars = 1
+    pageTitleFirst = 1
+    // linkVars = L(0-1)
+    prefixLocalAnchrors = all
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    removeDefaultJS = external
+    inlineStyle2TempFile = 1
+    admPanel = {$config.admPanel}
+    debug = {$config.debug}
+    contentObjectExceptionHandler = {$config.contentObjectExceptionHandler}
+    cache_period = 86400
+    sendCacheHeaders = 1
+    intTarget =
+    extTarget =
+    disablePrefixComment = 1
+    headerComment =
+    // Disable Image Upscaling
+    // Deprecation: #78134
+    // noScaleUp = 1
+    // Compression and Concatenation of CSS and JS Files
+    compressJs = 1
+    compressCss = 1
+    concatenateJs = 1
+    concatenateCss = 1
+    // Mail protection
+    spamProtectEmailAddresses = 2
+    spamProtectEmailAddresses_atSubst = (at)
+    // Language
+    sys_language_uid = 0
+    language = de
+    locale_all = de_DE
+    sys_language_overlay = 1
+    sys_language_mode = content_fallback
+    // indexed_search
+    index_enable = 1
+    // index_externals = 0
+    // index_metatags = 0
+}

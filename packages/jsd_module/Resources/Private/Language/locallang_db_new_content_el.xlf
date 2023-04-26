@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-15T19:09:37+01:00" product-name="jsd_module">
+    <header/>
+    <body>
+      <trans-unit id="wizards.newContentElement.jsdmod3erteaser_title">
+        <source>Modul: 3-er-Teaser / Fakten</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmod3erteaser_description">
+        <source>Der Anschlussteaser bietet die Möglichkeit, dem Nutzer weitere, für ihn ggf. interessante Inhalte zu finden.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodakkordeon_title">
+        <source>Modul: Akkordeon</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodakkordeon_description">
+        <source>Das Modul bietet die Möglichkeit, viele Inhalte (z.B. Krankheiten oder Leistungen) kompakt und übersichtlich darzustellen.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodankerliste_title">
+        <source>Modul: Ankerliste</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodankerliste_description">
+        <source>Die Ankerlinks sollen dem Nutzer auf langen Seiten ermöglichen, direkt zum Inhalt zu springen, der für ihn relevant ist.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbereichsteaser_title">
+        <source>Modul: Bereichsteaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbereichsteaser_description">
+        <source>Einblick in die wichtigen Bereiche der JoDia-Website.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildergalerie_title">
+        <source>Modul: Bildergalerie / Bildergalerie mit Text</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildergalerie_description">
+        <source>Kann auf Bereichs-, Einrichtungs- und Deteilseiten eingebettet werden. Ermöglicht die Darstellung von max. 10 Bildern.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbilderkachel_title">
+        <source>Modul: Bilder-Kachel</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbilderkachel_description">
+        <source>Das Bilder-Kachel-Modul dient der übersichtlichen Darstellung von Leistungen zu jeder Einrichtung.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildslider_title">
+        <source>Modul: Bühne 1 Slider</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildslider_description">
+        <source>Die Bühne der Startseite soll User der JoDia-Website begrüßen und direkt dazu inspirieren in weitere Themen einzutauchen.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildtextteaser_title">
+        <source>Modul: HIS Bild-Text-Teaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbildtextteaser_description">
+        <source>Der Bild-Text-Teaser kann dazu genutzt werden, um weiterführende Artikelseiten prominent hervorzuheben.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbuehnedetailseite_title">
+        <source>Modul: Bühne 2 Detailseite</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodbuehnedetailseite_description">
+        <source>Die Bühne der Detailseite, mit und ohne Bühnen-Bild, sollte Lust machen sich mit den Inhalten auseinanderzusetzen.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmoddownload_title">
+        <source>Modul: Download</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmoddownload_description">
+        <source>Innerhalb dieses Moduls können Dokumente zum Download zur Verfügung gestellt werden. (PDF, Word, ZIP-Dateien)</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodfooter_title">
+        <source>Modul: Footer (Global)</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodfooter_description">
+        <source>Im Footer sind Schnellzugriffe, die komprimierte Sitemap sowie  Teilen-, Drucken - bzw. Social-Mediafunktionen zu finden.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodgmapbvgyoutube_title">
+        <source>Modul: Google Map / Youtube Video</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodgmapbvgyoutube_description">
+        <source>Das Modul dient zur Einbindung einer Google Map oder eines Youtube Videos.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodhighlightteaser_title">
+        <source>Modul: Highlight-Teaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodhighlightteaser_description">
+        <source>Der Highlight-Teaser inszeniert besonders starke und wichtige Inhalte bildstark.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodinfobox_title">
+        <source>Modul: Infobox</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodinfobox_description">
+        <source>Das Modul dient der Vorteils- bzw. Mehrwertkommunikation.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodkontakt_title">
+        <source>Modul: Kontakt</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodkontakt_description">
+        <source>Im Kontaktmodul können Einrichtungen kompakt die wichtigsten Wege darstellen, mit der Organisation in Kontakt zu treten.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodleistungen_title">
+        <source>Modul: Leistungen</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodleistungen_description">
+        <source>Im Leistungs-Modul kann die Johannesstift Diakonie sowie die Einrichtungen ihre Leistungen übersichtlich und visuell prominent darstellen.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodlinkliste_title">
+        <source>Modul: Linkliste</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodlinkliste_description">
+        <source>Die Linkliste für interne und externe Seiten gibt eine Übersicht über weiterführende Inhalte.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodnavigation_title">
+        <source>Modul: Navigation Header (global)</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodnavigation_description">
+        <source>Das Navigatios-Modul dient der Konfiguration von globalem Megamenü, Einrichtungsmenü und Footermenü.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodschnellzugriffsteaser_title">
+        <source>Modul: Schnellzugriffsteaser</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodschnellzugriffsteaser_description">
+        <source>Der Schnellzugriffsteaser verlinkt zu den für den Nutzer wichtigsten Use Cases und damit verbundenen Services.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodseointrotext_title">
+        <source>Modul: SEO-Intro-Text</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodseointrotext_description">
+        <source>Intro Element, das immer am Seitenanfang eingesetzt wird. Dient als Orientierung und Suchmaschinenoptimierung.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodsimplespeak_title">
+        <source>Modul: Leichte Sprache</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodsimplespeak_description">
+        <source>Das Modul für Seiten mit Text und Bild in leichter Sprache.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodzahltext_title">
+        <source>Modul: Zahl-Text</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodzahltext_description">
+        <source>Diese Modul wird genutzt, um zahlengetriebene Fakten und Infos, z.B. Anzahl der Mitarbeiter, Krankenhäuser, abzubilden.</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodzitattext_title">
+        <source>Modul: Zitat-Text</source>
+      </trans-unit>
+      <trans-unit id="wizards.newContentElement.jsdmodzitattext_description">
+        <source>Diese Modul wird genutzt, um längere Texte durch Zitate aufzulockern und dadurch auch etwas emotional aufzuladen.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

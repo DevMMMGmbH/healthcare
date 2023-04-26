@@ -1,0 +1,32 @@
+<f:if condition="{data_tx_jsdmodule_warnhinweise}">
+    <div class="mod_warnhinweis container" id="c{data.uid}">
+        <div>
+            <div class="m_wrap" data-toggle="collapse" data-target="#warn-{data.uid}" aria-expanded="false" aria-controls="warn-{data.uid}">
+                <div class="marquee">
+                    <f:for each="{data_tx_jsdmodule_warnhinweise}" as="data_item" iteration="i">{data_item.data.tx_jsdmodule_tickertext}<span class="ph"></span></f:for>
+                </div>
+            </div>
+            <div class="collapse position-relative" id="warn-{data.uid}">
+                <f:for each="{data_tx_jsdmodule_warnhinweise}" as="data_item" iteration="i">
+                    <div class="row{f:if(condition: '{i.isLast}', then: ' last', else: '')}">
+                        <div class="col-xs-12 offset-xs-2 col-md-3 offset-md-2 col-lg-3 offset-lg-2 col-xl-2 offset-xl-3">
+                            <f:if condition="{data_item.data_tx_jsdmodule_image.0}">
+                                <f:render partial="MediaImage" arguments="{data_image:data_item.data_tx_jsdmodule_image.0, w-xs:160, w-sm:192, w-md:120, w-lg:192, w-xl:200}" />
+                            </f:if>
+                        </div>
+                        <div class="col-xs-12 offset-xs-2 col-md-9 offset-md-0 col-lg-7 offset-lg-1 offset-xl-1 offset-lg_1-2 offset-lg_plus-1-2-margin">
+                            <h2 class="header color_white size-xl" id="header-{data.uid}_{i.cycle}">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">{data_item.data.tx_jsdmodule_header}</f:link.typolink>
+                            </h2>
+                            <f:if condition="{data_item.data.tx_jsdmodule_teaser}">
+                                <p class="copy color_white"><f:format.nl2br>{data_item.data.tx_jsdmodule_teaser}</f:format.nl2br></p>
+                            </f:if>
+                            <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-red css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'header-{data.uid}_{i.cycle}'}">{data_item.data.tx_jsdmodule_button}</f:link.typolink>
+                        </div>
+                    </div>
+                </f:for>
+                <a href="#" class="close" title="Warnhinweis schließen" data-toggle="collapse" data-target="#warn-{data.uid}" aria-expanded="false" aria-controls="warn-{data.uid}"></a>
+            </div>
+        </div>
+    </div>
+</f:if>

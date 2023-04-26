@@ -1,0 +1,38 @@
+tt_content.jsdmodule_jsdmodankerliste = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodankerliste {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodankerliste
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    dataProcessing.10 {
+        // levels = 2
+        // includeSpacer = 0
+        titleField = nav_title // title
+        as = data_tx_jsdmodule_ankerliste
+        special = list
+        special {
+            value {
+                field = pages
+                override {
+                    data = page:uid
+                    if {
+                        isFalse.field = pages
+                    }
+                }
+            }
+        }
+        dataProcessing {
+                20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                20 {
+                    table = tt_content
+                    pidInList.field = uid
+                    as = content
+                    where = sectionIndex = 1
+                }
+            }
+    }
+}

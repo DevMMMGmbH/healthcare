@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" xml:space="preserve" width="67.7334mm" height="67.7334mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6773 6773">
+ <defs>
+  <style type="text/css">
+   
+    .str0 {stroke:white;stroke-width:330.73;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+   
+  </style>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+  <rect class="fil0" width="6773" height="6773"></rect>
+  <g id="_213689912">
+   <g>
+    <path class="fil0 str0" d="M5867 4213l0 1323c0,183 -148,331 -331,331l-1984 0c-183,0 -331,-148 -331,-331l0 -1323"></path>
+    <path class="fil0 str0" d="M5867 4213c0,-183 -148,-331 -331,-331l-1984 0c-183,0 -331,148 -331,331l1148 717c107,67 243,67 351,0l1148 -717z"></path>
+    <path class="fil0 str0" d="M2064 906c365,0 661,296 661,661 0,365 -296,661 -661,661 -365,0 -661,-296 -661,-661 0,-365 296,-661 661,-661z"></path>
+    <path class="fil0 str0" d="M3110 3220c-275,-577 -965,-823 -1543,-548 -403,192 -661,599 -661,1046l0 496 496 0 165 1654 992 0 41 -408"></path>
+    <path class="fil0 str0" d="M4379 906c320,0 579,259 579,579 0,320 -259,579 -579,579 -320,0 -579,-259 -579,-579 0,-320 259,-579 579,-579z"></path>
+    <path class="fil0 str0" d="M5239 2725c-274,-474 -881,-637 -1356,-363 -94,54 -179,124 -251,206"></path>
+   </g>
+  </g>
+ </g>
+</svg>

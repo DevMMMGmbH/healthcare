@@ -1,0 +1,26 @@
+{
+    "name": "jsdmodule/jsd-module",
+    "description": "",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-backend": "^11.5",
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-extbase": "^11.5",
+        "typo3/cms-fluid": "^11.5",
+        "typo3/cms-frontend": "^11.5"
+    },
+    "replace": {
+        "typo3-ter/jsd-module": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "JsdModule\\JsdModule\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jsd_module"
+        }
+    }
+}

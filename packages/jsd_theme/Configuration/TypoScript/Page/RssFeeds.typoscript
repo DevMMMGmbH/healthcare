@@ -1,0 +1,96 @@
+// #######################################
+// ### JSD Aktuelle Meldungen RSS FEED ###
+// #######################################
+// // [globalVar = TSFE:type = 9818]
+// [getTSFE().type == 9818]
+// config {
+//     disableAllHeaderCode = 1
+//     xhtml_cleaning = none
+//     admPanel = 0
+//     debug = 0
+//     disablePrefixComment = 1
+//     metaCharset = utf-8
+//     additionalHeaders.10.header = Content-Type:application/rss+xml;charset=utf-8
+//     linkVars >
+// }
+// pageAktuellesRSS = PAGE
+// pageAktuellesRSS {
+//     typeNum = 9818
+//     10 < tt_content.list.20.news_pi1
+//     10 {
+//         switchableControllerActions {
+//             News {
+//                 1 = list
+//             }
+//         }
+//         settings < plugin.tx_news.settings
+//         settings {
+//             list {
+//                 rss.channel {
+//                     title = Johannesstift Diakonie - Aktuelle Meldungen
+//                     description = Aktuelle Meldungen zur Johannesstift Diakonie und dessen Einrichtungen
+//                     link = https://johannesstift-diakonie.de
+//                     language = de-DE
+//                     copyright = Johannesstift Diakonie
+//                     category =
+//                     generator = TYPO3 EXT:news
+//                 }
+//             }
+//             limit = 30
+//             detailPid = 468
+//             startingpoint = 120
+//             recursive = 3
+//             format = xml
+//         }
+//     }
+// }
+// [END]
+
+// ########################################
+// ### JSD Blick in die Presse RSS FEED ###
+// ########################################
+// // [globalVar = TSFE:type = 9819]
+// [getTSFE().type == 9819]
+// config {
+//     disableAllHeaderCode = 1
+//     xhtml_cleaning = none
+//     admPanel = 0
+//     debug = 0
+//     disablePrefixComment = 1
+//     metaCharset = utf-8
+//     additionalHeaders.10.header = Content-Type:application/rss+xml;charset=utf-8
+//     linkVars >
+// }
+// pagePresseRSS = PAGE
+// pagePresseRSS {
+//     typeNum = 9819
+//     10 < tt_content.list.20.news_pi1
+//     10 {
+//         switchableControllerActions {
+//             News {
+//                 1 = list
+//             }
+//         }
+//         settings < plugin.tx_news.settings
+//         settings {
+//             list {
+//                 rss.channel {
+//                     title = Johannesstift Diakonie - Blick in die Presse
+//                     description = Pressespiegel der Johannesstift Diakonie
+//                     link = https://johannesstift-diakonie.de
+//                     language = de-DE
+//                     copyright = Johannesstift Diakonie
+//                     category =
+//                     generator = TYPO3 EXT:news
+//                 }
+//             }
+//             limit = 30
+//             detailPid = 464
+//             startingpoint = 121
+//             recursive = 3
+//             format = xml
+//         }
+//     }
+// }
+// [END]
+

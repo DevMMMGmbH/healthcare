@@ -1,0 +1,34 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_leichtsprache}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_leichtsprache}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_jsdmodule_bodytext}">
+    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_bodytext}</f:format.html><br />
+</f:if>
+
+<f:if condition="{data_item.data_tx_jsdmodule_image}">
+    <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_image_option}">
+    <f:then>
+        On<br />
+    </f:then>
+    <f:else>
+        Off<br />
+     </f:else>
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

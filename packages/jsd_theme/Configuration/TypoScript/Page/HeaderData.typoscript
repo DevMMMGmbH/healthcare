@@ -1,0 +1,49 @@
+# remove default page title
+config.noPageTitle = 2
+
+lib.titleTag = COA
+lib.titleTag {
+    // news
+    20 = COA
+    20 {
+        if.isTrue.data = GP:tx_news_pi1|news
+        if.isTrue.intval = 1
+        10 = RECORDS
+        10 {
+            source.data = GP:tx_news_pi1|news
+            source.intval = 1
+            tables = tx_news_domain_model_news
+            conf.tx_news_domain_model_news >
+            conf.tx_news_domain_model_news = TEXT
+            conf.tx_news_domain_model_news.field = title
+            htmlSpecialChars = 1
+            stdWrap.noTrimWrap = |<title>| - JSD International</title>|
+        }
+    }
+}
+
+// generate new page title
+page.headerData {
+    10 = COA
+    10 {
+        10 = TEXT
+        10 {
+            field = title
+            noTrimWrap = |<title>| - JSD International</title>|
+            if {
+                isFalse.cObject = COA
+                isFalse.cObject {
+                    20 = TEXT
+                    20.data = GP:tx_news_pi1|news
+                    40 = TEXT
+                    40.field = seo_title
+                }
+            }
+        }
+        20 < lib.titleTag
+        30 = TEXT
+        30.if.isTrue.field = seo_title
+        30.field = seo_title
+        30.noTrimWrap = |<title>|</title>|
+    }
+}

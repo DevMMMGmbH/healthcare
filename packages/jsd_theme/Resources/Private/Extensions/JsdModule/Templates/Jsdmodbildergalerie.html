@@ -1,0 +1,137 @@
+<f:if condition="{data_tx_jsdmodule_bildergalerie}">
+    <div class="mod_bildergalerie {f:if(condition: '{data.tx_jsdmodule_options}==2', then: 'with-text', else: '')}" id="c{data.uid}">
+        <div class="row slick" data-slick-class="slick-c{data.uid}">
+            <div class="col-xs-16 col-md-14 offset-md-1">
+                <div class="lightbox-content">
+                    <f:for each="{data_tx_jsdmodule_bildergalerie}" as="data_item" iteration="i">
+                        <div class="row" id="bildergalerie_lightbox-{f:if(condition: '{data.tx_jsdmodule_options}==2', then: 'text-', else: '')}{i.cycle}">
+                            <div class="col-xs-16 bildergalerie-bild">
+                                <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                                    <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+                                        <f:render partial="MediaImage" arguments="{data_image:file, w-md:672, w-lg:896, w-xl:1120}" />
+                                    </f:for>
+                                </f:if>
+                            </div>
+                            <f:if condition="{data_item.data.tx_jsdmodule_caption} || {data_item.data.tx_jsdmodule_copyright}">
+                                <div class="row">
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_caption}">
+                                <div class="col-xs-14 offset-xs-1 col-md-11 offset-md-0 copy color_dpurple padding_t text-visible">
+                                    {data_item.data.tx_jsdmodule_caption}
+                                </div>
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_copyright}">
+                                <div
+                                    class="{f:if(condition: '{data_item.data.tx_jsdmodule_caption}', then: 'col-xs-14 offset-xs-1 col-md-4 offset-md-1', else: 'col-xs-14 offset-xs-1 col-md-5 offset-md-11')} copy color_lpurple padding_t text-md-right text-visible">
+                                    {data_item.data.tx_jsdmodule_copyright}
+                                </div>
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_caption} || {data_item.data.tx_jsdmodule_copyright}">
+                        </div>
+                        </f:if>
+                        </div>
+                    </f:for>
+                </div>
+                <div class="row slick-c{data.uid}" data-slick='{"autoplay":true, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                    <f:if condition="{data.tx_jsdmodule_options}==1">
+                        <f:for each="{data_tx_jsdmodule_bildergalerie}" as="data_item" iteration="i">
+                            <div class="row">
+                                <div class="col-xs-16 bildergalerie-bild">
+                                    <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                                        <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+                                            <f:link.typolink parameter="{f:uri.image(src:'{file.uid}', treatIdAsReference: 1)}" class="lightbox"  additionalAttributes="{rel:'lightbox[{data.uid}]', data-featherlight:'#bildergalerie_lightbox-{i.cycle}'}">
+                                            <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, w-sm:384, w-md:672, w-lg:768, w-xl:960}" />
+                                            </f:link.typolink>
+                                        </f:for>
+                                    </f:if>
+                                </div>
+                                <f:if condition="{data_item.data.tx_jsdmodule_caption} || {data_item.data.tx_jsdmodule_copyright}">
+                                    <div class="row">
+                                </f:if>
+                                <f:if condition="{data_item.data.tx_jsdmodule_caption}">
+                                    <div class="col-xs-14 offset-xs-1 col-md-11 offset-md-0 copy color_dpurple padding_t text-visible">
+                                        {data_item.data.tx_jsdmodule_caption}
+                                    </div>
+                                </f:if>
+                                <f:if condition="{data_item.data.tx_jsdmodule_copyright}">
+                                    <div class="{f:if(condition: '{data_item.data.tx_jsdmodule_caption}', then: 'col-xs-14 offset-xs-1 col-md-4 offset-md-1', else: 'col-xs-14 offset-xs-1 col-md-5 offset-md-11')} copy color_lpurple padding_t text-md-right text-visible">
+                                        {data_item.data.tx_jsdmodule_copyright}
+                                    </div>
+                                </f:if>
+                                <f:if condition="{data_item.data.tx_jsdmodule_caption} || {data_item.data.tx_jsdmodule_copyright}">
+                                    </div>
+                                </f:if>
+                            </div>
+                        </f:for>
+                    </f:if>
+
+
+
+                    <f:if condition="{data.tx_jsdmodule_options}==2">
+                        <f:for each="{data_tx_jsdmodule_bildergalerie}" as="data_item" iteration="i">
+                            <div class="item">
+                                <div class="row bg_dpurple_0-1">
+                                    <div class="col-xs-16 col-lg-10 col-xl-10 bildergalerie-bild">
+                                        <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                                            <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+                                                <f:variable name="file_title" value="{file.title}" />
+                                                <f:link.typolink parameter="{f:uri.image(src:'{file.uid}', treatIdAsReference: 1)}" class="lightbox" additionalAttributes="{rel:'lightbox[{data.uid}]', data-featherlight:'#bildergalerie_lightbox-text-{i.cycle}'}">
+
+                                                <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, w-sm:384, w-md:673, w-lg:576, w-xl:720}" /></f:link.typolink>
+                                            </f:for>
+                                        </f:if>
+                                    </div>
+
+                                    <div class="col-xs-11 offset-xs-2 col-md-16 offset-md-0 col-lg-6 text padding-left-half-grid_lg padding-left-half-grid_xl">
+                                        <f:if condition="{data_item.data.tx_jsdmodule_caption} || {file_title}">
+                                            <div class="row">
+                                                <f:if condition="{file_title}">
+                                                <div class="col-xs-16 col-md-7 offset-md-0 col-lg-15 offset-lg-0 copy color_dpurple padding_t padding-left-half-grid_md">
+                                                    <h2 class="headline">{file_title -> f:format.crop(maxCharacters: 50)}</h2>
+                                                </div>
+                                                </f:if>
+                                                <f:if condition="{data_item.data.tx_jsdmodule_caption}">
+                                                <div class="col-xs-16 col-md-8 offset-md-0 col-lg-15 offset-lg-0 copy color_dpurple padding_t_half">
+                                                    <p>{data_item.data.tx_jsdmodule_caption-> f:format.crop(maxCharacters: 220)}</p>
+                                                </div>
+                                                </f:if>
+                                            </div>
+                                        </f:if>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <f:if condition="{data_item.data.tx_jsdmodule_copyright}">
+                                        <div class="col-xs-14 offset-xs-1 col-md-16 offset-md-0 copy color_lpurple padding_t copyline">
+                                            <f:comment>
+                                                {data_item.data.tx_jsdmodule_copyright -> f:format.crop(maxCharacters: 50)}
+                                            </f:comment>
+                                            {data_item.data.tx_jsdmodule_copyright}
+                                        </div>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </f:for>
+                    </f:if>
+
+
+
+                </div>
+            </div>
+            <f:if condition="{data_tx_jsdmodule_bildergalerie -> f:count()} > 1">
+                <div class="col-xs-14 offset-xs-1 text-md-right">
+                    <div class="border_b"></div>
+                    <div class="d-none d-xs-block d-md-none slick-dots-c{data.uid}"></div>
+                    <div class="carousel-control-prev-next d-xs-none d-md-block slick-c{data.uid}-navi">
+                        <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev" title="{f:translate(key: 'page.prev',  extensionName='jsd_theme')}"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.prev',  extensionName='jsd_theme')}</span>
+                        </button>
+                        <span class="count">
+                            <b><span class="num"></span></b>/{data_tx_jsdmodule_bildergalerie -> f:count()}
+                        </span>
+                        <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" title="{f:translate(key: 'page.next',  extensionName='jsd_theme')}"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.next',  extensionName='jsd_theme')}</span>
+                        </button>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</f:if>

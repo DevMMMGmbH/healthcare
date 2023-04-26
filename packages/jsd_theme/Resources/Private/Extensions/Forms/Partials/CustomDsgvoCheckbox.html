@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true"
+    xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+    v:schemaLocation="http://fluidtypo3.org/schemas/vhs-5.0.1.xsd">
+
+<formvh:renderRenderable renderable="{element}">
+    <div class="powermail_fieldwrap_type_check">
+        <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
+            <div id="{element.uniqueIdentifier}" class="inputs-list">
+
+                <div class="form-check form-check-inline checkbox">
+                    <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
+                        <f:form.checkbox property="{element.identifier}" value=""
+                            id="{element.uniqueIdentifier}-{idIterator.index}"
+                            class="{element.properties.elementClassAttribute}"
+                            value="{element.properties.value}"
+                            errorClass="{element.properties.elementErrorClassAttribute}"
+                            additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}" />
+
+                        <span class="mod_rtetext">
+                            {f:variable(name: 'linktext', value:'Datenschutzerklärung')}
+                            <f:format.raw>
+                                <f:variable name="replace_link">
+                                    <v:format.replace content="{element.properties.dsgvo}" substring="[link]"
+                                        replacement="{linktext -> f:link.typolink(parameter: element.properties.link, class: 'internal-link')}" />
+                                </f:variable>
+                                <v:format.replace content="{replace_link}" substring="[email]"
+                                    replacement="{f:link.typolink(parameter: element.properties.email, class: 'mail')}" />
+                            </f:format.raw>
+                        </span>
+
+                    </label>
+                </div>
+
+
+            </div>
+        </f:render>
+    </div>
+</formvh:renderRenderable>
+
+</html>

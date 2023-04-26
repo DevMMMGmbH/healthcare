@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="lieferung_neu.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 529.16665 299.77293" height="1133" width="2000">
+  <defs id="defs2"></defs>
+  <metadata id="metadata5"></metadata>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+    <g transform="matrix(2.7144262,0,0,2.7144262,-121.13881,-140.79089)" id="g294" style="fill:#24195d;fill-opacity:1">
+      <g id="g292" style="fill:#24195d;fill-opacity:1">
+        <path class="st0" d="m 133,79.2 -9.9,-12.4 c -0.9,-1.2 -2.3,-1.9 -3.8,-1.9 h -51 c -1.5,0 -2.9,0.7 -3.8,1.9 l -9.9,12.4 c -1,1.3 -1.9,3.7 -1.9,5.5 v 9.1 c 0.8,-1.2 1.9,-2.2 3.3,-2.6 0.1,-1 0.4,-2 0.9,-3 0.9,-1.6 2.4,-2.7 4.2,-3.2 0.6,-0.2 1.2,-0.2 1.8,-0.2 2.4,0 4.5,1.2 5.7,3.1 0.4,-0.1 0.7,-0.1 1.1,-0.1 1.2,0 2.2,0.3 3.2,0.9 l 5.5,-1.4 c 0.7,-0.2 1.4,-0.3 2.1,-0.3 3.8,0 7.1,2.6 8,6.2 l 10.7,41.2 c 0.6,2.1 0.2,4.4 -0.9,6.3 -1.1,1.9 -2.9,3.3 -5.1,3.8 l -4.8,1.2 h 40.2 c 3.4,0 6.1,-2.8 6.1,-6.1 v -55 c 0.2,-1.7 -0.6,-4.1 -1.7,-5.4 z M 57.8,79.1 61.1,75 h 22.3 l 2.2,-3.6 H 64 l 2.4,-3 c 0.5,-0.6 1.2,-0.9 1.9,-0.9 h 51 c 0.8,0 1.5,0.3 1.9,0.9 l 2.4,3 h -22 l 1.2,3.6 h 23.7 l 3.3,4.1 z m 1,15.2 -1.4,0.4 c -1.5,0.4 -2.3,1.9 -2,3.4 v 0.1 c 0.4,1.5 1.9,2.3 3.4,2 l 11.7,-3 c 1.5,-0.4 2.3,-1.9 2,-3.4 v -0.1 c -0.4,-1.5 -1.9,-2.3 -3.4,-2 l -1.4,0.4 C 67,92.3 66.2,91.8 66,91.1 v 0 C 65.6,89.4 63.8,88.4 62.1,88.8 H 62 c -1.7,0.4 -2.7,2.2 -2.3,3.9 v 0 c 0.3,0.6 -0.2,1.4 -0.9,1.6 z m 3.8,-3.9 c 0.7,-0.2 1.5,0.3 1.7,1 0.2,0.7 -0.3,1.5 -1,1.7 -0.7,0.2 -1.5,-0.3 -1.7,-1 -0.2,-0.7 0.2,-1.5 1,-1.7 z m 17.2,42.4 c 0.1,0.5 -0.2,1 -0.7,1.1 l -17,4.4 c -0.5,0.1 -1,-0.2 -1.1,-0.7 l -0.2,-0.9 c -0.1,-0.5 0.2,-1 0.7,-1.1 l 17,-4.4 c 0.5,-0.1 1,0.2 1.1,0.7 z m 2.1,-17.8 0.2,0.9 c 0.1,0.5 -0.2,1 -0.7,1.1 l -23.3,6.1 c -0.5,0.1 -1,-0.2 -1.1,-0.7 l -0.2,-0.9 c -0.1,-0.5 0.2,-1 0.7,-1.1 l 23.3,-6.1 c 0.5,-0.1 1,0.2 1.1,0.7 z m -2.5,-6 -23.3,6 c -0.5,0.1 -1,-0.2 -1.1,-0.7 l -0.2,-0.9 c -0.1,-0.5 0.2,-1 0.7,-1.1 l 23.3,-6.1 c 0.5,-0.1 1,0.2 1.1,0.7 l 0.2,0.9 c 0.1,0.5 -0.2,1.1 -0.7,1.2 z m -0.6,16.4 -18.8,4.9 c -0.5,0.1 -1,-0.2 -1.1,-0.7 l -0.2,-0.9 c -0.1,-0.5 0.2,-1 0.7,-1.1 l 18.8,-4.9 c 0.5,-0.1 1,0.2 1.1,0.7 l 0.2,0.9 c 0.1,0.4 -0.2,0.9 -0.7,1.1 z m 17,9.9 -10.7,-41.2 c -0.6,-2.5 -3.2,-4 -5.6,-3.3 L 74,92.2 c 0.1,0.3 0.2,0.5 0.3,0.8 0.7,2.5 -0.8,5 -3.3,5.7 l -11.5,3 c -2.4,0.6 -4.9,-0.6 -5.7,-2.9 -0.1,-0.4 -0.2,-0.9 -0.3,-1.3 L 48.1,99 c -2.5,0.6 -4,3.2 -3.3,5.6 l 10.7,41.2 c 0.6,2.5 3.2,4 5.6,3.3 l 31.3,-8.2 c 2.5,-0.6 4,-3.1 3.4,-5.6 z m -35.8,9.3 -9.3,-35.8 31.3,-8.2 9.3,35.8 z m 0,0" id="path290" style="fill:#24195d;fill-opacity:1"></path>
+      </g>
+    </g>
+  </g>
+  <style type="text/css" id="style10">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style56">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style72">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style123">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style153">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style166">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style205">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style221">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#E7E7E8;}
+</style>
+  <style type="text/css" id="style272">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style288">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style307">
+	.st0{fill:#003D7C;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4.6275;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style353">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style377">
+	.st0{fill:#003D7C;}
+	.st1{fill:#003D7C;stroke:#FFFFFF;stroke-width:5.1045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <style type="text/css" id="style411">
+	.st0{fill:#003D7C;}
+</style>
+</svg>

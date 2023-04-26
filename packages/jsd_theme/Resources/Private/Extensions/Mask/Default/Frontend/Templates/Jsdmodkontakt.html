@@ -1,0 +1,30 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:for each="{data.image}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:if condition="{data.tx_mask_kontakt}">
+    <ul>
+        <f:for each="{data.tx_mask_kontakt}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_kontakt_header}">
+                    {data_item.tx_mask_kontakt_header}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_kontakt_rtetext}">
+                    {data_item.tx_mask_kontakt_rtetext -> f:format.html()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_kontakt_cta_text}">
+                    {data_item.tx_mask_kontakt_cta_text}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_kontakt_cta_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_kontakt_cta_link}"></f:link.typolink>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

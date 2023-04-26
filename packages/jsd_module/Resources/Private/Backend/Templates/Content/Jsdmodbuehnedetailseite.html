@@ -1,0 +1,30 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.header_layout}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.type" /></strong>
+    {processedRow.header_layout.0} (raw={row.header_layout})<br>
+</f:if>
+<f:if condition="{processedRow.bodytext}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.text" /></strong>
+    {processedRow.bodytext} (raw={row.bodytext})<br>
+</f:if>
+<f:if condition="{processedRow.image}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.images" /></strong>
+<br><f:for each="{processedRow.image}" as="item">
+    <ul>
+        <li>
+    <ul>
+        <f:for each="{item.uid_local}" as="file">
+            <li><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.uid_local" /> {file.table}|{file.uid}|{file.title} (id={item.uid})</li>
+        </f:for>
+    </ul>
+        </li>
+    </ul>
+</f:for>
+</f:if>
+<f:if condition="{processedRow.subheader}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.subheader" /></strong>
+    {processedRow.subheader} (raw={row.subheader})<br>
+</f:if>

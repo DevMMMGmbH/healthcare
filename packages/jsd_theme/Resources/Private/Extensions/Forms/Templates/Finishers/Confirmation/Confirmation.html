@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<div id="{form.identifier}">
+    <f:if condition="{isPreparedMessage}">
+        <f:then>
+            {message -> f:format.raw()}
+        </f:then>
+        <f:else>
+            <div class="row mod_rtetext">
+                <div class="col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-10 offset-lg-3 col-xl-8 offset-xl-4">
+                    {message -> f:format.nl2br()}
+                </div>
+            </div>
+        </f:else>
+    </f:if>
+</div>
+
+</html>

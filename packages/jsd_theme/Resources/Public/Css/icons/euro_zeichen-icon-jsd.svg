@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g transform="matrix(8.333333333333334,0,0,8.333333333333334,0,0)">
+    <g>
+      <circle cx="12" cy="12" r="11.25" style="fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></circle>
+      <g>
+        <path d="M13.5,16.5C10.6,16.5,9,14.9,9,12s1.6-4.5,4.5-4.5" style="fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></path>
+        <line x1="7.5" y1="10.5" x2="13.5" y2="10.5" style="fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+        <line x1="7.5" y1="13.5" x2="12" y2="13.5" style="fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5px"></line>
+      </g>
+    </g>
+  </g>
+</svg>

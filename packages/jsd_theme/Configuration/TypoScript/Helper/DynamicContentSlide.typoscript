@@ -1,0 +1,38 @@
+######################################################
+#### CONTENT SLIDE FROM COLPOS FOR USAGE IN FLUID ####
+######################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{colPos: '2'}" />
+#
+#################
+lib.dynamicContentSlide = COA
+lib.dynamicContentSlide {
+    1 = LOAD_REGISTER
+    1 {
+        colPos.cObject = TEXT
+        colPos.cObject {
+            field = colPos
+            intval = 1
+            ifEmpty.cObject = TEXT
+            ifEmpty.cObject {
+                value.current = 1
+                ifEmpty = 2
+            }
+        }
+    }
+    20 = CONTENT
+    20 {
+        table = tt_content
+        select.where = colPos = {register:colPos}
+        select.where.insertData = 1
+        select.orderBy = sorting
+        slide = -1
+        // slide {
+        //     collect = -1
+        //     collectReverse = 1
+        // }
+    }
+    90 = RESTORE_REGISTER
+}

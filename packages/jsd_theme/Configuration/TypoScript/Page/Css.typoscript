@@ -1,0 +1,47 @@
+page {
+    # CSS file inclusion
+    includeCSS {
+        CSS-10 = EXT:jsd_theme/Resources/Public/Css/main.min.css
+        CSS-10.media = screen
+
+        CSS-20 = EXT:jsd_theme/Resources/Public/JavaScript/slick/slick.css
+        CSS-20.media = screen
+
+        CSS-30 = EXT:jsd_theme/Resources/Public/JavaScript/featherlight/featherlight.min.css
+        CSS-30.media = screen
+
+        CSS-40 = EXT:jsd_theme/Resources/Public/JavaScript/featherlight/featherlight.min.css
+        CSS-40.media = screen
+
+        CSS-50 = EXT:jsd_theme/Resources/Public/JavaScript/mCustomScrollbar/jquery.mCustomScrollbar.min.css
+        CSS-50.media = screen
+
+        CSS-60 = EXT:jsd_theme/Resources/Public/Css/mmm/markus.css
+        CSS-60.media = screen
+
+        CSS-70 = EXT:jsd_theme/Resources/Public/JavaScript/selectBoxIt/jquery.selectBoxIt.css
+        CSS-70.media = screen
+
+        CSS-71 = EXT:jsd_theme/Resources/Public/Css/mmm/sebastian.css
+        CSS-71.media = screen
+
+        CSS-75 = EXT:jsd_theme/Resources/Public/Css/style.css
+        CSS-75.media = screen
+
+        CSS-80 = EXT:jsd_theme/Resources/Public/Css/mmm/mmm.css
+        CSS-80.media = screen
+
+
+        // powermail
+        CSS-90 = EXT:jsd_theme/Resources/Public/Css/form.css
+        CSS-90.media = screen
+
+		CSS-190 = EXT:jsd_theme/Resources/Public/Css/mmm/mmm-jobs-print.css
+        CSS-190.media = print
+
+        CSS-200 = EXT:jsd_theme/Resources/Public/Css/ar.min.css
+        CSS-200.media = screen
+
+
+    }
+}

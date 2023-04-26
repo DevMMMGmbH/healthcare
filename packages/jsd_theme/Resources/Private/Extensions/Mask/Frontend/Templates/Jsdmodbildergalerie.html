@@ -1,0 +1,26 @@
+<f:if condition="{data.tx_mask_bildergalerie}">
+<ul>
+<f:for each="{data.tx_mask_bildergalerie}" as="data_item">
+<li><f:if condition="{data_item.tx_mask_caption}">
+{data_item.tx_mask_caption}<br />
+</f:if>
+
+
+<f:if condition="{data_item.tx_mask_copyright}">
+{data_item.tx_mask_copyright}<br />
+</f:if>
+
+
+<f:if condition="{data_item.tx_mask_image}">
+<f:for each="{data_item.tx_mask_image}" as="file">
+  <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+  {file.description} / {file.identifier}<br />
+</f:for>
+</f:if>
+
+
+</li>
+</f:for>
+</ul>
+</f:if>
+

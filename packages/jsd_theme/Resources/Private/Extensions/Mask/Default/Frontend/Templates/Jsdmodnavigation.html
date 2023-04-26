@@ -1,0 +1,26 @@
+<f:if condition="{data.tx_mask_navigation}">
+    <ul>
+        <f:for each="{data.tx_mask_navigation}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_pidinrootline}">
+                    {data_item.tx_mask_pidinrootline}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_pages}">
+                    {data_item.tx_mask_pages}
+                </f:if>
+                <f:for each="{data_item.tx_mask_image}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_content_element}">
+                    <f:for each="{data_item.tx_mask_content_element}" as="data_item_item">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                    </f:for>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_navigation_loginsimplespeak}">
+                    {data_item.tx_mask_navigation_loginsimplespeak}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

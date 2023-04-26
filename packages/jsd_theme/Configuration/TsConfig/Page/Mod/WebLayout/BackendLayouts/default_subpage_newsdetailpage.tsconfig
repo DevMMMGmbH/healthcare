@@ -1,0 +1,26 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            Defaultnewsdetailpage {
+                title = LLL:EXT:jsd_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.default_newsdetailpage
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:jsd_theme/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:jsd_theme/Resources/Public/Images/BackendLayouts/default_subpage.svg
+            }
+        }
+    }
+}

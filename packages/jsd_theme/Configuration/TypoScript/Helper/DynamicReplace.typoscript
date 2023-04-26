@@ -1,0 +1,31 @@
+#####################################################
+#### DYNAMIC REPLACE CHAR LIB FOR USAGE IN FLUID ####
+#####################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicReplace" data="{string: data, search: '<br>', replaceChar: 32}" />
+#
+#
+#  COLUMN NUMBERS
+#  ---------------
+#
+#  0  = main
+#  1  = left
+#  2  = right
+#  3  = border
+#
+#################
+lib.dynamicReplace = COA
+lib.dynamicReplace {
+    10 = TEXT
+    10 {
+        field = string
+        replacement {
+            10 {
+                search.field = search
+                replace.char.field = replaceChar
+            }
+        }
+    }
+}

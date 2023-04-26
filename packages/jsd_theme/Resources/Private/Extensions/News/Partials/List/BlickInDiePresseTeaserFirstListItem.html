@@ -1,0 +1,97 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/Teaser.html
+-->
+
+
+<div class="row article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}">
+    <n:excludeDisplayedNews newsItem="{newsItem}" />
+
+    <!-- image -->
+    <div class="col-md-8 f1-img">
+        <f:if condition="{newsItem.mediaPreviews}">
+            <!-- media preview element -->
+            <f:then>
+                <div class="news-img-wrap">
+                    <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                        <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+                            <f:if condition="{mediaElement.originalResource.type} == 2">
+                                <f:render partial="../../../Partials/MediaImage"
+                                    arguments="{data_image:mediaElement, w-xs:289, w-sm:289, w-md:312, w-lg:417, w-xl:520}" />
+                            </f:if>
+                            <f:if condition="{mediaElement.originalResource.type} == 4">
+                                <f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}" />
+                            </f:if>
+                            <f:if condition="{mediaElement.originalResource.type} == 5">
+                                <f:render partial="../../../Partials/MediaImage"
+                                    arguments="{data_image:mediaElement, w-xs:289, w-sm:289, w-md:312, w-lg:417, w-xl:520}" />
+                            </f:if>
+                        </f:alias>
+                    </n:link>
+                </div>
+            </f:then>
+            <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                    <div class="news-img-wrap">
+                        <span class="no-media-element">
+                            <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                                <img src="{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/media/holding/aktuelles/aktuelle-meldungen-jsd.svg" alt="" loading="lazy" />
+                                <f:comment>
+                                <f:image src="{settings.list.media.dummyImage}" title="" alt=""
+                                    maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.maxWidth)}"
+                                    maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.media.image.maxHeight)}" />
+                                </f:comment>
+                            </n:link>
+                        </span>
+                    </div>
+                </f:if>
+            </f:else>
+        </f:if>
+    </div>
+
+    <!-- header -->
+    <div class="col-md-7 offset-md-1 f1-txt">
+        <div class="header header-slider">
+            <h3 class="title bold color_blue first">
+                {newsItem.title ->f:format.crop(maxCharacters:'50', respectWordBoundaries:'1')}
+            </h3>
+            <!-- date -->
+            <span class="news-list-date color_lightblue">
+                <time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+                    <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+                </time>
+            </span>
+
+            <f:if condition="{newsItem.firstCategory}">
+                <!-- first category -->
+                <f:if condition="{newsItem.firstCategory.shortcut}">
+                    <f:then>
+                        <f:link.page pageUid="{newsItem.firstCategory.shortcut}"
+                            title="{newsItem.firstCategory.description}">
+                            <span
+                                class="news-list-category color_lightblue flagline">{newsItem.firstCategory.title}</span>
+                        </f:link.page>
+                    </f:then>
+                    <f:else>
+                        <span class="news-list-category color_lightblue flagline">{newsItem.firstCategory.title}</span>
+                    </f:else>
+                </f:if>
+            </f:if>
+        </div>
+
+        <!-- teaser -->
+        <n:removeMediaTags>
+            <f:if condition="{newsItem.teaser}">
+                <div>{newsItem.teaser ->f:format.crop(maxCharacters:'{settings.cropMaxCharacters}',
+                    respectWordBoundaries:'1') ->f:format.html()}</div>
+            </f:if>
+        </n:removeMediaTags>
+        <div class="link">{newsItem.bodytext ->f:format.crop(maxCharacters:'{settings.cropMaxCharacters}',
+            respectWordBoundaries:'1') ->f:format.html()}</div>
+    </div>
+
+</div>
+
+</html>

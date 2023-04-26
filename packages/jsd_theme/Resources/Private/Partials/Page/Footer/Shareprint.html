@@ -1,0 +1,25 @@
+<div class="row shareprint">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-xl-12 offset-xl-2">
+                <div class="row">
+                    <div class="col-lg-8 d-none d-lg-flex">
+                        <p class="text-lg-right">
+                            <f:link.page pageUid="{data.uid}" onclick="window.print();return false;"
+                                title="{f:translate(key: 'page.print',  extensionName='jsd_theme')}" class="print bold color_dpurple">{f:translate(key: 'page.print',  extensionName='jsd_theme')}</f:link.page>
+                        </p>
+                    </div>
+                    <div class="col-xs-16 col-lg-7 offset-lg-1 text-xs-center text-lg-left">
+                        <p>
+                            <f:link.page pageUid="{data.uid}" title="{f:translate(key: 'page.sharebox',  extensionName='jsd_theme')}" class="share bold color_dpurple">
+                                {f:translate(key: 'page.sharebox',  extensionName='jsd_theme')}</f:link.page>
+                            <div class="share-box" role="tooltip">
+                                <f:render partial="Footer/Shareprint/Share" arguments="{_all}" />
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

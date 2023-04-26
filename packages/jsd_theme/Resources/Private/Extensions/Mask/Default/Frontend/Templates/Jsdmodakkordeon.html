@@ -1,0 +1,20 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_akkordeon}">
+    <ul>
+        <f:for each="{data.tx_mask_akkordeon}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_title}">
+                    {data_item.tx_mask_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_content}">
+                    {data_item.tx_mask_content -> f:format.html()}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-10T13:45:16Z" product-name="jsd_modeinrichtungen">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>Titel des Bereichs</source>
+			</trans-unit>
+			<trans-unit id="ekomiidentifier.description">
+				<source>Kurz-String zur eKomi-identifizierung (z.B. ELK_THOR)</source>
+			</trans-unit>
+			<trans-unit id="rootpage.description">
+				<source>Seiten-ID der Bereichs-Startseite</source>
+			</trans-unit>
+			<trans-unit id="listpage.description">
+				<source>Seiten-ID der Bereichs-Listenansicht</source>
+			</trans-unit>
+			<trans-unit id="institution.description">
+				<source>Institution zuordnen</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

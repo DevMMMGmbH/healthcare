@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="truck_neu.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 529.16665 299.77293" height="1133" width="2000">
+  <defs id="defs2"></defs>
+  <metadata id="metadata5"></metadata>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+    <g style="fill:#24195d;fill-opacity:1" id="g118" transform="matrix(9.6024546,0,0,9.6024546,-58.574973,-18.63662)">
+      <path style="fill:#24195d;fill-opacity:1" id="path96" d="m 24.5,28.9 c -1.4,0 -2.6,-1.2 -2.6,-2.6 0,-1.4 1.2,-2.6 2.6,-2.6 1.4,0 2.6,1.2 2.6,2.6 0,1.4 -1.1,2.6 -2.6,2.6 z m 0,-3.8 c -0.6,0 -1.1,0.5 -1.1,1.1 0,0.6 0.5,1.1 1.1,1.1 0.6,0 1.1,-0.5 1.1,-1.1 0,-0.6 -0.5,-1.1 -1.1,-1.1 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path98" d="m 8.8,28.9 c -1.4,0 -2.6,-1.2 -2.6,-2.6 0,-1.4 1.2,-2.6 2.6,-2.6 1.4,0 2.6,1.2 2.6,2.6 0,1.4 -1.2,2.6 -2.6,2.6 z m 0,-3.8 c -0.6,0 -1.1,0.5 -1.1,1.1 0,0.6 0.5,1.1 1.1,1.1 0.6,0 1.1,-0.5 1.1,-1.1 0,-0.6 -0.5,-1.1 -1.1,-1.1 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path100" d="m 12.5,28.9 c -1.4,0 -2.6,-1.2 -2.6,-2.6 0,-1.4 1.2,-2.6 2.6,-2.6 1.4,0 2.6,1.2 2.6,2.6 0,1.4 -1.1,2.6 -2.6,2.6 z m 0,-3.8 c -0.6,0 -1.1,0.5 -1.1,1.1 0,0.6 0.5,1.1 1.1,1.1 0.6,0 1.1,-0.5 1.1,-1.1 0,-0.6 -0.5,-1.1 -1.1,-1.1 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path102" d="m 27.9,26.6 h -1.5 c -0.4,0 -0.8,-0.3 -0.8,-0.8 0,-0.4 0.3,-0.8 0.8,-0.8 h 1.5 c 0.4,0 0.8,-0.3 0.8,-0.8 0,-0.4 -0.3,-0.8 -0.8,-0.8 h -9 v 2.2 c 0,0.4 -0.3,0.8 -0.8,0.8 -0.4,0 -0.8,-0.3 -0.8,-0.8 v -3 c 0,-0.4 0.3,-0.8 0.8,-0.8 h 9.8 c 1.2,0 2.2,1 2.2,2.2 0,1.2 -1,2.6 -2.2,2.6 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path104" d="m 28.6,23.8 c -0.4,0 -0.8,-0.3 -0.8,-0.8 V 16.8 C 27.8,14.7 26.1,13 24,13 h -5.2 v 9.8 c 0,0.4 -0.3,0.8 -0.8,0.8 -0.4,0 -0.8,-0.3 -0.8,-0.8 V 12.4 c 0,-0.4 0.3,-0.8 0.8,-0.8 h 6 c 2.9,0 5.2,2.4 5.2,5.3 v 6.2 c 0.2,0.4 -0.1,0.7 -0.6,0.7 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path106" d="m 24.9,13.2 c -0.4,0 -0.8,-0.3 -0.8,-0.8 v 0 C 24,11.5 23.8,10.6 23.4,9.7 23.3,9.6 22.8,8.9 19.7,8.2 c -0.1,0 -0.1,0 -0.2,0 0,0 0,0 0,0 -0.2,0 -0.4,0.1 -0.5,0.2 -0.1,0.1 -0.2,0.3 -0.2,0.5 v 3.4 c 0,0.4 -0.3,0.8 -0.8,0.8 -0.4,0 -0.8,-0.3 -0.8,-0.8 V 8.9 c 0,-0.6 0.2,-1.2 0.7,-1.6 0.4,-0.4 1,-0.7 1.6,-0.7 0,0 0,0 0,0 0.2,0 0.3,0 0.5,0.1 4,0.9 4.5,2 4.7,2.3 0,0 0,0 0,0 0.5,1 0.7,2.1 0.8,3.3 0,0 0,0 0,0 v 0.1 c 0.1,0.4 -0.2,0.8 -0.6,0.8 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path108" d="M 15.1,22.1 H 6.9 c -0.4,0 -0.8,-0.3 -0.8,-0.8 0,-0.4 0.3,-0.8 0.8,-0.8 h 8.2 c 0.4,0 0.8,0.3 0.8,0.8 0,0.5 -0.3,0.8 -0.8,0.8 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path110" d="M 28.6,19.9 H 18.1 c -0.4,0 -0.8,-0.3 -0.8,-0.8 0,-0.4 0.3,-0.8 0.8,-0.8 h 10.5 c 0.4,0 0.8,0.3 0.8,0.8 0,0.4 -0.3,0.8 -0.8,0.8 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path112" d="m 22.6,19.9 c -0.4,0 -0.8,-0.3 -0.8,-0.8 v -6.8 c 0,-0.4 0.3,-0.8 0.8,-0.8 0.5,0 0.8,0.3 0.8,0.8 v 6.8 c 0,0.4 -0.3,0.8 -0.8,0.8 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path114" d="m 15.1,23.6 c -0.4,0 -0.8,-0.3 -0.8,-0.8 V 8.6 C 14.3,8.2 14,7.8 13.5,7.8 H 6.9 C 6.5,7.8 6.1,7.5 6.1,7 6.1,6.6 6.4,6.2 6.9,6.2 h 6.8 c 1.2,0 2.2,1 2.2,2.3 v 14.3 c 0,0.5 -0.3,0.8 -0.8,0.8 z" class="st0"></path>
+      <path style="fill:#24195d;fill-opacity:1" id="path116" d="m 22.7,26.6 h -8.3 c -0.4,0 -0.8,-0.3 -0.8,-0.8 0,-0.4 0.3,-0.8 0.8,-0.8 h 8.3 c 0.4,0 0.8,0.3 0.8,0.8 -0.1,0.5 -0.4,0.8 -0.8,0.8 z" class="st0"></path>
+    </g>
+  </g>
+  <style type="text/css" id="style10">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style28">
+	.st0{fill:#A31747;}
+	.st1{fill:#003E69;}
+</style>
+  <style type="text/css" id="style64">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style94">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style10-1">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style56">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style72">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style123">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+</svg>

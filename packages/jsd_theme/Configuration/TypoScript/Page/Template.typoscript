@@ -1,0 +1,53 @@
+# Template configuration
+page.10 = FLUIDTEMPLATE
+page.10 {
+    templateName = TEXT
+    templateName {
+        cObject = TEXT
+        cObject {
+            data = pagelayout
+            required = 1
+            case = uppercamelcase
+            split {
+                token = pagets__
+                cObjNum = 1
+                1.current = 1
+            }
+        }
+        ifEmpty = Default
+    }
+    templateRootPaths {
+        0 = EXT:jsd_theme/Resources/Private/Templates/Page/
+        1 = {$page.fluidtemplate.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:jsd_theme/Resources/Private/Partials/Page/
+        1 = {$page.fluidtemplate.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:jsd_theme/Resources/Private/Layouts/Page/
+        1 = {$page.fluidtemplate.layoutRootPath}
+    }
+    settings {
+        page {
+            uid   = {$glob_settings.page.uid}
+            title = {$glob_settings.page.title}
+            logo  = {$glob_settings.page.logo}
+            logo_lila  = {$glob_settings.page.logo_lila}
+            sysFolderLocationsInstitutiontypes = {$glob_settings.page.sysFolderLocationsInstitutiontypes}
+            searchTargetPage = {$glob_settings.page.searchTargetPage}
+            pidDsgvo = {$glob_settings.page.pidDsgvo}
+        }
+    }
+}
+
+// Lang menu
+page {
+   10.dataProcessing {
+      40 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+      40 {
+          languages = auto
+          as = languagenavigation
+      }
+   }
+}

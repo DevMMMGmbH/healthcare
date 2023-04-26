@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-14T14:04:03Z" product-name="pgdcontactperson">
+		<header/>
+		<body>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson">
+				<source>Contactperson</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.firstname">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.lastname">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.mobil">
+				<source>Mobil</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.institution">
+				<source>Institution</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.area">
+				<source>Area</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.room">
+				<source>Room</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie1label">
+				<source>Therapie1label</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie1link">
+				<source>Therapie1link</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie2label">
+				<source>Therapie2label</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie2link">
+				<source>Therapie2link</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie3label">
+				<source>Therapie3label</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie3link">
+				<source>Therapie3link</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie4label">
+				<source>Therapie4label</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie4link">
+				<source>Therapie4link</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.refposition">
+				<source>Refposition</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.reftitle">
+				<source>Reftitle</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_position.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_title.title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

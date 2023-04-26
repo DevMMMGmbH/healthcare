@@ -1,0 +1,93 @@
+.comments.slick .commentwrap .commenttext1 {
+    display: none;
+}
+.comments.slick .commentwrap .commenttext a.weiterlesen {
+    cursor: pointer;
+}
+.comments.slick .slick-initialized .slick-slide {
+   height: 0!important;
+}
+.comments.slick .slick-initialized .slick-slide.slick-active {
+    height: auto!important;
+}
+
+.mod_megamenu .mm li.current ul,
+.mod_megamenu .mm li.active ul {
+    display: block;
+}
+
+.mod_megamenu .mm li.current ul li  ul,
+.mod_megamenu .mm li.active ul li  ul {
+    display: none;
+}
+
+.mod_megamenu .mm li.current ul li.current  ul,
+.mod_megamenu .mm li.current ul li.active  ul,
+.mod_megamenu .mm li.active ul li.active  ul {
+    display: block;
+}
+
+.layout_einrichtungen .mod_navieinrichtung .menu-e-div.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.layout_einrichtungen .mod_navieinrichtung .menu-e-div.fixed .logo-e {
+    margin-top: 0;
+    position: unset;
+}
+.layout_einrichtungen .mod_navieinrichtung .menu-e-div.fixed .header-img {
+    display: none;
+}
+
+.layout_einrichtungen .mod_navieinrichtung .menu-e-div.fixed .menu-e {
+    position: unset;
+}
+
+.tx-jsd-modeinrichtungen .slick-list.draggable {
+    height: auto!important;
+}
+
+.formularfeldfehler.formularfeldfehler.formularfeldfehler.formularfeldfehler label,
+.formularfeldfehler.formularfeldfehler.formularfeldfehler label span {
+    color: red;
+}
+
+span.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung {
+    display: none;
+}
+
+.formularfeldfehler.formularfeldfehler.formularfeldfehler label span.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung.fehlermeldung {
+    display: inline;
+    padding-left: 5px;
+}
+/*
+@media (max-width: 1024px){
+    .mod_megamenu .mm li.ausblendenmobile {
+        display: none;
+    }
+    .mod_megamenu .mm li.ausblendenmobile.offen li,
+    .mod_megamenu .mm li.ausblendenmobile.offen {
+        display: block;
+    }
+    .mod_megamenu .mm li.ausblendenmobile.offen.unteractive li.ausblendenmobile {
+        display: none;
+    }
+    .mod_megamenu .mm li.ausblendenmobile.offen li.ausblendenmobile.offen li,
+    .mod_megamenu .mm li.ausblendenmobile.offen li.ausblendenmobile.offen {
+        display: block;
+    }
+}
+@media (max-width: 767px){
+    .mod_sprechstunde .slick-list.draggable {
+        height: auto!important;
+    }
+    .mod_sprechstunde .slick-list.draggable .slick-slide {
+        height: 0!important;
+    }
+    .mod_sprechstunde .slick-list.draggable .slick-slide.slick-active {
+        height: auto!important;
+    }
+}*/

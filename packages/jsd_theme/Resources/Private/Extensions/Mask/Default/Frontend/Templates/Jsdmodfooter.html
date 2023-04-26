@@ -1,0 +1,58 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_footer}">
+    <ul>
+        <f:for each="{data.tx_mask_footer}" as="data_item">
+            <li>
+                <f:for each="{data_item.tx_mask_footer_teaser}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_footer_menu_a_title}">
+                    {data_item.tx_mask_footer_menu_a_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_a_link}">
+                    {data_item.tx_mask_footer_menu_a_link}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_b_title}">
+                    {data_item.tx_mask_footer_menu_b_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_b_link}">
+                    {data_item.tx_mask_footer_menu_b_link}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_c_title}">
+                    {data_item.tx_mask_footer_menu_c_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_c_link}">
+                    {data_item.tx_mask_footer_menu_c_link}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_menu_d_link}">
+                    {data_item.tx_mask_footer_menu_d_link}
+                </f:if>
+                <f:for each="{data_item.tx_mask_footer_sm_icons}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_footer_gb_link_a}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footer_gb_link_a}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_gb_link_b}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footer_gb_link_b}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_gb_link_c}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footer_gb_link_c}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_gb_link_d}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footer_gb_link_d}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footer_gb_link_e}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footer_gb_link_e}"></f:link.typolink>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

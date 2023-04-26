@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-10-14T14:04:03Z" product-name="pgdcontactperson">
+		<header/>
+		<body>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson">
+				<source>Kontaktperson</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.firstname">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.lastname">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.phone">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.mobil">
+				<source>Mobil</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.institution">
+				<source>Institution</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.area">
+				<source>Bereich (z.B.: "Klinik für Anästhesie und Intensivmedizin")</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.room">
+				<source>Raum (z.B.: "Haus 6, Raum E.201")</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie1label">
+				<source>Label  Spezialtherapie 1</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie1link">
+				<source>Verlinkung Spezialtherapie 1</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie2label">
+				<source>Label  Spezialtherapie 2</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie2link">
+				<source>Verlinkung Spezialtherapie 2</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie3label">
+				<source>Label  Spezialtherapie 3</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie3link">
+				<source>Verlinkung Spezialtherapie 3</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie4label">
+				<source>Label  Spezialtherapie 4</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.therapie4link">
+				<source>Verlinkung Spezialtherapie 4</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.refposition">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.reftitle">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_position.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_title.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_contactperson.name">
+				<source>Modul: Kontaktperson</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_contactperson.description">
+				<source>Ein Modul zur Auswahl von Kontaktpersonen. Anzeigeoptionen als Liste oder Slider.</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.profile">
+				<source>zum Profil</source>
+			</trans-unit>
+			<trans-unit id="tx_pgdcontactperson_domain_model_contactperson.no_search">
+				<source>Nicht in Indexsuche einbeziehen</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

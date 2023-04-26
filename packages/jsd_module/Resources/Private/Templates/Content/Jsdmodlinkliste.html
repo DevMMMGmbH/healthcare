@@ -1,0 +1,42 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data.subheader}">
+    {data.subheader}<br />
+</f:if>
+
+<f:if condition="{data.header_link}">
+    <f:link.page pageUid="{data.header_link}">{data.header_link}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_linkliste}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_linkliste}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data.tx_jsdmodule_title}">
+    {data_item.data.tx_jsdmodule_title}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_link}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_link}">{data_item.data.tx_jsdmodule_link}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_link_type}">
+    <f:switch expression="{data_item.data.tx_jsdmodule_link_type}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_link_text}">
+    <f:format.nl2br>{data_item.data.tx_jsdmodule_link_text}</f:format.nl2br><br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

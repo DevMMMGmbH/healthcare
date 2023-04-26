@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target="fr" datatype="plaintext" original="messages" date="2023-04-17UTC09:15:100">
+        <header>
+            <authorName>Robert Heyduck</authorName>
+            <authorEmail>mail@typo-script.de</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+                <target>LLL: Envoyer</target>
+            </trans-unit>
+            <trans-unit id="element.Page.renderingOptions.nextButtonLabel">
+                <target>LLL: continue</target>
+            </trans-unit>
+            <trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel">
+                <target>LLL: back</target>
+            </trans-unit>
+
+            <trans-unit id="element.text-1.properties.label">
+                <target>LLL: FR E-Mail</target>
+            </trans-unit>
+            <trans-unit id="element.text-1.properties.placeholder">
+                <target>LLL: FR Enter your E-Mail here</target>
+            </trans-unit>
+            <trans-unit id="element.text-2.properties.label">
+                <target>LLL: FR Name</target>
+            </trans-unit>
+            <trans-unit id="element.text-2.properties.placeholder">
+                <target>LLL: FR Enter your name here</target>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.label">
+                <target>LLL: FR Comment</target>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.placeholder">
+                <target>LLL: FR Enter your comment here</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

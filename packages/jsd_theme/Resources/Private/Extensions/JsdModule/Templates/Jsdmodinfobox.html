@@ -1,0 +1,37 @@
+<div class="mod_infobox" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t"></div>
+    </div>
+    <div class="row kk_content">
+        <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+        </f:if>
+        <div class="col-xs-12 offset-xs-2">
+            <div class="row justify-content-between">
+
+                <f:for each="{data_tx_jsdmodule_infobox}" as="data_item">
+
+                    <f:cycle values="{0:'left', 1:'right'}" as="order">
+                        <f:switch expression="{order}">
+                            <f:case value="left">
+                                <div class="col-xs-16 col-lg-8 col-lg-8_justify-between_sub-1-2-col">
+                            </f:case>
+                            <f:case value="right">
+                                <div class="col-xs-16 col-lg-8 col-lg-8_justify-between_sub-1-2-col">
+                            </f:case>
+                        </f:switch>
+                    </f:cycle>
+                        <f:if condition="{data_item.data.tx_jsdmodule_text}"><div class="rtetext"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_text}</f:format.html></div></f:if>
+                    </div>
+                </f:for>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b"></div>
+    </div>
+</div>
+

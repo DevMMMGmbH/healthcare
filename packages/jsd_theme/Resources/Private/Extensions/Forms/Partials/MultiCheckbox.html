@@ -1,0 +1,64 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<formvh:renderRenderable renderable="{element}">
+    <div class="powermail_fieldwrap_type_check">
+    <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
+        <div id="{element.uniqueIdentifier}" class="inputs-list">
+
+            <f:for each="{element.properties.options}" as="label" key="value" iteration="idIterator">
+
+                <f:if condition="{label} != 'DS-Link' && {label} != 'DS-Mail'">
+
+                    <f:then>
+                        <div class="form-check form-check-inline checkbox">
+                            <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
+                                <f:form.checkbox
+                                    property="{element.identifier}"
+                                    multiple="1"
+                                    id="{element.uniqueIdentifier}-{idIterator.index}"
+                                    class="{element.properties.elementClassAttribute}"
+                                    value="{value}"
+                                    errorClass="{element.properties.elementErrorClassAttribute}"
+                                    additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
+                                />
+                                <span>
+                                    <f:format.raw>
+                                        {formvh:translateElementProperty(element: element, property: '{0: \'options\', 1: value}')}
+                                    </f:format.raw>
+                                </span>
+                            </label>
+                        </div>
+                    </f:then>
+
+                    <f:else>
+                        <f:if condition="{label} == 'DS-Link'">
+                            <div class="form-check form-check-inline checkbox">
+                                <label class="form-check-label" for="{element.uniqueIdentifier}-{idIterator.index}">
+                                    <f:form.checkbox
+                                        property="{element.identifier}"
+                                        multiple="1"
+                                        id="{element.uniqueIdentifier}-{idIterator.index}"
+                                        class="{element.properties.elementClassAttribute}"
+                                        value="{value}"
+                                        errorClass="{element.properties.elementErrorClassAttribute}"
+                                        additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
+                                    />
+                                    <span class="mod_rtetext">
+                                        Ich habe die <f:link.page pageUid="{value}" title="Datenschutzerklärung" class="internal-link">Datenschutzerklärung</f:link.page> zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine Daten werden dabei zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage benutzt. Mit dem Absenden des Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden. Hinweis: Die Einwilligung kann jederzeit für die Zukunft per E-Mail an
+                        </f:if>
+                        <f:if condition="{label} == 'DS-Mail'">
+                                        <f:link.typolink parameter="mailto:{value}" title="E-Mail schreiben" class="mail">{value}</f:link.typolink> widerrufen werden.
+                                    </span>
+                                </label>
+                            </div>
+                        </f:if>
+                    </f:else>
+
+                </f:if>
+
+            </f:for>
+
+        </div>
+    </f:render>
+</div>
+</formvh:renderRenderable>
+</html>

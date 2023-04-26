@@ -1,0 +1,30 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_bereichsteaser}">
+    <ul>
+        <f:for each="{data.tx_mask_bereichsteaser}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_header}">
+                    {data_item.tx_mask_header}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_teaser}">
+                    {data_item.tx_mask_teaser -> f:format.nl2br()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_button}">
+                    {data_item.tx_mask_button}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_link}"></f:link.typolink>
+                </f:if>
+                <f:for each="{data_item.tx_mask_image}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

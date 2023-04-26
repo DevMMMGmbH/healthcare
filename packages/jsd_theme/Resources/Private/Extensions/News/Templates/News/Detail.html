@@ -1,0 +1,137 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Detail" />
+
+<!--
+	=====================
+		News/Detail.html
+-->
+
+<f:section name="content">
+
+	<f:if condition="{newsItem}">
+		<f:then>
+            <div class="mod_aktuelles-teaser mod_buehnezwei news_details" id="c{contentObjectData.uid}">
+                <div class="row">
+                    <link class="d-none" itemprop="url" href="{f:cObject(typoscriptObjectPath: 'lib.baseurl')}<n:link newsItem="{newsItem}" uriOnly="1" />" />
+                    <meta class="d-none" itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" />
+
+                    <span class="d-none" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                        <span class="d-none" itemprop="name">{f:translate(key: 'page.projekt',  extensionName='jsd_theme')}</span>
+                        <span class="d-none" itemprop="logo" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                            <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/media/holding/bilder/logo-jsd.png</span>
+                        </span>
+                    </span>
+
+                    <f:if condition="{newsItem.firstCategory}">
+                        <span class="d-none" itemprop="author">{newsItem.firstCategory.title}</span>
+                    </f:if>
+
+                    <f:if condition="{newsItem.mediaPreviews}">
+                        <f:then>
+                            <span class="d-none" itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                <f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
+                                    <f:if condition="{mediaElement.originalResource.type} == 2">
+                                        <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/{mediaElement.originalResource.originalFile.identifier}</span>
+                                    </f:if>
+                                    <f:if condition="{mediaElement.originalResource.type} == 5">
+                                        <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/{mediaElement.originalResource.originalFile.identifier}</span>
+                                    </f:if>
+                                </f:alias>
+                            </span>
+                        </f:then>
+                        <f:else>
+                            <f:if condition="{settings.displayDummyIfNoMedia}">
+                                <span class="d-none" itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                    <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/media/holding/aktuelles/aktuelle-meldungen-jsd.png</span>
+                                </span>
+                            </f:if>
+                        </f:else>
+                    </f:if>
+
+                    <div class="col green-bg {f:if(condition: '{newsItem.falMedia}', then: 'haveImg', else: 'noImg')}">
+                        <div class="row">
+                            <div class="{f:if(condition: '{newsItem.falMedia}', then: 'order-xs-2 order-md-1 col-xs-11 offset-xs-2 col-md-6 offset-md-1 text', else: 'col-xs-11 offset-xs-2 col-md-8 offset-md-1 text')}">
+                                <span class="d-none" itemprop="headline">{newsItem.title}</span>
+                                <f:render partial="../../JsdModule/Partials/HeaderLayout" arguments="{header:newsItem.title, header_layout:1, htmlDecode: 1, cssclass: 'color_dpurple'}" />
+                                <div class="subline bold color_dpurple" itemprop="description"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{newsItem.teaser}</f:format.html></div>
+                            </div>
+                            <f:if condition="{newsItem.falMedia}">
+                                <div class="order-xs-1 order-md-2 col-xs-15 offset-xs-0 col-md-7 offset-md-1">
+                                    <f:for each="{newsItem.falMedia}" as="image" iteration="iterator">
+                                        <f:if condition="{iterator.cycle}==1">
+                                            <f:render partial="../../JsdModule/Partials/MediaImage"arguments="{data_image:image, w-xs:300, w-sm:360, w-md:337, w-lg:448, w-xl:560, notTreatIdAsReference: 1}" />
+                                        </f:if>
+                                    </f:for>
+                                </div>
+                            </f:if>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mod_breadcrumb color_pink small">
+                    <div class="col-xs-14 offset-xs-1">
+                        <f:cObject typoscriptObjectPath="lib.dynamicBreadcrumb" />
+                    </div>
+                </div>
+                <f:if condition="{settings.templateLayout} == 'story-detail'">
+                    <f:then>
+                        <span class="d-none" itemprop="datePublished">{f:format.date(date:newsItem.datetime, format:'Y-m-d')}</span>
+                        <span class="d-none" itemprop="dateModified">{f:format.date(date:newsItem.datetime, format:'Y-m-d')}</span>
+                    </f:then>
+                    <f:else>
+                        <div class="row">
+                            <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1">
+                                <div class="row dateTimeLocation justify-content-start">
+                                    <div class="col-auto date color_dpurple">
+                                        <span class="dateloc"><f:translate key="news.datum" extensionName="jsd_theme" /></span>
+                                        <span><b><time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+                                            <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+                                        </time></b></span>
+                                        <span class="d-none" itemprop="datePublished">{f:format.date(date:newsItem.datetime, format:'Y-m-d')}</span>
+                                        <span class="d-none" itemprop="dateModified">{f:format.date(date:newsItem.datetime, format:'Y-m-d')}</span>
+                                    </div>
+                                    <f:if condition="{newsItem.categories}">
+                                        <div class="col-auto location color_dpurple">
+                                            <span class="dateloc"><f:translate key="news.einrichtung" extensionName="jsd_theme" /></span>
+                                            <span><b>
+                                            <f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
+                                            </b></span>
+                                        </div>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </f:else>
+                </f:if>
+                <div class="row mod_rtetext">
+                    <div class="col-xs-14 offset-xs-1 col-md-12 offset-md-2 col-lg-10 offset-lg-3 col-xl-8 offset-xl-4">
+                        <div class="text">
+                            <f:format.html>{newsItem.bodytext}</f:format.html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <f:if condition="{newsItem.contentElements}">
+                <!-- content elements -->
+                <f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+            </f:if>
+            <f:comment>
+                <f:if condition="{settings.backPid}">
+                    <div class="row">
+                        <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1">
+                            <f:link.page pageUid="{settings.backPid}" class="btn button-blue css-trans_all">
+                                <f:translate key="back-link" />
+                            </f:link.page>
+                        </div>
+                    </div>
+                </f:if>
+            </f:comment>
+		</f:then>
+		<f:else>
+		</f:else>
+	</f:if>
+</f:section>
+</html>

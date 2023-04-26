@@ -1,0 +1,68 @@
+<div class="mod_zitattext" id="c{data.uid}">
+    <div class="row">
+        <f:if condition="{data.header_layout}!=100">
+            <f:if condition="{data.header}">
+                <div class="col-xs-16">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:data.header_layout, htmlDecode: 1}" />
+                </div>
+            </f:if>
+        </f:if>
+        <div class="col-xs-14 offset-xs-1 col-md-12 offset-md-2">
+            <f:if condition="{data_tx_jsdmodule_zitattext}">
+                <f:for each="{data_tx_jsdmodule_zitattext}" as="data_item">
+                    <f:if condition="{data_item.data.tx_jsdmodule_shortversion}">
+                        <f:then>
+                            <f:render section="shortversion" arguments="{data_item:data_item, fontType: data_item.data.tx_jsdmodule_shortversion}" />
+                        </f:then>
+                        <f:else>
+                            <f:render section="default" arguments="{data_item:data_item}" />
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</div>
+
+
+<f:section name="shortversion">
+    <div class="blockquote short">
+        <div class="wrap{f:if(condition: '{fontType}==3', then: ' small-font')}">
+            <f:if condition="{data_item.data.tx_jsdmodule_zitat}">
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_zitat}</f:format.html>
+            </f:if>
+
+            <f:if condition="{data_item.data.tx_jsdmodule_zitatcopy}">
+                <span class="copy color_pink">
+                    {data_item.data.tx_jsdmodule_zitatcopy}
+                </span>
+            </f:if>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="default">
+    <f:if condition="{data_item.data.tx_jsdmodule_text}">
+        <div class="d-xs-block d-lg-none">
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_text}</f:format.html>
+        </div>
+    </f:if>
+    <div class="blockquote {f:if(condition: '{data_item.data.tx_jsdmodule_options}==1', then: 'float-left', else: 'float-right')}">
+        <div class="wrap">
+            <f:if condition="{data_item.data.tx_jsdmodule_zitat}">
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_zitat}</f:format.html>
+            </f:if>
+
+            <f:if condition="{data_item.data.tx_jsdmodule_zitatcopy}">
+                <span class="copy color_pink">
+                    {data_item.data.tx_jsdmodule_zitatcopy}
+                </span>
+            </f:if>
+        </div>
+    </div>
+    <f:if condition="{data_item.data.tx_jsdmodule_text}">
+        <div class="d-none d-lg-block">
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_text}</f:format.html>
+        </div>
+    </f:if>
+</f:section>

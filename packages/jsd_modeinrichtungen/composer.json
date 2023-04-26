@@ -1,0 +1,23 @@
+{
+    "name": "jsd/jsd-modeinrichtungen",
+    "description": "Module: Einrichtungs-Teaser",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "require": {
+        "typo3/cms-core": "^10.4||^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JSD\\JsdModeinrichtungen\\": "Classes"
+        }
+    },
+    "replace": {
+        "jsd_modeinrichtungen": "self.version",
+        "typo3-ter/jsd-modeinrichtungen": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jsd_modeinrichtungen"
+        }
+    }
+}

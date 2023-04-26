@@ -1,0 +1,15 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      JSD\JsdModeinrichtungen\Domain\Model\Ttcontent {
+        mapping {
+          tableName = tt_content
+          recordType = Tx_JsdModeinrichtungen_Ttcontent
+        }
+      }
+
+    }
+  }
+}

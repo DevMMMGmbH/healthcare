@@ -1,0 +1,66 @@
+page {
+    meta {
+        viewport = {$page.meta.viewport}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+
+        # Facebook
+        fb:admins {
+            attribute = property
+            value = {$page.meta.fb-admins}
+        }
+
+        fb:app_id {
+            attribute = property
+            value = 584066739127680
+        }
+
+        # Twitter
+        twitter:card {
+            attribute = name
+            value = summary_large_image
+        }
+        twitter:site {
+            attribute = name
+            value = @JSD_gAG
+        }
+        twitter:creator {
+            attribute = name
+            value = @JSD_gAG
+        }
+    }
+}
+
+
+page {
+    meta {
+        description.stdWrap.cObject = COA
+        description.stdWrap.cObject {
+            // default page description
+            10 = TEXT
+            10.if.isTrue.field = description
+            10.field = description
+            // news
+            30 = COA
+            30 {
+                if.isTrue.data = GP:tx_news_pi1|news
+                if.isTrue.intval = 1
+                10 = RECORDS
+                10 {
+                    source.data = GP:tx_news_pi1|news
+                    source.intval = 1
+                    tables = tx_news_domain_model_news
+                    conf.tx_news_domain_model_news >
+                    conf.tx_news_domain_model_news = TEXT
+                    conf.tx_news_domain_model_news.field = teaser
+                    // conf.tx_news_domain_model_news.override.field = title
+                    // conf.tx_news_domain_model_news.override.if.isFalse.field = teaser
+                    htmlSpecialChars = 1
+                }
+            }
+        }
+    }
+}

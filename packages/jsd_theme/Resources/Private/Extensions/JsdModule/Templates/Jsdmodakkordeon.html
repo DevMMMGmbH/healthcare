@@ -1,0 +1,34 @@
+<f:if condition="{data_tx_jsdmodule_akkordeon}">
+    <div class="mod_akkordeon" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row pad-top kk_content">
+            <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2 col-lg-4">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+            </f:if>
+            <div class="col-xs-12 offset-xs-2 {f:if(condition: '{data.header}', then: 'col-lg-8 offset-lg-0', else: '')}">
+                <div class="accordion" id="akkordeon-{data.uid}">
+                    <f:for each="{data_tx_jsdmodule_akkordeon}" as="data_item" iteration="i">
+                        <div class="card">
+                            <div class="card-header" id="akkord-header-{i.cycle}">
+                                <button class="btn color_dpurple" type="button" data-toggle="collapse" data-target="#akkord-content-{i.cycle}" aria-expanded="false"
+                                    aria-controls="akkord-content-{i.cycle}">
+                                    {data_item.data.tx_jsdmodule_title}
+                                </button>
+                            </div>
+                            <div class="card-content collapse" id="akkord-content-{i.cycle}" aria-labelledby="akkord-header-{i.cycle}" data-parent="#akkordeon-{data.uid}">
+                                <div class="content-wrap"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_content}</f:format.html></div>
+                            </div>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>

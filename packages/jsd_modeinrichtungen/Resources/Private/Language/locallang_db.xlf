@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-10T13:45:16Z" product-name="jsd_modeinrichtungen">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions">
+				<source>Institutions</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.ekomiauth">
+				<source>Ekomiauth</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.rootpage">
+				<source>Rootpage</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.listpage">
+				<source>Listpage</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.house_number">
+				<source>House Number</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.boost_one">
+				<source>Boost One</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.boost_two">
+				<source>Boost Two</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_detail_presse">
+				<source>Pid Detail Presse</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_list_presse">
+				<source>Pid List Presse</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_list_presseschau">
+				<source>Pid List Presseschau</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_detail_veranstaltungen">
+				<source>Pid Detail Veranstaltungen</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_list_veranstaltungen">
+				<source>Pid List Veranstaltungen</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_detail_fachveranstaltungen">
+				<source>Pid Detail Fachveranstaltungen</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_list_fachveranstaltungen">
+				<source>Pid List Fachveranstaltungen</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_detail_career">
+				<source>Pid Detail Career</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.pid_list_career">
+				<source>Pid List Career</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.location_latitude">
+				<source>Location Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.location_longitude">
+				<source>Location Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.stadt">
+				<source>Stadt</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.bezirk">
+				<source>Bezirk</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.bundesland">
+				<source>Bundesland</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.sections_select">
+				<source>Sections Select</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.typ">
+				<source>Typ</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.bereich">
+				<source>Bereich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutions.fbereich">
+				<source>Fbereich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections">
+				<source>Sections</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections.ekomiidentifier">
+				<source>Ekomiidentifier</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections.rootpage">
+				<source>Rootpage</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections.listpage">
+				<source>Listpage</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_sections.institution">
+				<source>Institution</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_ttcontent">
+				<source>Ttcontent</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_ttcontent.jsd_teaser_einrichtung_select">
+				<source>Jsd Teaser Einrichtung Select</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_ttcontent.jsd_einrichtungen">
+				<source>Jsd Einrichtungen</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_ttcontent.jsd_bereiche">
+				<source>Jsd Bereiche</source>
+			</trans-unit>
+			<trans-unit id="tt_content.tx_extbase_type.Tx_JsdModeinrichtungen_Ttcontent">
+				<source>JSD Modul Einrichtungen Ttcontent</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutiontypes">
+				<source>Institution Types</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutiontypes.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutiontypes.types">
+				<source>Types</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_institutiontypes.bereich">
+				<source>Bereich</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_locations">
+				<source>Locations</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_locations.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdmodeinrichtungen_domain_model_locations.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_teaser.name">
+				<source>Modul: Einrichtungs-Teaser</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_teaser.description">
+				<source>Einrichtung als Slider oder Teaser wählen und anzeigen lassen.</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_ekomiwidget.name">
+				<source>Modul: Bewertungstool (Widget)</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_ekomiwidget.description">
+				<source>Anzeige der eKomi Kundenbewertungen auf den  Einrichtungsseiten als Widget.</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_ekomilist.name">
+				<source>Modul: Bewertungstool (Liste)</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_modeinrichtungen_ekomilist.description">
+				<source>Anzeige der eKomi Kundenbewertungen auf den  Einrichtungsseiten als Liste.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

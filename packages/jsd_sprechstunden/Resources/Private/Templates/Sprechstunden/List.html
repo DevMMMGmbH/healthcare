@@ -1,0 +1,118 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+    <f:comment>
+        <f:for each="{sprechstunden}" as="sprechstunde">
+                {sprechstunde.auswahlname}
+                {sprechstunde.title}
+                {sprechstunde.einrichtung}
+                {sprechstunde.gglmaplink}
+                {sprechstunde.beschreibung}
+                {sprechstunde.terminTitle}
+                {sprechstunde.terminEmailTitle}
+                {sprechstunde.terminEmailLink}
+                {sprechstunde.terminLinkTitle}
+                {sprechstunde.terminLink}
+                {sprechstunde.terminTelLink}
+                {sprechstunde.terminTel}
+                {sprechstunde.terminZeitenTitle}
+                {sprechstunde.terminZeiten}
+        </f:for>
+    </f:comment>
+
+    <f:if condition="{sprechstunden}">
+        <div class="mod_sprechstunde" id="c{data.uid}">
+            <div class="row">
+                <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+            </div>
+            <div class="row kk_content">
+                <f:if condition="{data.header}">
+                    <div class="col-xs-12 offset-xs-2">
+                        <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+                    </div>
+                </f:if>
+                <f:comment>
+                    <!-- TODO collapse inside slick slider autoheight -->
+                </f:comment>
+                <div class="col-xs-16 slick" data-slick-class="slick-c{data.uid}" id="t-parent-{data.uid}">
+                    <div class="row slick-c{data.uid}" data-slick='{"autoplay":false, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                        <f:for each="{sprechstunden}" as="item" iteration="i">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-xs-14 offset-xs-1 col-md-12 offset-md-1 col-lg-10 offset-lg-1 info">
+                                        <h3 class="header color_white">{item.title}</h3>
+                                        <f:if condition="{item.einrichtung} && {item.gglmaplink}">
+                                            <p class="color_white bold mapslink"><f:link.typolink parameter="{item.gglmaplink}" class="color_white bold">{item.einrichtung}</f:link.typolink></p>
+                                        </f:if>
+                                        <div class="rtetext color_white"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{item.beschreibung}</f:format.html></div>
+                                        <f:if condition="{item.terminTitle}">
+                                            <f:then><h4 class="color_white d-none d-md-block">{item.terminTitle}</h4></f:then>
+                                            <f:else><h4 class="color_white d-none d-md-block">Terminvereinbarung</h4></f:else>
+                                        </f:if>
+                                        <div class="d-md-none toggle-bt">
+                                            <button data-toggle="collapse" data-target="#t-box-{data.uid}_links-{i.cycle}" class="color_white bold links">{item.terminTitle}</button>
+                                        </div>
+                                        <div class="termin-links color_white d-md-block collapse" id="t-box-{data.uid}_links-{i.cycle}" data-parent="#t-parent-{data.uid}">
+                                            <f:if condition="{item.terminLink}">
+                                                <f:link.typolink parameter="{item.terminLink}" class="bold link">{item.terminLinkTitle}</f:link.typolink>
+                                            </f:if>
+                                            <f:if condition="{item.terminEmailLink}">
+                                                <f:link.typolink parameter="{item.terminEmailLink}" class="bold email">{item.terminEmailTitle}</f:link.typolink>
+                                            </f:if>
+                                            <f:if condition="{item.terminTelLink}">
+                                                <f:link.typolink parameter="{item.terminTelLink}" class="bold tel">{item.terminTel}</f:link.typolink>
+                                            </f:if>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-14 offset-xs-1 col-md-6 offset-md-0 col-lg-5 offset-lg-0 col-xl-4 offset-xl-0 zeiten">
+                                        <f:if condition="{item.terminZeitenTitle}">
+                                            <f:then><h4 class="color_dpurple d-none d-md-block">{item.terminZeitenTitle}</h4></f:then>
+                                            <f:else><h4 class="color_dpurple d-none d-md-block">Öffnungszeiten</h4></f:else>
+                                        </f:if>
+                                        <div class="d-md-none toggle-bt">
+                                            <button data-toggle="collapse" data-target="#t-box-{data.uid}_zeiten-{i.cycle}" class="color_white bold zeiten">{item.terminZeitenTitle}</button>
+                                        </div>
+                                        <div class="color_dpurple d-md-block collapse" id="t-box-{data.uid}_zeiten-{i.cycle}" data-parent="#t-parent-{data.uid}">
+                                            <div class="zeiten-content">
+                                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{item.terminZeiten}</f:format.html></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </f:for>
+                    </div>
+                    <f:if condition="{data.header_link} || {sprechstunden -> f:count()} > 1">
+                        <div class="row nav">
+                            <div class="col-xs-14 offset-xs-1 col-md-7 order-xs-2 order-md-1">
+                                <f:link.page pageUid="{data.header_link}" class="btn button-dpurple_0-2 css-trans_all">{data.subheader}</f:link.page>
+                                <a href="#" class="btn button-dpurple_0-2 p-holder">&nbsp;</a>
+                            </div>
+                            <div class="col-xs-14 offset-xs-1 col-md-7 offset-md-0 col-lg-6 offset-lg-0 order-xs-1 order-md-2">
+                                <f:if condition="{sprechstunden -> f:count()} > 1">
+                                    <div class="carousel-indicators d-md-none slick-dots-c{data.uid}"></div>
+                                    <div class="carousel-control-prev-next d-none d-md-inline-block slick-c{data.uid}-navi">
+                                        <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev"><span
+                                                class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                                        </button>
+                                        <span class="count">
+                                            <b><span class="num"></span></b>/{sprechstunden -> f:count()}
+                                        </span>
+                                        <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next"><span
+                                                class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                                        </button>
+                                    </div>
+                                </f:if>
+                            </div>
+                        </div>
+                    </f:if>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+            </div>
+        </div>
+    </f:if>
+
+</f:section>
+</html>

@@ -1,0 +1,105 @@
+#############################################
+#### DYNAMIC MENU LIB FOR USAGE IN FLUID ####
+#############################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: '3422,3423,3424', type: 'directory', class: 'cssclass'}" />
+#
+#
+lib.dynamicMenu = COA
+lib.dynamicMenu {
+    5 = LOAD_REGISTER
+    5 {
+        uid.cObject = TEXT
+        uid.cObject {
+            field = uid
+            ifEmpty = 1
+        }
+        type.cObject = TEXT
+        type.cObject {
+            field = type
+            ifEmpty = list
+        }
+        level.cObject = TEXT
+        level.cObject {
+            field = level
+            ifEmpty = 1
+        }
+        class.cObject = TEXT
+        class.cObject {
+            field = class
+            ifEmpty = default
+        }
+    }
+
+    10 = HMENU
+    10.stdWrap.if {
+        equals.data = register:level
+        value = 1
+    }
+    10.if {
+        equals.data = register:type
+        value = directory
+    }
+    10 {
+        special = directory
+        special.value = {register:uid}
+        special.value.insertData = 1
+        wrap = <div class="{register:class}">|</div>
+        wrap.insertData = 1
+        1 = TMENU
+        1 {
+            expAll = 1
+            wrap = <ul class="sub-ul-1 list-unstyled">|</ul>
+            wrap.insertData = 1
+
+            NO {
+                // linkWrap = <span class="dir">|</span>
+                ATagParams =
+                ATagParams.insertData = 1
+                stdWrap.field = title // subtitle // description
+                stdWrap.field.htmlSpecialChars = 1
+                ATagTitle.field = title // subtitle // description
+                allStdWrap.insertData = 1
+                wrapItemAndSub = <li class="sub-li-1" data-submenu-id="sub-ul-2_{field:uid}">|</li>
+                wrapItemAndSub.insertData = 1
+            }
+
+            CUR {
+                linkWrap = <li title="{field:title // field:subtitle // field:description}">|</li>
+                ATagParams = class="active"
+                linkWrap.htmlSpecialChars = 1
+                doNotLinkIt = 0
+                allStdWrap.insertData = 1
+            }
+        }
+    }
+
+    12 < .10
+    12.stdWrap.if {
+        equals.data = register:level
+        value = 2
+    }
+    12 {
+        2 < .1
+    }
+
+    13 < .10
+    13.stdWrap.if {
+        equals.data = register:level
+        value = 3
+    }
+    13 {
+        2 < .1
+        3 < .1
+    }
+
+    20 < .10
+    20.if.value = list
+    20.special = list
+
+    90 = RESTORE_REGISTER
+}
+
+

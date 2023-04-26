@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="geldstapel_neu.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 529.16666 299.77293" height="1133" width="2000">
+  <defs id="defs2"></defs>
+  <metadata id="metadata5"></metadata>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+    <g transform="matrix(2.8431098,0,0,2.8431098,-146.42015,-147.92929)" id="g209" style="fill:#24195d;fill-opacity:1">
+      <path class="st0" d="m 94.5,82.4 v 6.2 c 0,3.2 -9.6,5.8 -21.5,5.8 -11.8,0 -21.5,-2.6 -21.5,-5.8 v -6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.9,-0.1 21.5,-2.7 21.5,-5.9 z m 0,-1.2 c 0,3.2 -9.6,5.9 -21.5,5.9 -11.8,0 -21.5,-2.6 -21.5,-5.9 0,-3.2 9.6,-5.9 21.5,-5.9 11.9,0 21.5,2.7 21.5,5.9 z M 83.4,80.9 64.6,79.6 64,80.8 l 0.7,0.1 c 1,0.1 2.2,0.4 1.6,1.4 l -0.2,0.3 3.5,0.2 0.2,-0.3 C 70,82.1 70.1,81.7 70,81.4 l 12.7,0.9 z M 73,96.1 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.8 21.5,5.8 11.8,0 21.5,-2.6 21.5,-5.8 v -6.2 c 0,3.2 -9.6,5.9 -21.5,5.9 z m 0,7.8 c -11.8,0 -21.5,-2.6 -21.5,-5.8 v 6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.8,0 21.5,-2.6 21.5,-5.9 v -6.2 c 0,3.2 -9.6,5.8 -21.5,5.8 z m 0,7.8 c -11.8,0 -21.5,-2.6 -21.5,-5.8 v 6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.8,0 21.5,-2.6 21.5,-5.9 v -6.2 c 0,3.2 -9.6,5.8 -21.5,5.8 z m 0,7.6 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.8 21.5,5.8 11.8,0 21.5,-2.6 21.5,-5.8 v -6.2 c 0,3.3 -9.6,5.9 -21.5,5.9 z m 0,7.7 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.8 21.5,5.8 11.8,0 21.5,-2.6 21.5,-5.8 v -6.2 c 0,3.3 -9.6,5.9 -21.5,5.9 z M 97.5,82.8 h 0.2 V 83 c 3.4,0.6 7.5,1 11.9,1 11.8,0 21.5,-2.6 21.5,-5.8 V 72 c 0,3.2 -9.6,5.9 -21.5,5.9 -11.8,0 -21.5,-2.6 -21.5,-5.9 v 2.3 c 5.1,1.2 9.6,3.5 9.6,7.4 -0.1,0.3 -0.1,0.7 -0.2,1.1 z M 88.1,70.7 c 0,-3.2 9.6,-5.9 21.5,-5.9 11.8,0 21.5,2.6 21.5,5.9 0,3.2 -9.6,5.9 -21.5,5.9 C 97.7,76.5 88.1,73.9 88.1,70.7 Z m 11,0.3 18.8,1.3 0.6,-1.2 -0.7,-0.1 c -1,-0.1 -2.2,-0.4 -1.6,-1.4 l 0.2,-0.3 -3.4,-0.3 -0.2,0.3 c -0.2,0.4 -0.3,0.8 -0.2,1.1 L 99.9,69.5 Z m 10.4,20.8 c 11.8,0 21.5,-2.6 21.5,-5.8 v -6.2 c 0,3.2 -9.6,5.9 -21.5,5.9 -4.4,0 -8.5,-0.4 -11.9,-1 V 89 c 0,0.6 -0.1,1.1 -0.3,1.6 h 0.3 v 0.2 c 3.4,0.6 7.5,1 11.9,1 z m -11.9,6.7 v 0.2 c 3.4,0.6 7.5,1 11.9,1 11.8,0 21.5,-2.6 21.5,-5.9 v -6.2 c 0,3.2 -9.6,5.9 -21.5,5.9 -4.4,0 -8.5,-0.4 -11.9,-1 v 4.4 c 0,0.6 -0.1,1.1 -0.3,1.6 z m 33.4,2.4 v -5.6 c 0,2 -3.5,3.7 -8.9,4.7 2.3,0.1 5.6,0.4 8.9,0.9 z M 97.6,104 c 2.1,-1.4 5.2,-2.3 8.4,-2.9 -3.1,-0.1 -5.9,-0.4 -8.4,-0.9 z m 21.2,11.2 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.8,0 21.5,-2.6 21.5,-5.9 v -6.2 c -0.1,3.3 -9.7,5.9 -21.5,5.9 z m 0,-12.9 c 11.8,0 21.5,2.6 21.5,5.9 0,3.2 -9.6,5.9 -21.5,5.9 -11.8,0 -21.5,-2.6 -21.5,-5.9 0,-3.3 9.6,-5.9 21.5,-5.9 z m 3.1,5.7 -12.7,-0.9 -0.8,1.4 18.8,1.3 0.6,-1.2 -0.7,-0.1 c -1,-0.1 -2.2,-0.4 -1.6,-1.4 l 0.2,-0.3 -3.5,-0.2 -0.2,0.3 c -0.1,0.4 -0.2,0.8 -0.1,1.1 z m -3.1,15 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.8,0 21.5,-2.6 21.5,-5.9 v -6.2 c -0.1,3.3 -9.7,5.9 -21.5,5.9 z m 0,7.9 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.9 21.5,5.9 11.8,0 21.5,-2.6 21.5,-5.9 V 125 c -0.1,3.3 -9.7,5.9 -21.5,5.9 z m 0,7.7 c -11.8,0 -21.5,-2.6 -21.5,-5.9 v 6.2 c 0,3.2 9.6,5.8 21.5,5.8 11.8,0 21.5,-2.6 21.5,-5.8 v -6.2 c -0.1,3.3 -9.7,5.9 -21.5,5.9 z m 0,0" id="path207" style="fill:#24195d;fill-opacity:1"></path>
+    </g>
+    <rect style="fill:#24195d;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583" id="rect399" width="226.78572" height="223.7619" x="-386.28903" y="-777.01752"></rect>
+  </g>
+  <style type="text/css" id="style10">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style56">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style72">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style123">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style153">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style166">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style205">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style221">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#E7E7E8;}
+</style>
+  <style type="text/css" id="style272">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style288">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style307">
+	.st0{fill:#003D7C;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4.6275;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style353">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style377">
+	.st0{fill:#003D7C;}
+	.st1{fill:#003D7C;stroke:#FFFFFF;stroke-width:5.1045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <style type="text/css" id="style411">
+	.st0{fill:#003D7C;}
+</style>
+</svg>

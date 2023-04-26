@@ -1,0 +1,53 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <el>
+            <settings.teaserHeader>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Überschrift:</label>
+                    <config>
+                        <type>input</type>
+                        <eval>trim,required</eval>
+                        <max>40</max>
+                        <size>20</size>
+                        <placeholder>Unsere Einrichtungen</placeholder>
+                    </config>
+                </TCEforms>
+            </settings.teaserHeader>
+            <settings.teaserOption>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Anzeige als:</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Liste</numIndex>
+                                <numIndex index="1">0</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Slider</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </settings.teaserOption>
+            <settings.teaserListlink>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Link zu weiteren Einrichtungen (Liste):</label>
+                    <config>
+                        <type>input</type>
+                        <renderType>inputLink</renderType>
+                        <autocomplete>true</autocomplete>
+                    </config>
+                </TCEforms>
+            </settings.teaserListlink>
+        </el>
+    </ROOT>
+</T3DataStructure>

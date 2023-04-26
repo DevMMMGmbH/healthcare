@@ -1,0 +1,150 @@
+# ==============================================
+# FE-Plugin configuration for EXT:dp_cookieconsent
+# ==============================================
+plugin.dp_cookieconsent {
+    view {
+        templateRootPaths {
+            0 = EXT:dp_cookieconsent/Resources/Private/Templates/
+            1 = {$plugin.tx_cookieconsent.view.templateRootPath}
+        }
+         partialRootPaths {
+            0 = EXT:dp_cookieconsent/Resources/Private/Partials/
+            1 = {$plugin.tx_cookieconsent.view.partialRootPath}
+            10 = EXT:jsd_theme/Resources/Private/Extensions/dp_cookieconsent/Partials/
+        }
+        layoutRootPaths {
+            0 = EXT:dp_cookieconsent/Resources/Private/Layouts/
+            1 = {$plugin.tx_cookieconsent.view.layoutRootPath}
+            10 = EXT:jsd_theme/Resources/Private/Extensions/dp_cookieconsent/Layouts/
+        }
+    }
+
+    settings {
+        url = {$plugin.tx_cookieconsent.settings.url}
+        target = {$plugin.tx_cookieconsent.settings.target}
+        autoOpen = {$plugin.tx_cookieconsent.settings.autoOpen}
+        theme = {$plugin.tx_cookieconsent.settings.theme}
+        position = {$plugin.tx_cookieconsent.settings.position}
+        dismissOnScroll = {$plugin.tx_cookieconsent.settings.dismissOnScroll}
+        type = {$plugin.tx_cookieconsent.settings.type}
+        layout = {$plugin.tx_cookieconsent.settings.layout}
+        revokable = {$plugin.tx_cookieconsent.settings.revokable}
+
+        checkboxes {
+            statistics = {$plugin.tx_cookieconsent.settings.statistics}
+            marketing = {$plugin.tx_cookieconsent.settings.marketing}
+        }
+
+        overlay {
+            notice = {$plugin.tx_cookieconsent.settings.overlay.notice}
+            box {
+                background = {$plugin.tx_cookieconsent.settings.overlay.box.background}
+                text = {$plugin.tx_cookieconsent.settings.overlay.box.text}
+            }
+            button {
+                background = {$plugin.tx_cookieconsent.settings.overlay.button.background}
+                text = {$plugin.tx_cookieconsent.settings.overlay.button.text}
+            }
+        }
+
+        palette {
+            popup {
+                background = {$plugin.tx_cookieconsent.settings.palette.popup.background}
+                text = {$plugin.tx_cookieconsent.settings.palette.popup.text}
+            }
+            button {
+                background = {$plugin.tx_cookieconsent.settings.palette.button.background}
+                text = {$plugin.tx_cookieconsent.settings.palette.button.text}
+            }
+        }
+    }
+}
+
+lib.dp_cookieconsent = FLUIDTEMPLATE
+lib.dp_cookieconsent {
+    file = EXT:dp_cookieconsent/Resources/Private/Layouts/Cookie.html
+
+    templateRootPaths < plugin.dp_cookieconsent.view.templateRootPaths
+    partialRootPaths < plugin.dp_cookieconsent.view.partialRootPaths
+    layoutRootPaths < plugin.dp_cookieconsent.view.layoutRootPaths
+
+    settings < plugin.dp_cookieconsent.settings
+}
+
+page {
+    includeCSS {
+        dp_cookieconsent = EXT:dp_cookieconsent/Resources/Public/css/dp_cookieconsent.css
+    }
+
+    includeJSFooter {
+        dp_cookieconsent = EXT:dp_cookieconsent/Resources/Public/JavaScript/dp_cookieconsent.js
+    }
+
+    headerData {
+        998 = COA
+        998 {
+            # Modify Google Tag-Manager & Piwiki from CS_SEO
+            10 = COA
+            10 {
+                wrap = <script data-ignore="1" data-cookieconsent="statistics" type="text/plain">|</script>
+                required = 1
+
+                10 < page.jsInline.654
+            }
+            # Add Consent Config to Script
+            20 < lib.dp_cookieconsent
+        }
+
+        # cs_seo hook
+        657 {
+            # Modify Google Analytics from CS_SEO
+            10 {
+                stdWrap.replacement  {
+                    10 {
+                        search = <script
+                        replace = <script data-ignore="1" data-cookieconsent="statistics" type="text/plain"
+                    }
+                    20 {
+                        search = src=
+                        replace = data-src=
+                    }
+                }
+            }
+            # Modify Google Analytics from CS_SEO
+            20 {
+                stdWrap.replacement  {
+                    10 {
+                        search = <script
+                        replace = <script data-ignore="1" data-cookieconsent="statistics" type="text/plain"
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+# Remove Original Google Tag-Manager & Piwiki from CS_SEO
+page.jsInline.654 >
+
+
+plugin.tx_dp_cookieconsent._LOCAL_LANG.default {
+    message = LLL: Wir setzen Cookies ein, um Informationen über Ihren Besuch zu speichern. Cookies, darunter die von Drittanbietern, helfen uns, unsere Website zu verbessern, um Ihnen das bestmögliche Erlebnis auf unserer Website zu bieten, und Ihnen auf Ihre Interessen zugeschnittene Angebote zu machen. Durch Nutzung unserer Website erklären Sie sich mit der Verwendung dieser Cookies einverstanden. Weitere Informationen hierzu finden Sie in unserer
+
+    dismiss = LLL: Auswahl erlauben
+    allowall = LLL: Alle akzeptieren
+    allow = LLL: Auswahl erlauben
+    link = LLL: Datenschutzerklärung
+    deny = LLL: Alle Cookies ablehnen
+
+    # Checkbox labels
+    dpRequire = LLL: Notwendig
+    dpStatistik = LLL: Statistik
+    dpMarketing = LLL: Marketing & Social Media
+
+    # Iframe Overlay text
+    media.notice = XXX
+    media.desc = XXX
+    media.btn = XXX
+}
+plugin.tx_dp_cookieconsent._LOCAL_LANG.en < plugin.tx_dp_cookieconsent._LOCAL_LANG.default

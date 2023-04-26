@@ -1,0 +1,54 @@
+<f:if condition="{data.tx_mask_linkliste}">
+    <div class="mod_linkliste" id="c{data.uid}">
+        <div class="row">
+            <div class="col-sm-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row">
+            <f:if condition="{data.header}">
+                <div class="col-sm-14 offset-sm-2">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+                </div>
+            </f:if>
+            <div class="col-sm-14 offset-sm-1">
+                <div class="row">
+
+                    <f:for each="{data.tx_mask_linkliste}" as="data_item" iteration="i">
+                        <f:if condition="{i.cycle % 2}">
+                            <f:then>
+                                <div class="col-sm-14 offset-sm-1 col-md-14 offset-md-1 col-lg-7 offset-lg-1 col-lg_max-w_sub-1-2-grid">
+                                    <f:if condition="{i.cycle} == 1">
+                                        <hr class="bg_dpurple_0-5 d-none d-sm-block">
+                                    </f:if>
+                            </f:then>
+                            <f:else>
+                                <div class="col-sm-14 offset-sm-1 col-md-14 offset-md-1 col-lg-7 offset-lg-1 col-lg_max-w_sub-1-2-grid offset-lg_1-2">
+                                    <f:if condition="{i.cycle} == 2">
+                                        <hr class="bg_dpurple_0-5 d-none d-lg-block">
+                                    </f:if>
+                            </f:else>
+                        </f:if>
+                            <div class="links css-trans_all">
+                                <f:link.typolink parameter="{data_item.tx_mask_link}" class="flagline color_dpurple css-trans_all {f:if(condition: '{data_item.tx_mask_link_type} == 1', then: 'icon icon-ext', else: 'icon')}">
+                                    {data_item.tx_mask_title}
+                                </f:link.typolink>
+                                <f:if condition="{data_item.tx_mask_link_text}">
+                                    <p class="color_dpurple"><f:format.nl2br>{data_item.tx_mask_link_text}</f:format.nl2br></p>
+                                </f:if>
+                            </div>
+                            <hr class="bg_dpurple_0-5">
+                        </div>
+                    </f:for>
+
+                </div>
+            </div>
+            <f:if condition="{data.subheader}">
+            <div class="col-sm-16 d-flex justify-content-center">
+                <f:link.typolink parameter="{data.header_link}" class="btn button-dpurple_0-2 css-trans_all" additionalAttributes="{role:'button'}">{data.subheader}</f:link.typolink>
+            </div>
+            </f:if>
+        </div>
+        <div class="row">
+            <div class="col-sm-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>

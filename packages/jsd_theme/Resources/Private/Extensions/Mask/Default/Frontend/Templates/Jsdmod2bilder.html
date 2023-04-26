@@ -1,0 +1,10 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:for each="{data.image}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>

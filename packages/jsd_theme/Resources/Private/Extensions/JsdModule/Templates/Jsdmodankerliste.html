@@ -1,0 +1,49 @@
+<div class="mod_linkliste mod_ankerliste" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content">
+        <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+        </f:if>
+        <div class="col-xs-12 offset-xs-2">
+            <div class="row justify-content-between">
+                <f:for each="{data_tx_jsdmodule_ankerliste}" as="page">
+                    <f:for each="{page.content}" as="element" iteration="i">
+                        <f:if condition="{element.data.header}">
+                            <f:cycle values="{0:'left', 1:'right'}" as="order">
+                                <f:switch expression="{order}">
+                                    <f:case value="left">
+                                        <div class="col-xs-16 col-lg-8 col-lg-8_justify-between_sub-1-2-col">
+                                            <f:if condition="{i.cycle} == 1">
+                                                <hr class="bg_dpurple_0-5 d-none d-xs-block">
+                                            </f:if>
+                                    </f:case>
+                                    <f:case value="right">
+                                        <div class="col-xs-16 col-lg-8 col-lg-8_justify-between_sub-1-2-col">
+                                            <f:if condition="{i.cycle} == 2">
+                                                <hr class="bg_dpurple_0-5 d-none d-lg-block">
+                                            </f:if>
+                                    </f:case>
+                                </f:switch>
+                            </f:cycle>
+                                <div class="links">
+                                    <f:variable name="replacedChar"><f:cObject typoscriptObjectPath="lib.dynamicReplace" data="{string: element.data.header, search: '<br>', replaceChar: 32}" /></f:variable>
+                                    {replacedChar -> f:format.stripTags() -> f:variable(name: 'title')}
+                                    <a href="{page.link}#c{element.data.uid}" {f:if(condition: page.target, then: ' target="{page.target}"' )} title="{title}" class="icon css-trans_all flagline color_dpurple bold">{title}</a>
+                                </div>
+                                <hr class="bg_dpurple_0-5 d-none d-xs-block">
+                            </div>
+                        </f:if>
+                    </f:for>
+                </f:for>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+

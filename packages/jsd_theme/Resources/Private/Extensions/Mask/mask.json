@@ -1,0 +1,4504 @@
+{
+    "version": "7.2.0",
+    "tables": {
+        "sys_file_reference": {
+            "sql": {
+                "tx_mask_einrichtungimage": {
+                    "sys_file_reference": {
+                        "tx_mask_einrichtungimage": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_einrichtunglogo": {
+                    "sys_file_reference": {
+                        "tx_mask_einrichtunglogo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_file": {
+                    "sys_file_reference": {
+                        "tx_mask_file": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footer_sm_icons": {
+                    "sys_file_reference": {
+                        "tx_mask_footer_sm_icons": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footer_teaser": {
+                    "sys_file_reference": {
+                        "tx_mask_footer_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_logo": {
+                    "sys_file_reference": {
+                        "tx_mask_footereinrichtung_gb_logo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_kontakt_tel": {
+                    "sys_file_reference": {
+                        "tx_mask_footereinrichtung_kontakt_tel": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_sm_icons": {
+                    "sys_file_reference": {
+                        "tx_mask_footereinrichtung_sm_icons": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_teaser": {
+                    "sys_file_reference": {
+                        "tx_mask_footereinrichtung_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image": {
+                    "sys_file_reference": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_kontakt_image": {
+                    "sys_file_reference": {
+                        "tx_mask_kontakt_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            }
+        },
+        "tt_content": {
+            "elements": {
+                "jsdmod2bilder": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "image"
+                    ],
+                    "description": "Das Modul lockert inhaltsreiche Seiten visuell auf und emotionalisiert sie durch den Einsatz von Bildern.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmod2bilder",
+                    "label": "Modul: 2-Bilder",
+                    "labels": [
+                        "",
+                        "",
+                        "Bilder (max. 2):"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmod3erteaser": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_teaser"
+                    ],
+                    "description": "Der Anschlussteaser bietet die M\u00f6glichkeit, dem Nutzer weitere, f\u00fcr ihn ggf. interessante Inhalte zu finden.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmod3erteaser",
+                    "label": "Modul: 3-er-Teaser \/ Fakten",
+                    "labels": [
+                        "",
+                        "",
+                        "3-er-Teaser oder Fakten:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodakkordeon": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_akkordeon"
+                    ],
+                    "description": "Das Modul bietet die M\u00f6glichkeit, viele Inhalte (z.B. Krankheiten oder Leistungen) kompakt und \u00fcbersichtlich darzustellen.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodakkordeon",
+                    "label": "Modul: Akkordeon",
+                    "labels": [
+                        "",
+                        "",
+                        "Akkordeon Elemente:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodankerliste": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout"
+                    ],
+                    "description": "Die Ankerlinks sollen dem Nutzer auf langen Seiten erm\u00f6glichen, direkt zum Inhalt zu springen, der f\u00fcr ihn relevant ist.",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodankerliste",
+                    "label": "Modul: Ankerliste",
+                    "labels": [
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbereichsteaser": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_bereichsteaser"
+                    ],
+                    "description": "Einblick in die wichtigen Bereiche der JoDia-Website.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbereichsteaser",
+                    "label": "Modul: Bereichsteaser",
+                    "labels": [
+                        "",
+                        "",
+                        "Bereichsteaser:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbildergalerie": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_options",
+                        "tx_mask_bildergalerie"
+                    ],
+                    "description": "Kann auf Bereichs-, Einrichtungs- und Deteilseiten eingebettet werden. Erm\u00f6glicht die Darstellung von max. 10 Bildern.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbildergalerie",
+                    "label": "Modul: Bildergalerie \/ Bildergalerie mit Text",
+                    "labels": [
+                        "",
+                        "",
+                        "Anzeigeoption:",
+                        "Bildergalerie:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbilderkachel": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "header_link",
+                        "subheader",
+                        "tx_mask_bilderkachel"
+                    ],
+                    "description": "Das Bilder-Kachel-Modul dient der \u00fcbersichtlichen Darstellung von Leistungen zu jeder Einrichtung.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbilderkachel",
+                    "label": "Modul: Bilder-Kachel",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Bilder-Kacheln:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbildslider": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_image_slider"
+                    ],
+                    "description": "Die B\u00fchne der Startseite soll User der JoDia-Website begr\u00fc\u00dfen und direkt dazu inspirieren in weitere Themen einzutauchen.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbildslider",
+                    "label": "Modul: B\u00fchne 1 Slider",
+                    "labels": [
+                        "",
+                        "",
+                        "Bild Slider:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbildtextteaser": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_bild_text_teaser"
+                    ],
+                    "description": "Der Bild-Text-Teaser kann dazu genutzt werden, um weiterf\u00fchrende Artikelseiten prominent hervorzuheben.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbildtextteaser",
+                    "label": "Modul: HIS Bild-Text-Teaser",
+                    "labels": [
+                        "",
+                        "",
+                        "Bild-Text-Teaser:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbuehnedetailseite": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "bodytext",
+                        "image",
+                        "subheader"
+                    ],
+                    "description": "Die B\u00fchne der Detailseite, mit und ohne B\u00fchnen-Bild, sollte Lust machen sich mit den Inhalten auseinanderzusetzen.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbuehnedetailseite",
+                    "label": "Modul: B\u00fchne 2 Detailseite",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Youtube Video-ID (hinter v=):"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodbutton": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_link",
+                        "subheader"
+                    ],
+                    "description": "Modul zur Anzeige eines fest positionierten Buttons \u00fcber dem Seiteninhalt im unteren Bereich der Seite",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodbutton",
+                    "label": "Modul: Button",
+                    "labels": [
+                        "Button Titel",
+                        "Button Link",
+                        "Extra CSS Klasse (Team-O-Mat, etc.)"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmoddownload": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_downloads"
+                    ],
+                    "description": "Innerhalb dieses Moduls k\u00f6nnen Dokumente zum Download zur Verf\u00fcgung gestellt werden. (PDF, Word, ZIP-Dateien)",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmoddownload",
+                    "label": "Modul: Download",
+                    "labels": [
+                        "",
+                        "",
+                        "Dateien:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodfooter": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_footer"
+                    ],
+                    "description": "Im Footer sind Schnellzugriffe, die komprimierte Sitemap sowie  Teilen-, Drucken - bzw. Social-Mediafunktionen zu finden.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodfooter",
+                    "label": "Modul: Footer (Global)",
+                    "labels": [
+                        "",
+                        "",
+                        "Footer Element (Global):"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodfootereinrichtung": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_footereinrichtung"
+                    ],
+                    "description": "Der Begriff Footer bezeichnet die Inhalte der Webseite, die sich am unteren Ende der Seite, also im Fu\u00dfbereich, befinden.",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodfootereinrichtung",
+                    "label": "Modul: Footer (Einrichtungsebene)",
+                    "labels": [
+                        "",
+                        "Footer Inhalt:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodgmapbvgyoutube": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_jsdmodgmapbvgyt"
+                    ],
+                    "description": "Das Modul dient zur Einbindung einer Google Map oder eines Youtube Videos.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodgmapbvgyoutube",
+                    "label": "Modul: Google Map \/ Youtube Video",
+                    "labels": [
+                        "",
+                        "",
+                        "Neues Element anlegen:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodhighlightteaser": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_highlight_teaser"
+                    ],
+                    "description": "Der Highlight-Teaser inszeniert besonders starke und wichtige Inhalte bildstark.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodhighlightteaser",
+                    "label": "Modul: Highlight-Teaser",
+                    "labels": [
+                        "",
+                        "",
+                        "Highlight-Teaser:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodinfobox": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_infobox"
+                    ],
+                    "description": "Das Modul dient der Vorteils- bzw. Mehrwertkommunikation.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodinfobox",
+                    "label": "Modul: Infobox",
+                    "labels": [
+                        "",
+                        "",
+                        "Vorteile:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodkontakt": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "image",
+                        "tx_mask_kontakt"
+                    ],
+                    "description": "Im Kontaktmodul k\u00f6nnen Einrichtungen kompakt die wichtigsten Wege darstellen, mit der Organisation in Kontakt zu treten.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodkontakt",
+                    "label": "Modul: Kontakt",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "Kontakt-Boxen:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodleistungen": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "header_link",
+                        "subheader",
+                        "tx_mask_leistungen"
+                    ],
+                    "description": "Im Leistungs-Modul kann die Johannesstift Diakonie sowie die Einrichtungen ihre Leistungen \u00fcbersichtlich und visuell prominent darstellen.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodleistungen",
+                    "label": "Modul: Leistungen",
+                    "labels": [
+                        "",
+                        "",
+                        "CTA-Button:",
+                        "Link-Titel:",
+                        "Leistungen:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodleitbild": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_leitbilder"
+                    ],
+                    "description": "Einrichtungen oder Werte und Standards einzelner Bereiche aufbereiten.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodleitbild",
+                    "label": "Modul: Leitbild",
+                    "labels": [
+                        "",
+                        "",
+                        "Leitbilder:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodlinkliste": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "subheader",
+                        "header_link",
+                        "tx_mask_linkliste"
+                    ],
+                    "description": "Die Linkliste f\u00fcr interne und externe Seiten gibt eine \u00dcbersicht \u00fcber weiterf\u00fchrende Inhalte.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodlinkliste",
+                    "label": "Modul: Linkliste",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "Linkliste:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodnavigation": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_navigation"
+                    ],
+                    "description": "Das Navigatios-Modul dient der Konfiguration von globalem Megamen\u00fc, Einrichtungsmen\u00fc und Footermen\u00fc.",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodnavigation",
+                    "label": "Modul: Navigation Header (global)",
+                    "labels": [
+                        "",
+                        "Navigation Header (global):"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodnavigationeinrichtung": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "subheader",
+                        "tx_mask_navigationeinrichtung"
+                    ],
+                    "description": "Die Subnavigation der Einrichtung ist neben der Hauptnavigation das wichtigste Navigationselement der Webseite.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodnavigationeinrichtung",
+                    "label": "Modul: Navigation \/ Subnavi Einrichtung",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        "Navigation: Einrichtung"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodpopup": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "image",
+                        "tx_mask_modpopup_close_pos",
+                        "tx_mask_modpopup_display",
+                        "tx_mask_modpopup_delay",
+                        "subheader",
+                        "tx_mask_modpopup_bgcolor"
+                    ],
+                    "description": "Diese Modul wird f\u00fcr das Thema \"St\u00f6rer bzw. Popup\" genutzt. Es kann auf jeder Seite eingebaut oder referenziert werden.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodpopup",
+                    "label": "Modul: Popup",
+                    "labels": [
+                        "",
+                        "",
+                        "Position: Close Button (X)",
+                        "Erscheinungszeitpunkt beim:",
+                        "Anzeige nach X Millisekunden (1000 ms = 1 s):",
+                        "Extra CSS Klasse (optional):",
+                        "Hintergrundfarbe (optional):"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 1
+                },
+                "jsdmodschnellzugriffsteaser": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_schnellzugriffsteaser"
+                    ],
+                    "description": "Der Schnellzugriffsteaser verlinkt zu den f\u00fcr den Nutzer wichtigsten Use Cases und damit verbundenen Services.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodschnellzugriffsteaser",
+                    "label": "Modul: Schnellzugriffsteaser",
+                    "labels": [
+                        "",
+                        "",
+                        "Schnellzugriffsteaser:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodseointrotext": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "bodytext"
+                    ],
+                    "description": "Intro Element, das immer am Seitenanfang eingesetzt wird. Dient als Orientierung und Suchmaschinenoptimierung.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodseointrotext",
+                    "label": "Modul: SEO-Intro-Text",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodsimplespeak": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_leichtsprache"
+                    ],
+                    "description": "Das Modul f\u00fcr Seiten mit Text und Bild in leichter Sprache.",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodsimplespeak",
+                    "label": "Modul: Leichte Sprache",
+                    "labels": [
+                        "",
+                        "Leichte Sprache Elemente:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodwarning": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_warnhinweise"
+                    ],
+                    "description": "Das Warnhinweis-Modul f\u00fcr aktuelle Warnhinweise.",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "hidden": 1,
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodwarning",
+                    "label": "Modul: Warnhinweis",
+                    "labels": [
+                        "",
+                        "Warnhinweise:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodzahltext": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "bodytext",
+                        "tx_mask_zahltext"
+                    ],
+                    "description": "Diese Modul wird genutzt, um zahlengetriebene Fakten und Infos, z.B. Anzahl der Mitarbeiter, Krankenh\u00e4user, abzubilden.",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodzahltext",
+                    "label": "Modul: Zahl-Text",
+                    "labels": [
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "jsdmodzitattext": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "header_layout",
+                        "tx_mask_zitattext"
+                    ],
+                    "description": "Diese Modul wird genutzt, um l\u00e4ngere Texte durch Zitate aufzulockern und dadurch auch etwas emotional aufzuladen.",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "jsdmodzitattext",
+                    "label": "Modul: Zitat-Text",
+                    "labels": [
+                        "\u00dcberschrift:",
+                        "Typ:",
+                        "Zitat und Text:"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_akkordeon": {
+                    "tt_content": {
+                        "tx_mask_akkordeon": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_bereichsteaser": {
+                    "tt_content": {
+                        "tx_mask_bereichsteaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_bild_text_teaser": {
+                    "tt_content": {
+                        "tx_mask_bild_text_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_bildergalerie": {
+                    "tt_content": {
+                        "tx_mask_bildergalerie": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_bilderkachel": {
+                    "tt_content": {
+                        "tx_mask_bilderkachel": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_downloads": {
+                    "tt_content": {
+                        "tx_mask_downloads": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footer": {
+                    "tt_content": {
+                        "tx_mask_footer": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung": {
+                    "tt_content": {
+                        "tx_mask_footereinrichtung": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_highlight_teaser": {
+                    "tt_content": {
+                        "tx_mask_highlight_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image_slider": {
+                    "tt_content": {
+                        "tx_mask_image_slider": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_infobox": {
+                    "tt_content": {
+                        "tx_mask_infobox": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_jsdmodgmapbvgyt": {
+                    "tt_content": {
+                        "tx_mask_jsdmodgmapbvgyt": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_kontakt": {
+                    "tt_content": {
+                        "tx_mask_kontakt": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_leichtsprache": {
+                    "tt_content": {
+                        "tx_mask_leichtsprache": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_leistungen": {
+                    "tt_content": {
+                        "tx_mask_leistungen": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_leitbilder": {
+                    "tt_content": {
+                        "tx_mask_leitbilder": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_linkliste": {
+                    "tt_content": {
+                        "tx_mask_linkliste": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_modpopup_bgcolor": {
+                    "tt_content": {
+                        "tx_mask_modpopup_bgcolor": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_modpopup_close_pos": {
+                    "tt_content": {
+                        "tx_mask_modpopup_close_pos": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_modpopup_delay": {
+                    "tt_content": {
+                        "tx_mask_modpopup_delay": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_modpopup_display": {
+                    "tt_content": {
+                        "tx_mask_modpopup_display": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_navigation": {
+                    "tt_content": {
+                        "tx_mask_navigation": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_navigationeinrichtung": {
+                    "tt_content": {
+                        "tx_mask_navigationeinrichtung": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_options": {
+                    "tt_content": {
+                        "tx_mask_options": "tinytext"
+                    }
+                },
+                "tx_mask_schnellzugriffsteaser": {
+                    "tt_content": {
+                        "tx_mask_schnellzugriffsteaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tt_content": {
+                        "tx_mask_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_warnhinweise": {
+                    "tt_content": {
+                        "tx_mask_warnhinweise": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_zahltext": {
+                    "tt_content": {
+                        "tx_mask_zahltext": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_zitattext": {
+                    "tt_content": {
+                        "tx_mask_zitattext": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "bodytext": {
+                    "coreField": 1,
+                    "fullKey": "bodytext",
+                    "key": "bodytext",
+                    "type": "richtext"
+                },
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "header_layout": {
+                    "coreField": 1,
+                    "fullKey": "header_layout",
+                    "key": "header_layout",
+                    "type": "select"
+                },
+                "header_link": {
+                    "coreField": 1,
+                    "fullKey": "header_link",
+                    "key": "header_link",
+                    "type": "link"
+                },
+                "image": {
+                    "coreField": 1,
+                    "fullKey": "image",
+                    "imageoverlayPalette": 1,
+                    "key": "image",
+                    "type": "file"
+                },
+                "subheader": {
+                    "coreField": 1,
+                    "fullKey": "subheader",
+                    "key": "subheader",
+                    "type": "string"
+                },
+                "tx_mask_akkordeon": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "both",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_akkordeon",
+                    "key": "akkordeon",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_bereichsteaser": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "3",
+                        "minitems": "3",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_bereichsteaser",
+                    "key": "bereichsteaser",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_bild_text_teaser": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_bild_text_teaser",
+                    "key": "bild_text_teaser",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_bildergalerie": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "both"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "999",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_bildergalerie",
+                    "key": "bildergalerie",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_bilderkachel": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "both",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_bilderkachel",
+                    "key": "bilderkachel",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_downloads": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "both"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_downloads",
+                    "key": "downloads",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_footer": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footer",
+                    "key": "footer",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_footereinrichtung": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_highlight_teaser": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_highlight_teaser",
+                    "key": "highlight_teaser",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_image_slider": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image_slider",
+                    "key": "image_slider",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_infobox": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "both",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "10",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_infobox",
+                    "key": "infobox",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_jsdmodgmapbvgyt": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "99",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_jsdmodgmapbvgyt",
+                    "key": "jsdmodgmapbvgyt",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_kontakt": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "both",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "5",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_kontakt",
+                    "key": "kontakt",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_leichtsprache": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "both",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_leichtsprache",
+                    "key": "leichtsprache",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_leistungen": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "both"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "8",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_leistungen",
+                    "key": "leistungen",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_leitbilder": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "8",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_leitbilder",
+                    "key": "leitbilder",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_linkliste": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "20",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_linkliste",
+                    "key": "linkliste",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_modpopup_bgcolor": {
+                    "config": {
+                        "renderType": "colorpicker",
+                        "size": 10,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_modpopup_bgcolor",
+                    "key": "modpopup_bgcolor",
+                    "type": "colorpicker"
+                },
+                "tx_mask_modpopup_close_pos": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            [
+                                "oben links",
+                                "pos_tl",
+                                "",
+                                ""
+                            ],
+                            [
+                                "oben rechts",
+                                "pos_tr",
+                                "",
+                                ""
+                            ],
+                            [
+                                "unten links",
+                                "pos_bl",
+                                "",
+                                ""
+                            ],
+                            [
+                                "unten rechts",
+                                "pos_br",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_modpopup_close_pos",
+                    "key": "modpopup_close_pos",
+                    "type": "select"
+                },
+                "tx_mask_modpopup_delay": {
+                    "config": {
+                        "eval": "int",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_modpopup_delay",
+                    "key": "modpopup_delay",
+                    "type": "integer"
+                },
+                "tx_mask_modpopup_display": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Laden der Seite",
+                                "page_load",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Scrollen der Seite",
+                                "page_scroll",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_modpopup_display",
+                    "key": "modpopup_display",
+                    "type": "select"
+                },
+                "tx_mask_navigation": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_navigation",
+                    "key": "navigation",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_navigationeinrichtung": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_navigationeinrichtung",
+                    "key": "navigationeinrichtung",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_options": {
+                    "config": {
+                        "items": [
+                            [
+                                "Bildergalerie",
+                                "1",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Bildergalerie mit Text",
+                                "2",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_options",
+                    "key": "options",
+                    "type": "select"
+                },
+                "tx_mask_schnellzugriffsteaser": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "2",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_schnellzugriffsteaser",
+                    "key": "schnellzugriffsteaser",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "999",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "key": "teaser",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_warnhinweise": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": "1",
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "99",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_warnhinweise",
+                    "key": "warnhinweise",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_zahltext": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_zahltext",
+                    "key": "zahltext",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                },
+                "tx_mask_zitattext": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_zitattext",
+                    "key": "zitattext",
+                    "l10n_mode": "copy",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_akkordeon": {
+            "sql": {
+                "tx_mask_content": {
+                    "tx_mask_akkordeon": {
+                        "tx_mask_content": "text"
+                    }
+                },
+                "tx_mask_title": {
+                    "tx_mask_akkordeon": {
+                        "tx_mask_title": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_content": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_content",
+                    "inlineParent": "tx_mask_akkordeon",
+                    "key": "content",
+                    "label": "Inhalt:",
+                    "order": 2,
+                    "type": "richtext"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "inlineParent": "tx_mask_akkordeon",
+                    "key": "title",
+                    "label": "Titel:",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_bereichsteaser": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_bereichsteaser": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_bereichsteaser": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_bereichsteaser": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_bereichsteaser": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_bereichsteaser": {
+                        "tx_mask_teaser": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_bereichsteaser",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_bereichsteaser",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_bereichsteaser",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_bereichsteaser",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_bereichsteaser",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 4,
+                    "type": "text"
+                }
+            }
+        },
+        "tx_mask_bild_text_teaser": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_teaser": "text"
+                    }
+                },
+                "tx_mask_topline": {
+                    "tx_mask_bild_text_teaser": {
+                        "tx_mask_topline": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 6,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 8,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 7,
+                    "type": "link"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 5,
+                    "type": "text"
+                },
+                "tx_mask_topline": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_topline",
+                    "inlineParent": "tx_mask_bild_text_teaser",
+                    "key": "topline",
+                    "label": "Topline:",
+                    "order": 4,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_bildergalerie": {
+            "sql": {
+                "tx_mask_caption": {
+                    "tx_mask_bildergalerie": {
+                        "tx_mask_caption": "tinytext"
+                    }
+                },
+                "tx_mask_copyright": {
+                    "tx_mask_bildergalerie": {
+                        "tx_mask_copyright": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_bildergalerie": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_caption": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_caption",
+                    "inlineParent": "tx_mask_bildergalerie",
+                    "key": "caption",
+                    "label": "Caption:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_copyright": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_copyright",
+                    "inlineParent": "tx_mask_bildergalerie",
+                    "key": "copyright",
+                    "label": "Copyright:",
+                    "order": 6,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_bildergalerie",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 4,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_bilderkachel": {
+            "sql": {
+                "tx_mask_image": {
+                    "tx_mask_bilderkachel": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_bilderkachel": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_link_text": {
+                    "tx_mask_bilderkachel": {
+                        "tx_mask_link_text": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_bilderkachel": {
+                        "tx_mask_teaser": "text"
+                    }
+                },
+                "tx_mask_title": {
+                    "tx_mask_bilderkachel": {
+                        "tx_mask_title": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_bilderkachel",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 3,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_bilderkachel",
+                    "key": "link",
+                    "label": "CTA-Button:",
+                    "order": 4,
+                    "type": "link"
+                },
+                "tx_mask_link_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link_text",
+                    "inlineParent": "tx_mask_bilderkachel",
+                    "key": "link_text",
+                    "label": "Link-Titel:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_bilderkachel",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 2,
+                    "type": "text"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "inlineParent": "tx_mask_bilderkachel",
+                    "key": "title",
+                    "label": "Titel:",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_downloads": {
+            "sql": {
+                "tx_mask_description": {
+                    "tx_mask_downloads": {
+                        "tx_mask_description": "tinytext"
+                    }
+                },
+                "tx_mask_file": {
+                    "tx_mask_downloads": {
+                        "tx_mask_file": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_description": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_description",
+                    "inlineParent": "tx_mask_downloads",
+                    "key": "description",
+                    "label": "Beschreibung:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_file": {
+                    "config": {
+                        "appearance": {
+                            "fileUploadAllowed": "1"
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_file",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_downloads",
+                    "key": "file",
+                    "l10n_mode": "copy",
+                    "label": "Datei:",
+                    "order": 4,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_footer": {
+            "sql": {
+                "tx_mask_footer_gb_link_a": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_gb_link_a": "tinytext"
+                    }
+                },
+                "tx_mask_footer_gb_link_b": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_gb_link_b": "tinytext"
+                    }
+                },
+                "tx_mask_footer_gb_link_c": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_gb_link_c": "tinytext"
+                    }
+                },
+                "tx_mask_footer_gb_link_d": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_gb_link_d": "tinytext"
+                    }
+                },
+                "tx_mask_footer_gb_link_e": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_gb_link_e": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_a_link": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_a_link": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_a_title": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_a_title": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_b_link": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_b_link": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_b_title": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_b_title": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_c_link": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_c_link": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_c_title": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_c_title": "tinytext"
+                    }
+                },
+                "tx_mask_footer_menu_d_link": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_menu_d_link": "tinytext"
+                    }
+                },
+                "tx_mask_footer_sm_icons": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_sm_icons": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footer_teaser": {
+                    "tx_mask_footer": {
+                        "tx_mask_footer_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footer_gb_link_a": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Datenschutz",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_gb_link_a",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_gb_link_a",
+                    "label": "Abbinder Link 1 (Datenschutz):",
+                    "order": 12,
+                    "type": "link"
+                },
+                "tx_mask_footer_gb_link_b": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Impressum",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_gb_link_b",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_gb_link_b",
+                    "label": "Abbinder Link 2 (Impressum):",
+                    "order": 13,
+                    "type": "link"
+                },
+                "tx_mask_footer_gb_link_c": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Inhaltsverzeichnis",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_gb_link_c",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_gb_link_c",
+                    "label": "Abbinder Link 3 (Inhaltsverzeichnis):",
+                    "order": 14,
+                    "type": "link"
+                },
+                "tx_mask_footer_gb_link_d": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Leichte Sprache",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_gb_link_d",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_gb_link_d",
+                    "label": "Abbinder Link 4 (Leichte Sprache):",
+                    "order": 15,
+                    "type": "link"
+                },
+                "tx_mask_footer_gb_link_e": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Mitarbeiter-Login",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_gb_link_e",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_gb_link_e",
+                    "label": "Abbinder Link 5 (Mitarbeiter-Login):",
+                    "order": 16,
+                    "type": "link"
+                },
+                "tx_mask_footer_menu_a_link": {
+                    "config": {
+                        "eval": "required,trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_a_link",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_a_link",
+                    "label": "Men\u00fcspalte 1 - Seiten Id:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_a_title": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Medizinische Versorgung",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_a_title",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_a_title",
+                    "label": "Men\u00fcspalte 1 - \u00dcberschrift:",
+                    "order": 4,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_b_link": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Pflege & Wohnen",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_b_link",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_b_link",
+                    "label": "Men\u00fcspalte 2 - Seiten Id:",
+                    "order": 7,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_b_title": {
+                    "config": {
+                        "eval": "required,trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_b_title",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_b_title",
+                    "label": "Men\u00fcspalte 2 - \u00dcberschrift:",
+                    "order": 6,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_c_link": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Soziales & Integration",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_c_link",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_c_link",
+                    "label": "Men\u00fcspalte 3 - Seiten Id:",
+                    "order": 9,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_c_title": {
+                    "config": {
+                        "eval": "required,trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_c_title",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_c_title",
+                    "label": "Men\u00fcspalte 3 - \u00dcberschrift:",
+                    "order": 8,
+                    "type": "string"
+                },
+                "tx_mask_footer_menu_d_link": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "23,45,2456",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footer_menu_d_link",
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_menu_d_link",
+                    "label": "Men\u00fcspalte 4 - Mehrere Seiten Id's (kommagetrennt):",
+                    "order": 10,
+                    "type": "string"
+                },
+                "tx_mask_footer_sm_icons": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "6",
+                        "minitems": "0",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footer_sm_icons",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_sm_icons",
+                    "l10n_mode": "copy",
+                    "label": "Social Media Icons (max. 6):",
+                    "order": 11,
+                    "type": "file"
+                },
+                "tx_mask_footer_teaser": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "3",
+                        "minitems": "0",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footer_teaser",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footer",
+                    "key": "footer_teaser",
+                    "l10n_mode": "copy",
+                    "label": "Teaser (max. 3):",
+                    "order": 3,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_footereinrichtung": {
+            "sql": {
+                "tx_mask_footereinrichtung_gb_abbinder_a": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_abbinder_a": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_b": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_abbinder_b": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_c": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_abbinder_c": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_d": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_abbinder_d": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_e": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_abbinder_e": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_link_a": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_link_a": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_link_b": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_link_b": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_link_c": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_link_c": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_logo": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_logo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_gb_text": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_gb_text": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_kontakt": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_kontakt": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_kontakt_tel": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_kontakt_tel": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_kontakt_text": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_kontakt_text": "text"
+                    }
+                },
+                "tx_mask_footereinrichtung_sm_icons": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_sm_icons": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_footereinrichtung_sm_text": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_sm_text": "tinytext"
+                    }
+                },
+                "tx_mask_footereinrichtung_teaser": {
+                    "tx_mask_footereinrichtung": {
+                        "tx_mask_footereinrichtung_teaser": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_footereinrichtung_gb_abbinder_a": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Datenschutz",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_abbinder_a",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_abbinder_a",
+                    "label": "Global - Abbinder-Link 1:",
+                    "order": 12,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_b": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Impressum",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_abbinder_b",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_abbinder_b",
+                    "label": "Global - Abbinder-Link 2:",
+                    "order": 13,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_c": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Inhaltsverzeichnis",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_abbinder_c",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_abbinder_c",
+                    "label": "Global - Abbinder-Link 3:",
+                    "order": 14,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_d": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Leichte Sprache",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_abbinder_d",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_abbinder_d",
+                    "label": "Global - Abbinder-Link 4:",
+                    "order": 15,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_abbinder_e": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Mitarbeiter-Login",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_abbinder_e",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_abbinder_e",
+                    "label": "Global - Abbinder-Link 5:",
+                    "order": 16,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_link_a": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Medizinische Versorgung",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_link_a",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_link_a",
+                    "label": "Global - Link 1:",
+                    "order": 9,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_link_b": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Pflege & Wohnen",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_link_b",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_link_b",
+                    "label": "Global - Link 2:",
+                    "order": 10,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_link_c": {
+                    "config": {
+                        "eval": "required",
+                        "placeholder": "Soziales & Integration",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_link_c",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_link_c",
+                    "label": "Global - Link 3:",
+                    "order": 11,
+                    "type": "link"
+                },
+                "tx_mask_footereinrichtung_gb_logo": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_logo",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_logo",
+                    "l10n_mode": "copy",
+                    "label": "Global - Logo:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_footereinrichtung_gb_text": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Alle Angebote der Johannesstift Diakonie",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_gb_text",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_gb_text",
+                    "label": "Global - Markentext:",
+                    "order": 8,
+                    "type": "string"
+                },
+                "tx_mask_footereinrichtung_kontakt": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "Kontakt",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_kontakt",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_kontakt",
+                    "label": "Kontakt:",
+                    "order": 1,
+                    "type": "string"
+                },
+                "tx_mask_footereinrichtung_kontakt_tel": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_kontakt_tel",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_kontakt_tel",
+                    "l10n_mode": "copy",
+                    "label": "Kontakt - Telefon Icon (23x23 px) & Nr.:",
+                    "order": 2,
+                    "type": "file"
+                },
+                "tx_mask_footereinrichtung_kontakt_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_kontakt_text",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_kontakt_text",
+                    "label": "Kontakt - Freitext:",
+                    "order": 3,
+                    "type": "richtext"
+                },
+                "tx_mask_footereinrichtung_sm_icons": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "6",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_sm_icons",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_sm_icons",
+                    "l10n_mode": "copy",
+                    "label": "Social Media - Icons (max. 6, Format 23x23 px):",
+                    "order": 6,
+                    "type": "file"
+                },
+                "tx_mask_footereinrichtung_sm_text": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "Folgen Sie uns",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_sm_text",
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_sm_text",
+                    "label": "Social Media - \u00dcberschrift:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_footereinrichtung_teaser": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "3",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_footereinrichtung_teaser",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_footereinrichtung",
+                    "key": "footereinrichtung_teaser",
+                    "l10n_mode": "copy",
+                    "label": "Schnellzugriff-Teaser (max. 3, Format 23x23 px):",
+                    "order": 4,
+                    "type": "file"
+                }
+            }
+        },
+        "tx_mask_highlight_teaser": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_options": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_options": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_teaser": "text"
+                    }
+                },
+                "tx_mask_topline": {
+                    "tx_mask_highlight_teaser": {
+                        "tx_mask_topline": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "button",
+                    "label": "CTA-Buttton:",
+                    "order": 6,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 9,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 7,
+                    "type": "link"
+                },
+                "tx_mask_options": {
+                    "config": {
+                        "items": [
+                            [
+                                "Textbox links",
+                                "0"
+                            ],
+                            [
+                                "Textbox rechts",
+                                "1"
+                            ]
+                        ],
+                        "type": "radio"
+                    },
+                    "fullKey": "tx_mask_options",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "options",
+                    "label": "Optionen:",
+                    "order": 8,
+                    "type": "radio"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 5,
+                    "type": "text"
+                },
+                "tx_mask_topline": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_topline",
+                    "inlineParent": "tx_mask_highlight_teaser",
+                    "key": "topline",
+                    "label": "Topline:",
+                    "order": 4,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_image_slider": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_image_slider": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_image_slider": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_image_slider": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_image_slider": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_image_slider": {
+                        "tx_mask_teaser": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_image_slider",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_image_slider",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_image_slider",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bilder:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_image_slider",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_image_slider",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 4,
+                    "type": "text"
+                }
+            }
+        },
+        "tx_mask_infobox": {
+            "sql": {
+                "tx_mask_text": {
+                    "tx_mask_infobox": {
+                        "tx_mask_text": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_infobox",
+                    "key": "text",
+                    "label": "Text:",
+                    "order": 1,
+                    "type": "richtext"
+                }
+            }
+        },
+        "tx_mask_jsdmodgmapbvgyt": {
+            "sql": {
+                "tx_mask_jsdmodgmapbvgyt_address": {
+                    "tx_mask_jsdmodgmapbvgyt": {
+                        "tx_mask_jsdmodgmapbvgyt_address": "tinytext"
+                    }
+                },
+                "tx_mask_jsdmodgmapbvgyt_options": {
+                    "tx_mask_jsdmodgmapbvgyt": {
+                        "tx_mask_jsdmodgmapbvgyt_options": "tinytext"
+                    }
+                },
+                "tx_mask_jsdmodgmapbvgyt_video": {
+                    "tx_mask_jsdmodgmapbvgyt": {
+                        "tx_mask_jsdmodgmapbvgyt_video": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_jsdmodgmapbvgyt_address": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "12345 Ort, Stra\u00dfe Hausnummer",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_jsdmodgmapbvgyt_address",
+                    "inlineParent": "tx_mask_jsdmodgmapbvgyt",
+                    "key": "jsdmodgmapbvgyt_address",
+                    "label": "Adresse (PLZ Ort, Stra\u00dfe Hausnummer):",
+                    "order": 4,
+                    "type": "string"
+                },
+                "tx_mask_jsdmodgmapbvgyt_options": {
+                    "config": {
+                        "autoSizeMax": "1",
+                        "items": [
+                            [
+                                "Google Map",
+                                "1",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Youtube Video",
+                                "2",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "maxitems": "1",
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_jsdmodgmapbvgyt_options",
+                    "inlineParent": "tx_mask_jsdmodgmapbvgyt",
+                    "key": "jsdmodgmapbvgyt_options",
+                    "label": "Funktion des Moduls:",
+                    "order": 3,
+                    "type": "select"
+                },
+                "tx_mask_jsdmodgmapbvgyt_video": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "YTkf_MpsSqQ",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_jsdmodgmapbvgyt_video",
+                    "inlineParent": "tx_mask_jsdmodgmapbvgyt",
+                    "key": "jsdmodgmapbvgyt_video",
+                    "label": "Youtube Video-ID (hinter v=):",
+                    "order": 5,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_kontakt": {
+            "sql": {
+                "tx_mask_kontakt_cta_link": {
+                    "tx_mask_kontakt": {
+                        "tx_mask_kontakt_cta_link": "tinytext"
+                    }
+                },
+                "tx_mask_kontakt_cta_text": {
+                    "tx_mask_kontakt": {
+                        "tx_mask_kontakt_cta_text": "tinytext"
+                    }
+                },
+                "tx_mask_kontakt_header": {
+                    "tx_mask_kontakt": {
+                        "tx_mask_kontakt_header": "tinytext"
+                    }
+                },
+                "tx_mask_kontakt_rtetext": {
+                    "tx_mask_kontakt": {
+                        "tx_mask_kontakt_rtetext": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_kontakt_cta_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_kontakt_cta_link",
+                    "inlineParent": "tx_mask_kontakt",
+                    "key": "kontakt_cta_link",
+                    "label": "CTA-Button Link:",
+                    "order": 4,
+                    "type": "link"
+                },
+                "tx_mask_kontakt_cta_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_kontakt_cta_text",
+                    "inlineParent": "tx_mask_kontakt",
+                    "key": "kontakt_cta_text",
+                    "label": "CTA-Button Titel:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_kontakt_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_kontakt_header",
+                    "inlineParent": "tx_mask_kontakt",
+                    "key": "kontakt_header",
+                    "label": "\u00dcberschrift:",
+                    "order": 1,
+                    "type": "string"
+                },
+                "tx_mask_kontakt_rtetext": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_kontakt_rtetext",
+                    "inlineParent": "tx_mask_kontakt",
+                    "key": "kontakt_rtetext",
+                    "label": "Inhalt:",
+                    "order": 2,
+                    "type": "richtext"
+                }
+            }
+        },
+        "tx_mask_leichtsprache": {
+            "sql": {
+                "tx_mask_bodytext": {
+                    "tx_mask_leichtsprache": {
+                        "tx_mask_bodytext": "text"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_leichtsprache": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image_option": {
+                    "tx_mask_leichtsprache": {
+                        "tx_mask_image_option": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bodytext": {
+                    "bodytextTypeByElement": {
+                        "jsdmodsimplespeak": "richtext"
+                    },
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_bodytext",
+                    "inlineParent": "tx_mask_leichtsprache",
+                    "key": "bodytext",
+                    "label": "Text:",
+                    "order": 1
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_leichtsprache",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild (optional):",
+                    "order": 2,
+                    "type": "file"
+                },
+                "tx_mask_image_option": {
+                    "config": {
+                        "items": [
+                            [
+                                "Bild rechts im Text anzeigen"
+                            ]
+                        ],
+                        "type": "check"
+                    },
+                    "fullKey": "tx_mask_image_option",
+                    "inlineParent": "tx_mask_leichtsprache",
+                    "key": "image_option",
+                    "label": "Bild rechts im Text (default links):",
+                    "order": 3,
+                    "type": "check"
+                }
+            }
+        },
+        "tx_mask_leistungen": {
+            "sql": {
+                "tx_mask_link": {
+                    "tx_mask_leistungen": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_link_text": {
+                    "tx_mask_leistungen": {
+                        "tx_mask_link_text": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_leistungen": {
+                        "tx_mask_teaser": "text"
+                    }
+                },
+                "tx_mask_title": {
+                    "tx_mask_leistungen": {
+                        "tx_mask_title": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_leistungen",
+                    "key": "link",
+                    "label": "CTA-Button:",
+                    "order": 7,
+                    "type": "link"
+                },
+                "tx_mask_link_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link_text",
+                    "inlineParent": "tx_mask_leistungen",
+                    "key": "link_text",
+                    "label": "Link-Titel:",
+                    "order": 8,
+                    "type": "string"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_leistungen",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 6,
+                    "type": "text"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "inlineParent": "tx_mask_leistungen",
+                    "key": "title",
+                    "label": "Titel:",
+                    "order": 5,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_leitbilder": {
+            "sql": {
+                "tx_mask_leitbild": {
+                    "tx_mask_leitbilder": {
+                        "tx_mask_leitbild": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_leitbild": {
+                    "config": {
+                        "eval": "required",
+                        "max": "250",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_leitbild",
+                    "inlineParent": "tx_mask_leitbilder",
+                    "key": "leitbild",
+                    "label": "Leitbild:",
+                    "order": 3,
+                    "type": "text"
+                }
+            }
+        },
+        "tx_mask_linkliste": {
+            "sql": {
+                "tx_mask_link": {
+                    "tx_mask_linkliste": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_link_text": {
+                    "tx_mask_linkliste": {
+                        "tx_mask_link_text": "text"
+                    }
+                },
+                "tx_mask_link_type": {
+                    "tx_mask_linkliste": {
+                        "tx_mask_link_type": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_title": {
+                    "tx_mask_linkliste": {
+                        "tx_mask_title": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_linkliste",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 5,
+                    "type": "link"
+                },
+                "tx_mask_link_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_link_text",
+                    "inlineParent": "tx_mask_linkliste",
+                    "key": "link_text",
+                    "label": "Link: Teaser",
+                    "order": 7,
+                    "type": "text"
+                },
+                "tx_mask_link_type": {
+                    "config": {
+                        "items": [
+                            [
+                                "Interner Link",
+                                "0"
+                            ],
+                            [
+                                "Externer Link",
+                                "1"
+                            ]
+                        ],
+                        "type": "radio"
+                    },
+                    "fullKey": "tx_mask_link_type",
+                    "inlineParent": "tx_mask_linkliste",
+                    "key": "link_type",
+                    "label": "Link: Typ",
+                    "order": 6,
+                    "type": "radio"
+                },
+                "tx_mask_title": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_title",
+                    "inlineParent": "tx_mask_linkliste",
+                    "key": "title",
+                    "label": "Titel:",
+                    "order": 4,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_navigation": {
+            "sql": {
+                "tx_mask_content_element": {
+                    "tx_mask_navigation": {
+                        "tx_mask_content_element": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_navigation": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_navigation_loginsimplespeak": {
+                    "tx_mask_navigation": {
+                        "tx_mask_navigation_loginsimplespeak": "tinytext"
+                    }
+                },
+                "tx_mask_pages": {
+                    "tx_mask_navigation": {
+                        "tx_mask_pages": "tinytext"
+                    }
+                },
+                "tx_mask_pidinrootline": {
+                    "tx_mask_navigation": {
+                        "tx_mask_pidinrootline": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_content_element": {
+                    "cTypes": [
+                        "jsdmodule_jsdmodschnellzugriffsteaser"
+                    ],
+                    "config": {
+                        "appearance": {
+                            "collapseAll": "1",
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": "1",
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": "1",
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": "1",
+                            "showSynchronizationLink": "1",
+                            "useSortable": "1"
+                        },
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "tt_content",
+                        "maxitems": "1",
+                        "overrideChildTca": {
+                            "columns": {
+                                "colPos": {
+                                    "config": {
+                                        "default": 999
+                                    }
+                                }
+                            }
+                        },
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_content_element",
+                    "inlineParent": "tx_mask_navigation",
+                    "key": "content_element",
+                    "l10n_mode": "copy",
+                    "label": "Inhaltselemente (nur bei globalem Men\u00fc):",
+                    "order": 4,
+                    "type": "content"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_navigation",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Logo:",
+                    "order": 3,
+                    "type": "file"
+                },
+                "tx_mask_navigation_loginsimplespeak": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "12,13",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_navigation_loginsimplespeak",
+                    "inlineParent": "tx_mask_navigation",
+                    "key": "navigation_loginsimplespeak",
+                    "label": "Leichte Sprache & Mitarbeiterlogin Seiten Id's:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_pages": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "3,4,5",
+                        "size": "5",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_pages",
+                    "inlineParent": "tx_mask_navigation",
+                    "key": "pages",
+                    "label": "Extra Seiten (kommasepariert):",
+                    "order": 2,
+                    "type": "string"
+                },
+                "tx_mask_pidinrootline": {
+                    "config": {
+                        "eval": "required,trim",
+                        "placeholder": "1,2,3",
+                        "size": "5",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_pidinrootline",
+                    "inlineParent": "tx_mask_navigation",
+                    "key": "pidinrootline",
+                    "label": "Prim\u00e4re Seiten-Id's (kommasepariert):",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_navigationeinrichtung": {
+            "sql": {
+                "tx_mask_einrichtungbereich": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungbereich": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungimage": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungimage": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_einrichtunglink": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglink": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglinks_a": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglinks_a": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglinks_b": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglinks_b": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglinks_c": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglinks_c": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglinks_d": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglinks_d": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglinks_extra": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglinks_extra": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtunglogo": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtunglogo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_einrichtungslink_a_link": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_a_link": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_a_title": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_a_title": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_b_link": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_b_link": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_b_title": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_b_title": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_c_link": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_c_link": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_c_title": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_c_title": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_d_link": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_d_link": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungslink_d_title": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungslink_d_title": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungtitle": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungtitle": "tinytext"
+                    }
+                },
+                "tx_mask_einrichtungvideo": {
+                    "tx_mask_navigationeinrichtung": {
+                        "tx_mask_einrichtungvideo": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_einrichtungbereich": {
+                    "config": {
+                        "items": [
+                            [
+                                "Startseite der Einrichtung",
+                                "1",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Unterseite der Einrichtung",
+                                "2",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_einrichtungbereich",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungbereich",
+                    "label": "Men\u00fc f\u00fcr:",
+                    "order": 9,
+                    "type": "select"
+                },
+                "tx_mask_einrichtungimage": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_einrichtungimage",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungimage",
+                    "l10n_mode": "copy",
+                    "label": "Bild der Einrichtung:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_einrichtunglink": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglink",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglink",
+                    "label": "Link zur Einrichtung (Startseite):",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_einrichtunglinks_a": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "1,2,3,4",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglinks_a",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglinks_a",
+                    "label": "Links 1. Seitenzweig (Seiten-Id's):",
+                    "order": 12,
+                    "type": "string"
+                },
+                "tx_mask_einrichtunglinks_b": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "5,6,7,8",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglinks_b",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglinks_b",
+                    "label": "Links 2. Seitenzweig (Seiten-Id's):",
+                    "order": 15,
+                    "type": "string"
+                },
+                "tx_mask_einrichtunglinks_c": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "9,10,11,12",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglinks_c",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglinks_c",
+                    "label": "Links 3. Seitenzweig (Seiten-Id's):",
+                    "order": 18,
+                    "type": "string"
+                },
+                "tx_mask_einrichtunglinks_d": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "13,14,15,16",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglinks_d",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglinks_d",
+                    "label": "Links 4. Seitenzweig (Seiten-Id's):",
+                    "order": 21,
+                    "type": "string"
+                },
+                "tx_mask_einrichtunglinks_extra": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "17,18",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtunglinks_extra",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglinks_extra",
+                    "label": "Extra Links (Id's: Leichte Sprache, Mitarbeiter Login):",
+                    "order": 22,
+                    "type": "string"
+                },
+                "tx_mask_einrichtunglogo": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_einrichtunglogo",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtunglogo",
+                    "l10n_mode": "copy",
+                    "label": "Logo der Einrichtung:",
+                    "order": 5,
+                    "type": "file"
+                },
+                "tx_mask_einrichtungslink_a_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_a_link",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_a_link",
+                    "label": "Titel 1. Link (optional):",
+                    "order": 11,
+                    "type": "link"
+                },
+                "tx_mask_einrichtungslink_a_title": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "F\u00fcr Patienten & Angeh\u00f6rige",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_a_title",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_a_title",
+                    "label": "Titel 1. Men\u00fcpunkt:",
+                    "order": 10,
+                    "type": "string"
+                },
+                "tx_mask_einrichtungslink_b_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_b_link",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_b_link",
+                    "label": "Titel 2. Link (optional):",
+                    "order": 14,
+                    "type": "link"
+                },
+                "tx_mask_einrichtungslink_b_title": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "Spezialgebiete & Fachabteilungen",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_b_title",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_b_title",
+                    "label": "Titel 2. Men\u00fcpunkt:",
+                    "order": 13,
+                    "type": "string"
+                },
+                "tx_mask_einrichtungslink_c_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_c_link",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_c_link",
+                    "label": "Titel 3. Link (optional):",
+                    "order": 17,
+                    "type": "link"
+                },
+                "tx_mask_einrichtungslink_c_title": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "F\u00fcr Bewerber & Fachkr\u00e4fte",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_c_title",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_c_title",
+                    "label": "Titel 3. Men\u00fcpunkt:",
+                    "order": 16,
+                    "type": "string"
+                },
+                "tx_mask_einrichtungslink_d_link": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_d_link",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_d_link",
+                    "label": "Titel 4. Link (optional):",
+                    "order": 20,
+                    "type": "link"
+                },
+                "tx_mask_einrichtungslink_d_title": {
+                    "config": {
+                        "eval": "trim",
+                        "placeholder": "Unser Haus:",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungslink_d_title",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungslink_d_title",
+                    "label": "Titel 4. Men\u00fcpunkt:",
+                    "order": 19,
+                    "type": "string"
+                },
+                "tx_mask_einrichtungtitle": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungtitle",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungtitle",
+                    "label": "Titel der Einrichtung:",
+                    "order": 4,
+                    "type": "string"
+                },
+                "tx_mask_einrichtungvideo": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_einrichtungvideo",
+                    "inlineParent": "tx_mask_navigationeinrichtung",
+                    "key": "einrichtungvideo",
+                    "label": "Youtube Video-ID (hinter v=) | Unterseite der Einrichtung",
+                    "order": 8,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_schnellzugriffsteaser": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_schnellzugriffsteaser": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_schnellzugriffsteaser": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_schnellzugriffsteaser": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_schnellzugriffsteaser": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_schnellzugriffsteaser": {
+                        "tx_mask_teaser": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_schnellzugriffsteaser",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_schnellzugriffsteaser",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_schnellzugriffsteaser",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_schnellzugriffsteaser",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_schnellzugriffsteaser",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 4,
+                    "type": "text"
+                }
+            }
+        },
+        "tx_mask_teaser": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_teaser": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_teaser": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_teaser": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_teaser": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_text": {
+                    "tx_mask_teaser": {
+                        "tx_mask_text": "text"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_teaser",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_teaser",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_teaser",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_teaser",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_teaser",
+                    "key": "text",
+                    "label": "Teaser:",
+                    "order": 4,
+                    "type": "text"
+                }
+            }
+        },
+        "tx_mask_warnhinweise": {
+            "sql": {
+                "tx_mask_button": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_button": "tinytext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_header": "tinytext"
+                    }
+                },
+                "tx_mask_image": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_link": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_link": "tinytext"
+                    }
+                },
+                "tx_mask_teaser": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_teaser": "text"
+                    }
+                },
+                "tx_mask_tickertext": {
+                    "tx_mask_warnhinweise": {
+                        "tx_mask_tickertext": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_button": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_button",
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "button",
+                    "label": "CTA-Button:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "header",
+                    "label": "Header:",
+                    "order": 3,
+                    "type": "string"
+                },
+                "tx_mask_image": {
+                    "config": {
+                        "appearance": {
+                            "collapseAll": "1"
+                        },
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_image",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "image",
+                    "l10n_mode": "copy",
+                    "label": "Bild:",
+                    "order": 7,
+                    "type": "file"
+                },
+                "tx_mask_link": {
+                    "config": {
+                        "eval": "trim",
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_link",
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "link",
+                    "label": "Link:",
+                    "order": 6,
+                    "type": "link"
+                },
+                "tx_mask_teaser": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_teaser",
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "teaser",
+                    "label": "Teaser:",
+                    "order": 4,
+                    "type": "text"
+                },
+                "tx_mask_tickertext": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_tickertext",
+                    "inlineParent": "tx_mask_warnhinweise",
+                    "key": "tickertext",
+                    "label": "Ticker-Teaser Text:",
+                    "order": 2,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_zahltext": {
+            "sql": {
+                "tx_mask_text": {
+                    "tx_mask_zahltext": {
+                        "tx_mask_text": "tinytext"
+                    }
+                },
+                "tx_mask_zahl": {
+                    "tx_mask_zahltext": {
+                        "tx_mask_zahl": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_text": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_zahltext",
+                    "key": "text",
+                    "label": "Text:",
+                    "order": 5,
+                    "type": "string"
+                },
+                "tx_mask_zahl": {
+                    "config": {
+                        "eval": "trim",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_zahl",
+                    "inlineParent": "tx_mask_zahltext",
+                    "key": "zahl",
+                    "label": "Zahl:",
+                    "order": 4,
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_zitattext": {
+            "sql": {
+                "tx_mask_options": {
+                    "tx_mask_zitattext": {
+                        "tx_mask_options": "tinytext"
+                    }
+                },
+                "tx_mask_shortversion": {
+                    "tx_mask_zitattext": {
+                        "tx_mask_shortversion": "int(11) DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_text": {
+                    "tx_mask_zitattext": {
+                        "tx_mask_text": "text"
+                    }
+                },
+                "tx_mask_zitat": {
+                    "tx_mask_zitattext": {
+                        "tx_mask_zitat": "text"
+                    }
+                },
+                "tx_mask_zitatcopy": {
+                    "tx_mask_zitattext": {
+                        "tx_mask_zitatcopy": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_options": {
+                    "config": {
+                        "fieldWizard": {
+                            "selectIcons": {
+                                "disabled": 1
+                            }
+                        },
+                        "items": [
+                            [
+                                "Zitat links im Text",
+                                "1",
+                                "",
+                                ""
+                            ],
+                            [
+                                "Zitat rechts im Text",
+                                "2",
+                                "",
+                                ""
+                            ]
+                        ],
+                        "renderType": "selectSingle",
+                        "type": "select"
+                    },
+                    "fullKey": "tx_mask_options",
+                    "inlineParent": "tx_mask_zitattext",
+                    "key": "options",
+                    "label": "Zitat-Anzeige:",
+                    "order": 4,
+                    "type": "select"
+                },
+                "tx_mask_shortversion": {
+                    "config": {
+                        "default": "0",
+                        "items": [
+                            [
+                                "Nur Zitat und Zitatgeber anzeigen (Fontsize 24px - Linehight 32px)"
+                            ],
+                            [
+                                "Schriftgr\u00f6\u00dfe verkleinern (Fontsize 16px - Linehight 24px)"
+                            ]
+                        ],
+                        "type": "check"
+                    },
+                    "fullKey": "tx_mask_shortversion",
+                    "inlineParent": "tx_mask_zitattext",
+                    "key": "shortversion",
+                    "label": "Zitat Format:",
+                    "order": 1,
+                    "type": "check"
+                },
+                "tx_mask_text": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_text",
+                    "inlineParent": "tx_mask_zitattext",
+                    "key": "text",
+                    "label": "Text:",
+                    "order": 5,
+                    "type": "richtext"
+                },
+                "tx_mask_zitat": {
+                    "config": {
+                        "enableRichtext": 1,
+                        "richtextConfiguration": "jsdtheme",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_zitat",
+                    "inlineParent": "tx_mask_zitattext",
+                    "key": "zitat",
+                    "label": "Zitat:",
+                    "order": 2,
+                    "type": "richtext"
+                },
+                "tx_mask_zitatcopy": {
+                    "config": {
+                        "eval": "trim",
+                        "max": "100",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_zitatcopy",
+                    "inlineParent": "tx_mask_zitattext",
+                    "key": "zitatcopy",
+                    "label": "Zitatgeber:",
+                    "order": 3,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

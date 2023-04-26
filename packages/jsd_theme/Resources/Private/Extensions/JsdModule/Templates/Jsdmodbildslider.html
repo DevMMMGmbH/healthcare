@@ -1,0 +1,58 @@
+<f:if condition="{data_tx_jsdmodule_image_slider}">
+<div class="mod_bild-slider" id="c{data.uid}">
+    <div class="slick" data-slick-class="slick-c{data.uid}">
+        <div class="row slick-c{data.uid}" data-slick='{"speed": 1500, "autoplaySpeed": 1500, "fade":true, "autoplay":true, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+            <f:for each="{data_tx_jsdmodule_image_slider}" as="data_item" iteration="i">
+
+                    <div class="col-xs-16">
+
+                        <f:for each="{data_item.data_tx_jsdmodule_image}" as="data_image" iteration="iteration_image">
+                            <f:if condition="{iteration_image.cycle}==1">
+                                <f:then>
+                                    <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:320, cropVariant-xs:'specialMobile', w-sm:384, cropVariant-sm:'specialMobile', w-md:768, w-lg:1024, w-xl:1280}" />
+                                </f:then>
+                            </f:if>
+                        </f:for>
+
+                        <div class="col-xs-16 col-md-8 offset-md-1 carousel-caption">
+                            <h2 class="header" id="slide-{data.uid}_{i.cycle}">
+                                <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                                    <f:then>
+                                        <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
+                                            {data_item.data.tx_jsdmodule_header}
+                                        </f:link.typolink>
+                                    </f:then>
+                                    <f:else>
+                                        {data_item.data.tx_jsdmodule_header}
+                                    </f:else>
+                                </f:if>
+                            </h2>
+                            <p class="teaser-copy">
+                                {data_item.data.tx_jsdmodule_teaser}
+                            </p>
+                            <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'slide-{data.uid}_{i.cycle}'}">
+                                    {f:if(condition: '{data_item.data.tx_jsdmodule_button} != ', then: '{data_item.data.tx_jsdmodule_button}', else:'')}
+                                </f:link.typolink>
+                            </f:if>
+                        </div>
+
+                    </div>
+
+            </f:for>
+        </div>
+        <f:if condition="{data_tx_jsdmodule_image_slider -> f:count()} > 1">
+            <div class="carousel-indicators d-md-none slick-dots-c{data.uid}"></div>
+            <div class="carousel-control-prev-next d-none d-md-inline-block slick-c{data.uid}-navi">
+                <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev" title="{f:translate(key: 'page.prev',  extensionName='jsd_theme')}"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.prev',  extensionName='jsd_theme')}</span>
+                </button>
+                <span class="count">
+                    <b><span class="num"></span></b>/{data_tx_jsdmodule_image_slider -> f:count()}
+                </span>
+                <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" title="{f:translate(key: 'page.next',  extensionName='jsd_theme')}"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.next',  extensionName='jsd_theme')}</span>
+                </button>
+            </div>
+        </f:if>
+    </div>
+</div>
+</f:if>

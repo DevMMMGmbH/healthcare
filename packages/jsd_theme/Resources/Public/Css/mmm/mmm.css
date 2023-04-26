@@ -1,0 +1,1257 @@
+.mod_ankerliste .icon-b { padding-top: 0; }
+.mod_infobox { padding: 0 0 80px 0; }
+
+/* --------------------------------- hos --------*/
+#tx-solr-search .tx-pgdcareer .col-xs-16.col-md-5.image a {
+position:relative;
+display: block;
+width: 100%;
+padding: 0 !important;
+background: #00BC82;
+overflow: hidden;
+}
+
+#tx-solr-search .tx-pgdcareer .col-xs-16.col-md-5.image a:before {
+content: "";
+display:block;
+padding-top: 100%;
+}
+
+#tx-solr-search .tx-pgdcareer .col-xs-16.col-md-5.image a img{
+position: absolute;
+top: -140%;
+left: -390%;
+width: 750%;
+max-width: 800%;
+}
+
+/* ---------------------------------------- Infobox -- */
+.mod_infobox {
+	padding: 0;
+	/* background: url(../images/_dev/01-modul-infobox-1280.png) no-repeat top left; */
+}
+
+.mod_einrichtungsteaser.teaser-liste .icon-t,
+.mod_einrichtungsteaser.teaser-slider .icon-t,
+.mod_eventsteaser.list-view .icon-t,
+.mod_eventsteaser.list.scroll-container .icon-t,
+.mod_eventsteaser.slider-view .icon-t,
+.mod_ekomiwidget .icon-t,
+.mod_leistungen .icon-t,
+.mod_akkordeon .icon-t,
+.mod_3-er-teaser .icon-t,
+.mod_bereichs-teaser .icon-t,
+.mod_ankerliste .icon-t,
+.mod_zahltext .icon-t,
+.mod_downloads .icon-t,
+.mod_infobox .icon-t,
+.mod_linkliste .icon-t,
+.mod_leitbild .icon-t,
+.mod_kontakt .icon-t,
+.mod_seo-intro-text .icon-t,
+.mod_aktuelles-teaser .icon-t,
+.mod_sprechstunde .icon-t {
+	width: 40px;
+	height: 40px;
+	max-width: 40px;
+	margin: 0 0 28px 60px;
+}
+.mod_einrichtungsteaser.teaser-liste .icon-b,
+.mod_einrichtungsteaser.teaser-slider .icon-b,
+.mod_eventsteaser.list-view .icon-b,
+.mod_eventsteaser.slider-view .icon-b,
+.mod_eventsteaser.list.scroll-container .icon-b,
+.mod_ekomiwidget .icon-b,
+.mod_leistungen .icon-b,
+.mod_akkordeon .icon-b,
+.mod_3-er-teaser .icon-b,
+.mod_bereichs-teaser .icon-b,
+.mod_ankerliste .icon-b,
+.mod_zahltext .icon-b,
+.mod_downloads .icon-b,
+.mod_infobox .icon-b,
+.mod_linkliste .icon-b,
+.mod_leitbild .icon-b,
+.mod_kontakt .icon-b,
+.mod_seo-intro-text .icon-b,
+.mod_aktuelles-teaser .icon-b,
+.mod_sprechstunde .icon-b {
+	display: block;
+	flex: auto;
+	width: 40px;
+	max-width: none;
+	height: 40px;
+	margin: 0 60px 0 0;
+}
+
+.mod_zitattext .blockquote::before {
+	background-image: url(img/visual-top_left.svg) !important;
+}
+.mod_einrichtungsteaser.teaser-liste .icon-t,
+.mod_einrichtungsteaser.teaser-slider .icon-t,
+.mod_infobox .icon-t,
+.mod_3-er-teaser .icon-t,
+.mod_bereichs-teaser .icon-t,
+.mod_ankerliste .icon-t,
+.mod_leistungen .icon-t,
+.mod_zahltext .icon-t,
+.mod_downloads .icon-t,
+.mod_akkordeon .icon-t,
+.mod_linkliste .icon-t,
+.mod_leitbild .icon-t,
+.mod_kontakt .icon-t,
+.mod_aktuelles-teaser .icon-t,
+.mod_sprechstunde .icon-t {
+	background: url(img/visual-top_left_green.svg) no-repeat top left;
+}
+.mod_seo-intro-text .icon-t,
+.mod_infobox .icon-t {
+	background: url(img/visual-top_left.svg) no-repeat top left;
+}
+.mod_eventsteaser.list-view .icon-t,
+.mod_eventsteaser.slider-view .icon-t,
+.mod_eventsteaser.list.scroll-container .icon-t,
+.mod_aktuelles-teaser .icon-t {
+	background: url(img/visual-top_left_blue.svg) no-repeat top left;
+}
+.mod_ekomiwidget .icon-t {
+	background: url(img/visual-top_left_purple.svg) no-repeat top left;
+}
+
+.mod_einrichtungsteaser.teaser-liste .icon-b,
+.mod_einrichtungsteaser.teaser-slider .icon-b,
+.mod_ankerliste .icon-b,
+.mod_3-er-teaser .icon-b,
+.mod_bereichs-teaser .icon-b,
+.mod_infobox .icon-b,
+.mod_leistungen .icon-b,
+.mod_zahltext .icon-b,
+.mod_downloads .icon-b,
+.mod_akkordeon .icon-b,
+.mod_linkliste .icon-b,
+.mod_leitbild .icon-b,
+.mod_kontakt .icon-b,
+.mod_aktuelles-teaser .icon-b,
+.mod_sprechstunde .icon-b {
+	background: url(img/visual-bottom_right_green.svg) no-repeat bottom right;
+}
+.mod_seo-intro-text .icon-b,
+.mod_infobox .icon-b {
+	background: url(img/visual-bottom_right.svg) no-repeat bottom right;
+}
+.mod_eventsteaser.list-view .icon-b,
+.mod_eventsteaser.slider-view .icon-b,
+.mod_eventsteaser.list.scroll-container .icon-b,
+.mod_aktuelles-teaser .icon-b {
+	background: url(img/visual-bottom_right_blue.svg) no-repeat bottom right;
+}
+.mod_ekomiwidget .icon-b {
+	background: url(img/visual-bottom_right_purple.svg) no-repeat bottom right;
+}
+
+.mod_zitattext .blockquote::after { background-image: url(img/visual-bottom_right.svg) !important; }
+.mod_infobox .headline { margin-bottom: 85px; }
+
+.mod_bild-text-teaser .slick-slide .row .icon-t {
+	position: absolute;
+	background: url(img/visual-top_left_blue.svg) no-repeat top left;
+	z-index: 1;
+}
+.mod_bild-text-teaser .slick-slide .row .icon-b {
+	position: absolute;
+	background: url(img/visual-bottom_right_blue.svg) no-repeat bottom right;
+	z-index: 1;
+}
+.mod_3-er-teaser .carousel-control-prev-next { padding-bottom: 0; }
+.mod_linkliste .btn,
+.mod_downloads ul {
+	margin-bottom: 0;
+}
+.mod_linkliste .headline,
+
+.mod_aktuelles-teaser .header.color_blue {
+	margin-top: 0;
+}
+.mod_aktuelles-teaser .news-backlink-wrap { padding-bottom: 0px; }
+
+.mod_akkordeon .pad-top { margin-top: 18px; padding-bottom: 0; }
+
+.mod_leistungen .btn {
+    margin-top: 0px;
+}
+.mod_leistungen .pad-t {
+    padding-top: 10px;
+}
+
+.footer .row.teaserlinks .justify-content-between .text-md-left{
+	width: 33.33%;
+	flex: 0 0 33.33%;
+}
+
+.footer .row.teaserlinks .justify-content-between .text-md-center{
+	width: 33.33%;
+	flex: 0 0 33.33%;
+}
+
+.footer .row.teaserlinks .justify-content-between .text-md-right{
+	width: 33.33%;
+	flex: 0 0 33.33%;
+}
+.mod_ekomilist .weiterlesen{
+	color: #24195D;
+}
+
+
+/*Headlines RTE-Editor*/
+.mod_rtetext h2{
+	font-size: 28px;
+	line-height: 40px;
+}
+.mod_rtetext h3{	
+	font-size: 24px;
+	line-height: 30px;
+}
+.mod_rtetext h4{
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.mod_rtetext .frame,
+.mod_rtetext{
+	padding: 0;
+}
+.mod_rtetext .frame.frame-space-after-extra-large{
+	padding: 0 0 40px 0;
+}
+
+
+
+
+/*Babygallerie*/
+.tx-pgdbaby form input[type="text"], .tx-pgdbaby form select {
+    padding: 3px 58px 5px 17px !important;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.tx-pgdbaby .details .text .parameter .birthdate::after {
+    content: " Uhr";
+}
+.select-selected::after {
+    background-size: 20px 13px !important;
+}
+.tx-pgdbaby form {
+    border-top: 1px solid #918CAE !important;
+    border-bottom: 1px solid #918CAE !important;
+}
+.tx-pgdbaby .f3-widget-paginator {
+    border-top: 1px solid #918CAE !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.tx-pgdbaby form .resetFilter {
+    margin: 94px 0 40px !important;
+}
+}
+/*
+.tx-pgdbaby .shariff-share-icon:hover {
+    background-image: url('../Images/icon_share_hover.png') !important;
+    background: no-repeat 50%/100% 100%;
+}
+*/
+.select-items div, .select-selected {
+    padding: 10px 16px !important;
+}
+
+
+a.kontrast,
+div.kontrast{
+	display: none !important;
+}
+
+
+
+
+
+
+
+.mod_akkordeon .card-content .content-wrap {
+    padding: 20px 0 10px 0;
+}
+
+
+@media only screen and (min-width: 320px) {
+	/* body > .container { background: transparent url(img/24_grid_bg.png) repeat 0 0; } */
+
+	.mod_einrichtungsteaser.teaser-liste .icon-t,
+	.mod_einrichtungsteaser.teaser-slider .icon-t,
+	.mod_eventsteaser.list-view .icon-t,
+	.mod_eventsteaser.list.scroll-container .icon-t,
+	.mod_eventsteaser.slider-view .icon-t,
+	.mod_ekomiwidget .icon-t,
+	.mod_infobox .icon-t,
+	.mod_3-er-teaser .icon-t,
+	.mod_bereichs-teaser .icon-t,
+	.mod_ankerliste .icon-t,
+	.mod_leistungen .icon-t,
+	.mod_zahltext .icon-t,
+	.mod_downloads .icon-t,
+	.mod_akkordeon .icon-t,
+	.mod_linkliste .icon-t,
+	.mod_leitbild .icon-t,
+	.mod_kontakt .icon-t,
+	.mod_seo-intro-text .icon-t,
+	.mod_aktuelles-teaser .icon-t,
+	.mod_sprechstunde .icon-t {
+		width: 24px;
+		height: 24px;
+		max-width: 24px;
+		max-width: 40px;
+		margin: 0;
+	}
+	.mod_einrichtungsteaser.teaser-liste .icon-b,
+	.mod_einrichtungsteaser.teaser-slider .icon-b,
+	.mod_eventsteaser.list-view .icon-b,
+	.mod_eventsteaser.slider-view .icon-b,
+.mod_eventsteaser.list.scroll-container .icon-b,
+	.mod_ekomiwidget .icon-b,
+	.mod_ankerliste .icon-b,
+	.mod_3-er-teaser .icon-b,
+	.mod_bereichs-teaser .icon-b,
+	.mod_infobox .icon-b,
+	.mod_leistungen .icon-b,
+	.mod_zahltext .icon-b,
+	.mod_downloads .icon-b,
+	.mod_akkordeon .icon-b,
+	.mod_linkliste .icon-b,
+	.mod_leitbild .icon-b,
+	.mod_kontakt .icon-b,
+	.mod_seo-intro-text .icon-b,
+	.mod_aktuelles-teaser .icon-b,
+	.mod_sprechstunde .icon-b {
+		width: 100%;
+		height: 24px;
+		margin: 0;
+	}
+
+	.mod_infobox .headline { margin-bottom: 61px; }
+	.mod_infobox .rtetext { max-width: 263px; }
+
+	.mod_ankerliste .row.justify-content-between {
+		padding-bottom: 40px;
+	}
+
+	.mod_bild-text-teaser .slick-slide .row .icon-t {
+		position: absolute;
+		left: 0;
+		top: -25px;
+		width: 24px;
+		height: 24px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b {
+		position: absolute;
+		right: 0;
+		bottom: 12px;
+		width: 24px;
+		height: 24px;
+		display: block !important;
+	}
+	.mod_zitattext div.blockquote::before,
+	.mod_zitattext div.blockquote::after {
+		height: 24px;
+		width: 24px;
+	}
+	.kk_content { margin: 8px 0 20px; }
+	.mod_akkordeon .pad-top { margin-top: 8px; }
+
+	.mod_eventsteaser.list.scroll-container .kk_content {
+    margin: 28px 0 -10px;
+	}
+
+	.mod_ekomiwidget .kk_content {
+    margin: -6px 0 3px;
+	}
+
+	.mod_linkliste.mod_ankerliste .kk_content {
+    margin: 8px 0 -20px;
+	}
+	.mod_3-er-teaser .kk_content {
+    margin: 8px 0 0px;
+	}
+	.mod_infobox .kk_content {
+    margin: 8px 0 -25px;
+	}
+	.mod_zahltext .kk_content {
+    margin: 8px 0 8px;
+	}
+	.mod_bereichs-teaser .kk_content {
+    margin: 8px 0 -10px;
+	}
+	.mod_buehnezwei .noImg {
+    background-image: url(../images/me_bg-384.png);
+	}
+	.mod_bild-text-teaser img {
+    height: auto;
+	}
+	.mod_seo-intro-text .kk_content {
+    margin: 8px 0 3px;
+	}
+	/* .mod_downloads.mod_gMapBvgYt .offset-xs-2 {
+    margin-left: 0;
+	} */
+	/* .mod_downloads.mod_gMapBvgYt .offset-xs-2 h2{
+    margin-left: 12.5%;
+	} */
+	/* .mod_downloads.mod_gMapBvgYt .col-xs-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+	} */
+	/* .mod_gMapBvgYt .gmap,
+	.mod_gMapBvgYt .yt {
+    height: 181px;
+	} */
+	.mod_infobox .rtetext {
+    max-width: 220px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b{
+	display: none !important;
+	}
+	.mod_bild-text-teaser .col-xs-16.d-md-none.d-xs-block .icon-b-dpurple{
+	background: url(img/visual-bottom_right.svg) no-repeat bottom right;
+	z-index: 1;
+	width: 24px;
+	height: 24px;
+	display: block !important;
+	position: absolute;
+	right: 0;
+	bottom: -27px;
+    }
+    .mod_bild-text-teaser .col-xs-16.d-md-none.d-xs-block .icon-b-blue{
+	background: url(img/visual-bottom_right_blue.svg) no-repeat bottom right;
+	z-index: 1;
+	width: 24px;
+	height: 24px;
+	display: block !important;
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	}
+	.mod_bild-text-teaser h3 a{
+		color: #24195D;
+	}
+	.mod_buehnezwei .green-bg .row {
+    padding-top: 24px;
+	}
+	.mod_buehnezwei .green-bg.noImg .row {
+    padding-top: 20px;
+	}
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -60px 64px !important;
+    background-image: none;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+	.mod_leistungen .row:last-child .icon-b-green{
+	margin-top: 20px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.footer .row.teaserlinks .justify-content-between .text-md-left,
+	.footer .row.teaserlinks .justify-content-between .text-md-center,
+	.footer .row.teaserlinks .justify-content-between .text-md-right{
+	width: 100%;
+	flex: none;
+	}
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 384px) {
+	body > .container { max-width: none; }
+
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -8px 60px !important;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 360px) {
+	.mod_buehnezwei .green-bg {
+    background: no-repeat -22px 0;
+    background-image: url(../images/me_bg-384.png);
+	}
+	.mod_buehnezwei .green-bg.noImg .row {
+    padding-top: 24px;
+	}
+	.mod_buehnezwei .is-vid iframe {
+    width: 100%;
+    height: 190px;
+	}
+	.mod_3-er-teaser img {
+    width: 266px;
+    height: auto;
+	}
+	.mod_3-er-teaser .item-w p,
+	.mod_3-er-teaser .item-w h5.teaser-header {
+    max-width: 267px;
+	}
+	/* .mod_gMapBvgYt .gmap, .mod_gMapBvgYt .yt {
+    height: 203px;
+	} */
+	.mod_kontakt .image img {
+    max-width: 100%;
+    height: auto;
+	}
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -22px 60px !important;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+	.mod_infobox .rtetext {
+    max-width: 248px;
+	}
+	.mod_navieinrichtung .menu-e {
+    -ms-flex: 0 0 180px;
+    flex: 0 0 180px;
+    max-width: 180px;
+	}
+	/* .mod_navieinrichtung .menu-e .menu-e-tabs > li, .mod_navieinrichtung .menu-e .menu-e-tabs > li .menu-head {
+    width: 180px;
+	} */
+	.mod_navieinrichtung .menu-e .tabcontent {
+    width: 360px;
+	}
+}
+
+
+
+@media only screen and (min-width: 384px) {
+	/*body > .container { background: transparent url(img/24_grid_bg.png) repeat 0 0; }*/
+
+	.mod_einrichtungsteaser.teaser-liste .icon-t,
+	.mod_einrichtungsteaser.teaser-slider .icon-t,
+	.mod_eventsteaser.list-view .icon-t,
+	.mod_eventsteaser.slider-view .icon-t,
+	.mod_ekomiwidget .icon-t,
+	.mod_infobox .icon-t,
+	.mod_3-er-teaser .icon-t,
+	.mod_bereichs-teaser .icon-t,
+	.mod_ankerliste .icon-t,
+	.mod_leistungen .icon-t,
+	.mod_zahltext .icon-t,
+	.mod_downloads .icon-t,
+	.mod_akkordeon .icon-t,
+	.mod_linkliste .icon-t,
+	.mod_leitbild .icon-t,
+	.mod_kontakt .icon-t,
+	.mod_seo-intro-text .icon-t,
+	.mod_aktuelles-teaser .icon-t,
+	.mod_sprechstunde .icon-t {
+		width: 24px;
+		height: 24px;
+		max-width: 24px;
+		max-width: 40px;
+		margin: 0;
+	}
+	.mod_einrichtungsteaser.teaser-liste .icon-b,
+	.mod_einrichtungsteaser.teaser-slider .icon-b,
+	.mod_eventsteaser.list-view .icon-b,
+	.mod_eventsteaser.slider-view .icon-b,
+	.mod_ekomiwidget .icon-b,
+	.mod_ankerliste .icon-b,
+	.mod_3-er-teaser .icon-b,
+	.mod_bereichs-teaser .icon-b,
+	.mod_infobox .icon-b,
+	.mod_leistungen .icon-b,
+	.mod_zahltext .icon-b,
+	.mod_downloads .icon-b,
+	.mod_akkordeon .icon-b,
+	.mod_linkliste .icon-b,
+	.mod_leitbild .icon-b,
+	.mod_kontakt .icon-b,
+	.mod_seo-intro-text .icon-b,
+	.mod_aktuelles-teaser .icon-b,
+	.mod_sprechstunde .icon-b {
+		width: 100%;
+		height: 24px;
+		margin: 0;
+	}
+	.mod_ankerliste .row.justify-content-between {
+		padding-bottom: 40px;
+	}
+
+	.mod_infobox .headline { margin-bottom: 54px; }
+
+	.mod_bild-text-teaser .slick-slide .row .icon-t {
+		position: absolute;
+		left: 0;
+		top: -25px;
+		width: 24px;
+		height: 24px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b {
+		position: absolute;
+		right: 0;
+		bottom: 12px;
+		width: 24px;
+		height: 24px;
+		display: block !important;
+	}
+	.mod_zitattext div.blockquote::before,
+	.mod_zitattext div.blockquote::after {
+		height: 24px;
+		width: 24px;
+	}
+	.kk_content { margin: 8px 0 20px; }
+	.mod_akkordeon .pad-top { margin-top: 8px; }
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(1) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(2) p {
+		margin-bottom: 0;
+	}
+
+	.mod_einrichtungsteaser.teaser-liste .kk_content { margin: 8px 0 20px; }
+	.mod_ekomiwidget .kk_content { margin: -10px 0 4px; }
+	.mod_linkliste .kk_content { margin: 15px 0 20px; }
+	.mod_ankerliste .row.justify-content-between { padding-bottom: 0 !important;}
+	.mod_sprechstunde .kk_content { margin: 8px 0 20px; }
+	.mod_3-er-teaser .kk_content { margin: 5px 0 0px; }
+	.mod_infobox .kk_content { margin: 8px 0 -20px; }
+	.mod_zahltext .kk_content { margin: 8px 0 7px; }
+	.mod_linkliste .kk_content { margin: 7px 0 20px; }
+	.mod_seo-intro-text .kk_content { margin: 8px 0 3px; }
+	.mod_bereichs-teaser .kk_content { margin: 8px 0 -10px; }
+	.mod_aktuelles-teaser.slider .kk_content{ margin: -3px 0 0px; }
+
+	.mod_linkliste.mod_ankerliste .kk_content {
+    margin: 8px 0 20px;
+	}
+
+	.mod_buehnezwei .green-bg {
+    background: no-repeat 0px 0 !important;
+    background-image: none !important;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat 0px 64px !important;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+	.mod_navieinrichtung .menu-e {
+    max-width: 192px !important;
+    flex: 0 0 192px !important;
+	}
+	.mod_navieinrichtung .menu-e .tabcontent {
+    width: 384px !important;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	/*body > .container { background: transparent url(img/48_grid_bg.png) repeat 0 0; }*/
+
+	.mod_einrichtungsteaser.teaser-liste .icon-t,
+	.mod_einrichtungsteaser.teaser-slider .icon-t,
+	.mod_eventsteaser.list-view .icon-t,
+	.mod_eventsteaser.slider-view .icon-t,
+	.mod_ekomiwidget .icon-t,
+	.mod_ankerliste .icon-t,
+	.mod_3-er-teaser .icon-t,
+	.mod_bereichs-teaser .icon-t,
+	.mod_infobox .icon-t,
+	.mod_leistungen .icon-t,
+	.mod_zahltext .icon-t,
+	.mod_downloads .icon-t,
+	.mod_akkordeon .icon-t,
+	.mod_linkliste .icon-t,
+	.mod_leitbild .icon-t,
+	.mod_kontakt .icon-t,
+	.mod_seo-intro-text .icon-t,
+	.mod_aktuelles-teaser .icon-t,
+	.mod_sprechstunde .icon-t {
+		width: 32px;
+		height: 32px;
+		max-width: 32px;
+		margin: 0 0 0 32px;
+	}
+	.mod_einrichtungsteaser.teaser-liste .icon-b,
+	.mod_einrichtungsteaser.teaser-slider .icon-b,
+	.mod_eventsteaser.list-view .icon-b,
+	.mod_eventsteaser.slider-view .icon-b,
+	.mod_ekomiwidget .icon-b,
+	.mod_ankerliste .icon-b,
+	.mod_3-er-teaser .icon-b,
+	.mod_bereichs-teaser .icon-b,
+	.mod_infobox .icon-b,
+	.mod_leistungen .icon-b,
+	.mod_zahltext .icon-b,
+	.mod_downloads .icon-b,
+	.mod_akkordeon .icon-b,
+	.mod_linkliste .icon-b,
+	.mod_leitbild .icon-b,
+	.mod_kontakt .icon-b,
+	.mod_seo-intro-text .icon-b,
+	.mod_aktuelles-teaser .icon-b,
+	.mod_sprechstunde .icon-b {
+		width: 100%;
+		height: 32px;
+		margin: 0 32px 0 0;
+	}
+	.mod_bereichs-teaser .icon-b { margin-top: -6px; }
+
+	.mod_infobox .headline { margin-bottom: 63px; }
+	.mod_infobox .rtetext { max-width: 552px; }
+
+	.mod_bild-text-teaser .slick-slide .row .icon-t {
+		position: absolute;
+		left: -16px;
+		top: -16px;
+		width: 32px;
+		height: 32px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b {
+		position: absolute;
+		right: -16px;
+		bottom: 16px;
+		width: 32px;
+		height: 32px;
+	}
+	/* .mod_zitattext div.blockquote::before,
+	.mod_zitattext div.blockquote::after {
+		height: 32px;
+		width: 32px;
+	} */
+
+	.mod_einrichtungsteaser.teaser-slider .kk_content { margin: 8px 0 20px; }
+	.mod_einrichtungsteaser.teaser-liste .kk_content { margin: 8px 0 20px; }
+	.mod_eventsteaser.slider-view .kk_content { margin: 8px 0 20px; }
+	.mod_eventsteaser.list-view .kk_content { margin: 8px 0 20px; }
+	.mod_sprechstunde .kk_content { margin: 8px 0 20px; }
+	.mod_ekomiwidget .kk_content { margin: -25px 0 3px; }
+	.mod_kontakt .kk_content { margin: 8px 0 20px; }
+	.kk_content { margin: 8px 0 20px; }
+	.mod_akkordeon .pad-top { margin-top: 8px; }
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(1) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(2) p {
+		margin-bottom: 0;
+	}
+	.mod_linkliste .kk_content { margin: 9px 0 20px; }
+	.mod_infobox .kk_content { margin: 8px 0 -28px; }
+	.mod_zahltext .kk_content { margin: 8px 0 12px; }
+	.mod_seo-intro-text .kk_content { margin: 8px 0 4px; }
+	.mod_aktuelles-teaser.slider .kk_content { margin: 0; }
+	.mod_aktuelles-teaser.slider .navi-button-pad { padding-bottom: 20px; }
+	.mod_buehnezwei .noImg {
+    background-image: url(../images/me_bg-768.png);
+	}
+	.mod_buehnezwei .green-bg {
+    background: no-repeat 0px 0 !important;
+        background-image: none !important;
+    background-image: url(../images/me_bg-768.png) !important;
+	}
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat 0 64px !important;
+    background-image: none !important;
+    background-image: url(../images/me_bg-768.png) !important;
+	}
+	.mod_bild-text-teaser .carousel-control-prev-next {
+    top: 310px;
+	}
+	/* .footer .teaserlinks .border-lr:first-child {
+    border-width: 0;
+    }
+	.footer .teaserlinks .border-lr:last-child	 {
+    border-width: 0 0 0 1px;
+    } */
+    /* .mod_gMapBvgYt .gmap, .mod_gMapBvgYt .yt {
+    height: 450px;
+} */
+	.mod_navieinrichtung .menu-e {
+    -ms-flex: 0 0 600px !important;
+    flex: 0 0 600px !important;
+    max-width: 600px !important;
+	}
+	.mod_navieinrichtung .menu-e .tabcontent {
+    width: 768px !important;
+	}
+	.mod_buehnezwei .green-bg .row {
+    padding-top: 48px;
+	}
+	.mod_buehnezwei .green-bg.noImg .row {
+    padding-top: 48px;
+	}
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+	/*body > .container { background: transparent url(img/64_grid_bg.png) repeat 0 0; }*/
+
+	.mod_einrichtungsteaser.teaser-liste .icon-t,
+	.mod_einrichtungsteaser.teaser-slider .icon-t,
+	.mod_eventsteaser.list-view .icon-t,
+	.mod_eventsteaser.slider-view .icon-t,
+	.mod_eventsteaser.list.scroll-container .icon-t,
+	.mod_ekomiwidget .icon-t,
+	.mod_ankerliste .icon-t,
+	.mod_3-er-teaser .icon-t,
+	.mod_bereichs-teaser .icon-t,
+	.mod_infobox .icon-t,
+	.mod_leistungen .icon-t,
+	.mod_zahltext .icon-t,
+	.mod_downloads .icon-t,
+	.mod_akkordeon .icon-t,
+	.mod_linkliste .icon-t,
+	.mod_leitbild .icon-t,
+	.mod_kontakt .icon-t,
+	.mod_seo-intro-text .icon-t,
+	.mod_aktuelles-teaser .icon-t,
+	.mod_sprechstunde .icon-t {
+		width: 32px;
+		height: 32px;
+		max-width: 32px;
+		margin: 0 0 0 48px;
+	}
+	.mod_einrichtungsteaser.teaser-liste .icon-b,
+	.mod_einrichtungsteaser.teaser-slider .icon-b,
+	.mod_eventsteaser.list-view .icon-b,
+	.mod_eventsteaser.slider-view .icon-b,
+	.mod_eventsteaser.list.scroll-container .icon-b,
+	.mod_ekomiwidget .icon-b,
+	.mod_ankerliste .icon-b,
+	.mod_3-er-teaser .icon-b,
+	.mod_bereichs-teaser .icon-b,
+	.mod_infobox .icon-b,
+	.mod_leistungen .icon-b,
+	.mod_zahltext .icon-b,
+	.mod_downloads .icon-b,
+	.mod_akkordeon .icon-b,
+	.mod_linkliste .icon-b,
+	.mod_leitbild .icon-b,
+	.mod_kontakt .icon-b,
+	.mod_seo-intro-text .icon-b,
+	.mod_aktuelles-teaser .icon-b,
+	.mod_sprechstunde .icon-b {
+		width: 100%;
+		height: 32px;
+		margin: 0 48px 0 0;
+	}
+
+	.mod_bereichs-teaser .icon-b { margin-top: -6px; }
+
+
+	.mod_eventsteaser.list.scroll-container .kk_content {
+    margin: 21px 0 9px;
+	}
+
+	.mod_infobox .headline { margin-bottom: 68px; }
+	.mod_infobox .rtetext { max-width: 338px; }
+
+	.mod_bild-text-teaser .slick-slide .row .icon-t {
+		position: absolute;
+		left: -17px;
+		top: -17px;
+		width: 32px;
+		height: 32px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b {
+		position: absolute;
+		right: -16px;
+		bottom: 0;
+		width: 32px;
+		height: 32px;
+	}
+	/* .mod_zitattext div.blockquote::before,
+	.mod_zitattext div.blockquote::after {
+		height: 32px;
+		width: 32px;
+	} */
+	.kk_content { margin: 18px 0 20px; }
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(1) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(2) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(3) p {
+		margin-bottom: 0;
+	}
+
+	.mod_einrichtungsteaser.teaser-slider .kk_content { margin: 8px 0 20px; }
+	.mod_einrichtungsteaser.teaser-liste .kk_content { margin: 18px 0 20px; }
+	.mod_eventsteaser.slider-view .kk_content { margin: 8px 0 20px; }
+	.mod_eventsteaser.list-view .kk_content { margin: 8px 0 20px; }
+	.mod_ekomiwidget .kk_content { margin: -25px 0 3px; }
+	.mod_linkliste .kk_content { margin: 8px 0 20px; }
+	.mod_ankerliste .row.justify-content-between { padding-bottom: 0 !important; }
+	.mod_aktuelles-teaser .kk_content { margin: 17px 0 20px; }
+	.mod_sprechstunde .kk_content { margin: 8px 0 20px; }
+	.mod_3-er-teaser .kk_content { margin: 5px 0 20px; }
+	.mod_aktuelles-teaser.slider .kk_content { margin: 7px 0 20px; }
+	.mod_kontakt .kk_content { margin: 8px 0 20px; }
+	.mod_akkordeon .pad-top { margin-top: 17px; }
+	.mod_infobox .kk_content { margin: 15px 0 -8px; }
+	.mod_seo-intro-text .kk_content { margin: 8px 0 3px; }
+
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(1) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(2) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(3) p {
+		margin-bottom: 0;
+	}
+	.mod_zahltext .kk_content {
+    margin: 28px 0 27px;
+	}
+	.mod_buehnezwei .noImg {
+    background-image: url(../images/me_bg-1024.png);
+	}
+	.mod_buehnezwei .green-bg {
+    background: no-repeat 0px 0 !important;
+    background-image: url(../images/me_bg-1024.png) !important;
+	}
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat 0 64px !important;
+    background-image: url(../images/me_bg-1024.png) !important;
+	}
+	.mod_buehnezwei .is-vid iframe {
+    width: 100%;
+    height: 253px;
+	}
+	/* .mod_downloads.mod_gMapBvgYt .offset-xs-2 {
+    margin-left: 12.5%;
+	}
+	.mod_downloads.mod_gMapBvgYt .col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+	}
+	.mod_downloads.mod_gMapBvgYt .col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37.5%;
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+    margin-left: 0;
+	}
+	.mod_gMapBvgYt .gmap,
+	.mod_gMapBvgYt .yt {
+    height: 325px;
+	}
+	.mod_gMapBvgYt .gmap, .mod_gMapBvgYt .yt {
+    height: 432px;
+	} */
+	.mod_bild-text-teaser .carousel-control-prev-next {
+    top: 340px;
+	}
+	.mod_navieinrichtung .menu-e {
+    -ms-flex: 0 0 800px !important;
+    flex: 0 0 800px !important;
+    max-width: 800px !important;
+	}
+	.mod_navieinrichtung .menu-e .menu-e-tabs > li, .mod_navieinrichtung .menu-e .menu-e-tabs > li .menu-head {
+    width: 200px;
+    }
+    .mod_navieinrichtung .menu-e .tabcontent {
+    width: 1024px !important;
+	}
+	.mod_buehnezwei .green-bg .row {
+    padding-top: 64px;
+	}
+	.mod_buehnezwei .green-bg.noImg .row {
+    padding-top: 64px;
+	}
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1280px) {
+	/*body > .container { background: transparent url(img/80_grid_bg.png) repeat 0 0; }*/
+
+	.mod_einrichtungsteaser.teaser-liste .icon-t,
+	.mod_einrichtungsteaser.teaser-slider .icon-t,
+	.mod_eventsteaser.list-view .icon-t,
+	.mod_eventsteaser.slider-view .icon-t,
+	.mod_eventsteaser.list.scroll-container .icon-t,
+	.mod_ekomiwidget .icon-t,
+	.mod_ankerliste .icon-t,
+	.mod_3-er-teaser .icon-t,
+	.mod_bereichs-teaser .icon-t,
+	.mod_infobox .icon-t,
+	.mod_leistungen .icon-t,
+	.mod_zahltext .icon-t,
+	.mod_downloads .icon-t,
+	.mod_akkordeon .icon-t,
+	.mod_linkliste .icon-t,
+	.mod_leitbild .icon-t,
+	.mod_kontakt .icon-t,
+	.mod_seo-intro-text .icon-t,
+	.mod_aktuelles-teaser .icon-t,
+	.mod_sprechstunde .icon-t {
+		width: 40px;
+		height: 40px;
+		max-width: 40px;
+		margin: 0 0 0 60px;
+	}
+	.mod_einrichtungsteaser.teaser-liste .icon-b,
+	.mod_einrichtungsteaser.teaser-slider .icon-b,
+	.mod_eventsteaser.list-view .icon-b,
+	.mod_eventsteaser.slider-view .icon-b,
+	.mod_eventsteaser.list.scroll-container .icon-b,
+	.mod_ekomiwidget .icon-b,
+	.mod_ankerliste .icon-b,
+	.mod_3-er-teaser .icon-b,
+	.mod_bereichs-teaser .icon-b,
+	.mod_infobox .icon-b,
+	.mod_leistungen .icon-b,
+	.mod_zahltext .icon-b,
+	.mod_downloads .icon-b,
+	.mod_akkordeon .icon-b,
+	.mod_linkliste .icon-b,
+	.mod_leitbild .icon-b,
+	.mod_kontakt .icon-b,
+	.mod_seo-intro-text .icon-b,
+	.mod_aktuelles-teaser .icon-b,
+	.mod_sprechstunde .icon-b {
+		width: 100%;
+		height: 40px;
+		margin: 0 60px 0 0;
+	}
+	.mod_bereichs-teaser .icon-b { margin-top: -10px; }
+
+	.mod_bild-text-teaser .slick-slide .row .icon-t {
+		position: absolute;
+		left: -21px;
+		top: -21px;
+		width: 40px;
+		height: 40px;
+	}
+	.mod_bild-text-teaser .slick-slide .row .icon-b {
+		position: absolute;
+		right: -21px;
+		bottom: 1px;
+		width: 40px;
+		height: 40px;
+	}
+	/* .mod_zitattext div.blockquote::before,
+	.mod_zitattext div.blockquote::after {
+		height: 40px;
+		width: 40px;
+	} */
+	.mod_infobox .rtetext { max-width: 426px; }
+	.kk_content { margin: 28px 0 30px; }
+
+	.mod_einrichtungsteaser.teaser-slider .kk_content { margin: 16px 0 30px; }
+	.mod_einrichtungsteaser.teaser-liste .kk_content { margin: 16px 0 28px; }
+	.mod_eventsteaser.slider-view .kk_content { margin: 16px 0 30px; }
+	.mod_eventsteaser.list-view .kk_content { margin: 16px 0 30px; }
+	.mod_sprechstunde .kk_content { margin: 16px 0 30px; }
+	.mod_3-er-teaser .kk_content { margin: 16px 0 30px; }
+	.mod_ekomiwidget .kk_content { margin: -20px 0 30px; }
+	.mod_linkliste .kk_content{ margin: 15px 0 30px; }
+	.mod_ankerliste .row.justify-content-between {padding-bottom: 0 !important;}
+	.mod_aktuelles-teaser .kk_content {margin: 17px 0 30px;}
+	.mod_aktuelles-teaser.slider .kk_content {margin: 7px 0 30px;}
+	.mod_akkordeon .pad-top {margin-top: 17px;}
+	.mod_kontakt .kk_content { margin: 16px 0 30px; }
+	.mod_infobox .kk_content {margin: 15px 0 -18px;}
+	.mod_seo-intro-text .kk_content {margin: 15px 0 12px;}
+
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(1) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(2) p,
+	.mod_leitbild .pad-1-2-r:nth-last-of-type(3) p {
+		margin-bottom: 0;
+	}
+	.mod_buehnezwei .noImg {
+    background-image: url(../images/me_bg-1280.png);
+	}
+
+	.mod_downloads.mod_gMapBvgYt .kk_content {
+    margin: 16px 0 30px;
+	}
+
+	.mod_buehnezwei .green-bg {
+    background: no-repeat 0px 0 !important;
+    background-image: none !important;
+    background-image: url(../images/me_bg-1280.png) !important;
+	}
+	.mod_buehnezwei .is-vid iframe {
+    width: 100%;
+    height: 315px;
+	}
+	/* .mod_gMapBvgYt .gmap,
+	.mod_gMapBvgYt .yt {
+    height: 538px;
+	} */
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat 0 80px !important;
+    background-image: url(../images/me_bg-1280.png) !important;
+	}
+	.mod_bild-text-teaser .carousel-control-prev-next {
+    top: 420px;
+	}
+	.mod_navieinrichtung .menu-e {
+    -ms-flex: 0 0 78.125% !important;
+    flex: 0 0 78.125% !important;
+    max-width: 78.125% !important;
+	}
+	.mod_navieinrichtung .menu-e .menu-e-tabs > li, .mod_navieinrichtung .menu-e .menu-e-tabs > li .menu-head {
+    width: 250px;
+    }
+    .mod_navieinrichtung .menu-e .tabcontent {
+    width: 1280px !important;
+	}
+	.mod_buehnezwei .green-bg .row {
+    padding-top: 80px;
+	}
+	.mod_leistungen .row:last-child .icon-b-green{
+	margin-top: 30px;
+	}
+	.mod_buehnezwei .green-bg.noImg .row {
+    padding-top: 80px;
+	}
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 384px) {
+	.mod_navieinrichtung .menu-e {
+    max-width: 195px;
+}
+.mod_navieinrichtung .menu-e .menu-e-tabs > li, .mod_navieinrichtung .menu-e .menu-e-tabs > li .menu-head {
+    width: 195px;
+}
+.mod_navieinrichtung.subnavi .logo-e {
+    padding: 13px 18px;
+}
+.mod_kontakt .image img {
+    max-width: 100% !important;
+    height: auto;
+}
+.mod_navieinrichtung .menu-e {
+    max-width: 195px;
+    flex: 0 0 195px;
+}
+.container {
+    max-width: 375px;
+}
+.mod_buehnezwei .noImg {
+    background: no-repeat -8px -4px;
+    background-image: url(../images/me_bg-384_text.png);
+}
+.mod_buehnezwei .is-vid iframe {
+    width: 100%;
+    height: 198px;
+}
+.mod_buehnezwei .green-bg {
+    background: no-repeat -9px 0;
+    background-image: url(../images/me_bg-384.png);
+}
+.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat 0px 64px !important;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+.mod_bild-text-teaser .slick-slide .row .icon-b{
+	display: none !important;
+}
+.mod_bild-text-teaser .col-xs-16.d-md-none.d-xs-block .icon-b-dpurple{
+	background: url(img/visual-bottom_right.svg) no-repeat bottom right;
+	z-index: 1;
+	width: 24px;
+	height: 24px;
+	display: block !important;
+	position: absolute;
+	right: 0;
+	bottom: -27px;
+}
+.mod_navieinrichtung .menu-e .tabcontent {
+    width: 375px;
+}
+.mod_buehnezwei .green-bg .row {
+    padding-top: 24px;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -9px 64px !important;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+	.mod_navieinrichtung.subnavi .green-bg .row {
+    padding-top: 88px;
+	}
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+
+.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -23px 64px !important;
+    background-image: none;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+	.mod_navieinrichtung.subnavi .green-bg {
+    background: no-repeat -60px 64px !important;
+    background-image: none;
+    background-image: none;
+    background-image: url(../images/me_bg-384.png) !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

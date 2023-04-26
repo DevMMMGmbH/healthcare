@@ -1,0 +1,211 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	This Template is responsible for creating a table of domain objects.
+
+	If you modify this template, do not forget to change the overwrite settings
+	in /Configuration/ExtensionBuilder/settings.yaml:
+	  Resources:
+		Private:
+		  Templates:
+			List.html: keep
+
+	Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+    <f:if condition="{settings.teaserOption}==1">
+        <f:then>
+            <f:variable name="slick">slick</f:variable>
+            <f:variable name="viewType">teaser-slider</f:variable>
+        </f:then>
+        <f:else>
+            <f:variable name="viewType">teaser-liste</f:variable>
+        </f:else>
+    </f:if>
+    <div class="mod_einrichtungsteaser {viewType}" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row kk_contentx">
+
+                <div class="col-xs-12 offset-xs-2">
+                    <f:if condition="{settings.teaserHeader}">
+                        <f:then>
+                            <h2 class="header">{settings.teaserHeader}</h2>
+                        </f:then>
+                        <f:else>
+                            <div style="height:30px;"></div>
+                        </f:else>
+                     </f:if>
+                </div>
+
+            <div class="col-16 {slick}" data-slick-class="slick-c{data.uid}">
+                <f:if condition="{contactpersons}">
+                    <f:then>
+                        <div class="row slick-c{data.uid}" data-slick='{"autoplay":false, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                            <f:for each="{contactpersons}" as="contactperson" iteration="iterator">
+                                <div class="col-16" itemscope itemtype="https://schema.org/Person">
+                                    <div class="row">
+                                        <div class="col-xs-12 offset-xs-2 col-sm-12 col-md-4 offset-md-1 col-lg-4 image">
+                                            <f:if condition="{contactperson.image}">
+                                                <f:then>
+                                                    <f:render partial="MediaImage" arguments="{data_image:contactperson.image.originalResource, w-xs:240, w-sm:288, w-md:264, w-lg:288, w-xl:361, notTreatIdAsReference:1}" />
+                                                    <span class="d-none" itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                                        <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/fileadmin/{contactperson.image.originalResource.originalFile.identifier}</span>
+                                                    </span>
+                                                </f:then>
+                                                <f:else>
+                                                    <span itemscope="itemscope" itemtype="http://schema.org/Thing">
+                                                        <img src="{f:uri.resource(path:'Images/dummy.png', extensionName: 'pgdcontactperson')}" loading="lazy" />
+                                                    </span>
+                                                    <span class="d-none" itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                                        <span class="d-none" itemprop="url">{f:cObject(typoscriptObjectPath: 'lib.baseurl')}/{f:uri.resource(path:'Images/dummy.png', extensionName: 'pgdcontactperson')}</span>
+                                                    </span>
+                                                </f:else>
+                                            </f:if>
+                                        </div>
+                                        <div class="col-xs-12 offset-xs-2 col-sm-12 col-md-9 offset-md-0">
+                                            <span class="d-none" itemprop="name">{contactperson.reftitle.title} {contactperson.firstname} {contactperson.lastname}</span>
+                                            <div class="type bold">{contactperson.refposition.position}</div>
+                                            <span class="d-none" itemprop="jobTitle">{contactperson.refposition.position}</span>
+                                            <h3 class="header color_dpurple">{contactperson.reftitle.title} {contactperson.firstname} {contactperson.lastname}</h3>
+                                            <div class="address">
+                                                <f:if condition="{institutions.{iterator.index}.iStreet}">
+                                                    <f:alias map="{address: '{institutions.{iterator.index}.iStreet} {institutions.{iterator.index}.iHouseNumber} {institutions.{iterator.index}.iZip} {institutions.{iterator.index}.iCity}'}">
+                                                        <f:link.external target="_blank" uri="https://www.google.de/maps/dir/{address->f:format.urlencode()}" class="googleMap color_blue bold" title="{institutions.{iterator.index}.iTitle} bei Google Maps">{institutions.{iterator.index}.iTitle} <f:if condition="{contactperson.area}"> | {contactperson.area}</f:if><f:if condition="{contactperson.room}"> | {contactperson.room}</f:if></f:link.external>
+                                                        <span class="d-none" itemprop="worksFor">{institutions.{iterator.index}.iTitle}</span>
+                                                     </f:alias>
+                                                </f:if>
+                                                </div>
+                                            <div class="desc">
+                                                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{contactperson.description}</f:format.html>
+                                                <span class="d-none" itemprop="description"><f:format.stripTags>{contactperson.description}</f:format.stripTags></span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="contactRow">
+                                                    <f:if condition="{contactperson.phone}">
+                                                        <span class="textspan">
+                                                            <a class="phone color_dpurple bold" target="_blank" href="tel:{contactperson.phone}">{contactperson.phone}</a>
+                                                        </span>
+                                                        <span class="d-none" itemprop="telephone">{contactperson.phone}</span>
+                                                    </f:if>
+                                                    <f:if condition="{contactperson.mobil}">
+                                                        <span class="textspan">
+                                                            <a class="phone mobil color_dpurple bold" target="_blank" href="tel:{contactperson.mobil}">{contactperson.mobil}</a>
+                                                        </span>
+                                                        <span class="d-none" itemprop="telephone">{contactperson.mobil}</span>
+                                                    </f:if>
+                                                    <f:if condition="{contactperson.email}">
+                                                        <span class="textspan">
+                                                            <f:link.typolink parameter="{contactperson.email}" class="email color_dpurple bold">{contactperson.email}</f:link.typolink>
+                                                        </span>
+                                                        <span class="d-none" itemprop="email">{contactperson.email}</span>
+                                                    </f:if>
+                                                    <f:if condition="{contactperson.fax}">
+                                                        <span class="textspan">
+                                                            <span class="fax color_dpurple bold">{contactperson.fax}</span>
+                                                        </span>
+                                                        <span class="d-none" itemprop="faxNumber">{contactperson.fax}</span>
+                                                    </f:if>
+                                                </div>
+                                                <f:if condition="{contactperson.therapie1link}">
+                                                    <div class="contactRow">
+                                                        <div class="col-16">
+                                                            <f:link.typolink parameter="{contactperson.therapie1link}" title="{contactperson.therapie1label}" class="rootlink color_dpurple bold">{contactperson.therapie1label}</f:link.typolink>
+                                                        </div>
+                                                        <f:if condition="{contactperson.therapie2link}">
+                                                            <div class="col-16">
+                                                                <f:link.typolink parameter="{contactperson.therapie2link}" title="{contactperson.therapie2label}" class="rootlink color_dpurple bold">{contactperson.therapie2label}</f:link.typolink>
+                                                            </div>
+                                                        </f:if>
+                                                        <f:if condition="{contactperson.therapie3link}">
+                                                            <div class="col-16">
+                                                                <f:link.typolink parameter="{contactperson.therapie3link}" title="{contactperson.therapie3label}" class="rootlink color_dpurple bold">{contactperson.therapie3label}</f:link.typolink>
+                                                            </div>
+                                                        </f:if>
+                                                        <f:if condition="{contactperson.therapie4link}">
+                                                            <div class="col-16">
+                                                                <f:link.typolink parameter="{contactperson.therapie4link}" title="{contactperson.therapie4label}" class="rootlink color_dpurple bold">{contactperson.therapie4label}</f:link.typolink>
+                                                            </div>
+                                                        </f:if>
+                                                    </div>
+                                                </f:if>
+                                                <f:if condition="{contactperson.profile}">
+                                                    <div class="col-16">
+                                                        <f:if condition="{contactperson.reftitle.title}">
+                                                            <f:then>
+                                                                <f:link.typolink parameter="{contactperson.profile}" title="{f:translate(key: 'ansprechpartner.toprofile',  extensionName='jsd_theme')} {f:translate(key: 'ansprechpartner.toprofilefrom',  extensionName='jsd_theme')} {contactperson.reftitle.title} {contactperson.firstname} {contactperson.lastname}" class="profile color_dpurple bold"><f:translate key="ansprechpartner.toprofile" extensionName="jsd_theme" /></f:link.typolink>
+                                                                <span class="d-none" itemprop="url"><f:uri.page pageUid="{contactperson.profile}" /></span>
+                                                            </f:then>
+                                                            <f:else>
+                                                                <f:link.typolink parameter="{contactperson.profile}" title="{f:translate(key: 'ansprechpartner.toprofile',  extensionName='jsd_theme')} {f:translate(key: 'ansprechpartner.toprofilefrom',  extensionName='jsd_theme')} {contactperson.firstname} {contactperson.lastname}" class="profile color_dpurple bold"><f:translate key="ansprechpartner.toprofile" extensionName="jsd_theme" /></f:link.typolink>
+                                                                <span class="d-none" itemprop="url"><f:uri.page pageUid="{contactperson.profile}" /></span>
+                                                            </f:else>
+                                                        </f:if>
+                                                    </div>
+                                                </f:if>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 offset-xs-2 col-md-13 offset-md-1 col-lg-13 border-div">
+                                            <div class="border-b"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </f:for>
+                        </div>
+                        <f:if condition="{slick}">
+                            <f:then>
+                                <div class="carousel-indicators d-md-none slick-dots-c{data.uid}  {f:if(condition: '!{settings.teaserListlink}', then: 'noMoreLink')}"></div>
+                                    <div class="carousel-control-prev-next d-none d-md-inline-block slick-c{data.uid}-navi {f:if(condition: '!{settings.teaserListlink}', then: 'noMoreLink')}">
+                                        <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+                                        </button>
+                                        <span class="count">
+                                            <b><span class="num"></span></b>/{contactpersons -> f:count()}
+                                        </span>
+                                        <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" onclick="jump('comments-{data.uid}')" ><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+                                        </button>
+                                    </div>
+                                    <f:if condition="{settings.teaserListlink}">
+                                        <f:then>
+                                            <div class="col-xs-12 offset-xs-2 contactsearch">
+                                                <f:link.typolink  parameter="{settings.teaserListlink}" title="{settings.teaserListLabel}" class="btn all button-dpurple_0-2 css-trans_all">
+                                                    {settings.teaserListLabel}
+                                                </f:link.typolink>
+                                            </div>
+                                        </f:then>
+                                    </f:if>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{settings.teaserListlink}">
+                                    <div class="row justify-content-between more moreList">
+                                        <div class="col-xs-12 offset-xs-2">
+                                            <f:link.typolink parameter="{settings.teaserListlink}" class="btn all button-dpurple_0-2 css-trans_all">
+                                                     {settings.teaserListLabel}
+                                            </f:link.typolink>
+                                        </div>
+                                    </div>
+                                </f:if>
+                        </f:else>
+                        </f:if>
+
+                    </f:then>
+                    <f:else><f:translate key="ansprechpartner.noresults" extensionName="jsd_theme" /></f:else>
+                </f:if>
+            </div>
+        </div>
+        <f:if condition="{slick}">
+            <f:if condition="{settings.teaserListlink}">
+                <f:then>
+                    <div class="row spacerbottom"></div>
+                </f:then>
+                <f:else>
+                    <div class="row spacerbottom noLink"></div>
+                </f:else>
+            </f:if>
+        </f:if>
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:section>
+</html>

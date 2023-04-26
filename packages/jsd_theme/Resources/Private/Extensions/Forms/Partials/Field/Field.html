@@ -1,0 +1,82 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:form.validationResults for="{element.rootForm.identifier}.{element.identifier}">
+    <div class="form-group{f:if(condition: '{validationResults.errors.0}', then: ' has-error')}">
+        <f:if condition="{doNotShowLabel} != 1">
+            <label class="control-label check-label" for="{element.uniqueIdentifier}">{formvh:translateElementProperty(element: element, property: 'label')}<f:if condition="{element.required}"><f:render partial="Field/Required" /></f:if></label>
+        </f:if>
+        <div class="{element.properties.containerClassAttribute}">
+            <f:format.raw>
+                {elementContent}
+                <f:if condition="{validationResults.flattenedErrors}">
+                    <span class="error help-block has-error-text" role="alert">
+                        <f:for each="{validationResults.errors}" as="error">
+                            <f:if condition="{element.properties.validationErrorMessages}">
+                                <f:format.htmlspecialchars>{formvh:translateElementError(element: element, error: error)}</f:format.htmlspecialchars>
+                                <br />
+                            </f:if>
+                        </f:for>
+                    </span>
+                </f:if>
+            </f:format.raw>
+            <f:if condition="{element.properties.elementDescription}">
+                <span class="help-block">{formvh:translateElementProperty(element: element, property: 'elementDescription')}</span>
+            </f:if>
+        </div>
+    </div>
+
+<f:variable name="validityStates" value="{
+    'patternMissmatch': {0:1221565130},
+    'tooLong': {0:1238108069},
+    'tooShort': {0:1238108068},
+    'rangeOverflow': {0:1221561846},
+    'rangeUnderflow': {0:1221561846},
+    'typeMissmatch': {0:1221565786, 1:1221560288, 2:1221563685, 3:1221560494, 4:1221559976, 5:1269883975, 6:1221551320},
+    'valueMissing': {0:1221560718}
+}" />
+
+<f:for each="{element.properties.validationErrorMessages}" as="validationErrorMessage">
+    <f:for each="{validityStates}" key="validityState" as="codes">
+        <f:for each="{codes}" as="code">
+            <f:if condition="{validationErrorMessage.code} == {code}">
+                <f:variable name="setCustomMessage" value="1" />
+            </f:if>
+        </f:for>
+    </f:for>
+</f:for>
+
+<f:if condition="{setCustomMessage}">
+    <f:asset.script identifier="{element.uniqueIdentifier}">
+
+        const field{element.parentRenderable.index}{element.index} = document.getElementById('{element.uniqueIdentifier}');
+
+        ['input', 'focus', 'mouseenter'].forEach(function (eventString) <f:format.raw value="{" />
+            field{element.parentRenderable.index}{element.index}.addEventListener(eventString, function (event) <f:format.raw value="{" />
+
+            <f:for each="{element.properties.validationErrorMessages}" as="validationErrorMessage">
+                <f:for each="{validityStates}" key="validityState" as="codes">
+                    <f:for each="{codes}" as="code">
+                        <f:if condition="{validationErrorMessage.code} == {code}">
+                            {f:if(condition: setElse, then: 'else ')}if (event.target.validity.{validityState}) <f:format.raw value="{" />
+                                event.target.setCustomValidity("{validationErrorMessage.message}");
+                                event.target.setAttribute('title', "{validationErrorMessage.message}");
+                            <f:format.raw value="}" />
+                            <f:variable name="setElse" value="1" />
+                        </f:if>
+                    </f:for>
+                </f:for>
+            </f:for>
+            else <f:format.raw value="{" />
+                event.target.setCustomValidity("");
+                event.target.removeAttribute('title');
+            <f:format.raw value="}" />
+            if (eventString !== 'mouseenter') <f:format.raw value="{" />
+                event.target.reportValidity();
+            <f:format.raw value="}" />
+            <f:format.raw value="}" />);
+        <f:format.raw value="}" />);
+
+    </f:asset.script>
+</f:if>
+
+</f:form.validationResults>
+</html>

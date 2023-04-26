@@ -1,0 +1,5 @@
+# titles in the page tree will have their ID numbers printed before the title
+options.pageTree.showPageIdWithTitle = 1
+
+# cache menu for non admin users
+options.clearCache.all = 1

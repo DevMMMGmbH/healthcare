@@ -1,0 +1,28 @@
+.DS_Store
+.idea
+nbproject
+*:Zone.Identifier
+# /var/*
+# !/var/labels
+# /vendor
+# /public/*
+# !/public/.htaccess
+# !/public/typo3conf
+# /public/typo3conf/*
+# !/public/typo3conf/LocalConfiguration.php
+# !/public/typo3conf/AdditionalConfiguration.php
+
+/.build
+/.db-backup
+/.ddev
+/.git
+/.git-bak
+/.info
+/.vscode
+/config
+/public
+/var
+/vendor
+/LICENSE
+# /Readme.md
+# /README.md

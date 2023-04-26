@@ -1,0 +1,711 @@
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=4812d128-c1f8-4bba-8573-8d3e9105dcbb&fontids=5631499,5631529");
+@font-face{
+    font-family: "Neue Plak Text W04 Regular";
+    src:url("../Fonts/5631499/f1393402-017c-45b3-befc-78eeba33562e.eot?#iefix");
+    src:url("../Fonts/5631499/f1393402-017c-45b3-befc-78eeba33562e.eot?#iefix") format("eot"),url("../Fonts/5631499/ad734153-699d-48a8-85d1-5ed1ad410b69.woff2") format("woff2"),url("../Fonts/5631499/12ea4496-da88-4292-89e0-58f2fc9da2bf.woff") format("woff"),url("../Fonts/5631499/6ec74d39-8d1a-4239-ab93-96e943cec785.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Neue Plak Text W04 Bold";
+    src:url("../Fonts/5631529/411a3fac-3843-4789-85de-1b71781e1aa3.eot?#iefix");
+    src:url("../Fonts/5631529/411a3fac-3843-4789-85de-1b71781e1aa3.eot?#iefix") format("eot"),url("../Fonts/5631529/5014e154-3299-48c9-a82c-479ff9a6bb92.woff2") format("woff2"),url("../Fonts/5631529/7f78a096-76ae-4cce-9f16-dbac3035417e.woff") format("woff"),url("../Fonts/5631529/8e23dc74-cc81-42c6-8f37-72370fbd25b8.ttf") format("truetype");
+}
+.mod_mailform .mandatory {
+    padding-left: 3px;
+}
+.mod_mailform legend,
+.mod_mailform label,
+.mod_mailform label span,
+.mod_mailform input[type="text"],
+.mod_mailform input[type="email"],
+.mod_mailform input[type="tel"]
+{
+    font-family: "Neue Plak Text W04 Bold";
+}
+.mod_mailform legend {
+    font-size: 24px;
+    color: #1B1A1A;
+    line-height: 32px;
+    padding: 20px 0 20px 0;
+    margin: 0;
+}
+.mod_mailform label {
+    font-size: 14px;
+    color: #24195D;
+    letter-spacing: 0;
+    line-height: 14px;
+}
+.mod_mailform textarea {
+    font-family: "Neue Plak Text W04 Regular";
+    font-size: 16px;
+    color: #24195D;
+    margin: 0 0 30px 0;
+    border: 1px solid #9C97B6;
+    padding: 10px 16px;
+    border-radius: 0;
+}
+.mod_mailform input[type="text"],
+.mod_mailform input[type="email"],
+.mod_mailform input[type="date"],
+.mod_mailform input[type="file"],
+.mod_mailform input[type="password"],
+.mod_mailform input[type="tel"] {
+    font-size: 16px;
+    color: #24195D;
+    border: 1px solid #9C97B6;
+    /* padding: 23px 16px; */
+    padding: 23px 16px 24px 16px;
+    border-radius: 0;
+    margin: 0 0 20px 0;
+}
+.mod_mailform input[type="date"] {
+    padding: 0;
+    padding-right: 48px;
+    padding-left: 16px;
+    height: 48px;
+    background: url(images/form/datepicker.png) 100% 50% no-repeat;
+}
+.mod_mailform input[type="date"].active {
+    font-family: "Neue Plak Text W04 Bold";
+}
+.mod_mailform input[type="date"]:hover {
+    cursor: pointer;
+}
+.mod_mailform input[type="date"] {
+    -webkit-appearance: none;
+    -webkit-padding-before: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 0 0;
+    -webkit-flex: 1 0 0;
+}
+.mod_mailform input[type="file"] {
+    padding: 11px 5px 10px 5px;
+    width: 100%;
+}
+.mod_mailform ::placeholder,
+.mod_mailform .form-control::placeholder
+{
+    font-family: "Neue Plak Text W04 Regular";
+    font-size: 16px;
+    color: #39306D;
+    opacity: 1;
+}
+.mod_mailform div.powermail_fieldwrap_type_select {
+    margin: 0 0 30px 0;
+}
+.mod_mailform div.powermail_fieldwrap_type_radio > label,
+.mod_mailform div.powermail_fieldwrap_type_check > label {
+    margin-bottom: 16px;
+}
+.mod_mailform div.powermail_fieldwrap_type_radio .radio,
+.mod_mailform div.powermail_fieldwrap_type_check .checkbox {
+    margin-bottom: 16px;
+}
+.mod_mailform div.powermail_fieldwrap_type_radio .radio label span,
+.mod_mailform div.powermail_fieldwrap_type_radio .form-check-inline.radio label span,
+.mod_mailform div.powermail_fieldwrap_type_check .checkbox label span,
+.mod_mailform div.powermail_fieldwrap_type_check .form-check-inline.checkbox label span {
+    display: block;
+    padding: 0 0 0 26px;
+    margin-top: -21px;
+    font-family: "Neue Plak Text W04 Regular";
+    font-size: 16px;
+    color: #191919;
+    line-height: 24px;
+}
+.mod_mailform div.powermail_fieldwrap_type_radio div .form-check-inline.radio,
+.mod_mailform div.powermail_fieldwrap_type_check .form-check-inline.checkbox {
+    margin-right: 0;
+    padding-right: 30px;
+}
+
+
+.mod_mailform input[type="checkbox"],
+.mod_mailform input[type="radio"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+     box-shadow: unset;
+}
+.mod_mailform input[type="checkbox"] {
+    background-image: url(images/form/check-off.png);
+}
+.mod_mailform input[type="checkbox"]:checked {
+    background-image: url(images/form/check-on.png);
+}
+.mod_mailform input[type="radio"] {
+    background-image: url(images/form/radio-off.png);
+}
+.mod_mailform input[type="radio"]:checked {
+    background: none;
+    background-image: url(images/form/radio-on.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 50% 50%;
+}
+
+
+.mod_mailform .form-control:focus {
+    color: #24195D;
+    background-color: inherit;
+    border-color: #9C97B6;
+    outline: 0;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+
+.mod_mailform select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    display: none;
+}
+.mod_mailform select::-ms-expand {
+    display: none;
+}
+.mod_mailform select:focus::-ms-value {
+    background-color: transparent;
+}
+.mod_mailform .selectboxit-arrow-container {
+    display: none;
+}
+.mod_mailform .selectboxit-container {
+    border: 0;
+    height: 48px;
+    cursor: pointer;
+    display: block;
+}
+.mod_mailform .selectboxit-container .selectboxit-options {
+    border: 1px solid #9C97B6;
+    border-radius: 0;
+    top: 47px !important;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.mod_mailform .selectboxit-option a {
+    border-top: 1px solid rgba(36, 25, 93, 0.1);
+    height: 47px;
+}
+.mod_mailform .selectboxit-list .selectboxit-option-anchor {
+    color: #39306D;
+    background: none;
+    padding-left: 10px;
+}
+.mod_mailform .selectboxit-list .selectboxit-option-first .selectboxit-option-anchor {
+    border: 0;
+}
+.mod_mailform .selectboxit-container .selectboxit {
+    border: 1px solid #9C97B6;
+    border-radius: 0;
+    padding-left: 11px;
+    width: 100% !important;
+}
+.mod_mailform .selectboxit-text,
+.mod_mailform .selectboxit-options a {
+    font-family: "Neue Plak Text W04 Regular";
+    font-size: 16px;
+    color: #39306D;
+    line-height: 46px !important;
+}
+.mod_mailform .selectboxit-container span,
+.mod_mailform .selectboxit-container .selectboxit-options a {
+    height: 48px;
+    line-height: 48px;
+}
+.mod_mailform .selectboxit-option-icon-container {
+    display: none;
+}
+.mod_mailform .selectboxit-btn,
+.mod_mailform .selectboxit-btn.selectboxit-enabled:hover,
+.mod_mailform .selectboxit-btn.selectboxit-enabled:focus,
+.mod_mailform .selectboxit-btn.selectboxit-enabled:active
+{
+    background: none;
+}
+.mod_mailform .selectboxit-focus,
+.mod_mailform .selectboxit-selected
+{
+    background: rgba(36, 25, 93, 0.05);
+    font-family: "Neue Plak Text W04 Bold";
+}
+.mod_mailform .selectboxit-focus a,
+.mod_mailform .selectboxit-selected a,
+.mod_mailform .selectboxit-focus a:hover,
+.mod_mailform .selectboxit-selected a:hover
+{
+    font-family: "Neue Plak Text W04 Bold";
+    color: #39306D;
+}
+.mod_mailform .select-wrap {
+    position: relative;
+}
+.mod_mailform .select-wrap:after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 48px;
+    margin: 10px 0 0 -48px;
+    background: no-repeat 50% 50%;
+    background-image: url(images/akkordeon-down_white.png);
+    background-color: #24195D;
+    pointer-events: none;
+    top: -10px;
+    right: 0px;
+}
+
+.mod_mailform .powermail_fieldwrap_type_text {
+    padding-bottom: 30px;
+}
+
+.mod_mailform .sending {
+    border-top: 1px solid rgba(36, 25, 93, 0.5);
+    /* margin-top: 40px; */
+    margin-top: 0;
+    padding-top: 5px;
+}
+.mod_mailform .powermail_reset {
+    margin-right: 15px;
+}
+
+.mod_mailform a.link {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 18px;
+}
+.mod_mailform a.link.intern {
+    background-image: url(images/rte/link_int.png);
+}
+.mod_mailform a.link.extern {
+    background-image: url(images/rte/link_ext.png);
+}
+.mod_mailform a.link.email {
+    background-image: url(images/rte/link_mail.png);
+}
+.mod_mailform a.link.telefon {
+    background-image: url(images/rte/link_phone.png);
+}
+.mod_mailform a.link.download {
+    background-image: url(images/rte/link_download.png);
+}
+
+
+/* error */
+.mod_mailform input[type="text"].parsley-error,
+.mod_mailform input[type="email"].parsley-error,
+.mod_mailform input[type="date"].parsley-error,
+.mod_mailform input[type="file"].parsley-error,
+.mod_mailform textarea.parsley-error {
+    border-color: red;
+}
+.mod_mailform .parsley-error::placeholder,
+.mod_mailform .parsley-error.form-control::placeholder,
+.mod_mailform input[type="date"].parsley-error,
+.mod_mailform input[type="file"].parsley-error,
+.mod_mailform .parsley-error .selectboxit-text {
+    color: red;
+}
+.mod_mailform .parsley-error .selectboxit-container .selectboxit {
+    border: 1px solid red;
+}
+.mod_mailform .parsley-error input[type="radio"] {
+    background-image: url(images/form/radio-error.png);
+}
+.mod_mailform .parsley-error input[type="checkbox"] {
+    background-image: url(images/form/check-error.png);
+}
+.mod_mailform .uploadinfo {
+    position: absolute;
+    top: -2px;
+    left: 13px;
+    z-index: 21;
+    font-size: 12px;
+    color: #333;
+    padding: 0 3px;
+}
+.mod_mailform input[type="file"] {
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.mod_mailform input[type="file"]:focus {
+    outline: 0;
+}
+
+
+
+
+.mod_mailform .file-upload-wrapper {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #9C97B6;
+}
+.mod_mailform .powermail_fieldwrap_type_file.formularfeldfehler .file-upload-wrapper {
+    border: 1px solid red;
+}
+.mod_mailform .file-upload-wrapper:after {
+    content: attr(data-text);
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 0 16px;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: 46px;
+    line-height: 46px;
+    color: #24195D;
+    font-family: "Neue Plak Text W04 Bold";
+    /* max-width: 220px; */
+    overflow: hidden;
+}
+.mod_mailform .file-upload-wrapper:before {
+    content: 'Datei wählen';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 47px;
+    background: #24195D;
+    color: #FFFFFF;
+    z-index: 25;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0 15px;
+    /* text-transform: uppercase; */
+    pointer-events: none;
+    font-family: "Neue Plak Text W04 Bold";
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.mod_mailform .file-upload-wrapper:hover:before {
+    background: rgba(36, 25, 93, 0.25);
+    color: #24195D;
+}
+.mod_mailform .file-upload-wrapper input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .mod_mailform .sending .btn {
+        max-width: 132px;
+    }
+    .mod_mailform .file-upload-wrapper:after {
+        max-width: 160px;
+    }
+    .mod_mailform .file-upload-wrapper {
+        margin-bottom: 20px;
+    }
+    .mod_mailform .uploadinfo {
+        position: absolute;
+        top: 46px;
+        left: -4px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .mod_mailform .file-upload-wrapper:after {
+        max-width: 530px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .mod_mailform .row .col-lg-8:first-child {
+        padding-right: 10px;
+    }
+    .mod_mailform .row .col-lg-8:last-child {
+        padding-left: 10px;
+    }
+}
+
+
+.mod_mailform a {
+    color: #24195D;
+}
+
+
+/* google chrome */
+.mod_mailform input::-webkit-inner-spin-button,
+.mod_mailform input::-webkit-clear-button {
+  display: none;
+}
+.mod_mailform input::-webkit-calendar-picker-indicator {
+    width: 48px;
+    height: 48px;
+    margin-right: -48px;
+    color: rgba(0, 0, 0, 0);
+    opacity: 1
+}
+.mod_mailform input::-webkit-calendar-picker-indicator:hover {
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+/* multiselect */
+.mod_mailform .ms-options-wrap,
+.mod_mailform .ms-options-wrap * {
+    box-sizing: border-box;
+}
+.mod_mailform .ms-options-wrap > button:focus,
+.mod_mailform .ms-options-wrap > button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #9C97B6;
+    background-color: #FFFFFF;
+    padding: 11px 16px 11px 16px;
+    margin-top: 1px;
+    font-family: "Neue Plak Text W04 Regular";
+    font-size: 16px;
+    color: #24195D;
+    outline-offset: -2px;
+    white-space: nowrap;
+}
+.mod_mailform .ms-options-wrap > button > span {
+    display: inline-block;
+}
+.mod_mailform .ms-options-wrap > button:after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 48px;
+    margin: 10px 0 0 -48px;
+    background: no-repeat 50% 50%;
+    background-image: url(images/akkordeon-down_white.png);
+    background-color: #24195D;
+    pointer-events: none;
+    top: -11px;
+    right: -1px;
+}
+.mod_mailform .ms-options-wrap.ms-has-selections > button {
+    color: #333;
+}
+.mod_mailform .ms-options-wrap > .ms-options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: -1px;
+    background: white;
+    z-index: 9999;
+    border: 1px solid #9C97B6;
+    overflow: auto;
+    visibility: hidden;
+}
+.mod_mailform .ms-options-wrap.ms-active > .ms-options {
+    visibility: visible
+}
+.mod_mailform .ms-options-wrap > .ms-options > .ms-search input {
+    width: 100%;
+    padding: 4px 5px;
+    border: none;
+    border-bottom: 1px groove;
+    outline: none;
+}
+.mod_mailform .ms-options-wrap > .ms-options .ms-selectall {
+    display: inline-block;
+    font-size: .9em;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.mod_mailform .ms-options-wrap > .ms-options .ms-selectall:hover {
+    text-decoration: underline;
+}
+.mod_mailform .ms-options-wrap > .ms-options > .ms-selectall.global {
+    margin: 4px 5px;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul,
+.mod_mailform .ms-options-wrap > .ms-options > ul > li.optgroup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li.ms-hidden {
+    display: none;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul > li.optgroup {
+    padding: 5px;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul > li.optgroup + li.optgroup {
+    border-top: 1px solid #aaa;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul > li.optgroup .label {
+    display: block;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 4px 4px 4px 20px;
+    margin: 1px 0;
+    border: 1px dotted transparent;
+    font-family: "Neue Plak Text W04 Regular";
+}
+.mod_mailform .ms-options-wrap > .ms-options.checkbox-autofit > ul label,
+.mod_mailform .ms-options-wrap > .ms-options.hide-checkbox > ul label {
+    padding: 4px;
+}
+
+.mod_mailform .ms-options-wrap > .ms-options > ul label.focused {
+    background-color: #FFFFFF;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul label:hover {
+    background-color: rgba(36, 25, 93, 0.05);
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li.selected label {
+    background-color: rgba(36, 25, 93, 0.05);
+    font-family: "Neue Plak Text W04 Bold";
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+.mod_mailform .ms-options-wrap > .ms-options.hide-checkbox > ul input[type="checkbox"] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+/* multiselect customs */
+.mod_mailform .ms-options-wrap > button:focus {
+    outline: 0;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+.mod_mailform .ms-options {
+    min-height: auto !important;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li {
+    border-top: 1px solid rgba(36, 25, 93, 0.1);
+    margin-top: -1px;
+    padding: 0;
+    margin: 0;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li:first-child {
+    border: 0;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li label {
+    padding: 17px 42px;
+    margin: 0;
+    border: 0;
+}
+.mod_mailform .ms-options-wrap > .ms-options > ul li input[type="checkbox"] {
+    margin-top: 11px;
+    margin-left: 11px;
+}
+.mod_mailform .ms-has-selections button span {
+    font-family: "Neue Plak Text W04 Bold";
+    color: #24195D;
+    margin-top: -1px;
+}
+.mod_mailform .selectmulti-wrap.parsley-error .ms-options-wrap > .ms-options > ul li input[type="checkbox"] {
+    background-image: url(images/form/check-off.png);
+}
+.mod_mailform .selectmulti-wrap.parsley-error .ms-options-wrap > .ms-options > ul li.selected input[type="checkbox"] {
+    background-image: url(images/form/check-on.png);
+}
+.mod_mailform .selectmulti-wrap.parsley-error .ms-options-wrap > button:focus,
+.mod_mailform .selectmulti-wrap.parsley-error .ms-options-wrap > button,
+.mod_mailform .selectmulti-wrap.parsley-error .ms-options {
+    border: 1px solid red;
+}
+@media only screen and (min-width: 1024px) {
+    .mod_mailform .ms-options-wrap > .ms-options {
+        width: calc(100% - 10px);
+    }
+    .mod_mailform .row .col-lg-8:last-child .ms-options-wrap > .ms-options {
+        left: 10px;
+    }
+}
+
+
+/* input:invalid,
+input:required:invalid,
+textarea:invalid,
+textarea:required:invalid
+{
+    border: 3px solid #900 !important;
+}
+input:focus:invalid,
+textarea:focus:invalid
+{
+    outline: none;
+}
+
+input:required:valid,
+textarea:required:valid
+{ border-color:green} */
+
+.has-error label{
+    color: red !important;
+}
+.has-error input[type="radio"] {
+    background-image: url(images/form/radio-error.png);
+}
+.has-error input[type="checkbox"] {
+    background-image: url(images/form/check-error.png);
+}
+.has-error input[type="text"],
+.has-error input[type="email"],
+.has-error input[type="date"],
+.has-error input[type="file"],
+.has-error input[type="password"],
+.has-error input[type="tel"],
+.has-error textarea,
+.has-error .selectboxit-container .selectboxit,
+.has-error .ms-options-wrap > button:focus,
+.has-error .ms-options-wrap > button,
+.has-error .file-upload-wrapper {
+    border-color: red;
+}
+.has-error input::placeholder,
+.has-error textarea::placeholder,
+.has-error input[type="date"],
+.has-error input[type="file"],
+.has-error .selectboxit-text {
+    color: red !important;
+}
+
+.has-error-text {
+    color: red !important;
+}
+
+.mod_mailform textarea {
+    min-height: 200px;
+}

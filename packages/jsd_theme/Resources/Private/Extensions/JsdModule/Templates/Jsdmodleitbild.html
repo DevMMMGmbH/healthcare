@@ -1,0 +1,63 @@
+<f:if condition="{data_tx_jsdmodule_leitbilder}">
+    <div class="mod_leitbild" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row d-xs-none d-md-flex kk_content">
+            <div class="col-xs-12 offset-xs-2 col-md-6 offset-md-2 col-lg-4">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+
+            <f:for each="{data_tx_jsdmodule_leitbilder}" as="data_item" iteration="i">
+                <f:if condition="{i.cycle} == 1"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-1 col-lg-4 offset-lg-1 pad-1-2-r pad-bot"></f:if>
+                <f:if condition="{i.cycle} == 2"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-3 col-lg-4 offset-lg-0 pad-1-2-r"></f:if>
+                <f:if condition="{i.cycle} == 3"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-1 col-lg-4 offset-lg-3 pad-1-2-r pad-bot"></f:if>
+                <f:if condition="{i.cycle} == 4"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-3 col-lg-4 offset-lg-0 pad-1-2-r"></f:if>
+                <f:if condition="{i.cycle} == 5"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-1 col-lg-4 offset-lg-0 pad-1-2-r pad-bot"></f:if>
+                <f:if condition="{i.cycle} == 6">
+                    <div class="col-xs-16">
+                        <div class="row">
+                </f:if>
+                <f:if condition="{i.cycle} == 6"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-3 col-lg-4 offset-lg-3 pad-1-2-r"></f:if>
+                <f:if condition="{i.cycle} == 7"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-1 col-lg-4 offset-lg-0 pad-1-2-r pad-bot"></f:if>
+                <f:if condition="{i.cycle} == 8"><div class="col-xs-12 offset-xs-2 col-md-5 offset-md-3 col-lg-4 offset-lg-0 pad-1-2-r"></f:if>
+                <p class="lila">
+                    <span class="count">{i.cycle}</span>{data_item.data.tx_jsdmodule_leitbild -> f:format.htmlentitiesDecode() -> f:format.nl2br()}
+                </p>
+                <f:if condition="{i.cycle} == 8">
+                        </div>
+                    </div>
+                </f:if>
+                </div>
+            </f:for>
+        </div>
+
+        <f:comment>Clone for BT carousel on xs-view</f:comment>
+
+        <div class="row d-none d-xs-flex d-md-none">
+            <div class="col-xs-12 offset-xs-2">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout: 2, htmlDecode: 1}" />
+            </div>
+
+            <div class="col-xs-12 offset-xs-2 slick" data-slick-class="slick-c{data.uid}">
+                <div class="row slick-c{data.uid}" data-slick='{"autoplay":true, "arrows":false, "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                    <f:for each="{data_tx_jsdmodule_leitbilder}" as="data_item" iteration="i">
+                        <div class="col-xs-16">
+                            <p class="lila">
+                                <span class="count">{i.cycle}</span>{data_item.data.tx_jsdmodule_leitbild -> f:format.htmlentitiesDecode() -> f:format.nl2br()}
+                            </p>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+            <div class="col-xs-12 offset-xs-2 text-md-right slick_nav" data-slick-class-nav="slick-nav-c{data.uid}">
+                <div class="border_b"></div>
+                <div class="d-none d-xs-block d-md-none slick-dots-c{data.uid}"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>

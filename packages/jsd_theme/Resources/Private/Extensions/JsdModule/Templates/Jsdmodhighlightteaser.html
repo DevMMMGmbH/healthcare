@@ -1,0 +1,37 @@
+<div class="mod_highlight-teaser" id="c{data.uid}">
+    <div class="row">
+        <f:for each="{data_tx_jsdmodule_highlight_teaser}" as="data_item" iteration="i">
+            <f:if condition="{i.cycle}==1">
+                <div class="col-xs-16">
+                    <f:for each="{data_item.data_tx_jsdmodule_image}" as="file" iteration="iteration_image">
+                        <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, w-sm:384, w-md:768, w-lg:1024, w-xl:1280}" />
+                    </f:for>
+                </div>
+
+                <f:if condition="{data_item.data.tx_jsdmodule_options}">
+                    <f:then>
+                        <div class="col-xs-16 col-md-8 offset-md-7 carousel-caption">
+                    </f:then>
+                    <f:else>
+                        <div class="col-xs-16 col-md-8 offset-md-1 carousel-caption">
+                    </f:else>
+                </f:if>
+                    <span class="flagline">{data_item.data.tx_jsdmodule_topline}</span>
+                    <h2 class="title" id="header-{data.uid}_{i.cycle}">
+                        <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
+                            {data_item.data.tx_jsdmodule_header}
+                        </f:link.typolink>
+                    </h2>
+                    <p class="teaser-copy">
+                        {data_item.data.tx_jsdmodule_teaser}
+                    </p>
+
+                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'header-{data.uid}_{i.cycle}'}">
+                        {data_item.data.tx_jsdmodule_button}
+                    </f:link.typolink>
+
+                </div>
+            </f:if>
+        </f:for>
+    </div>
+</div>

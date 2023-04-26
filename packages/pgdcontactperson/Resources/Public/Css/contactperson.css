@@ -1,0 +1,224 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08.10.2019, 18:26:40
+    Author     : imme
+*/
+
+.tx-pgdcontactperson .mod_einrichtungsteaser h2.header {
+    margin-bottom: 40px;
+    padding-top: 0;
+    margin-top: 18px;
+}
+
+
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .type {
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.tx-pgdcontactperson a.color_blue {
+  color:#24195D !important;
+}
+
+.tx-pgdcontactperson .desc{
+    padding-bottom:10px;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser  .image{
+    padding-left:6.125%;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser  .image img{
+   min-width:100%;
+   max-width:100%;
+   height:auto;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .border-div{
+    padding-left:6.125%;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .border-b {
+	padding-top:18px;
+	margin-bottom: 23px;
+}	
+
+	
+.tx-pgdcontactperson  .textspan{
+    padding-right:6.125%;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .fax {
+    /* background-image: url('../Images/contact-fax.png'); */
+    background-image: url('/typo3conf/ext/jsd_theme/Resources/Public/Css/icons2/fax-icon-jsd.svg');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+   
+    padding-left: 50px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;    
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .fax:hover,
+.tx-pgdcontactperson .mod_einrichtungsteaser a.profile:hover{
+    color: #24195D;
+}
+
+
+.tx-pgdcontactperson .mod_einrichtungsteaser .contactRow{
+    width:100%;
+    margin-bottom:20px;
+}
+.tx-pgdcontactperson .mod_einrichtungsteaser a.rootlink {
+    /* background-image: url('../Images/contact-spezial.png'); */
+    background-image: url('/typo3conf/ext/jsd_theme/Resources/Public/Css/icons2/pfeil-icon-jsd.svg');
+    margin-bottom: 11px;
+}
+
+.tx-pgdcontactperson .mod_einrichtungsteaser a.profile {
+    /* background-image: url('../Images/contact-profil.png'); */
+    background-image: url('/typo3conf/ext/jsd_theme/Resources/Public/Css/icons2/profile-icon-jsd.svg');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;    
+}
+
+
+.tx-pgdcontactperson  .mod_einrichtungsteaser .carousel-control-prev-next {
+	margin-bottom:-20px;
+}
+
+.tx-pgdcontactperson .contactsearch {
+	position:absolute;
+}
+.tx-pgdcontactperson .contactsearch .btn{
+	margin-top:0;
+}
+.tx-pgdcontactperson  .spacerbottom{
+	height:20px;
+}	
+
+.tx-pgdcontactperson .moreList {
+	margin-bottom:30px;
+}
+
+@media (max-width: 1025px) {
+    .tx-pgdcontactperson h2 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+    } 
+    
+  
+    .tx-pgdcontactperson h3, .tx-pgdcontactperson  h3 a {
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    
+	.tx-pgdcontactperson  .spacerbottom{
+		height:20px;
+	}
+	.tx-pgdcontactperson .moreList {
+		margin-bottom:20px;
+	}
+	.tx-pgdcontactperson .mod_einrichtungsteaser .border-b {
+		margin-bottom: 23px;
+		padding-top: 15px;
+	}
+
+  
+}
+@media (max-width: 1023px) {
+    .tx-pgdcontactperson .mod_einrichtungsteaser .carousel-control-prev-next {
+        margin-right: 6.25%;
+    }      
+  
+}
+
+@media (max-width: 769px) {
+ 
+    .tx-pgdcontactperson .mod_einrichtungsteaser h2.header {
+        margin-top: 8px;
+    }  
+    .tx-pgdcontactperson .mod_einrichtungsteaser h2.header {
+        margin-bottom: 30px;
+    }
+	.tx-pgdcontactperson .moreList {
+		margin-bottom:20px;
+	}
+	.tx-pgdcontactperson .mod_einrichtungsteaser .border-b {
+		margin-bottom: 33px;
+	}	
+	.tx-pgdcontactperson .mod_einrichtungsteaser .carousel-control-prev-next.noMoreLink{
+		margin-bottom:-13px;
+	}
+        
+    .tx-pgdcontactperson .spacerbottom {
+        height: 40px;
+    }        
+    
+  
+}
+
+@media (max-width: 767px) {
+    .tx-pgdcontactperson .mod_einrichtungsteaser  .image,
+    .tx-pgdcontactperson .mod_einrichtungsteaser .border-div{
+        padding-left:0%;
+    }   
+    .tx-pgdcontactperson .mod_einrichtungsteaser  .image
+    {
+        padding-bottom:20px;
+    }       
+    .tx-pgdcontactperson .mod_einrichtungsteaser .more {
+        padding-top: 35px;
+    }
+    .tx-pgdcontactperson .mod_einrichtungsteaser a.phone, 
+    .tx-pgdcontactperson .mod_einrichtungsteaser a.email, 
+    .tx-pgdcontactperson .mod_einrichtungsteaser a.rootlink,
+    .tx-pgdcontactperson .mod_einrichtungsteaser .fax{
+        margin-bottom: 5px;
+    }
+    
+    .tx-pgdcontactperson .mod_einrichtungsteaser h2.header {
+        margin-bottom: 40px;
+    }    
+    
+}
+
+@media (max-width: 385px) {
+    .tx-pgdcontactperson .slick-dots {
+        margin-top: 5px;
+		margin-bottom:40px;
+    }  
+    .tx-pgdcontactperson .noMoreLink .slick-dots{
+        margin-top: 5px;
+		margin-bottom:0px;
+    }  	
+	
+	.tx-pgdcontactperson .moreList {
+		margin-bottom: 20px;
+	}
+	.tx-pgdcontactperson .mod_einrichtungsteaser .more {
+		padding-top: 5px;
+	}
+	.tx-pgdcontactperson .spacerbottom {
+		margin-bottom: 20px;
+	}
+	.tx-pgdcontactperson .spacerbottom.noLink {
+		display:none;
+	}
+	.tx-pgdcontactperson .mod_einrichtungsteaser .border-b {
+		padding-top: 27px;
+	}	
+    
+}

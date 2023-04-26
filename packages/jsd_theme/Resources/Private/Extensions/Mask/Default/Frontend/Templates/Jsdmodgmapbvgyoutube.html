@@ -1,0 +1,29 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.tx_mask_jsdmodgmapbvgyt}">
+    <ul>
+        <f:for each="{data.tx_mask_jsdmodgmapbvgyt}" as="data_item">
+            <li>
+                <f:variable name="jsdmodgmapbvgytOptions" value="{data_item.tx_mask_jsdmodgmapbvgyt_options}"/>
+                <f:switch expression="{jsdmodgmapbvgytOptions}">
+                    <f:case value="1">
+                        {jsdmodgmapbvgytOptions}
+                    </f:case>
+                    <f:case value="2">
+                        {jsdmodgmapbvgytOptions}
+                    </f:case>
+                </f:switch>
+                <f:if condition="{data_item.tx_mask_jsdmodgmapbvgyt_address}">
+                    {data_item.tx_mask_jsdmodgmapbvgyt_address}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_jsdmodgmapbvgyt_video}">
+                    {data_item.tx_mask_jsdmodgmapbvgyt_video}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

@@ -1,0 +1,37 @@
+<div class="mod_highlight-teaser" id="c{data.uid}">
+    <div class="row">
+        <f:for each="{data.tx_mask_highlight_teaser}" as="data_item" iteration="i">
+            <f:if condition="{i.cycle}==1">
+                <div class="col-sm-16">
+                    <f:for each="{data_item.tx_mask_image}" as="file" iteration="iteration_image">
+                        <f:render partial="MediaImage" arguments="{data_image:file, w-sm:384, w-md:768, w-lg:1024, w-xl:1280}" />
+                    </f:for>
+                </div>
+
+                <f:if condition="{data_item.tx_mask_options}">
+                    <f:then>
+                        <div class="col-sm-16 col-md-8 offset-md-7 carousel-caption">
+                    </f:then>
+                    <f:else>
+                        <div class="col-sm-16 col-md-8 offset-md-1 carousel-caption">
+                    </f:else>
+                </f:if>
+                    <span class="flagline">{data_item.tx_mask_topline}</span>
+                    <h5 class="title">
+                        <f:link.typolink parameter="{data_item.tx_mask_link}">
+                            {data_item.tx_mask_header}
+                        </f:link.typolink>
+                    </h5>
+                    <p class="teaser-copy">
+                        {data_item.tx_mask_teaser}
+                    </p>
+
+                    <f:link.typolink parameter="{data_item.tx_mask_link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button'}">
+                        {data_item.tx_mask_button}
+                    </f:link.typolink>
+
+                </div>
+            </f:if>
+        </f:for>
+    </div>
+</div>

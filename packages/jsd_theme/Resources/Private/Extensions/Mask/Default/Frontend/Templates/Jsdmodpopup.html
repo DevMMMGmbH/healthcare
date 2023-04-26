@@ -1,0 +1,46 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:for each="{data.image}" as="file">
+    <f:image image="{file}" width="200" />
+    {file.description}
+</f:for>
+<f:variable name="modpopupClosePos" value="{data.tx_mask_modpopup_close_pos}"/>
+<f:switch expression="{modpopupClosePos}">
+    <f:case value="">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="pos_tl">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="pos_tr">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="pos_bl">
+        {modpopupClosePos}
+    </f:case>
+    <f:case value="pos_br">
+        {modpopupClosePos}
+    </f:case>
+</f:switch>
+<f:variable name="modpopupDisplay" value="{data.tx_mask_modpopup_display}"/>
+<f:switch expression="{modpopupDisplay}">
+    <f:case value="">
+        {modpopupDisplay}
+    </f:case>
+    <f:case value="page_load">
+        {modpopupDisplay}
+    </f:case>
+    <f:case value="page_scroll">
+        {modpopupDisplay}
+    </f:case>
+</f:switch>
+<f:if condition="{data.tx_mask_modpopup_delay}">
+    {data.tx_mask_modpopup_delay}
+</f:if>
+<f:if condition="{data.subheader}">
+    {data.subheader}
+</f:if>
+<f:if condition="{data.tx_mask_modpopup_bgcolor}">
+    {data.tx_mask_modpopup_bgcolor}
+</f:if>

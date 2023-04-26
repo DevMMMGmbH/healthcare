@@ -1,0 +1,76 @@
+<f:if condition="{data.tx_mask_image_slider}">
+<div class="mod_bild-slider" id="c{data.uid}">
+    <div class="carousel slide" data-ride="carousel" data-interval="5000" id="carousel-c{data.uid}" data-carousel-id="carousel-c{data.uid}">
+        <div class="carousel-inner">
+            <f:for each="{data.tx_mask_image_slider}" as="data_item" iteration="iteration_data">
+                <div class="carousel-item {f:if(condition: '{iteration_data.cycle} == 1', then: 'active', else: '')}" id="c{data.uid}_{iteration_data.cycle}">
+                    <div class="col-sm-16">
+
+                        <f:for each="{data_item.tx_mask_image}" as="data_image" iteration="iteration_image">
+                            <f:if condition="{iteration_image.cycle}==1">
+                                <f:then>
+                                    <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:320, w-sm:384, w-md:768, w-lg:1024, w-xl:1280}" />
+                                </f:then>
+                            </f:if>
+                        </f:for>
+
+                        <div class="col-sm-16 col-md-8 offset-md-1 carousel-caption">
+                            <h5 class="title">
+                                <f:if condition="{data_item.tx_mask_link}">
+                                    <f:then>
+                                        <f:link.typolink parameter="{data_item.tx_mask_link}">
+                                            {data_item.tx_mask_header}
+                                        </f:link.typolink>
+                                    </f:then>
+                                    <f:else>
+                                        {data_item.tx_mask_header}
+                                    </f:else>
+                                </f:if>
+                            </h5>
+                            <p class="teaser-copy">
+                                {data_item.tx_mask_teaser}
+                            </p>
+                            <f:if condition="{data_item.tx_mask_link}">
+                                <f:link.typolink parameter="{data_item.tx_mask_link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button'}">
+                                    {f:if(condition: '{data_item.tx_mask_button} != ', then: '{data_item.tx_mask_button}', else:
+                                    'Klick
+                                    hier!')}
+                                </f:link.typolink>
+                            </f:if>
+                        </div>
+
+                    </div>
+                </div>
+            </f:for>
+        </div>
+        <f:if condition="{data.tx_mask_image_slider -> f:count()} > 1">
+            <div class="carousel-control-prev-next d-none d-md-inline-block">
+                <a class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all" href="#carousel-c{data.uid}" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <span class="count">
+                    <b><span class="num"><span class="start">1</span></span></b>/{data.tx_mask_image_slider -> f:count()}
+                </span>
+                <a class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all" href="#carousel-c{data.uid}" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <ol class="carousel-indicators d-md-none">
+                <f:for each="{data.tx_mask_image_slider}" as="data_item" iteration="iteration_data_indicator">
+                    <f:if condition="{iteration_data_indicator.index} == 0">
+                        <f:then>
+                            <li data-target="#carousel-c{data.uid}" data-slide-to="{iteration_data_indicator.index}"
+                                class="active"></li>
+                        </f:then>
+                        <f:else>
+                            <li data-target="#carousel-c{data.uid}" data-slide-to="{iteration_data_indicator.index}"></li>
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </ol>
+        </f:if>
+    </div>
+</div>
+</f:if>

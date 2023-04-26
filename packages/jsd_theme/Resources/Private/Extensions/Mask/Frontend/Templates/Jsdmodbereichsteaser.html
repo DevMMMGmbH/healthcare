@@ -1,0 +1,97 @@
+<f:if condition="{data.tx_mask_bereichsteaser}">
+<div class="mod_bereichs-teaser" id="c{data.uid}">
+    <div class="row">
+        <div class="col-sm-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-14 offset-sm-2">
+            <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:data.header_layout, htmlDecode: 1}" />
+        </div>
+        <f:for each="{data.tx_mask_bereichsteaser}" as="data_item" iteration="i">
+
+            <f:if condition="{i.cycle} == 1">
+                <div class="col-sm-16 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-1 col-lg-11 offset-lg-1 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.tx_mask_image, w-xs:320, w-sm:384, w-md:432, w-lg:704, w-xl:880}" />
+                        </div>
+                        <div class="col-sm-11 col-md-6 offset-md-9 col-lg-5 offset-lg-10 col-xl-4 offset-xl-11 b-2-{i.cycle}">
+                            <f:render section="link" arguments="{link: data_item.tx_mask_link, title: data_item.tx_mask_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.tx_mask_teaser}</p>
+                            <f:render section="button" arguments="{link: data_item.tx_mask_link, text: data_item.tx_mask_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{i.cycle} == 2">
+                <div class="col-sm-16 col-lg-8 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-6 col-lg-12 offset-lg-2 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.tx_mask_image, w-xs:320, w-sm:384, w-md:432, w-lg:384, w-xl:480}" />
+                        </div>
+                        <div class="col-sm-11 offset-sm-5 col-md-6 offset-md-1 col-lg-10 offset-lg-6 col-xl-9 offset-xl-7 b-2-{i.cycle}">
+                            <f:render section="link"
+                                arguments="{link: data_item.tx_mask_link, title: data_item.tx_mask_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.tx_mask_teaser}</p>
+                            <f:render section="button"
+                                arguments="{link: data_item.tx_mask_link, text: data_item.tx_mask_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+            <f:if condition="{i.cycle} == 3">
+                <div class="col-sm-16 col-lg-8 items item-{i.cycle}">
+                    <div class="row">
+                        <div class="col-md-9 offset-md-1 col-lg-10 offset-lg-2 position-absolute b-1-{i.cycle}">
+                            <f:render section="image" arguments="{images: data_item.tx_mask_image, w-xs:320, w-sm:384, w-md:432, w-lg:320, w-xl:400}" />
+                        </div>
+                        <div class="col-sm-11 col-md-6 offset-md-9 col-lg-10 offset-lg-4 col-xl-8 offset-xl-6 b-2-{i.cycle}">
+                            <f:render section="link"
+                                arguments="{link: data_item.tx_mask_link, title: data_item.tx_mask_header}" />
+                            <p class="d-none d-lg-block teaser-copy">{data_item.tx_mask_teaser}</p>
+                            <f:render section="button"
+                                arguments="{link: data_item.tx_mask_link, text: data_item.tx_mask_button}" />
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+
+        </f:for>
+    </div>
+    <div class="row">
+        <div class="col-sm-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+</f:if>
+
+
+<f:section name="image">
+    <f:for each="{images}" as="data_image" iteration="i">
+        <f:if condition="{i.cycle}==1">
+            <f:then>
+                <f:render partial="MediaImage" arguments="{data_image:data_image, w-xs:w-xs, w-sm:w-sm, w-md:w-md, w-lg:w-lg, w-xl:w-xl}" />
+            </f:then>
+        </f:if>
+    </f:for>
+</f:section>
+
+<f:section name="link">
+    <f:if condition="{link}">
+        <f:then>
+            <f:link.typolink parameter="{link}">
+                <h5 class="title">{title -> f:format.htmlentitiesDecode()}</h5>
+            </f:link.typolink>
+        </f:then>
+        <f:else>
+            <h5 class="title">{title -> f:format.htmlentitiesDecode()}</h5>
+        </f:else>
+    </f:if>
+</f:section>
+
+<f:section name="button">
+    <f:if condition="{link}">
+        <f:link.typolink parameter="{link}" class="btn button-green css-trans_all" additionalAttributes="{role:'button'}">
+            {f:if(condition: '{text} != ', then: '{text}', else: 'Mehr erfahren')}
+        </f:link.typolink>
+    </f:if>
+</f:section>

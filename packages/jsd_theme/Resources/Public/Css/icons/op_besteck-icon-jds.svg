@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="op_besteck_neu.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 529.16666 299.77293" height="1133" width="2000">
+  <defs id="defs2"></defs>
+  <metadata id="metadata5"></metadata>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+    <g style="fill:#24195d;fill-opacity:1" transform="matrix(2.2593137,0,0,2.2593137,-101.21725,-78.078294)" id="g375">
+      <path style="fill:#24195d;fill-opacity:1" class="st0" d="M 48.9,81.6" id="path355"></path>
+      <path style="fill:#24195d;fill-opacity:1" class="st0" d="m 160.8,49.7 c -6.2,0 -11.4,11.4 -11.4,17.2 v 24.4 c -0.6,0.9 -1,2.1 -1,3.3 V 146 c 0,3.3 2.7,6.1 6.1,6.1 1.6,0 3.1,-0.6 4.3,-1.8 1.1,-1.1 1.8,-2.7 1.8,-4.3 V 94.6 c 0,-1.2 -0.4,-2.3 -1,-3.3 V 80.6 l 2.3,-2.7 c 0.2,-0.3 0.3,-0.6 0.3,-0.9 V 51.1 c 0,-0.4 -0.2,-0.8 -0.4,-1 -0.3,-0.3 -0.6,-0.4 -1,-0.4 z m -1.5,26.8 -2.3,2.7 c -0.2,0.3 -0.3,0.6 -0.3,0.9 v 8.8 c -0.7,-0.3 -1.4,-0.4 -2.2,-0.4 -0.8,0 -1.5,0.2 -2.2,0.4 v -22 c 0,-4.6 3.7,-12.1 7.1,-13.9 z" id="path357"></path>
+      <path style="fill:#24195d;fill-opacity:1" class="st0" d="M 67.3,113.9 C 67.3,101.4 66,89.7 63.7,81.9 63.3,80.4 62.8,79.1 62.3,78 61.2,72.2 59.4,61.5 58.8,55.4 58.6,53.7 58,52.3 57.3,52.3 c -0.4,0 -0.7,0 -0.9,0.2 -0.2,-0.1 -0.5,-0.2 -0.9,-0.2 -0.9,0 -1.6,1.4 -1.8,3.1 C 52.6,64 48.3,82 48.3,82 l 0.2,-0.2 c -2.8,9.3 -3.7,23.2 -3.7,32.1 0,14.2 1.7,27.1 4.5,34.7 0.4,1 1.5,1.5 2.5,1.2 1,-0.4 1.5,-1.5 1.2,-2.5 -2.6,-7 -4.3,-19.8 -4.3,-33.3 0,-25.1 5.1,-38 7.3,-38 0.4,0 2.1,1.3 3.8,7.2 2.2,7.5 3.4,18.7 3.5,30.9 0,13.5 -1.6,26.3 -4.3,33.3 -0.4,1 0.1,2.2 1.2,2.5 1,0.4 2.2,-0.1 2.5,-1.2 2.9,-7.7 4.6,-20.6 4.6,-34.8 z m -11.2,-42 c 0,0 -1,0.5 -1.1,0.5 l 1,-12.8 1.2,12.8 c -0.3,0 -0.8,-0.5 -1.1,-0.5 z" id="path359"></path>
+      <path style="fill:#24195d;fill-opacity:1" class="st0" d="m 90.2,150.1 c 3.4,0 6.6,-1.3 9.1,-3.8 2.4,-2.4 3.8,-5.6 3.8,-9.1 0,-3.1 -1.1,-5.9 -3,-8.3 -0.2,-0.3 -1,-0.8 -0.9,-1.5 0.1,-0.4 0.7,-2.8 2,-7.8 0.2,-1.1 0.6,-0.9 0.8,-0.8 0.2,0.1 0.4,0.3 0.6,0.4 1.7,0.9 3.7,1.4 5.9,1.5 2.3,0 4.4,-0.6 6,-1.5 0.3,-0.2 0.9,-0.5 1.2,0.4 1.2,4.9 1.8,7.3 1.9,7.7 0.2,0.5 -0.1,0.8 -0.2,0.9 -2.4,2.4 -3.8,5.6 -3.8,9.1 0,3.4 1.3,6.6 3.8,9.1 2.4,2.4 5.6,3.8 9.1,3.8 3.4,0 6.6,-1.3 9.1,-3.8 2.4,-2.4 3.8,-5.6 3.8,-9.1 0,-3.4 -1.3,-6.6 -3.8,-9.1 -2.4,-2.4 -5.6,-3.8 -9.1,-3.8 -1.4,0 -2.8,0.2 -4.1,0.7 -0.2,0.1 -0.6,0.1 -0.8,-0.6 -1.3,-5.1 -6.5,-25.8 -8.1,-34.2 -1.6,-8.6 -1.4,-33.8 -1.4,-34.1 0,-1.2 -1,-2.2 -2.2,-2.2 -0.7,0 -0.9,0.5 -1.5,0.5 -0.5,0 -0.8,-0.6 -1.5,-0.5 -0.6,0 -1.2,0.3 -1.6,0.7 -0.4,0.4 -0.7,1 -0.7,1.6 0,0.3 0.2,25.3 -1.3,33.8 -1.7,9.6 -6.7,29.5 -7.9,34.4 -0.2,1 -1,0.7 -1.4,0.6 -1.2,-0.4 -2.4,-0.5 -3.7,-0.5 -3.4,0 -6.6,1.3 -9.1,3.8 -2.4,2.4 -3.8,5.6 -3.8,9.1 0,6.9 5.7,12.6 12.8,12.6 z m 43,-19.7 c 1.8,1.8 2.8,4.3 2.8,6.9 0,2.6 -1,5 -2.8,6.9 -1.8,1.8 -4.3,2.8 -6.9,2.8 -2.6,0 -5,-1 -6.9,-2.8 -1.8,-1.8 -2.8,-4.3 -2.8,-6.9 0,-2.6 1,-5 2.8,-6.9 1.8,-1.8 4.3,-2.8 6.9,-2.8 2.6,0 5.1,1 6.9,2.8 z M 107.3,90.7 c 0.2,-1.9 0.2,-5.4 1,-5.4 0.7,0 0.8,3.8 1,5.7 0.5,5.4 2.9,14.5 4.9,22.8 0.4,1.5 -0.2,1.8 -0.5,2.1 -1.2,1 -3.1,1.7 -5.3,1.7 -1.8,0 -3.5,-0.5 -4.8,-1.3 -0.2,-0.1 -0.5,-0.3 -0.7,-0.6 -0.2,-0.2 -0.7,-0.8 -0.5,-1.6 2,-8 4.2,-17.3 4.9,-23.4 z m -26.8,46.6 c 0,-2.6 1,-5 2.8,-6.9 1.8,-1.8 4.3,-2.8 6.9,-2.8 2.6,0 5,1 6.9,2.8 1.8,1.8 2.8,4.3 2.8,6.9 0,2.6 -1,5 -2.8,6.9 -1.8,1.8 -4.3,2.8 -6.9,2.8 -5.4,0 -9.7,-4.3 -9.7,-9.7 z" id="path361"></path>
+    </g>
+  </g>
+  <style type="text/css" id="style10">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style56">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style72">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style123">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style10-1">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style56-6">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style72-3">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style123-0">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style153">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style166">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style205">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style221">
+	.st0{fill:#A31747;}
+	.st1{fill:#003D7C;}
+	.st2{fill:#E7E7E8;}
+</style>
+  <style type="text/css" id="style272">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style288">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style307">
+	.st0{fill:#003D7C;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:4.6275;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+</style>
+  <style type="text/css" id="style353">
+	.st0{fill:#003D7C;}
+</style>
+  <style type="text/css" id="style377">
+	.st0{fill:#003D7C;}
+	.st1{fill:#003D7C;stroke:#FFFFFF;stroke-width:5.1045;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+  <style type="text/css" id="style411">
+	.st0{fill:#003D7C;}
+</style>
+</svg>

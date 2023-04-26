@@ -1,0 +1,50 @@
+<f:if condition="{data.tx_mask_teaser}">
+    <div class="mod_3-er-teaser" id="c{data.uid}">
+        <div class="row">
+            <div class="col-sm-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row">
+            <f:if condition="{header:data.header}">
+                <div class="col-sm-12 offset-sm-2 col-md-14 offset-md-2">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:data.header_layout, htmlDecode: 1}" />
+                </div>
+            </f:if>
+            <div class="col-sm-14 offset-sm-2">
+                <div class="row">
+                    <f:for each="{data.tx_mask_teaser}" as="data_item" iteration="i">
+                        <f:if condition="{i.cycle} == 1">
+                            <f:then>
+                                <div class="col-sm-15 col-md-6 col-lg-3 item-w">
+                            </f:then>
+                            <f:else>
+                                <div class="col-sm-15 col-md-6 offset-md-1 col-lg-3 offset-lg-1 item-w half-offset">
+                            </f:else>
+                        </f:if>
+                        <f:for each="{data_item.tx_mask_image}" as="file">
+                            <f:render partial="MediaImage" arguments="{data_image:file, w-xs:289, w-sm:289, w-md:264, w-lg:224, w-xl:280}" />
+                        </f:for>
+                        <h5>
+                            <f:link.typolink parameter="{data_item.tx_mask_link}">
+                                {data_item.tx_mask_header}
+                            </f:link.typolink>
+                        </h5>
+                        <f:if condition="{data_item.tx_mask_text}">
+                            <p>
+                                <f:format.nl2br>{data_item.tx_mask_text}</f:format.nl2br>
+                            </p>
+                        </f:if>
+                        <f:link.typolink parameter="{data_item.tx_mask_link}" class="btn button-green css-trans_all"
+                            additionalAttributes="{role:'button'}">
+                            {f:if(condition: '{data_item.tx_mask_button} != ', then: '{data_item.tx_mask_button}', else:
+                            'Mehr erfahren')}
+                        </f:link.typolink>
+                </div>
+                </f:for>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+    </div>
+</f:if>

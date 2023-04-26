@@ -1,0 +1,69 @@
+<f:if condition="{data_tx_jsdmodule_teaser}">
+    <f:if condition="{data_tx_jsdmodule_teaser -> f:count()}>3">
+        <f:then>
+            <f:variable name="dips-arrows">d-xs-none d-md-flex</f:variable>
+            <f:variable name="faktenDreier">fakten</f:variable>
+            <f:variable name="slick-conf">{"autoplay":true, "arrows":false,"responsive": [{"breakpoint": 8192,"settings": {"arrows":true,"slidesToShow": 3,"slidesToScroll": 1,"prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next"}},{"breakpoint": 1024,"settings": {"arrows":true,"slidesToShow": 2,"slidesToScroll": 1,"prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next"}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"slidesToScroll": 1,"dots": true,"arrows": false}}]}</f:variable>
+        </f:then>
+        <f:else>
+            <f:variable name="dips-arrows">d-xs-none d-md-flex d-lg-none d-xl-none</f:variable>
+            <f:variable name="faktenDreier">dreierteaser</f:variable>
+            <f:variable name="slick-conf">{"autoplay":false, "arrows":false,"responsive": [{"breakpoint": 8192,"settings": "unslick"},{"breakpoint": 1024,"settings": {"arrows":true,"slidesToShow": 2,"slidesToScroll": 1,"prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next"}},{"breakpoint": 768,"settings": {"slidesToShow": 1,"slidesToScroll": 1,"dots": true,"arrows": false}}]}</f:variable>
+        </f:else>
+    </f:if>
+    <div class="mod_3-er-teaser c{data.uid}" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row kk_content">
+            <f:if condition="{header:data.header}">
+                <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-2">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+                </div>
+            </f:if>
+            <div class="col-xs-12 offset-xs-2 slick {faktenDreier}" data-slick-class="slick-c{data.uid}">
+                <div class="row slick-c{data.uid}" data-slick='{slick-conf}'>
+                    <f:for each="{data_tx_jsdmodule_teaser}" as="data_item" iteration="i">
+                        <div class="col-xs-15 col-lg-3 offset-lg-1 item-w half-offset">
+                            <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+                                <f:render partial="MediaImage" arguments="{data_image:file, w-xs:240, w-sm:289, w-md:264, w-lg:224, w-xl:280}" />
+                            </f:for>
+                            <h3 class="teaser-header" id="header-{data.uid}_{i.cycle}">
+                            <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
+                                {data_item.data.tx_jsdmodule_header}
+                            </f:link.typolink>
+                            </h3>
+                            <f:if condition="{data_item.data.tx_jsdmodule_text}">
+                                <p>
+                                    <f:format.nl2br>{data_item.data.tx_jsdmodule_text}</f:format.nl2br>
+                                </p>
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-green css-trans_all"
+                                    additionalAttributes="{role:'button', aria-labelledby:'header-{data.uid}_{i.cycle}'}">
+                                    <f:if condition="{data_item.data.tx_jsdmodule_button} != ''">
+                                        <f:then>{data_item.data.tx_jsdmodule_button}</f:then>
+                                        <f:else>{f:translate(key: 'mods.readmore',  extensionName='jsd_theme')}</f:else>
+                                    </f:if>
+                                </f:link.typolink>
+                            </f:if>
+                        </div>
+                    </f:for>
+                </div>
+                <div class="row {dips-arrows}">
+                    <div class="col-md-16 text-md-right">
+                        <div class="carousel-control-prev-next">
+                            <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev" title="{f:translate(key: 'page.prev',  extensionName='jsd_theme')}"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.prev',  extensionName='jsd_theme')}</span>
+                            </button>
+                            <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" title="{f:translate(key: 'page.next',  extensionName='jsd_theme')}"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.next',  extensionName='jsd_theme')}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>

@@ -1,0 +1,39 @@
+<f:if condition="{data.header}">
+{data.header}<br />
+</f:if>
+
+<f:if condition="{data.header_layout}">
+<f:switch expression="{data.header_layout}">
+  <f:case value="1">Value is: 1</f:case>
+  <f:case value="2">Value is: 2</f:case>
+  <f:case value="3">Value is: 3</f:case>
+</f:switch><br />
+</f:if>
+
+<f:if condition="{data.header_link}">
+<f:link.typolink parameter="{data.header_link}">{data.header_link}</f:link.typolink><br />
+</f:if>
+
+<f:if condition="{data.tx_mask_leistungen}">
+<ul>
+<f:for each="{data.tx_mask_leistungen}" as="data_item">
+<li><f:if condition="{data_item.tx_mask_link}">
+<f:link.typolink parameter="{data_item.tx_mask_link}">{data_item.tx_mask_link}</f:link.typolink><br />
+</f:if>
+
+
+<f:if condition="{data_item.tx_mask_teaser}">
+<f:format.nl2br>{data_item.tx_mask_teaser}</f:format.nl2br><br />
+</f:if>
+
+
+<f:if condition="{data_item.tx_mask_title}">
+{data_item.tx_mask_title}<br />
+</f:if>
+
+
+</li>
+</f:for>
+</ul>
+</f:if>
+

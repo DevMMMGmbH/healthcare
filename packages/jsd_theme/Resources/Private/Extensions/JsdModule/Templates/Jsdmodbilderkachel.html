@@ -1,0 +1,78 @@
+<div class="mod_leistungen mod_bilderkachel" id="c{data.uid}">
+    <div class="row">
+        <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+    </div>
+    <div class="row kk_content" id="parent-{data.uid}">
+        <f:if condition="{data.header}">
+            <div class="col-xs-12 offset-xs-2 col-lg-12 tophead">
+                <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+            </div>
+        </f:if>
+        <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-3">
+            <div class="row row-1 justify-content-end">
+                <f:for each="{data_tx_jsdmodule_bilderkachel}" as="data_item" iteration="i">
+                    <f:switch expression="{i.cycle}">
+                        <f:case value="3"><f:variable name="currow">row-2</f:variable></f:case>
+                        <f:case value="6"><f:variable name="currow">row-3</f:variable></f:case>
+                        <f:case value="9"><f:variable name="currow">row-4</f:variable></f:case>
+                        <f:case value="12"><f:variable name="currow">row-5</f:variable></f:case>
+                        <f:case value="15"><f:variable name="currow">row-6</f:variable></f:case>
+                        <f:defaultCase><f:variable name="currow">row-x</f:variable></f:defaultCase>
+                    </f:switch>
+                    <f:if condition="{i.cycle} % 3">
+                        <f:then>
+                            <f:alias map="{cols: 6}">
+                                <f:render section="card_items" arguments="{_all}" />
+                            </f:alias>
+                        </f:then>
+                        <f:else>
+                            <f:alias map="{cols: 6}">
+                                <f:render section="card_items" arguments="{_all}" />
+                                <f:if condition="!{i.isLast}">
+                                    </div>
+                                    <div class="row {currow} justify-content-end">
+                                </f:if>
+                            </f:alias>
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-xs-16 text-center pad-t">
+            <f:if condition="{data.header_link}">
+                <f:link.typolink parameter="{data.header_link}" class="btn button-dpurple_0-2 css-trans_all" additionalAttributes="{role:'button'}">{f:if(condition: data.subheader, then: data.subheader, else: '')}</f:link.typolink>
+            </f:if>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+    </div>
+</div>
+
+<f:section name="card_items">
+    <div class="col-lg-{cols} flip-card card-{i.cycle}">
+        <div class="flip-card-inner">
+            <div class="flip-card-front {f:if(condition: '{data_item.data_tx_jsdmodule_image}', then: 'withimg', else: '')}">
+                <h3 class="subheader color_white d-none {f:if(condition: '{data_item.data_tx_jsdmodule_image}', then: 'd-lg-none', else: 'd-lg-block')}">{data_item.data.tx_jsdmodule_title}</h3>
+                <button data-toggle="collapse" data-target="#item-card-{data.uid}_{i.cycle}" class="color_white bold d-lg-none">{data_item.data.tx_jsdmodule_title}</button>
+                <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                    <f:for each="{data_item.data_tx_jsdmodule_image}" as="file">
+                        <div class="d-none d-lg-block">
+                            <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, cropVariant-xs:'specialMobile', w-sm:384, cropVariant-sm:'specialMobile', w-md:768, cropVariant-md:'specialMobile', w-lg:1024, cropVariant-lg:'specialMobile', w-xl:1280, cropVariant-xl:'specialMobile'}" />
+                        </div>
+                    </f:for>
+                </f:if>
+            </div>
+            <div class="flip-card-back collapse d-lg-block" id="item-card-{data.uid}_{i.cycle}" data-parent="#parent-{data.uid}">
+                <h3 class="subheader color_white d-none {f:if(condition: '{data_item.data_tx_jsdmodule_image}', then: 'd-lg-block', else: 'd-lg-none')}">{data_item.data.tx_jsdmodule_title}</h3>
+                <p class="color_dpurple"><f:format.nl2br>{data_item.data.tx_jsdmodule_teaser}</f:format.nl2br></p>
+                <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-dpurple css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'item-card-{data.uid}_{i.cycle}'}">{f:if(condition: data_item.data.tx_jsdmodule_link_text, then: data_item.data.tx_jsdmodule_link_text, else: '')}</f:link.typolink><br />
+                </f:if>
+            </div>
+        </div>
+    </div>
+</f:section>

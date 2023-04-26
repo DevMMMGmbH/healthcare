@@ -1,0 +1,63 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.tx_mask_footereinrichtung}">
+    <ul>
+        <f:for each="{data.tx_mask_footereinrichtung}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_kontakt}">
+                    {data_item.tx_mask_footereinrichtung_kontakt}
+                </f:if>
+                <f:for each="{data_item.tx_mask_footereinrichtung_kontakt_tel}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_kontakt_text}">
+                    {data_item.tx_mask_footereinrichtung_kontakt_text -> f:format.html()}
+                </f:if>
+                <f:for each="{data_item.tx_mask_footereinrichtung_teaser}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_sm_text}">
+                    {data_item.tx_mask_footereinrichtung_sm_text}
+                </f:if>
+                <f:for each="{data_item.tx_mask_footereinrichtung_sm_icons}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:for each="{data_item.tx_mask_footereinrichtung_gb_logo}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_text}">
+                    {data_item.tx_mask_footereinrichtung_gb_text}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_link_a}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_link_a}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_link_b}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_link_b}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_link_c}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_link_c}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_abbinder_a}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_abbinder_a}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_abbinder_b}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_abbinder_b}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_abbinder_c}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_abbinder_c}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_abbinder_d}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_abbinder_d}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_footereinrichtung_gb_abbinder_e}">
+                    <f:link.typolink parameter="{data_item.tx_mask_footereinrichtung_gb_abbinder_e}"></f:link.typolink>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

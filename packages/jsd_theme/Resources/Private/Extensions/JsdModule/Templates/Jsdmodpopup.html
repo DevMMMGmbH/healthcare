@@ -1,0 +1,91 @@
+<f:if condition="{data_image}">
+    <div tabindex="-1" class="mod_popup{f:if(condition: '{data.subheader}', then: ' {data.subheader}')}" id="c{data.uid}" {f:if(condition: '{data.tx_jsdmodule_modpopup_delay} || {data.tx_jsdmodule_modpopup_display} == \'page_scroll\'', then: 'style="display: none;"')}>
+        <div class="content"  {f:if(condition: '{data.tx_jsdmodule_modpopup_bgcolor}', then: 'style="background-color: {data.tx_jsdmodule_modpopup_bgcolor};"')}>
+            <f:for each="{data_image}" as="file" iteration="i">
+                <f:if condition="{i.isFirst}">
+                    <f:if condition="{file.link}">
+                        <f:then>
+                            <f:link.typolink parameter="{file.link}">
+                                <f:image image="{file}" alt="{file.alternative}" title="{file.title}" alt="{file.alternative}" loading="lazy" />
+                            </f:link.typolink>
+                        </f:then>
+                        <f:else>
+                            <f:image image="{file}" alt="{file.alternative}" title="{file.title}" alt="{file.alternative}" loading="lazy" />
+                        </f:else>
+                    </f:if>
+                </f:if>
+            </f:for>
+            <f:if condition="{data.tx_jsdmodule_modpopup_close_pos}">
+                <f:switch expression="{data.tx_jsdmodule_modpopup_close_pos}">
+                    <f:case value="pos_tl"><f:variable name="class"> pos_tl</f:variable></f:case>
+                    <f:case value="pos_tr"><f:variable name="class"> pos_tr</f:variable></f:case>
+                    <f:case value="pos_bl"><f:variable name="class"> pos_bl</f:variable></f:case>
+                    <f:case value="pos_br"><f:variable name="class"> pos_br</f:variable></f:case>
+                </f:switch>
+                <div class="cls-button{class}">
+                    <div class="mdiv">
+                        <div class="md"></div>
+                    </div>
+                </div>
+            </f:if>
+        </div>
+    </div>
+</f:if>
+
+
+<f:asset.script identifier="mod_popup" type="text/javascript">
+    <f:format.raw>
+    var modPopup = $('.mod_popup#c{data.uid}');
+    var modPopup_close = $('.mod_popup#c{data.uid} .cls-button');
+    var modPopup_load = '{data.tx_jsdmodule_modpopup_display}';
+    var modPopup_delay = parseInt({data.tx_jsdmodule_modpopup_delay});
+    var fadeIn_duration = 400;
+    </f:format.raw>
+
+    // Focus popup with delay and pagescroll
+    if (modPopup_load == 'page_scroll') {
+        $(window).scroll(function (event) {
+            var st = $(this).scrollTop();
+            if (st > 0 && modPopup_delay > 0) {
+                setTimeout(showPopup, modPopup_delay);
+            } else {
+                $(modPopup).fadeIn(fadeIn_duration).focus();
+            }
+        });
+    }
+
+    // Focus popup with delay and no pagescroll
+    if (modPopup_delay > 0 && modPopup_load != 'page_scroll') {
+        $(window).on('load', function() {
+            setTimeout(showPopup, modPopup_delay);
+        });
+    }
+
+    // Focus popup without options
+    if (modPopup_delay == 0 && modPopup_load == '') {
+        $(document).ready(function() {
+            $(modPopup).focus();
+        });
+    }
+
+    function showPopup() {
+        $(modPopup).fadeIn(fadeIn_duration).focus();
+    }
+
+    // Close button to hide the popup
+    $(modPopup_close).click(function() {
+        $(modPopup).hide().addClass('d-none');
+    });
+
+    // ESCAPE KEY closes popup
+    $(document).keyup( function(e)
+    {
+        if(e.which == 27)
+        {
+            // trigger close button
+            $(modPopup_close).click();
+            return;
+        }
+    });
+
+</f:asset.script>

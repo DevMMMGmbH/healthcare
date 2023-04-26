@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jsd_theme/Configuration/TypoScript/Extensions/dp_cookieconsent/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jsd_theme/Configuration/TypoScript/Extensions/felogin/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jsd_theme/Configuration/TypoScript/Extensions/news/constants.txt">

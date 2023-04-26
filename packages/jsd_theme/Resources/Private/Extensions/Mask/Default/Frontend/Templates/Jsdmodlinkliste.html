@@ -1,0 +1,35 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:if condition="{data.subheader}">
+    {data.subheader}
+</f:if>
+<f:if condition="{data.header_link}">
+    <f:link.typolink parameter="{data.header_link}"></f:link.typolink>
+</f:if>
+<f:if condition="{data.tx_mask_linkliste}">
+    <ul>
+        <f:for each="{data.tx_mask_linkliste}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_title}">
+                    {data_item.tx_mask_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_link}"></f:link.typolink>
+                </f:if>
+                <f:variable name="linkType" value="{data_item.tx_mask_link_type}"/>
+                <f:if condition="{linkType}">
+                    <f:then>
+                        <f:comment><!-- Do this, if checked --></f:comment>
+                    </f:then>
+                    <f:else>
+                        <f:comment><!-- Else do this --></f:comment>
+                    </f:else>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_link_text}">
+                    {data_item.tx_mask_link_text -> f:format.nl2br()}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

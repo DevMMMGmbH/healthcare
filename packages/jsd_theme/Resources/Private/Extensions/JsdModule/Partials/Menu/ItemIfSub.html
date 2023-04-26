@@ -1,0 +1,14 @@
+<f:if condition="{item.spacer} || {item.current}">
+    <f:then>
+        <li class="submenu {f:if(condition:item.current, then:' current')}{f:if(condition:item.spacer, then:' spacer')}">
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass, htmlDecode: htmlDecode}" />
+    </f:then>
+    <f:else if="{item.active}">
+        <li class="submenu {f:if(condition:item.active, then:' active')}">
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass}" />
+    </f:else>
+    <f:else>
+        <li class="submenu">
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass}" />
+    </f:else>
+</f:if>

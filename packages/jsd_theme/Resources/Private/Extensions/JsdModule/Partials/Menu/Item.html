@@ -1,0 +1,14 @@
+<f:if condition="{item.spacer} || {item.current}">
+    <f:then>
+        <li {f:if(condition: '{cssid}', then: 'id="{cssid}"', else: '')} class="{f:if(condition:item.current, then:' current')}{f:if(condition:item.spacer, then:' spacer')}{f:if(condition:liMmCssClass, then:' {liMmCssClass}')}">
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass, htmlDecode: htmlDecode}" />
+    </f:then>
+    <f:else if="{item.active}">
+        <li {f:if(condition: '{cssid}', then: 'id="{cssid}"', else: '')} class="{f:if(condition:item.active, then:' active')}{f:if(condition:liMmCssClass, then:' {liMmCssClass}')}">
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass, htmlDecode: htmlDecode}" />
+    </f:else>
+    <f:else>
+        <li {f:if(condition: '{cssid}', then: 'id="{cssid}"', else: '')}{f:if(condition:liMmCssClass, then:' class="{liMmCssClass}"')}>
+            <f:render partial="Menu/Link" arguments="{item: item, cssclass: cssclass, htmlDecode: htmlDecode}" />
+    </f:else>
+</f:if>

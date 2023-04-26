@@ -1,0 +1,16 @@
+###################################################
+#### TSFE TYPENUM CONDITION FOR USAGE IN FLUID ####
+###################################################
+#
+#  EXAMPLE
+#  ---------------
+#  <f:cObject typoscriptObjectPath="lib.conditionTypeNum" />
+#
+#################
+lib.conditionTypeNum = COA
+lib.conditionTypeNum {
+    20 = TEXT
+    20 {
+        data = TSFE:type
+    }
+}

@@ -1,0 +1,499 @@
+
+/*MMM print CSS*/
+
+
+ 
+
+*,
+body,
+.container{
+	color:#000 !important;
+	background: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+    font-size:12pt;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+    font-size:12pt;
+}
+/*NO DISPLAY / PRINT*/
+.icon-t,
+.mod_megamenu .col-xs-10.col-md-12,
+.cc-message,
+.footer,
+#btt-button,
+.sticky-menu-cta,
+.mod_schnellzugriffsteaser,
+.tx-jsd-kartesolr,
+.mod_2-bilder,
+.mod_3-er-teaser,
+.mod_linkliste,
+.mod_bereichs-teaser,
+.mod_bild-slider,
+.mod_downloads,
+.mod_highlight-teaser,
+.flip-card-front,
+.carousel-control-prev-next,
+.row.slick .text-md-right,
+.mod_einrichtungsteaser .rootlink,
+.mod_bild-text-teaser,
+.powermail_form,
+.mod_breadcrumb,
+#pgdbabyFindForm,
+.itemBaby .showModal,
+.f3-widget-paginator,
+#modalBaby,
+.cc-window,
+.sf-search-pop,
+.header .col-xs-10,
+.header .offeneebenen1,
+.cc-revoke,
+.skiplink,
+.sf-search-pop,
+.gfilter,
+.mod_buehnezwei .is-vid{
+	display: none !important;
+}
+.header span {
+    display: block;
+    max-width: 80mm;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 8pt;
+}
+/*Zwischenüberschriften Sammlung*/
+.frame-type-header{
+	display: none;
+}
+
+.mod_zitattext .blockquote::before,
+.mod_zitattext .blockquote::after,
+.mod_bildergalerie .bildergalerie-bild a span::after{
+	background-image: none !important;
+	background-color: transparent !important;
+}
+.mod_megamenu .sticky .logo a span, .mod_megamenu .mm .logo a span {
+    padding: 26px 10px 0 0px;
+}
+
+/*Bootstrap Stuff*/
+.col-xl-8,
+.col-xl-12,
+.col-lg-5,
+.col-lg-6,
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.offset-lg-2,
+.offset-xl-4,
+.offset-xs-2,
+.offset-md-2 {
+    margin-left: 0;
+}
+.mod_einrichtungsteaser.teaser-liste .icon-b, .mod_einrichtungsteaser.teaser-slider .icon-b, .mod_eventsteaser.list-view .icon-b, .mod_eventsteaser.slider-view .icon-b, .mod_eventsteaser.list.scroll-container .icon-b, .mod_ekomiwidget .icon-b, .mod_ankerliste .icon-b, .mod_3-er-teaser .icon-b, .mod_bereichs-teaser .icon-b, .mod_infobox .icon-b, .mod_leistungen .icon-b, .mod_zahltext .icon-b, .mod_downloads .icon-b, .mod_akkordeon .icon-b, .mod_linkliste .icon-b, .mod_leitbild .icon-b, .mod_kontakt .icon-b, .mod_seo-intro-text .icon-b, .mod_aktuelles-teaser .icon-b, .mod_sprechstunde .icon-b {
+    height: 0;
+}
+.mod_bild-slider, .mod_2-bilder, .mod_seo-intro-text, .mod_bereichs-teaser, .mod_3-er-teaser, .mod_leitbild, .mod_bild-text-teaser, .mod_linkliste, .mod_highlight-teaser, .mod_bildergalerie, .mod_schnellzugriffsteaser, .mod_akkordeon, .mod_zahltext, .mod_ankerliste, .mod_downloads, .mod_leistungen, .mod_zitattext, .mod_rtetext, .mod_table, .mod_kontakt, .mod_ekomiwidget, .mod_ekomilist {
+    padding: 0;
+}
+.card-header {
+    border: none;
+}
+.mod_akkordeon .card-header button, .mod_akkordeon .card-header button[aria-expanded="true"],
+.mod_akkordeon .card-content {
+    padding: 0px;
+    border: none;
+}
+
+/*CE´s*/
+.mod_buehnezwei .green-bg .row .text {
+    padding-top: 0;
+}
+.mod_buehnezwei .green-bg {
+    background-image: none !important;
+}
+.mod_buehnezwei .green-bg .row {
+    padding-top: 0px;
+}
+
+
+.mod_infobox .rtetext::before{
+	background-image: none !important;
+}
+.mod_infobox .rtetext {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.mod_table .headline {
+    padding-left: 0;
+}
+
+
+.mod_zitattext div.blockquote div.wrap {
+    padding: 0;
+}
+.mod_zitattext .row {
+    display: block;
+}
+.mod_zitattext div.blockquote.float-left,
+.mod_zitattext div.blockquote.float-right {
+	padding: 0 0 0 8%;
+	max-width: 90%;
+	width: 90%;
+    font-style: italic;
+}
+.mod_zitattext div.blockquote span.copy {
+font-size: 9pt;
+width: 100%;
+text-align: right;
+display: block;
+}
+.mod_leistungen .headline {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.mod_leistungen .flip-card {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+}
+.mod_leistungen .flip-card-front, .mod_leistungen .flip-card-back {
+    backface-visibility: visible;
+}
+.mod_leistungen .flip-card-back {
+    background-color: transparent;
+    transform: none;
+    position: static;
+    padding: 0;
+}
+.mod_leistungen .btn{
+	display: none;
+}
+.mod_leistungen .row{
+	display: block;
+}
+.mod_leistungen .color_dpurple{
+margin-bottom: 0;
+}
+.mod_zahltext .row{
+	display: block;
+}
+.mod_zahltext h5{
+margin-top: 0;
+display: inline;
+font-weight: normal;
+}
+.mod_zahltext .headline {
+    max-width: 100%;
+    width: 100%;
+}
+.mod_zahltext .pad-t {
+    padding-top: 0px;
+}
+.collapse:not(.show) {
+    display: block;
+}
+.mod_akkordeon .row{
+	display: block;
+}
+.mod_akkordeon .col-lg-4,
+.mod_akkordeon .col-lg-8 {
+    max-width: 100%;
+}
+.lightbox-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lightbox-content .row {
+    margin-bottom: 30px;
+    display: block;
+    width: 48%;
+}
+.lightbox-content .row .row {
+    width: 100%;
+}
+.lightbox-content .row .text-md-right {
+    text-align: left !important;
+}
+.lightbox-content .row .col-md-4 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.lightbox-content .row .offset-md-1 {
+    margin-left: 0%;
+}
+.mod_bildergalerie .offset-md-1 {
+    margin-left: 0;
+}
+.lightbox-content .offset-md-11 {
+    margin-left: 0;
+}
+.slick-slider .row{
+	display: block;
+}
+.mod_bildergalerie.with-text .text {
+    max-width: 100%;
+}
+/**
+.mod_bildergalerie.with-text img {
+    max-height: 70%;
+    max-width: 70%;
+    height: 70%;
+    width: 70%;
+}
+.mod_bildergalerie img {
+    max-height: 45%;
+    max-width: 45%;
+    height: 45%;
+    width: 45%;
+}
+**/
+.mod_bildergalerie  .slick-slide{
+	display: none;
+}
+.mod_leitbild,
+.mod_leitbild .row,
+.mod_leitbild .col-xs-12 {
+    height:auto;
+}
+.mod_leitbild .d-md-flex {
+    display: block !important;
+}
+.mod_leitbild .col-lg-4 {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.mod_leitbild .pad-1-2-r {
+    padding-right: 0;
+}
+.mod_leitbild  p {
+    margin-bottom: 48px !important;
+padding-left: 24pt;
+position: relative;
+}
+span.count {
+font-weight: bold;
+position: absolute;
+left: 0;
+}
+.mod_leitbild .row.d-none.d-xs-flex.d-md-none {
+display: none;
+}
+.mod_einrichtungsteaser .row .row .row .row{
+ display: block;
+}
+.mod_einrichtungsteaser a.googleMap {
+    padding: 5px 0 15px 0px;
+}
+.mod_einrichtungsteaser a.phone,
+.mod_einrichtungsteaser a.email {
+padding: 0;
+}
+.mod_einrichtungsteaser a.phone::before {
+content: "Telefon: ";
+}
+.mod_einrichtungsteaser a.email::before {
+content: "E-Mail: ";
+}
+.tx-pgdcontactperson .fax::before {
+content: "Fax: ";
+padding-left: 0 !important;
+}
+
+.tx-pgdcontactperson .profile{
+	display: none !important;
+} 
+.tx-pgdcontactperson .mod_einrichtungsteaser .image,
+.tx-pgdcontactperson .mod_einrichtungsteaser .border-div {
+    padding-left: 0;
+}
+
+.tx-pgdcontactperson a.color_blue {
+    color:#000 !important;
+}
+.tx-pgdcontactperson .mod_einrichtungsteaser .fax, .tx-pgdcontactperson .fax{
+	padding-left: 0;
+}
+.tx-pgdcontactperson .textspan {
+    display: block;
+}
+.mod_seo-intro-text .col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.mod_seo-intro-text .row {
+display: block;
+}
+
+/** hos-edited **/
+.offset-md-1 {
+    margin-left: 0%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+picture img {
+max-width: 100%;
+height: auto;
+}
+h1, h1 a, h2, h2 a {
+    font-size: 18pt;
+    line-height: 24pt;
+}
+table, table th, table td, table tr {
+font-size: 9pt !important;
+}
+.table th, .table td {
+padding: 3pt;
+}
+/** Stellenangebote **/
+.tx-pgdcareer .col-auto {
+    width: 100%;
+    float: left;
+    padding: 0 !important;    
+}
+.tx-pgdcareer .col-auto span,
+.tx-pgdcareer .col-auto div  {
+    float: left;
+    margin-right: 8px;
+    min-width: 180px;
+}
+.tx-pgdcareer .haveImg {
+    margin-bottom: 20px;
+}
+.tx-pgdcareer .offset-md-1 {
+    margin-bottom: 40px;
+}
+.tx-pgdcareer p.mod_rtetext,
+.tx-pgdcareer .contactperson .image {
+    display: none;
+}
+.tx-pgdcareer .infoboxAbs2 {
+    /*page-break-before: always;*/
+}
+.tx-pgdcontactperson h2 {
+    font-size: 18pt !important;
+    line-height: 24pt !important;
+    margin: 0 !important;
+}
+.tx-pgdcareer .col-16,
+.mod_aktuelles-teaser.list .col-xs-12 {
+    width: 100%;
+    float: left;
+    display: block;
+    clear: both;
+}
+.tx-pgdcareer .col-16 .image,
+.mod_aktuelles-teaser.list .f1-img {
+    width: 25mm;
+    float: left;
+    margin-right: 8mm;
+}
+.tx-pgdcareer .col-16 .col-md-9,
+.mod_aktuelles-teaser.list .f1-txt {
+    padding-left: 33mm;
+}
+.tx-pgdcareer .col-lg-12.border-div,
+.mod_aktuelles-teaser.list .border-b.list {
+    padding-bottom: 5mm !important;
+    margin-bottom: 5mm !important;
+    border-bottom: 1px solid #000 !important;
+    max-width: 100%;
+    width: 100%;
+    float: left;
+}
+.tx-pgdcareer .col-md-9 a[href]::after {
+  content: "Die komplette Stellenausschreibung unter : <" attr(href) ">";
+  color: #888;
+  background-color: inherit;
+  font-style: italic;
+  font-size: 80%;
+  display: table;
+}
+.mod_aktuelles-teaser.list .col-md-7 a.btn[href]::after,
+.mod_eventteaser a.btn[href]::after {
+  content: ": http://www.jsd.de"attr(href);
+  color: #000;
+  background-color: inherit;
+}
+.tx-pgdcareer .list_institution br { 
+    display: none; 
+} 
+.tx-pgdcareer .list_institution p {
+    margin: 0;
+    line-height: 12pt;
+}
+.tx-pgdcareer .mod_rtetext ul {
+    margin: 0;
+    padding: 0;
+}
+.tx-pgdcareer .col-lg-8_justify-between_sub-1-2-col,
+.tx-pgdcareer .mod_rtetext li {
+    padding: 0 0 0 10mm;
+    margin: 0;
+    list-style: none;
+}
+.tx-pgdcareer .col-lg-8_justify-between_sub-1-2-col p {
+    margin: 0;
+}
+.tx-pgdcareer .col-lg-8_justify-between_sub-1-2-col::before,
+.tx-pgdcareer .mod_rtetext li::before {
+    content: "-";
+    float: left;
+    margin-left: -10mm;
+    background: #fff;
+}
+.tx-pgdcareer .row,
+.tx-pgdcareer .infoboxAbs1,
+.tx-pgdcareer .infoboxAbs2,
+.tx-pgdcareer .tx-pgdcontactperson {
+    width: 100%;
+    float: left;
+    clear: both;
+ }
+a,
+a.googleMap {
+    padding: 0;
+    text-decoration: none;
+}
+.link a[href]::after {
+  content: ": <" attr(href) ">";
+  color: #888;
+  background-color: inherit;
+  font-style: italic;
+}
+.presseschau .col-xs-12 {
+    border-bottom: 1pt solid #000;
+    padding-bottom: 8mm;
+    margin-bottom: 8mm;
+}
+.presseschau .d-none,
+.presseschau .d-md-none {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.mod_eventsteaser .date::after {
+    content " - ";
+}
+.header h3 span {
+    max-width: 100%;
+}
+.mod_megamenu .mm.closed {
+    display: none;
+}

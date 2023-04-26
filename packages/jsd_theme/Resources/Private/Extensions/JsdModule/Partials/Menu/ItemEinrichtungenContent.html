@@ -1,0 +1,41 @@
+<ul class="sub-e {f:if(condition: '{links}', then: '', else: 'd-lg-none')}" aria-labelledby="menu-label_{mItem}-{dataUid}" id="menu-content_{mItem}-{dataUid}" role="tabpanel">
+    <li>
+        <f:if condition="{link}">
+            <f:then>
+                <f:if condition="{links}">
+                    <f:then>
+                        <span id="menu-label_{mItem}-{dataUid}"
+                            class="menu-head {f:if(condition: '{links}', then: 'haveLinks', else: 'noLinks')} color_white main-navigation d-lg-none">{linkTitle}</span>
+                    </f:then>
+                    <f:else>
+                        <f:link.typolink parameter="{link}" title="{linkTitle}" additionalAttributes="{id:'menu-label_{mItem}-{dataUid}'}"
+                            class="menu-head noLinks color_white main-navigation">
+                            {linkTitle}</f:link.typolink>
+                    </f:else>
+                </f:if>
+            </f:then>
+            <f:else>
+                <span id="menu-label_{mItem}-{dataUid}"
+                    class="menu-head {f:if(condition: '{links}', then: 'haveLinks', else: 'noLinks')} color_white main-navigation d-lg-none">{linkTitle}</span>
+            </f:else>
+        </f:if>
+        <f:if condition="{links}">
+            <ul>
+                <f:for each="{links}" as="link_item" iteration="i">
+                    <f:if condition="{i.cycle}==1">
+                        <f:then>
+                            <f:if condition="{link}">
+                                <li><f:link.typolink parameter="{link}" title="{linkTitle}"><span class="menu-head-inlist">Zur Übersicht</span></f:link.typolink></li>
+                            </f:if>
+                            <f:render partial="Menu/Item" arguments="{item: link_item, cssclass: 'links_{mItem} submenu', htmlDecode: 1}" /></li>
+                        </f:then>
+                        <f:else>
+                            <f:render partial="Menu/Item" arguments="{item: link_item, cssclass: 'links_{mItem} submenu', htmlDecode: 1}" /></li>
+                        </f:else>
+                    </f:if>
+                </f:for>
+            </ul>
+        </f:if>
+    </li>
+</ul>
+

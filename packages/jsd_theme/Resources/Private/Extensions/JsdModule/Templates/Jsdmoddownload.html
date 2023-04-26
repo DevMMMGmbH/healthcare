@@ -1,0 +1,36 @@
+<f:if condition="{data_tx_jsdmodule_downloads}">
+    <div class="mod_downloads" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row kk_content">
+            <f:if condition="{data.header}">
+                <div class="col-xs-12 offset-xs-2 col-lg-4">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1}" />
+                </div>
+            </f:if>
+            <div class="col-xs-12 offset-xs-2 col-lg-6 offset-lg-2">
+                <ul class="list-unstyled">
+                    <f:for each="{data_tx_jsdmodule_downloads}" as="data_item">
+                        <li>
+                            <p class="color_dpurple">
+                                <f:for each="{data_item.data_tx_jsdmodule_file}" as="file">
+                                    <f:link.typolink parameter="{file.publicUrl}" class="bold" target="_blank" title="{file.title}">{file.title -> f:format.crop(maxCharacters: 40)}</f:link.typolink>
+                                    <span class="color_lpurple">{file.extension} <span class="bold">&middot;</span> {file.size -> f:format.bytes()}</span>
+                                    <span class="desc">{file.description}</span>
+                                </f:for>
+                                <f:if condition="{data_item.data.tx_jsdmodule_description}">
+                                    {data_item.data.tx_jsdmodule_description -> f:format.crop(maxCharacters: 50)}<br />
+                                </f:if>
+                            </p>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>
+

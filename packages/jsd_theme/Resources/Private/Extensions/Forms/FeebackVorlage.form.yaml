@@ -1,0 +1,459 @@
+
+renderingOptions:
+  submitButtonLabel: Senden
+  fieldState:
+    statictext-1:
+      type: StaticText
+      identifier: statictext-1
+      label: ''
+      renderingOptions:
+        deleted: 1
+        listView: 1
+    radiobutton-1:
+      type: RadioButton
+      identifier: radiobutton-1
+      label: 'Sie waren bei uns als'
+      renderingOptions:
+        deleted: 1
+        listView: 1
+    date-1:
+      type: Date
+      identifier: date-1
+      label: 'Wann waren Sie bei uns?'
+      renderingOptions:
+        deleted: 1
+        listView: 1
+    multicheckbox-1:
+      type: MultiCheckbox
+      identifier: multicheckbox-1
+      label: 'Was möchten Sie uns mitteilen?'
+      renderingOptions:
+        deleted: 1
+        listView: 1
+    singleselect-1:
+      type: SingleSelect
+      identifier: singleselect-1
+      label: 'Anrede (Single Select)'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    multicheckbox-2:
+      type: MultiCheckbox
+      identifier: multicheckbox-2
+      label: 'Welchen Bereich betrifft Ihre Rückmeldung?'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    fieldset-2:
+      type: Fieldset
+      identifier: fieldset-2
+      label: Zwischenüberschrift
+      renderingOptions:
+        deleted: 0
+        listView: 0
+    textarea-1:
+      type: Textarea
+      identifier: textarea-1
+      label: Nachricht
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    text-1:
+      type: Text
+      identifier: text-1
+      label: Vorname
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    text-2:
+      type: Text
+      identifier: text-2
+      label: Nachname
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    multiselect-1:
+      type: MultiSelect
+      identifier: multiselect-1
+      label: 'Multi select'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    text-3:
+      type: Text
+      identifier: text-3
+      label: Text
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    fileupload-1:
+      type: FileUpload
+      identifier: fileupload-1
+      label: 'File upload'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    imageupload-1:
+      type: ImageUpload
+      identifier: imageupload-1
+      label: 'Image upload'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    multicheckbox-3:
+      type: MultiCheckbox
+      identifier: multicheckbox-3
+      label: Datenschutz
+      renderingOptions:
+        deleted: 1
+        listView: 0
+    fieldset-3:
+      type: Fieldset
+      identifier: fieldset-3
+      label: 'Ihr Feedback an uns'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-1:
+      type: GridRow
+      identifier: gridrow-1
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-2:
+      type: GridRow
+      identifier: gridrow-2
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-3:
+      type: GridRow
+      identifier: gridrow-3
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-4:
+      type: GridRow
+      identifier: gridrow-4
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-5:
+      type: GridRow
+      identifier: gridrow-5
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-7:
+      type: GridRow
+      identifier: gridrow-7
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-8:
+      type: GridRow
+      identifier: gridrow-8
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    gridrow-6:
+      type: GridRow
+      identifier: gridrow-6
+      label: 'Grid: Row'
+      renderingOptions:
+        listView: 0
+        deleted: 0
+    linkedcheckbox-1:
+      type: LinkedCheckbox
+      identifier: linkedcheckbox-1
+      label: 'Ich habe die %s zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine Daten werden dabei zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage benutzt. Mit dem Absenden des Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden. Hinweis: Die Einwilligung kann jederzeit für die Zukunft per E-Mail an %s widerrufen werden.'
+      renderingOptions:
+        deleted: 1
+        listView: 0
+type: Form
+identifier: FeebackVorlage
+label: 'Feedback Vorlage'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: dsfgsdf
+      recipients:
+        xcvb@asdf.de: Admin
+      senderAddress: xcvb@asdf.de
+      senderName: Admin
+      addHtmlPart: true
+      attachUploads: true
+      translation:
+        language: Default
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToReceiver
+  -
+    identifier: FormToDatabase
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-3
+        label: 'Ihr Feedback an uns'
+        renderables:
+          -
+            properties:
+              text: 'Felder mit * sind Pflichtfelder und müssen ausgefüllt werden. '
+            type: StaticText
+            identifier: statictext-1
+            label: ''
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                'Patient*in': 'Patient*in'
+                'Angehörige*r': 'Angehörige*r'
+                Sonstiges: Sonstiges
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: ''
+                  xs:
+                    numbersOfColumnsToUse: ''
+              fluidAdditionalAttributes:
+                required: required
+            type: RadioButton
+            identifier: radiobutton-1
+            label: 'Sie waren bei uns als'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            properties:
+              fluidAdditionalAttributes:
+                min: ''
+                max: ''
+                step: 1
+                required: required
+            type: Date
+            identifier: date-1
+            label: 'Wann waren Sie bei uns?'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                Lob: Lob
+                Anregung: Anregung
+                Beschwerde: Beschwerde
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: ''
+            type: MultiCheckbox
+            identifier: multicheckbox-1
+            label: 'Was möchten Sie uns mitteilen?'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            properties:
+              options:
+                Frau: Frau
+                Herr: Herr
+              elementDescription: ''
+              prependOptionLabel: 'Wählen Sie bitte Ihre Anrede'
+              fluidAdditionalAttributes:
+                required: required
+            type: SingleSelect
+            identifier: singleselect-1
+            label: 'Anrede (Single Select)'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-3
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                'Station 1': 'Station 1'
+                'Station 2': 'Station 2'
+                'Station 3': 'Station 3'
+                'Station 4': 'Station 4'
+                'Station 5': 'Station 5'
+                Tagesklinik: Tagesklinik
+                Pflegestützpunkt: Pflegestützpunkt
+                Pflegedienst: Pflegedienst
+            type: MultiCheckbox
+            identifier: multicheckbox-2
+            label: 'Welchen Bereich betrifft Ihre Rückmeldung?'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: Fieldset
+        identifier: fieldset-2
+        label: Zwischenüberschrift
+      -
+        type: GridRow
+        identifier: gridrow-4
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-1
+            label: Nachricht
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Ihre Nachricht an uns'
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-5
+        label: 'Grid: Row'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Vorname
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Ihr Vorname'
+                required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  lg:
+                    numbersOfColumnsToUse: ''
+                  xs:
+                    numbersOfColumnsToUse: ''
+                  md:
+                    numbersOfColumnsToUse: ''
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Nachname
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: ''
+                  lg:
+                    numbersOfColumnsToUse: ''
+                  md:
+                    numbersOfColumnsToUse: ''
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-7
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                'Option 1': 'Option 1'
+                'Option 2': 'Option 2'
+                'Option 3': 'Option 3'
+              fluidAdditionalAttributes:
+                required: required
+            type: MultiSelect
+            identifier: multiselect-1
+            label: 'Multi select'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Text
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-8
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              saveToFileMount: '1:/user_upload/'
+              allowedMimeTypes:
+                - application/pdf
+              fluidAdditionalAttributes:
+                required: required
+            type: FileUpload
+            identifier: fileupload-1
+            label: 'File upload'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            properties:
+              saveToFileMount: '1:/user_upload/'
+              allowedMimeTypes:
+                - image/jpeg
+                - image/png
+              fluidAdditionalAttributes:
+                required: required
+            type: ImageUpload
+            identifier: imageupload-1
+            label: 'Image upload'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-6
+        label: 'Grid: Row'
+        renderables:
+          -
+            properties:
+              options:
+                1: 'Ich habe die Datenschutzerklärung zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine Daten werden dabei zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage benutzt. Mit dem Absenden des Kontaktformulars erkläre ich mich mit der Verarbeitung einverstanden. Hinweis: Die Einwilligung kann jederzeit für die Zukunft per E-Mail an datenschutz.egzb@jsd.de widerrufen werden.'
+            type: MultiCheckbox
+            identifier: multicheckbox-3
+            label: Datenschutz
+            validators:
+              -
+                identifier: NotEmpty

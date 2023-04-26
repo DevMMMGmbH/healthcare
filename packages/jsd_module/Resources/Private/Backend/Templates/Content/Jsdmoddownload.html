@@ -1,0 +1,18 @@
+<f:if condition="{processedRow.header}">
+    <strong><f:translate key="LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header" /></strong>
+    {processedRow.header} (raw={row.header})<br>
+</f:if>
+<f:if condition="{processedRow.header_layout}">
+    <strong><f:translate key="LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.type" /></strong>
+    {processedRow.header_layout.0} (raw={row.header_layout})<br>
+</f:if>
+<f:if condition="{processedRow.tx_jsdmodule_downloads}">
+    <strong><f:translate key="LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tt_content.tx_jsdmodule_downloads" /></strong>
+<br><f:for each="{processedRow.tx_jsdmodule_downloads}" as="item">
+    <ul>
+        <li>
+            <f:translate key="LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tx_jsdmodule_downloads.tx_jsdmodule_description" /> {item.tx_jsdmodule_description} (id={item.uid})<br/>
+        </li>
+    </ul>
+</f:for>
+</f:if>

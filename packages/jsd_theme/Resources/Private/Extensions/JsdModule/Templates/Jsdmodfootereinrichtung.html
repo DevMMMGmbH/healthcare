@@ -1,0 +1,127 @@
+<f:if condition="{data_tx_jsdmodule_footereinrichtung}">
+    <f:for each="{data_tx_jsdmodule_footereinrichtung}" as="data_item">
+        <div class="row footer-e">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 offset-xs-2">
+                        <div class="row">
+
+                            <div class="col kontakt-teaser">
+                                <div class="row">
+                                    <div class="col-xs-16 col-lg-8 kontakt">
+                                        <f:if condition="{data_item.data.tx_jsdmodule_footereinrichtung_kontakt}">
+                                            <div class="head">
+                                                <p class="bold color_white">{data_item.data.tx_jsdmodule_footereinrichtung_kontakt}</p>
+                                            </div>
+                                        </f:if>
+                                        <f:if condition="{data_item.data_tx_jsdmodule_footereinrichtung_kontakt_tel}">
+                                            <div class="color_white tel">
+                                            <f:for each="{data_item.data_tx_jsdmodule_footereinrichtung_kontakt_tel}" as="file"><f:link.typolink parameter="{file.link}" title="{file.description}">
+                                                <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" loading="lazy" /><span>{file.title}</span>
+                                            </f:link.typolink>
+                                            </f:for>
+                                            </div>
+                                        </f:if>
+                                        <f:if condition="{data_item.data.tx_jsdmodule_footereinrichtung_kontakt_text}">
+                                            <div class="color_white text">
+                                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data_item.data.tx_jsdmodule_footereinrichtung_kontakt_text}</f:format.html>
+                                            </div>
+                                        </f:if>
+                                    </div>
+                                    <div class="col-xs-16 col-lg-8 color_white teaser">
+                                        <f:if condition="{data_item.data_tx_jsdmodule_footereinrichtung_teaser}">
+                                            <f:for each="{data_item.data_tx_jsdmodule_footereinrichtung_teaser}" as="file">
+                                                <div class="teaser-img">
+                                                <f:link.typolink parameter="{file.link}" title="{file.description}">
+                                                <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" loading="lazy" /><span>{file.title}</span>
+                                                </f:link.typolink>
+                                                </div>
+                                            </f:for>
+                                        </f:if>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-16 col-md-5 col color_white follow">
+                                <f:if condition="{data_item.data.tx_jsdmodule_footereinrichtung_sm_text}">
+                                    <p class="bold">
+                                        {data_item.data.tx_jsdmodule_footereinrichtung_sm_text}
+                                    </p>
+                                </f:if>
+                                <f:if condition="{data_item.data_tx_jsdmodule_footereinrichtung_sm_icons}">
+                                    <div class="row">
+                                    <f:for each="{data_item.data_tx_jsdmodule_footereinrichtung_sm_icons}" as="file">
+                                        <div class="col-xs-8 col-md-16 col-lg-8">
+                                        <f:link.typolink parameter="{file.link}" title="{file.description}">
+                                        <f:image image="{file}" alt="{settings.page.title} bei {file.alternative}" title="{settings.page.title} bei {file.title}" width="200" loading="lazy" /><span>{file.title}</span>
+                                        </f:link.typolink>
+                                        </div>
+                                    </f:for>
+                                    </div>
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row teaserlinks-e">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs col-md-14 offset-md-1 col-xl-12 offset-xl-2">
+                        <div class="row">
+                            <div class="col-xs-12 offset-xs-2 col-md-4 offset-md-0 col-lg-3 d-flex align-items-center logo-g">
+                                <f:for each="{data_item.data_tx_jsdmodule_footereinrichtung_gb_logo}" as="file">
+                                    <f:link.typolink parameter="{file.link}" title="{file.title}" class="d-flex align-items-center">
+                                        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" loading="lazy" />
+                                    </f:link.typolink>
+                                </f:for>
+                            </div>
+                            <div class="col-xs-16 d-block d-md-none border-b"></div>
+                            <div class="col col-lg-4 d-none d-lg-flex align-items-center justify-content-lg-end justify-content-xl-center teaser-g-titel">
+                                <span class="d-block text-left">{data_item.data.tx_jsdmodule_footereinrichtung_gb_text}</span>
+                            </div>
+                            <div class="col-xs-12 offset-xs-2 offset-md-0 col-md teaser-g tg1">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_link_a}" class="teaser-1 text-left bold color_dpurple">
+                                    <span class="bold">Medizinische Versorgung</span>
+                                </f:link.typolink>
+                            </div>
+                            <div class="col-xs-16 d-block d-md-none border-b"></div>
+                            <div class="col-xs-12 offset-xs-2 offset-md-0 col-md teaser-g tg2">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_link_b}" class="teaser-2 text-left bold color_dpurple">
+                                    <span class="bold">Pflege & Wohnen</span>
+                                </f:link.typolink>
+                            </div>
+                            <div class="col-xs-16 d-block d-md-none border-b"></div>
+                            <div class="col-xs-12 offset-xs-2 offset-md-0 col-md teaser-g tg3">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_link_c}" class="teaser-3 text-left bold color_dpurple">
+                                    <span class="bold">Teilhabe & Pädagogik</span>
+                                </f:link.typolink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row legal legal-e">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-xl-12 offset-xl-2">
+                        <div class="row justify-content-between">
+                            <div class="col-md-6 col-lg-4">
+                                <f:link.typolink parameter="{settings.page.uid}" title="{settings.page.title}"><span class="d-block">© <f:cObject typoscriptObjectPath="lib.dynamicYear" /> {settings.page.title}</span></f:link.typolink>
+                            </div>
+                            <div class="col-md-10 col-lg-12 d-lg-flex justify-content-lg-between">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_abbinder_a}" title="Datenschutz">Datenschutz</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_abbinder_b}" title="Impressum">Impressum</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_abbinder_c}" title="Inhaltsverzeichnis">Inhaltsverzeichnis</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_abbinder_d}" title="Leichte Sprache" class="simple-speak">Leichte Sprache</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footereinrichtung_gb_abbinder_e}" class="login" title="Mitarbeitenden-Login">Mitarbeitenden-Login</f:link.typolink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </f:for>
+</f:if>

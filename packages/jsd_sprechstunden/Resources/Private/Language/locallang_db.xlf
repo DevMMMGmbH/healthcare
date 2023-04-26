@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:jsd_sprechstunden/Resources/Private/Language/locallang_db" date="2021-02-10T08:35:02Z" product-name="jsd_sprechstunden">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden" resname="tx_jsdsprechstunden_domain_model_sprechstunden">
+				<source>Sprechstunde</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.auswahlname" resname="tx_jsdsprechstunden_domain_model_sprechstunden.auswahlname">
+				<source>Sprechstunde Identifikation (Name im Select-Feld):</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.title" resname="tx_jsdsprechstunden_domain_model_sprechstunden.title">
+				<source>Sprechstunde - Titel:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.einrichtung" resname="tx_jsdsprechstunden_domain_model_sprechstunden.einrichtung">
+				<source>Sprechstunde - Einrichtung:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.gglmaplink" resname="tx_jsdsprechstunden_domain_model_sprechstunden.gglmaplink">
+				<source>Sprechstunde - Google Maps Link:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.beschreibung" resname="tx_jsdsprechstunden_domain_model_sprechstunden.beschreibung">
+				<source>Sprechstunde - Beschreibung:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_title" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_title">
+				<source>Terminevereinbarung - Titel:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_email_title" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_email_title">
+				<source>Terminevereinbarung - E-Mail Titel:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_email_link" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_email_link">
+				<source>Terminevereinbarung - E-Mail:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_link_title" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_link_title">
+				<source>Terminevereinbarung - Link Titel:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_link" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_link">
+				<source>Terminevereinbarung - Link:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_tel_link" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_tel_link">
+				<source>Terminevereinbarung - Telefon:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_tel" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_tel">
+				<source>Terminevereinbarung - Telefon Titel:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_zeiten_title" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_zeiten_title">
+				<source>Terminzeiten - Überschrift:</source>
+			</trans-unit>
+			<trans-unit id="tx_jsdsprechstunden_domain_model_sprechstunden.termin_zeiten" resname="tx_jsdsprechstunden_domain_model_sprechstunden.termin_zeiten">
+				<source>Terminzeiten - Zeiten (Tabelle):</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_sprechstunden_sprechstunden.name" resname="tx_jsd_sprechstunden_sprechstunden.name">
+				<source>Modul: Sprechstunden</source>
+			</trans-unit>
+			<trans-unit id="tx_jsd_sprechstunden_sprechstunden.description" resname="tx_jsd_sprechstunden_sprechstunden.description">
+				<source>Sprechstunden der Krankenhäuser</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

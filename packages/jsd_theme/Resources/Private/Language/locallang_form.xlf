@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-04-17UTC09:15:100">
+        <header>
+            <authorName>Robert Heyduck</authorName>
+            <authorEmail>mail@typo-script.de</authorEmail>
+        </header>
+        <body>
+
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel">
+                <source>LLL: Send message</source>
+            </trans-unit>
+            <trans-unit id="element.Page.renderingOptions.nextButtonLabel">
+                <source>LLL: continue</source>
+            </trans-unit>
+            <trans-unit id="element.SummaryPage.renderingOptions.previousButtonLabel">
+                <source>LLL: back</source>
+            </trans-unit>
+
+            <trans-unit id="element.text-1.properties.label">
+                <source>LLL: E-Mail</source>
+            </trans-unit>
+            <trans-unit id="element.text-1.properties.placeholder">
+                <source>LLL: Enter your E-Mail here</source>
+            </trans-unit>
+            <trans-unit id="element.text-2.properties.label">
+                <source>LLL: Name</source>
+            </trans-unit>
+            <trans-unit id="element.text-2.properties.placeholder">
+                <source>LLL: Enter your name here</source>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.label">
+                <source>LLL: Comment</source>
+            </trans-unit>
+            <trans-unit id="element.textarea-1.properties.placeholder">
+                <source>LLL: Enter your comment here</source>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

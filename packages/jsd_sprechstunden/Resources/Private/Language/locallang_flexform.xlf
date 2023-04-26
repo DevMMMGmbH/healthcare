@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:jsd_sprechstunden/Resources/Private/Language/locallang_flexform" date="2021-02-10T08:35:02Z" product-name="jsd_sprechstunden">
+		<header/>
+		<body>
+			<trans-unit id="flexform.title" resname="flexform.title">
+				<source>Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="flexform.storagePid" resname="flexform.storagePid">
+				<source>Sprechstunden Ordner</source>
+			</trans-unit>
+			<trans-unit id="flexform.items" resname="flexform.items">
+				<source>Sprechstunden Auswahl</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

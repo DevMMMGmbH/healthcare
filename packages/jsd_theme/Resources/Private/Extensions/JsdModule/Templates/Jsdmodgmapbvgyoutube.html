@@ -1,0 +1,111 @@
+<f:if condition="{data_tx_jsdmodule_jsdmodgmapbvgyt}">
+    <div class="mod_downloads mod_gMapBvgYt" id="c{data.uid}">
+        <div class="row">
+            <div class="col-xs-2 col-md-1 offset-md-1 icon-t icon-t-green"></div>
+        </div>
+        <div class="row kk_content">
+            <f:if condition="{data.header}">
+                <div class="col-xs-12 offset-xs-2 col-lg-4">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:2, htmlDecode: 1, size: 2}" />
+                </div>
+            </f:if>
+            <div class="col-xs-12 offset-xs-2 col-lg-8 offset-lg-0">
+                <f:switch expression="{data.pid}">
+                    <f:case value="1147">
+                        <div class="iframe gmap i_dsgvo" data-url="https://www.google.com/maps/d/u/0/embed?mid=15TKURwOXfKmSAFMHzWw5egS1oo7NEQ9S">
+                            <iframe class="tab-map-iframe" src="" loading="lazy"></iframe>
+                            <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.googlemaps\',  extensionName=\'jsd_theme\')}'}" />
+                        </div>
+                    </f:case>
+                    <f:case value="329">
+                        <div class="iframe gmap i_dsgvo" data-url="https://www.google.com/maps/d/embed?mid=1eI7tl6OMQ52I08bp-2IF0PLVlNKvGQFN">
+                            <iframe class="tab-map-iframe" src="" loading="lazy"></iframe>
+                            <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.googlemaps\',  extensionName=\'jsd_theme\')}'}" />
+                        </div>
+                    </f:case>
+                    <f:case value="27">
+                        <div class="iframe gmap i_dsgvo" data-url="https://www.google.com/maps/d/embed?mid=1-4AUcaOMian4AhCrSHu5T4RUcSJIRzM">
+                            <iframe class="tab-map-iframe" src="" loading="lazy"></iframe>
+                            <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.googlemaps\',  extensionName=\'jsd_theme\')}'}" />
+                        </div>
+                    </f:case>
+                    <f:defaultCase>
+                        <f:for each="{data_tx_jsdmodule_jsdmodgmapbvgyt}" as="data_item" iteration="i">
+                                <f:switch expression="{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_options}">
+                                    <f:case value="1">
+                                        <!-- Google Map -->
+                                        <f:if condition="{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_address} && {i.cycle} == 1">
+                                            <div class="iframe gmap i_dsgvo" data-url="https://maps.google.de/maps?hl=de&amp;q={data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_address}&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed&amp;fb=1&amp;gl=de&amp;hq=0">
+                                                <iframe class="tab-map-iframe" src="" loading="lazy"></iframe>
+                                                <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.googlemaps\',  extensionName=\'jsd_theme\')}'}" />
+                                            </div>
+                                        </f:if>
+                                    </f:case>
+                                    <f:case value="2">
+                                        <!-- Youtube -->
+                                        <f:if condition="{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_video} && {i.cycle} == 1">
+                                            <div class="iframe yt i_dsgvo" data-url="https://www.youtube-nocookie.com/embed/{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_video}?autoplay=1&rel=0&showinfo=0&autohide=1">
+                                                <iframe width="560" height="315" id="vid_frame" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                                                <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.youtube\',  extensionName=\'jsd_theme\')}'}" />
+                                            </div>
+                                        </f:if>
+                                    </f:case>
+                                </f:switch>
+                        </f:for>
+
+                        <f:if condition="{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()} > 1 && {data_tx_jsdmodule_jsdmodgmapbvgyt.0.data.tx_jsdmodule_jsdmodgmapbvgyt_video}">
+                            <div class="slick {f:if(condition: '{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()} > 3', then: 'padBottom', else: 'padNothing')} " data-slick-class="slick-c{data.uid}">
+                                <div class="row slick-c{data.uid}" data-slick='{"speed": 500, "autoplaySpeed": 1500, "fade":false, "autoplay":false, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 3,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "slidesToShow": 2,"slidesToScroll": 2, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                                    <f:for each="{data_tx_jsdmodule_jsdmodgmapbvgyt}" as="data_item" iteration="i">
+                                        <f:if condition="{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_video}">
+                                            <div class="video" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_video}?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                                <div class="thumb d-flex justify-content-center"><img src="https://img.youtube.com/vi/{data_item.data.tx_jsdmodule_jsdmodgmapbvgyt_video}/hqdefault.jpg" width="204" loading="lazy" ></div>
+                                            </div>
+                                        </f:if>
+                                    </f:for>
+                                </div>
+                                <f:if condition="{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()} > 2">
+                                    <div class="carousel-indicators d-md-none slick-dots-c{data.uid}"></div>
+                                    <f:if condition="{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()} > 3">
+                                        <f:then><div class="d-none d-md-block"></f:then>
+                                        <f:else><div class="d-none"></f:else>
+                                    </f:if>
+                                    <div class="carousel-control-prev-next d-none d-md-inline-block slick-c{data.uid}-navi">
+                                        <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev" title="{f:translate(key: 'page.prev',  extensionName='jsd_theme')}"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.prev',  extensionName='jsd_theme')}</span>
+                                        </button>
+                                        <span class="count">
+                                            <b><span class="num"></span></b>/{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()}
+                                        </span>
+                                        <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" title="{f:translate(key: 'page.next',  extensionName='jsd_theme')}"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.next',  extensionName='jsd_theme')}</span>
+                                        </button>
+                                    </div>
+                                    <f:if condition="{data_tx_jsdmodule_jsdmodgmapbvgyt -> f:count()} > 3">
+                                        <f:then></div></f:then>
+                                        <f:else></div></f:else>
+                                    </f:if>
+                                </f:if>
+                            </div>
+                        </f:if>
+
+                    </f:defaultCase>
+                </f:switch>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-md-15 icon-b icon-b-green"></div>
+        </div>
+    </div>
+</f:if>
+
+<f:section name="data-police">
+    <div class="datapolice position-absolute d-flex align-items-center row">
+        <div>
+            <h5>{f:translate(key: 'mods.dsgvo.header',  extensionName='jsd_theme')}</h5>
+            <p>{f:translate(key: 'mods.dsgvo.teaser.before.provider',  extensionName='jsd_theme')} {provider} {f:translate(key: 'mods.dsgvo.teaser.after.provider',  extensionName='jsd_theme')}</p>
+            <label class="switch">
+                <input type="checkbox"><span class="slider round"></span>
+            </label>
+            <p class="small">{f:translate(key: 'mods.dsgvo.smalltext',  extensionName='jsd_theme')} <f:link.typolink parameter="{settings.page.pidDsgvo}">{f:translate(key: 'mods.dsgvo.text',  extensionName='jsd_theme')}</f:link.typolink>.</p>
+        </div>
+    </div>
+</f:section>

@@ -1,0 +1,31 @@
+tt_content.jsdmodule_jsdmodnavigation {
+    dataProcessing.10 {
+        dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.30 {
+            special = list
+            special.value.field = tx_jsdmodule_pidinrootline
+            levels = 3
+            includeSpacer = 1
+            titleField = nav_title // title
+            as = data_tx_jsdmodule_menu_list
+        }
+        dataProcessing.40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.40 {
+            special = list
+            special.value.field = tx_jsdmodule_pages
+            levels = 3
+            includeSpacer = 1
+            titleField = nav_title // title
+            as = data_tx_jsdmodule_menu_extra
+        }
+        dataProcessing.50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.50 {
+            special = list
+            special.value.field = tx_jsdmodule_navigation_loginsimplespeak
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = data_tx_jsdmodule_menu_loginspeak
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:docname="bewertung-icon-jds.svg" inkscape:version="1.0 (4035a4fb49, 2020-05-01)" id="svg8" version="1.1" viewBox="0 0 52.916665 52.916668" height="200" width="200">
+  <defs id="defs2"></defs>
+  <metadata id="metadata5"></metadata>
+  <g id="layer1" inkscape:groupmode="layer" inkscape:label="Ebene 1">
+    <g transform="matrix(2.2048611,0,0,2.2048611,0.00640103,-0.0253204)" id="g939">
+      <path d="m 0.75,14.25 v 9" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" id="path931"></path>
+      <path d="m 0.75,21.75 h 15 a 3,3 0 0 0 -3,-3 H 9 a 3,3 0 0 0 -3,-3 H 0.75" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" id="path933"></path>
+      <path d="M 6,18.75 H 9" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" id="path935"></path>
+      <path d="m 16.932,1.233 2.005,3.946 h 3.428 a 0.884,0.884 0 0 1 0.62,1.513 l -3.117,3.068 1.741,4 a 0.883,0.883 0 0 1 -1.243,1.122 l -4.222,-2.374 -4.222,2.374 A 0.883,0.883 0 0 1 10.679,13.76 l 1.742,-4 L 9.3,6.692 A 0.883,0.883 0 0 1 9.92,5.179 h 3.428 l 2,-3.946 a 0.883,0.883 0 0 1 1.584,0 z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" id="path937"></path>
+    </g>
+  </g>
+</svg>

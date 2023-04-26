@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-06-03UTC09:15:100">
+        <header>
+            <authorName>Robert Heyduck</authorName>
+            <authorEmail>mail@typo-script.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Startseite</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default_subpage">
+                <source>Startseite (Subpages, 1. Breadcrumb - 2. Content)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default_subpage_holding">
+                <source>Startseite (Holding-Subpages, 1. Content - 2. Breadcrumb)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.einrichtungen">
+                <source>Einrichtungen</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.einrichtungen_subpage">
+                <source>Einrichtungen (Subpages)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.default_newsdetailpage">
+                <source>Einrichtungen Detailseite (News)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.suche">
+                <source>Suche</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.header">
+                <source>Header (Navigation global)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.subheader">
+                <source>SubHeader (Navigation Einrichtungen)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.subheader_holding">
+                <source>SubHeader (Content über Breadcrumb)</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer">
+                <source>Footer</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

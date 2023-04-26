@@ -1,0 +1,219 @@
+<f:if condition="{data_tx_jsdmodule_navigation}">
+    <div class="mod_megamenu position-relative" id="c{data.uid}">
+        <div class="sticky css-trans_all">
+            <div class="row align-items-center justify-content-between">
+                <f:for each="{data_tx_jsdmodule_navigation}" as="data_item">
+                    <f:comment>
+                        <!-- Logo, Main-Links & Burger/Close button -->
+                    </f:comment>
+                    <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayoutSlide')}=='Einrichtungen' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='EinrichtungenSubpage' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayout')}=='Defaultnewsdetailpage'">
+                        <f:then>
+                            <div class="col mm-nav-e-logo">
+                                <f:link.typolink parameter="{data_item.data_tx_jsdmodule_image.0.link}" title="{f:translate(key: 'page.logo.title',  extensionName='jsd_theme')}" class="bold color_dpurple d-flex font-size-14 justify-content-md-end">{f:translate(key: 'page.project',  extensionName='jsd_theme')}</f:link.typolink>
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div class="col-xs-6 col-md-4 logo css-trans_all">
+                                <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                                    <f:render partial="MediaImage" arguments="{data_image:data_item.data_tx_jsdmodule_image.0, tabindex: 1}" />
+                                </f:if>
+                            </div>
+                        </f:else>
+                    </f:if>
+                    <div class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'col mm-nav-e-sub', else: 'col-xs-10 col-md-12')}">
+                        <f:if condition="{data_item.data.tx_jsdmodule_pidinrootline}">
+                            <div class="row justify-content-end" role="navigation" aria-label="{f:translate(key: 'page.menu.main',  extensionName='jsd_theme')}">
+                                <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayoutSlide')}=='Einrichtungen' || {f:cObject(typoscriptObjectPath: 'lib.conditionBackendLayoutSlide')}=='EinrichtungenSubpage'">
+                                    <f:then></f:then>
+                                    <f:else>
+                                        <f:for each="{data_item.data_tx_jsdmodule_menu_list}" as="menuMain" iteration="i">
+                                            <div class="col-md-auto d-none d-md-block css-trans_all item ifSubSlide js-item">
+                                                <ul>
+                                                    <f:render partial="Menu/Item" arguments="{item: menuMain, cssclass: 'main-navigation css-trans_all mMcycleClass-{i.cycle}', htmlDecode: 1, cssid: 'mMcycleId-{i.cycle}'}" />
+                                                </ul>
+                                            </div>
+                                        </f:for>
+                                    </f:else>
+                                </f:if>
+                                <f:comment>
+                                    <div class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'col item', else: 'col-xs-5 col-md-2 css-trans_all item kontrast')}">
+                                        <a href="#" class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'css-trans_all kontrast', else: 'main-navigation css-trans_all kontrast')}"><span>Kontrast</span></a>
+                                    </div>
+                                </f:comment>
+                                <div class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'col item', else: 'col-xs-5 col-md-2 css-trans_all item suche')}">
+                                    <a href="#" class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'css-trans_all suche', else: 'main-navigation css-trans_all suche')}" title="{f:translate(key: 'page.menu.lang.button',  extensionName='jsd_theme')}"><span>{f:translate(key: 'page.menu.lang.button',  extensionName='jsd_theme')}</span></a>
+                                </div>
+                                <div class="{f:if(condition: '{f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'Einrichtungen\' || {f:cObject(typoscriptObjectPath: \'lib.conditionBackendLayoutSlide\')}==\'EinrichtungenSubpage\'', then: 'col burger', else: 'col-xs-5 col-md-2 burger')}">
+                                    <a href="#" class="main-navigation css-trans_all menu mm_open" title="{f:translate(key: 'page.menu.menu.title',  extensionName='jsd_theme')}" aria-label="{f:translate(key: 'page.menu.menu.title',  extensionName='jsd_theme')}" aria-expanded="false"><span>{f:translate(key: 'page.menu.menu.title',  extensionName='jsd_theme')}</span></a>
+                                </div>
+                            </div>
+                        </f:if>
+                    </div>
+                </f:for>
+            </div>
+        </div>
+
+        <div class="mm closed" role="navigation" aria-label="{f:translate(key: 'page.menu.main',  extensionName='jsd_theme')}">
+            <f:for each="{data_tx_jsdmodule_navigation}" as="data_item">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xs-6 col-md-4 logo css-trans_all">
+                        <f:if condition="{data_item.data_tx_jsdmodule_image}">
+                            <f:render partial="MediaImage" arguments="{data_image:data_item.data_tx_jsdmodule_image.0, tabindex: 1}" />
+                        </f:if>
+                    </div>
+                    <div class="col-xs-5 col-md-2 burger">
+                        <a href="#" class="main-navigation css-trans_all menu mm_close" title="{f:translate(key: 'page.search.close.title',  extensionName='jsd_theme')}" aria-label="{f:translate(key: 'page.search.close.title',  extensionName='jsd_theme')}" aria-expanded="true"><span>{f:translate(key: 'page.search.close.button',  extensionName='jsd_theme')}</span></a>
+                    </div>
+                </div>
+
+                <f:if condition="{data_item.data.tx_jsdmodule_pidinrootline} ||{data_item.data.tx_jsdmodule_pages}">
+                    <div class="row mainmenu">
+                        <div class="col-xs-16 col-lg-5 menuAllWrap">
+                            <ul class="lvl-0">
+                                <f:for each="{data_item.data_tx_jsdmodule_menu_list}" as="menuMain" iteration="i">
+                                    <f:if condition="{menuMain.children}">
+                                        <f:then>
+                                            <f:render partial="Menu/ItemIfSub" arguments="{item: menuMain, cssclass: 'prime a-lvl-0 aha-lvl-0-cycle-{i.cycle}'}" />
+                                            <ul class="lvl-1 subitems">
+                                                <li class="parent"><f:link.page pageUid="{menuMain.data.uid}" title="{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {menuMain.data.title} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}" class="overview a-lvl-1-back"><span>{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}</span></f:link.page></li>
+                                                <f:for each="{menuMain.children}" as="subItem">
+                                                    <f:if condition="{subItem.children}">
+                                                        <f:then>
+                                                            <f:render partial="Menu/ItemIfSub" arguments="{item: subItem, cssclass: 'primeSub a-lvl-1 aha-lvl-1-cycle-{i.cycle}'}" />
+                                                            <ul class="lvl-2 subitems">
+                                                                <li class="parent"><f:link.page pageUid="{subItem.data.uid}" title="{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {subItem.data.title} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}" class="overview a-lvl-2-back"><span>{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}</span></f:link.page></li>
+                                                                <f:for each="{subItem.children}" as="subItem">
+                                                                    <f:if condition="{subItem.children}">
+                                                                        <f:then>
+                                                                            <f:render partial="Menu/ItemIfSub" arguments="{item: subItem, cssclass: 'primeSubSub a-lvl-3 aha-lvl-3-cycle-{i.cycle}'}" />
+                                                                            </li>
+                                                                        </f:then>
+                                                                        <f:else>
+                                                                            <f:render partial="Menu/Item" arguments="{item: subItem, cssclass: 'primeSubSub a-lvl-3 aha-lvl-3-cycle-{i.cycle}'}" />
+                                                                            </li>
+                                                                        </f:else>
+                                                                    </f:if>
+                                                                </f:for>
+                                                            </ul>
+                                                            </li>
+                                                        </f:then>
+                                                        <f:else>
+                                                            <f:render partial="Menu/Item" arguments="{item: subItem, cssclass: 'primeSub a-lvl-1 aha-lvl-1-cycle-{i.cycle}'}" />
+                                                            </li>
+                                                        </f:else>
+                                                    </f:if>
+                                                </f:for>
+                                            </ul>
+                                        </f:then>
+                                        <f:else>
+                                            <f:render partial="Menu/Item" arguments="{item: menuMain, cssclass: 'prime a-lvl-0 aha-lvl-0-cycle-{i.cycle}'}" />
+                                        </f:else>
+                                    </f:if>
+                                    </li>
+                                </f:for>
+                                <f:for each="{data_item.data_tx_jsdmodule_menu_extra}" as="menuMain" iteration="i">
+                                    <f:if condition="{menuMain.children}">
+                                        <f:then>
+                                            <f:render partial="Menu/ItemIfSub" arguments="{item: menuMain, cssclass: 'secondary a-lvl-0 oha-lvl-0-cycle-{i.cycle}'}" />
+                                            <ul class="lvl-1 subitems">
+                                                <li class="parent"><f:link.page pageUid="{menuMain.data.uid}" title="{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {menuMain.data.title} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}" class="overview a-lvl-1-back"><span>{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}</span></f:link.page></li>
+                                                <f:for each="{menuMain.children}" as="subItem">
+                                                    <f:if condition="{subItem.children}">
+                                                        <f:then>
+                                                            <f:if condition="{subItem.children}">
+                                                                <f:then>
+                                                                    <f:render partial="Menu/ItemIfSub" arguments="{item: subItem, cssclass: 'secondary a-lvl-1 oha-lvl-1-cycle-{i.cycle}'}" />
+                                                                    <ul class="lvl-2 subitems">
+                                                                        <li class="parent"><f:link.page pageUid="{subItem.data.uid}" title="{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {subItem.data.title} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}" class="overview a-lvl-2-back"><span>{f:translate(key: 'page.menu.to',  extensionName='jsd_theme')} {f:translate(key: 'page.menu.overview',  extensionName='jsd_theme')}</span></f:link.page>
+                                                                        </li>
+                                                                        <f:for each="{subItem.children}" as="subItem">
+                                                                            <f:if condition="{subItem.children}">
+                                                                                <f:then>
+                                                                                    <f:render partial="Menu/ItemIfSub" arguments="{item: subItem, cssclass: 'secondary a-lvl-2 oha-lvl-2-cycle-{i.cycle}'}" />
+                                                                                    </li>
+                                                                                </f:then>
+                                                                                <f:else>
+                                                                                    <f:render partial="Menu/Item" arguments="{item: subItem, cssclass: 'secondary a-lvl-2 oha-lvl-2-cycle-{i.cycle}'}" />
+                                                                                    </li>
+                                                                                </f:else>
+                                                                            </f:if>
+                                                                        </f:for>
+                                                                    </ul>
+                                                                    </li>
+                                                                </f:then>
+                                                                <f:else>
+                                                                    <f:render partial="Menu/Item" arguments="{item: subItem, cssclass: 'secondary a-lvl-1 oha-lvl-1-cycle-{i.cycle}'}}" />
+                                                                    </li>
+                                                                </f:else>
+                                                            </f:if>
+                                                            </li>
+                                                        </f:then>
+                                                        <f:else>
+                                                            <f:render partial="Menu/Item" arguments="{item: subItem}" />
+                                                            </li>
+                                                        </f:else>
+                                                    </f:if>
+                                                </f:for>
+                                            </ul>
+                                        </f:then>
+                                        <f:else>
+                                            <f:render partial="Menu/Item" arguments="{item: menuMain, cssclass: 'secondary a-lvl-0 oha-lvl-0-cycle-{i.cycle}'}" />
+                                        </f:else>
+                                    </f:if>
+                                    </li>
+                                </f:for>
+                                <f:if condition="{data_item.data_tx_jsdmodule_menu_loginspeak}">
+                                    <li class="d-xs-to-lg-block_lvl-one">
+                                        <a href="#" class="filllink"><span>&nbsp;</span></a>
+                                    </li>
+                                    <f:for each="{data_item.data_tx_jsdmodule_menu_loginspeak}" as="menuLoginSpeak" iteration="i">
+                                        <f:if condition="{i.cycle}==1">
+                                            <f:then>
+                                                <f:render partial="Menu/Item" arguments="{item: menuLoginSpeak, cssclass: 'speak', liMmCssClass: 'd-xs-to-lg-block_lvl-one'}" />
+                                            </f:then>
+                                            <f:else>
+                                                <f:render partial="Menu/Item" arguments="{item: menuLoginSpeak, cssclass: 'login', liMmCssClass: 'd-xs-to-lg-block_lvl-one'}" />
+                                            </f:else>
+                                        </f:if>
+                                        </li>
+                                    </f:for>
+                                </f:if>
+                            </ul>
+                        </div>
+                        <f:if condition="{data_item.data_tx_jsdmodule_content_element}">
+                            <div class="xs-16 mm_ce">
+                                <f:for each="{data_item.data_tx_jsdmodule_content_element}" as="content_item">
+                                    <f:cObject typoscriptObjectPath="tt_content" data="{content_item.data}" table="tt_content" />
+                                </f:for>
+                            </div>
+                        </f:if>
+                    </div>
+                </f:if>
+            </f:for>
+        </div>
+    </div>
+</f:if>
+
+
+<f:section name="submenu">
+    <ul class="lvl-{cycle} subitems">
+    <f:for each="{submenu}" as="subItem">
+        <f:if condition="{subItem.children}">
+            <f:then>
+                <f:render partial="Menu/ItemIfSub" arguments="{item: subItem}" />
+                <f:if condition="{subItem.children}">
+                    <f:render section="submenu" arguments="{submenu: subItem.children, cycle: 2}" />
+                </f:if>
+                </li>
+            </f:then>
+            <f:else>
+                <f:render partial="Menu/Item" arguments="{item: subItem}" />
+                <f:if condition="{subItem.children}">
+                    <f:render section="submenu" arguments="{submenu: subItem.children}" />
+                </f:if>
+                </li>
+            </f:else>
+        </f:if>
+    </f:for>
+    </ul>
+</f:section>

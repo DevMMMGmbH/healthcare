@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<nav class="form-navigation sending">
+    <div class="row">
+        <div class="col-xs-16">
+            <div class="btn-toolbar justify-content-end" role="toolbar">
+                <div class="" role="group">
+                    <f:link.page class="btn button-dpurple_0-2 css-trans_all mr-2">{f:translate(key: 'element.Form.renderingOptions.resetButtonLabel',  extensionName='jsd_theme')}</f:link.page>
+                    <f:if condition="{form.previousPage}">
+
+                            <f:form.hidden property="__currentPage" value="{form.previousPage.index}" />
+                            <f:form.button type="button" onclick="document.forms['{form.formDefinition.identifier}'].submit();" formnovalidate="formnovalidate" class="btn button-dpurple_0-2 css-trans_all mr-2">{formvh:translateElementProperty(element: form.currentPage, renderingOptionProperty: 'previousButtonLabel')}</f:form.button>
+
+                    </f:if>
+                    <f:if condition="{form.nextPage}">
+                        <f:then>
+
+                                <f:form.button property="__currentPage" value="{form.nextPage.index}" class="btn btn-primary" class="btn btn-primary btn button-dpurple css-trans_all mr-2">{formvh:translateElementProperty(element: form.currentPage, renderingOptionProperty: 'nextButtonLabel')}</f:form.button>
+
+                        </f:then>
+                        <f:else>
+
+                                <f:form.button property="__currentPage" value="{form.pages -> f:count()}" class="btn btn-primary btn button-dpurple css-trans_all">
+                                    {formvh:translateElementProperty(element: form, renderingOptionProperty: 'submitButtonLabel')}
+                                </f:form.button>
+
+                        </f:else>
+                    </f:if>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+</html>

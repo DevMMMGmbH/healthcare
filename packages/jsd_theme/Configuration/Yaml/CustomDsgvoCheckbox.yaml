@@ -1,0 +1,87 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+
+          # – ---------------------------------------------------------------------------------
+          # Darstellung des Formularelementes im Backend:
+          # In der Übersicht / Listenansicht, mittlere Spalte
+
+          formEditor:
+
+            # Für Darstellung im Backend: JS-Dateien/Module registrieren, die per requireJS
+            # eingebunden werden. tx_form sucht in genau diesem Pfad nach den JS-Dateien:
+            # 'EXT:..../Resources/Public/JavaScript/Backend/FormEditor/......js
+            dynamicRequireJsModules:
+              additionalViewModelModules:
+                1668693062: 'TYPO3/CMS/JsdTheme/Backend/FormEditor/CustomDsgvoCheckboxViewModel'
+
+            # Für Darstellung im Backend: Welches Fluid-Template verwenden?
+            # Hier einfach das Standard-Template von tx_core
+            formEditorPartials:
+              FormElement-CustomDsgvoCheckbox: 'Stage/SimpleTemplate'
+
+
+          formElementsDefinition:
+
+            # – -------------------------------------------------------
+            # Für Ausgabe im Frontend: Zusätzliche Pfade, die für Rendern des Feldes
+            # durchsucht werden sollen. Der numerische Key muss eindeutig sein
+
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  1668693062: 'EXT:jsd_theme/Resources/Private/Extensions/Forms/Templates/'
+                partialRootPaths:
+                  1668693062: 'EXT:jsd_theme/Resources/Private/Extensions/Forms/Partials/'
+
+            # – -------------------------------------------------------
+            # Darstellung der Formularfelder im Backend
+            # Detailansicht mit Formularfeldern in der rechten Spalte
+
+            CustomDsgvoCheckbox:
+
+              # Erbt die Standard-Darstellung und Felder, z.B. "Label" und "Description"
+              # siehe SYSEXT:form/Configuration/Yaml/FormEditorSetup.yaml
+              __inheritances:
+                10: 'TYPO3.CMS.Form.mixins.formElementMixins.FormElementMixin'
+
+              # Überschrift (erscheint als Titel in Übersicht und über dem Formular)
+              formEditor:
+                label: 'DSGVO Checkbox'
+                group: custom
+                groupSorting: 1010
+
+                # Dieses Icon wird in der ext_localconf.php registriert
+                iconIdentifier: CustomDsgvoCheckbox-icon
+
+                # Defaults für die Formularfelder
+                predefinedDefaults: {  }
+
+                # Hier können eigene Formularfelder definiert werden
+                editors:
+                  # 200 wurde von FormElementMixin geerbt und enhält das Feld "Label"
+                  # 230 wurde von auch geerbt und enhält das Feld "Description"
+                  # 700 enthält die Angaben für Spaltenbreiten xs, sm, ... beim Einfügen in ein Row-Element
+                  # 800 ist die required-Checkbox (Pflichtfeld)
+                  300:
+                    identifier: 'link'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'Link'
+                    propertyPath: 'properties.link'
+                  301:
+                    identifier: 'email'
+                    templateName: 'Inspector-TextEditor'
+                    label: 'E-Mail'
+                    propertyPath: 'properties.email'
+                  302:
+                    identifier: 'dsgvo'
+                    templateName: 'Inspector-TextareaEditor'
+                    label: 'DSGVO Text'
+                    propertyPath: 'properties.dsgvo'
+              properties:
+                containerClassAttribute: 'input checkbox'
+                elementClassAttribute: add-on
+                elementErrorClassAttribute: error
+                value: 1

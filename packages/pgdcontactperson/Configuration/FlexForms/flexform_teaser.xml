@@ -1,0 +1,82 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <el>
+            <settings.teaserHeader>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Überschrift:</label>
+                    <config>
+                        <type>input</type>
+                        <eval>trim</eval>
+                        <max>40</max>
+                        <size>20</size>
+                        <placeholder>Ansprechpartner</placeholder>
+                    </config>
+                </TCEforms>
+            </settings.teaserHeader>
+            <settings.teaserOption>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Anzeige als:</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Liste</numIndex>
+                                <numIndex index="1">0</numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Slider</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </settings.teaserOption>
+            <settings.contactpersons>
+                <TCEforms>
+                    <label>Ansprechpartner wählen</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectMultipleSideBySide</renderType>
+                        <foreign_table>tx_pgdcontactperson_domain_model_contactperson</foreign_table>
+                        <foreign_table_where>AND (tx_pgdcontactperson_domain_model_contactperson.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) OR tx_pgdcontactperson_domain_model_contactperson.sys_language_uid = '-1') AND tx_pgdcontactperson_domain_model_contactperson.deleted = 0 AND tx_pgdcontactperson_domain_model_contactperson.hidden = 0 ORDER BY lastname</foreign_table_where>
+                        <items type="array"></items>
+                        <maxitems>99</maxitems>
+                        <minitems>1</minitems>
+                        <size>10</size>
+                        <multiple>0</multiple>
+                    </config>
+                </TCEforms>
+            </settings.contactpersons>
+            <settings.teaserListLabel>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Label für Link "Ansprechpartner-Suche":</label>
+                    <config>
+                        <type>input</type>
+                        <eval>trim</eval>
+                        <max>40</max>
+                        <size>20</size>
+                        <placeholder>Ansprechpartner finden</placeholder>
+                    </config>
+                </TCEforms>
+            </settings.teaserListLabel>
+            <settings.teaserListlink>
+                <TCEforms>
+                    <exclude>1</exclude>
+                    <label>Link zur Ansprechpartner-Suche:</label>
+                    <config>
+                        <type>input</type>
+                        <renderType>inputLink</renderType>
+                        <autocomplete>true</autocomplete>
+                    </config>
+                </TCEforms>
+            </settings.teaserListlink>
+        </el>
+    </ROOT>
+</T3DataStructure>

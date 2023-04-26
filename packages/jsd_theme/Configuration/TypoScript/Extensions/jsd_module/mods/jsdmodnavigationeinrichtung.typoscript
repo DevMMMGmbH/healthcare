@@ -1,0 +1,49 @@
+tt_content.jsdmodule_jsdmodnavigationeinrichtung {
+    dataProcessing.10 {
+        dataProcessing.30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.30 {
+            special = directory
+            special.value.field = tx_jsdmodule_einrichtunglinks_a
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = einrichtunglinks_a
+        }
+        dataProcessing.40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.40 {
+            special = directory
+            special.value.field = tx_jsdmodule_einrichtunglinks_b
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = einrichtunglinks_b
+        }
+        dataProcessing.50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.50 {
+            special = directory
+            special.value.field = tx_jsdmodule_einrichtunglinks_c
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = einrichtunglinks_c
+        }
+        dataProcessing.60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.60 {
+            special = directory
+            special.value.field = tx_jsdmodule_einrichtunglinks_d
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = einrichtunglinks_d
+        }
+        dataProcessing.70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        dataProcessing.70 {
+            special = list
+            special.value.field = tx_jsdmodule_einrichtunglinks_extra
+            levels = 1
+            includeSpacer = 0
+            titleField = nav_title // title
+            as = einrichtunglinks_extra
+        }
+    }
+}

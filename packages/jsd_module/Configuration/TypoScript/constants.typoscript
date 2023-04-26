@@ -1,0 +1,8 @@
+# cat=jsd_module/file; type=string; label=Path to template root (FE)
+plugin.tx_jsdmodule.view.templateRootPath =
+
+# cat=jsd_module/file; type=string; label=Path to template partials (FE)
+plugin.tx_jsdmodule.view.partialRootPath =
+
+# cat=jsd_module/file; type=string; label=Path to template layouts (FE)
+plugin.tx_jsdmodule.view.layoutRootPath =

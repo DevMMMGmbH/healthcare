@@ -1,0 +1,43 @@
+<div class="mod_buehnezwei" id="c{data.uid}">
+    <div class="row">
+        <div class="col green-bg {f:if(condition: '{data_image}', then: 'haveImg', else: 'noImg')}">
+            <div class="row">
+                <div class="{f:if(condition: '{data_image} || {data.subheader}', then: 'order-xs-2 order-md-1 col-xs-11 offset-xs-2 col-md-6 offset-md-1 text', else: 'col-xs-11 offset-xs-2 col-md-8 offset-md-1 text')}">
+                    <f:render partial="HeaderLayout" arguments="{header:data.header, header_layout:1, htmlDecode: 1}" />
+                    <div class="subline bold color_dpurple"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html></div>
+                </div>
+                <f:if condition="{data.subheader}">
+                    <f:then>
+                        <div class="order-xs-1 order-md-2 col-xs-15 offset-xs-0 col-md-7 offset-md-1 is-vid i_dsgvo g-7-16" data-url="https://www.youtube-nocookie.com/embed/{data.subheader}?rel=0">
+                            <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                            <f:render section="data-police" arguments="{provider: '{f:translate(key: \'mods.dsgvo.provider.youtube\',  extensionName=\'jsd_theme\')}'}" />
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{data_image}">
+                            <div class="order-xs-1 order-md-2 col-xs-15 offset-xs-0 col-md-7 offset-md-1 is-img">
+                                <f:for each="{data_image}" as="file">
+                                    <f:render partial="MediaImage"
+                                        arguments="{data_image:file, w-xs:300, w-sm:360, w-md:337, w-lg:448, w-xl:560}" />
+                                </f:for>
+                            </div>
+                        </f:if>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</div>
+
+<f:section name="data-police">
+    <div class="datapolice position-absolute d-flex align-items-center row">
+        <div>
+            <h5>{f:translate(key: 'mods.dsgvo.header',  extensionName='jsd_theme')}</h5>
+            <p>{f:translate(key: 'mods.dsgvo.teaser.before.provider',  extensionName='jsd_theme')} {provider} {f:translate(key: 'mods.dsgvo.teaser.after.provider',  extensionName='jsd_theme')}</p>
+            <label class="switch">
+                <input type="checkbox"><span class="slider round"></span>
+            </label>
+            <p class="small">{f:translate(key: 'mods.dsgvo.smalltext',  extensionName='jsd_theme')} <f:link.typolink parameter="{settings.page.pidDsgvo}">{f:translate(key: 'mods.dsgvo.text',  extensionName='jsd_theme')}</f:link.typolink>.</p>
+        </div>
+    </div>
+</f:section>

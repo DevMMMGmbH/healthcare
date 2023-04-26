@@ -1,0 +1,33 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:variable name="options" value="{data.tx_mask_options}"/>
+<f:switch expression="{options}">
+    <f:case value="1">
+        {options}
+    </f:case>
+    <f:case value="2">
+        {options}
+    </f:case>
+</f:switch>
+<f:if condition="{data.tx_mask_bildergalerie}">
+    <ul>
+        <f:for each="{data.tx_mask_bildergalerie}" as="data_item">
+            <li>
+                <f:for each="{data_item.tx_mask_image}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_caption}">
+                    {data_item.tx_mask_caption}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_copyright}">
+                    {data_item.tx_mask_copyright}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

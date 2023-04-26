@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.8 102.8">
+  <defs>
+    <style>.cls-1{fill:#24195d;}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style>
+  </defs>
+  <g id="kreis">
+    <circle class="cls-1" cx="51.4" cy="51.4" r="51.4"></circle>
+  </g>
+  <g id="Ebene_1" data-name="Ebene 1">
+    <path class="cls-2" d="M25.07,61.68A16.1,16.1,0,0,1,50.16,48.32" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M32.69,27.16a16.35,16.35,0,0,0,18.23,3.67" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M31.33,32.16a9.84,9.84,0,1,0,9.84-9.84A9.84,9.84,0,0,0,31.33,32.16Z" transform="translate(-0.08 -0.14)"></path>
+    <path class="cls-2" d="M66.09,48.39l3.68,7.92h7.16a1.76,1.76,0,0,1,1.24,3.07L72,65.49,75.4,73.4a1.87,1.87,0,0,1-1,2.45,1.9,1.9,0,0,1-1.66-.11l-8.31-4.68L56.1,75.74a1.87,1.87,0,0,1-2.56-.68,1.84,1.84,0,0,1-.11-1.66l3.44-7.91-6.2-6.11a1.76,1.76,0,0,1-.15-2.48,1.79,1.79,0,0,1,1.36-.59H59l3.68-7.92a1.9,1.9,0,0,1,2.58-.79A1.94,1.94,0,0,1,66.09,48.39Z" transform="translate(-0.08 -0.14)"></path>
+  </g>
+</svg>

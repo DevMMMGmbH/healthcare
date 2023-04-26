@@ -1,0 +1,613 @@
+tt_content.jsdmodule_jsdmod3erteaser = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmod3erteaser {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmod3erteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_teaser
+        table = tx_jsdmodule_teaser
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_teaser
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_teaser
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodakkordeon = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodakkordeon {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodakkordeon
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_akkordeon
+        table = tx_jsdmodule_akkordeon
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_akkordeon
+    }
+}
+tt_content.jsdmodule_jsdmodankerliste = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodankerliste {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodankerliste
+}
+tt_content.jsdmodule_jsdmodbereichsteaser = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbereichsteaser {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbereichsteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_bereichsteaser
+        table = tx_jsdmodule_bereichsteaser
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_bereichsteaser
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_bereichsteaser
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodbildergalerie = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbildergalerie {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbildergalerie
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_bildergalerie
+        table = tx_jsdmodule_bildergalerie
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_bildergalerie
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_bildergalerie
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodbilderkachel = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbilderkachel {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbilderkachel
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_bilderkachel
+        table = tx_jsdmodule_bilderkachel
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_bilderkachel
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_bilderkachel
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodbildslider = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbildslider {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbildslider
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image_slider
+        table = tx_jsdmodule_image_slider
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_image_slider
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_image_slider
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodbildtextteaser = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbildtextteaser {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbildtextteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_bild_text_teaser
+        table = tx_jsdmodule_bild_text_teaser
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_bild_text_teaser
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_bild_text_teaser
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodbuehnedetailseite = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodbuehnedetailseite {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodbuehnedetailseite
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = image
+        references {
+            fieldName = image
+            table = tt_content
+        }
+        as = data_image
+    }
+}
+tt_content.jsdmodule_jsdmoddownload = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmoddownload {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmoddownload
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_downloads
+        table = tx_jsdmodule_downloads
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_downloads
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_file
+        references {
+            fieldName = tx_jsdmodule_file
+            table = tx_jsdmodule_downloads
+        }
+        as = data_tx_jsdmodule_file
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodfooter = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodfooter {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodfooter
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_footer
+        table = tx_jsdmodule_footer
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_footer
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_footer_teaser
+        references {
+            fieldName = tx_jsdmodule_footer_teaser
+            table = tx_jsdmodule_footer
+        }
+        as = data_tx_jsdmodule_footer_teaser
+    }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_jsdmodule_footer_sm_icons
+        references {
+            fieldName = tx_jsdmodule_footer_sm_icons
+            table = tx_jsdmodule_footer
+        }
+        as = data_tx_jsdmodule_footer_sm_icons
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodgmapbvgyoutube = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodgmapbvgyoutube {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodgmapbvgyoutube
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_jsdmodgmapbvgyt
+        table = tx_jsdmodule_jsdmodgmapbvgyt
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_jsdmodgmapbvgyt
+    }
+}
+tt_content.jsdmodule_jsdmodhighlightteaser = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodhighlightteaser {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodhighlightteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_highlight_teaser
+        table = tx_jsdmodule_highlight_teaser
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_highlight_teaser
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_highlight_teaser
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodinfobox = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodinfobox {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodinfobox
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_infobox
+        table = tx_jsdmodule_infobox
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_infobox
+    }
+}
+tt_content.jsdmodule_jsdmodkontakt = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodkontakt {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodkontakt
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = image
+        references {
+            fieldName = image
+            table = tt_content
+        }
+        as = data_image
+    }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_jsdmodule_kontakt
+        table = tx_jsdmodule_kontakt
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_kontakt
+    }
+}
+tt_content.jsdmodule_jsdmodleistungen = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodleistungen {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodleistungen
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_leistungen
+        table = tx_jsdmodule_leistungen
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_leistungen
+    }
+}
+tt_content.jsdmodule_jsdmodlinkliste = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodlinkliste {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodlinkliste
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_linkliste
+        table = tx_jsdmodule_linkliste
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_linkliste
+    }
+}
+tt_content.jsdmodule_jsdmodnavigation = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodnavigation {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodnavigation
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_navigation
+        table = tx_jsdmodule_navigation
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_navigation
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_navigation
+        }
+        as = data_tx_jsdmodule_image
+    }
+    dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.20 {
+        if.isTrue.field = tx_jsdmodule_content_element
+        table = tt_content
+        pidInList.field = pid
+        where = tx_jsdmodule_content_element_parent=###uid### AND deleted=0 AND hidden=0 AND colPos=###colPos### AND CType IN (###CType1###)
+        orderBy = sorting
+        markers.colPos.value = 999
+        markers.CType1.value = jsdmodule_jsdmodschnellzugriffsteaser
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_content_element
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodschnellzugriffsteaser = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodschnellzugriffsteaser {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodschnellzugriffsteaser
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_schnellzugriffsteaser
+        table = tx_jsdmodule_schnellzugriffsteaser
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_schnellzugriffsteaser
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_schnellzugriffsteaser
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodseointrotext = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodseointrotext {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodseointrotext
+}
+tt_content.jsdmodule_jsdmodsimplespeak = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodsimplespeak {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodsimplespeak
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_leichtsprache
+        table = tx_jsdmodule_leichtsprache
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_leichtsprache
+    }
+dataProcessing.10 {
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_image
+        references {
+            fieldName = tx_jsdmodule_image
+            table = tx_jsdmodule_leichtsprache
+        }
+        as = data_tx_jsdmodule_image
+    }
+
+}
+}
+tt_content.jsdmodule_jsdmodzahltext = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodzahltext {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodzahltext
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_zahltext
+        table = tx_jsdmodule_zahltext
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_zahltext
+    }
+}
+tt_content.jsdmodule_jsdmodzitattext = FLUIDTEMPLATE
+tt_content.jsdmodule_jsdmodzitattext {
+    layoutRootPaths.0 = EXT:jsd_module/Resources/Private/Layouts/
+    layoutRootPaths.10 = {$plugin.tx_jsdmodule.view.layoutRootPath}
+    partialRootPaths.0 = EXT:jsd_module/Resources/Private/Partials/
+    partialRootPaths.10 = {$plugin.tx_jsdmodule.view.partialRootPath}
+    templateRootPaths.0 = EXT:jsd_module/Resources/Private/Templates/Content/
+    templateRootPaths.10 = {$plugin.tx_jsdmodule.view.templateRootPath}
+    templateName = Jsdmodzitattext
+    dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+    dataProcessing.10 {
+        if.isTrue.field = tx_jsdmodule_zitattext
+        table = tx_jsdmodule_zitattext
+        pidInList.field = pid
+        where = parentid=###uid### AND deleted=0 AND hidden=0
+        orderBy = sorting
+        markers.uid.field = uid
+        as = data_tx_jsdmodule_zitattext
+    }
+}

@@ -1,0 +1,82 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.subheader}">
+    {data.subheader}
+</f:if>
+<f:if condition="{data.tx_mask_navigationeinrichtung}">
+    <ul>
+        <f:for each="{data.tx_mask_navigationeinrichtung}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_einrichtungtitle}">
+                    {data_item.tx_mask_einrichtungtitle}
+                </f:if>
+                <f:for each="{data_item.tx_mask_einrichtunglogo}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_einrichtunglink}">
+                    <f:link.typolink parameter="{data_item.tx_mask_einrichtunglink}"></f:link.typolink>
+                </f:if>
+                <f:for each="{data_item.tx_mask_einrichtungimage}" as="file">
+                    <f:image image="{file}" width="200" />
+                    {file.description}
+                </f:for>
+                <f:if condition="{data_item.tx_mask_einrichtungvideo}">
+                    {data_item.tx_mask_einrichtungvideo}
+                </f:if>
+                <f:variable name="einrichtungbereich" value="{data_item.tx_mask_einrichtungbereich}"/>
+                <f:switch expression="{einrichtungbereich}">
+                    <f:case value="1">
+                        {einrichtungbereich}
+                    </f:case>
+                    <f:case value="2">
+                        {einrichtungbereich}
+                    </f:case>
+                </f:switch>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_a_title}">
+                    {data_item.tx_mask_einrichtungslink_a_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_a_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_einrichtungslink_a_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtunglinks_a}">
+                    {data_item.tx_mask_einrichtunglinks_a}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_b_title}">
+                    {data_item.tx_mask_einrichtungslink_b_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_b_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_einrichtungslink_b_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtunglinks_b}">
+                    {data_item.tx_mask_einrichtunglinks_b}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_c_title}">
+                    {data_item.tx_mask_einrichtungslink_c_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_c_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_einrichtungslink_c_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtunglinks_c}">
+                    {data_item.tx_mask_einrichtunglinks_c}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_d_title}">
+                    {data_item.tx_mask_einrichtungslink_d_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtungslink_d_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_einrichtungslink_d_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtunglinks_d}">
+                    {data_item.tx_mask_einrichtunglinks_d}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_einrichtunglinks_extra}">
+                    {data_item.tx_mask_einrichtunglinks_extra}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

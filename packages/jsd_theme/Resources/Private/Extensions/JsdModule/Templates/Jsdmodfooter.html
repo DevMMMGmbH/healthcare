@@ -1,0 +1,101 @@
+<f:if condition="{data_tx_jsdmodule_footer}">
+    <f:for each="{data_tx_jsdmodule_footer}" as="data_item">
+
+        <f:if condition="{data_item.data_tx_jsdmodule_footer_teaser}">
+            <div class="row teaserlinks">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-16 col-md-14 offset-md-1 col-lg-12 offset-lg-2">
+                            <div class="row justify-content-between">
+                                <f:for each="{data_item.data_tx_jsdmodule_footer_teaser}" as="file" iteration="i">
+                                    <f:if condition="{i.cycle}==2">
+                                        <div class="col-xs-16 col-md-6 text-md-center border-lr f-teaser ft-{i.cycle}">
+                                    </f:if>
+                                    <f:if condition="{i.cycle}==1">
+                                        <div class="col-xs-16 col-md-5 text-md-center border-lr f-teaser ft-{i.cycle}">
+                                    </f:if>
+                                    <f:if condition="{i.cycle}==3">
+                                        <div class="col-xs-16 col-md-5 text-md-center border-lr f-teaser ft-{i.cycle}">
+                                    </f:if>
+                                        <f:link.typolink parameter="{file.link}" title="{file.title}" class="teaser-{i.cycle} text-left bold color_dpurple"><f:image image="{file}" treatIdAsReference="1" alt="{file.title}" class="float-left" loading="lazy" /><span class="bold">{file.description -> f:format.htmlentitiesDecode() -> f:format.nl2br()}</span></f:link.typolink>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+
+        <div class="row menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-16 col-md-12 offset-md-2">
+                        <div class="row">
+                            <div class="col-xs-16 col-md-4">
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'list', level: 1, class: 'header bold'}" />
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'directory', level: 1, class: 'content d-none d-md-block'}" />
+                            </div>
+                            <div class="col-xs-16 col-md-4">
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'list', class: 'header bold'}" />
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'directory', class: 'content'}" />
+                            </div>
+                            <div class="col-xs-16 col-md-4">
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'list', class: 'header bold'}" />
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'directory', class: 'content'}" />
+                            </div>
+                            <div class="col-xs-16 col-md-4">
+                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_d_link, type: 'list', level: 1, class: 'content extra'}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <f:if condition="{data_item.data_tx_jsdmodule_footer_sm_icons}">
+            <div class="row follow">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 offset-xs-2 col-lg-13 offset-lg-2 col-lg-12">
+                            <div class="row">
+                                <div class="col-xs-16 col-lg-4">
+                                    <p class="bold">{f:translate(key: 'footer.followus',  extensionName='jsd_theme')}</p>
+                                </div>
+                                <div class="col-xs-16 col-lg-12">
+                                    <f:for each="{data_item.data_tx_jsdmodule_footer_sm_icons}" as="file">
+                                        <div class="inline-block">
+                                            <f:link.typolink parameter="{file.link}" title="{settings.page.title} bei {file.title}"><f:image image="{file}" alt="{settings.page.title} bei {file.alternative}" title="{settings.page.title} bei {file.title}" loading="lazy" />{file.title}</f:link.typolink>
+                                        </div>
+                                    </f:for>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+
+        <div class="row legal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-xl-12 offset-xl-2">
+                        <div class="row justify-content-between">
+                            <div class="col-md-6 col-lg-4">
+                                <f:link.typolink parameter="{settings.page.uid}" title="{settings.page.title}"><span class="d-block">© <f:cObject typoscriptObjectPath="lib.dynamicYear" /> {settings.page.title}</span></f:link.typolink>
+                            </div>
+                            <div class="col-md-10 col-lg-12 d-lg-flex justify-content-lg-between">
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_a}" title="{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}">{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_b}" title="{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}">{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_c}" title="{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}">{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_d}" title="{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}" class="simple-speak">{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_e}" title="{f:translate(key: 'footer.login',  extensionName='jsd_theme')}" class="login">{f:translate(key: 'footer.login',  extensionName='jsd_theme')}</f:link.typolink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </f:for>
+</f:if>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-12-10T13:45:16Z" product-name="jsd_modeinrichtungen">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source>Name der Einrichtung</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Beschreibung der Einrichtung</source>
+			</trans-unit>
+			<trans-unit id="ekomiauth.description">
+				<source>eKomi API Password</source>
+			</trans-unit>
+			<trans-unit id="rootpage.description">
+				<source>Startseite der Einrichtung (Seiten ID)</source>
+			</trans-unit>
+			<trans-unit id="listpage.description">
+				<source>Seiten ID der eKomi Liste</source>
+			</trans-unit>
+			<trans-unit id="phone.description">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>Bild der Einrichtung</source>
+			</trans-unit>
+			<trans-unit id="street.description">
+				<source>Strasse</source>
+			</trans-unit>
+			<trans-unit id="house_number.description">
+				<source>Hausnummer</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>PLZ</source>
+			</trans-unit>
+			<trans-unit id="boost_one.description">
+				<source>Kommaseparierte Boost-Wörter 1</source>
+			</trans-unit>
+			<trans-unit id="boost_two.description">
+				<source>Kommaseparierte Boost-Wörter 2</source>
+			</trans-unit>
+			<trans-unit id="pid_detail_presse.description">
+				<source>Presse - Detailseite</source>
+			</trans-unit>
+			<trans-unit id="pid_list_presse.description">
+				<source>Presse - Liste</source>
+			</trans-unit>
+			<trans-unit id="pid_list_presseschau.description">
+				<source>Presseschau - Liste</source>
+			</trans-unit>
+			<trans-unit id="pid_detail_veranstaltungen.description">
+				<source>Veranstaltungen - Detailseite</source>
+			</trans-unit>
+			<trans-unit id="pid_list_veranstaltungen.description">
+				<source>Veranstaltungen - Liste</source>
+			</trans-unit>
+			<trans-unit id="pid_detail_fachveranstaltungen.description">
+				<source>Fachveranstaltungen - Detailseite</source>
+			</trans-unit>
+			<trans-unit id="pid_list_fachveranstaltungen.description">
+				<source>Fachveranstaltungen - Liste</source>
+			</trans-unit>
+			<trans-unit id="pid_detail_career.description">
+				<source>Karriere - Detailseite</source>
+			</trans-unit>
+			<trans-unit id="pid_list_career.description">
+				<source>Karriere - Liste</source>
+			</trans-unit>
+			<trans-unit id="location_latitude.description">
+				<source>Location Breitengrad</source>
+			</trans-unit>
+			<trans-unit id="location_longitude.description">
+				<source>Location Längengrad</source>
+			</trans-unit>
+			<trans-unit id="stadt.description">
+				<source>Stadt</source>
+			</trans-unit>
+			<trans-unit id="bezirk.description">
+				<source>Bezirk oder Lankreis</source>
+			</trans-unit>
+			<trans-unit id="bundesland.description">
+				<source>Bundesland</source>
+			</trans-unit>
+			<trans-unit id="sections_select.description">
+				<source>Klinikbereiche für die eKomi Bewertungen</source>
+			</trans-unit>
+			<trans-unit id="typ.description">
+				<source>Einrichtung Typ</source>
+			</trans-unit>
+			<trans-unit id="bereich.description">
+				<source>Bereich bzw. Leistungsbereich</source>
+			</trans-unit>
+			<trans-unit id="fbereich.description">
+				<source>Fachbereiche</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

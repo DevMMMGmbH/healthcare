@@ -1,0 +1,26 @@
+
+plugin.tx_jsdsprechstunden_sprechstunden {
+    view {
+        templateRootPaths.0 = EXT:jsd_sprechstunden/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_jsdsprechstunden_sprechstunden.view.templateRootPath}
+        partialRootPaths.0 = EXT:jsd_sprechstunden/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_jsdsprechstunden_sprechstunden.view.partialRootPath}
+        partialRootPaths.10 = EXT:jsd_theme/Resources/Private/Extensions/JsdModule/Partials/
+        layoutRootPaths.0 = EXT:jsd_sprechstunden/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_jsdsprechstunden_sprechstunden.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_jsdsprechstunden_sprechstunden.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}

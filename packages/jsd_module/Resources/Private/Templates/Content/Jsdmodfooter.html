@@ -1,0 +1,84 @@
+<f:if condition="{data.header}">
+    {data.header}<br />
+</f:if>
+
+<f:if condition="{data.header_layout}">
+    <f:switch expression="{data.header_layout}">
+        <f:case value="1">Value is: 1</f:case>
+        <f:case value="2">Value is: 2</f:case>
+        <f:case value="3">Value is: 3</f:case>
+    </f:switch><br />
+</f:if>
+
+<f:if condition="{data_tx_jsdmodule_footer}">
+    <ul>
+        <f:for each="{data_tx_jsdmodule_footer}" as="data_item">
+            <li>
+                <f:if condition="{data_item.data_tx_jsdmodule_footer_teaser}">
+    <f:for each="{data_item.data_tx_jsdmodule_footer_teaser}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_a_title}">
+    {data_item.data.tx_jsdmodule_footer_menu_a_title}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_a_link}">
+    {data_item.data.tx_jsdmodule_footer_menu_a_link}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_b_title}">
+    {data_item.data.tx_jsdmodule_footer_menu_b_title}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_b_link}">
+    {data_item.data.tx_jsdmodule_footer_menu_b_link}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_c_title}">
+    {data_item.data.tx_jsdmodule_footer_menu_c_title}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_c_link}">
+    {data_item.data.tx_jsdmodule_footer_menu_c_link}<br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_menu_d_link}">
+    {data_item.data.tx_jsdmodule_footer_menu_d_link}<br />
+</f:if>
+
+<f:if condition="{data_item.data_tx_jsdmodule_footer_sm_icons}">
+    <f:for each="{data_item.data_tx_jsdmodule_footer_sm_icons}" as="file">
+        <f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+        {file.description} / {file.identifier}<br />
+    </f:for>
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_a}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_footer_gb_link_a}">{data_item.data.tx_jsdmodule_footer_gb_link_a}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_b}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_footer_gb_link_b}">{data_item.data.tx_jsdmodule_footer_gb_link_b}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_c}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_footer_gb_link_c}">{data_item.data.tx_jsdmodule_footer_gb_link_c}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_d}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_footer_gb_link_d}">{data_item.data.tx_jsdmodule_footer_gb_link_d}</f:link.page><br />
+</f:if>
+
+<f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_e}">
+    <f:link.page pageUid="{data_item.data.tx_jsdmodule_footer_gb_link_e}">{data_item.data.tx_jsdmodule_footer_gb_link_e}</f:link.page><br />
+</f:if>
+
+
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+

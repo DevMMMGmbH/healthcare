@@ -1,0 +1,17 @@
+plugin.tx_form {
+    settings {
+        yamlConfigurations {
+            125 = EXT:jsd_theme/Configuration/Yaml/FormBaseSetup.yaml
+            // 1668693062 = EXT:jsd_theme/Configuration/Yaml/CustomDsgvoCheckbox.yaml
+        }
+    }
+}
+
+module.tx_form {
+    settings {
+        yamlConfigurations {
+            125 = EXT:jsd_theme/Configuration/Yaml/FormBaseSetup.yaml
+            // 1668693062 = EXT:jsd_theme/Configuration/Yaml/CustomDsgvoCheckbox.yaml
+        }
+    }
+}

@@ -1,0 +1,82 @@
+<f:if condition="{data_image.link}">
+    <f:then>
+        <f:link.typolink parameter="{data_image.link}" additionalAttributes="{tabindex: '{tabindex}'}">
+            <span itemscope="itemscope" itemtype="http://schema.org/Thing">
+                <f:if condition="{data_image.originalFile.properties.extension}=='svg'">
+                    <f:then>
+                        <f:image loading="lazy" image="{data_image}" />
+                    </f:then>
+                    <f:else>
+                        <f:render section="renderPicture" arguments="{
+                            data_image: data_image,
+                            notTreatIdAsReference: notTreatIdAsReference,
+                            notAnImgObject: notAnImgObject,
+                            cropVariant-xl: cropVariant-xl, w-xl: w-xl,
+                            cropVariant-lg: cropVariant-lg, w-lg: w-lg,
+                            cropVariant-md: cropVariant-md, w-md: w-md,
+                            cropVariant-sm: cropVariant-sm, w-sm: w-sm,
+                            cropVariant-xs: cropVariant-xs, w-xs: w-xs
+                        }" />
+                    </f:else>
+                </f:if>
+            </span>
+        </f:link.typolink>
+    </f:then>
+    <f:else>
+        <span itemscope="itemscope" itemtype="http://schema.org/Thing">
+            <f:if condition="{data_image.originalFile.properties.extension}=='svg'">
+                <f:then>
+                    <f:image loading="lazy" image="{data_image}" />
+                </f:then>
+                <f:else>
+                    <f:render section="renderPicture" arguments="{
+                        data_image: data_image,
+                        notTreatIdAsReference: notTreatIdAsReference,
+                        notAnImgObject: notAnImgObject,
+                        cropVariant-xl: cropVariant-xl, w-xl: w-xl,
+                        cropVariant-lg: cropVariant-lg, w-lg: w-lg,
+                        cropVariant-md: cropVariant-md, w-md: w-md,
+                        cropVariant-sm: cropVariant-sm, w-sm: w-sm,
+                        cropVariant-xs: cropVariant-xs, w-xs: w-xs
+                    }" />
+                </f:else>
+            </f:if>
+        </span>
+    </f:else>
+</f:if>
+
+
+<f:section name="renderPicture">
+    <picture>
+        <source type="image/webp" media="(min-width: 1280px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'webp', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-xl}', width:'{w-xl}')}">
+        <source type="image/jpeg" media="(min-width: 1280px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'jpg', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-xl}', width:'{w-xl}')}">
+        <source type="image/webp" media="(min-width: 1024px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'webp', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-lg}', width:'{w-lg}')}">
+        <source type="image/jpeg" media="(min-width: 1024px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'jpg', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-lg}', width:'{w-lg}')}">
+        <source type="image/webp" media="(min-width: 768px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'webp', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-md}', width:'{w-md}')}">
+        <source type="image/jpeg" media="(min-width: 768px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'jpg', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-md}', width:'{w-md}')}">
+        <source type="image/webp" media="(min-width: 384px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'webp', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-sm}', width:'{w-sm}')}">
+        <source type="image/jpeg" media="(min-width: 384px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'jpg', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-sm}', width:'{w-sm}')}">
+        <source type="image/webp" media="(min-width: 320px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'webp', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-xs}', width:'{w-xs}')}">
+        <source type="image/jpeg" media="(min-width: 320px)"
+            srcset="{f:uri.image(image: data_image, fileExtension: 'jpg', treatIdAsReference:'{f:if(condition: \'{notTreatIdAsReference}\', then: \'\', else: \'1\')}', cropVariant: '{cropVariant-xs}', width:'{w-xs}')}">
+        <f:if condition="!{notAnImgObject}">
+            <f:then>
+                <f:image loading="lazy" image="{data_image}"
+                    treatIdAsReference="{f:if(condition: '{notTreatIdAsReference}', then: '', else: '1')}" />
+            </f:then>
+            <f:else>
+                <f:image loading="lazy" src="{data_image}"
+                    treatIdAsReference="{f:if(condition: '{notTreatIdAsReference}', then: '', else: '1')}" />
+            </f:else>
+        </f:if>
+    </picture>
+</f:section>

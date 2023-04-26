@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2023-03-15T19:09:37+01:00" product-name="jsd_module">
+    <header/>
+    <body>
+      <trans-unit id="tx_jsdmodule_akkordeon">
+        <source>tx_jsdmodule_akkordeon</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_akkordeon.tx_jsdmodule_title">
+        <source>Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_akkordeon.tx_jsdmodule_content">
+        <source>Inhalt:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser">
+        <source>tx_jsdmodule_bereichsteaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bereichsteaser.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser">
+        <source>tx_jsdmodule_bild_text_teaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_topline">
+        <source>Topline:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bild_text_teaser.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bildergalerie">
+        <source>tx_jsdmodule_bildergalerie</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bildergalerie.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bildergalerie.tx_jsdmodule_caption">
+        <source>Caption:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bildergalerie.tx_jsdmodule_copyright">
+        <source>Copyright:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel">
+        <source>tx_jsdmodule_bilderkachel</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel.tx_jsdmodule_title">
+        <source>Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel.tx_jsdmodule_link">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_bilderkachel.tx_jsdmodule_link_text">
+        <source>Link-Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_downloads">
+        <source>tx_jsdmodule_downloads</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_downloads.tx_jsdmodule_description">
+        <source>Beschreibung:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_downloads.tx_jsdmodule_file">
+        <source>Datei:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer">
+        <source>tx_jsdmodule_footer</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_teaser">
+        <source>Teaser (max. 3):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_a_title">
+        <source>Menüspalte 1 - Überschrift:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_a_link">
+        <source>Menüspalte 1 - Seiten Id:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_b_title">
+        <source>Menüspalte 2 - Überschrift:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_b_link">
+        <source>Menüspalte 2 - Seiten Id:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_c_title">
+        <source>Menüspalte 3 - Überschrift:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_c_link">
+        <source>Menüspalte 3 - Seiten Id:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_menu_d_link">
+        <source>Menüspalte 4 - Mehrere Seiten Id's (kommagetrennt):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_sm_icons">
+        <source>Social Media Icons (max. 6):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_gb_link_a">
+        <source>Abbinder Link 1 (Datenschutz):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_gb_link_b">
+        <source>Abbinder Link 2 (Impressum):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_gb_link_c">
+        <source>Abbinder Link 3 (Inhaltsverzeichnis):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_gb_link_d">
+        <source>Abbinder Link 4 (Leichte Sprache):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_footer.tx_jsdmodule_footer_gb_link_e">
+        <source>Abbinder Link 5 (Mitarbeiter-Login):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser">
+        <source>tx_jsdmodule_highlight_teaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_topline">
+        <source>Topline:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_button">
+        <source>CTA-Buttton:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_options">
+        <source>Optionen:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_options.I.0">
+        <source>Textbox links</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_highlight_teaser.tx_jsdmodule_options.I.1">
+        <source>Textbox rechts</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider">
+        <source>tx_jsdmodule_image_slider</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_image_slider.tx_jsdmodule_image">
+        <source>Bilder:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_infobox">
+        <source>tx_jsdmodule_infobox</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_infobox.tx_jsdmodule_text">
+        <source>Text:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt">
+        <source>tx_jsdmodule_jsdmodgmapbvgyt</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt.tx_jsdmodule_jsdmodgmapbvgyt_options">
+        <source>Funktion des Moduls:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt.tx_jsdmodule_jsdmodgmapbvgyt_address">
+        <source>Adresse (PLZ Ort, Straße Hausnummer):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt.tx_jsdmodule_jsdmodgmapbvgyt_video">
+        <source>Youtube Video-ID (hinter v=):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt.tx_jsdmodule_jsdmodgmapbvgyt_options.I.0">
+        <source>Google Map</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_jsdmodgmapbvgyt.tx_jsdmodule_jsdmodgmapbvgyt_options.I.1">
+        <source>Youtube Video</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_kontakt">
+        <source>tx_jsdmodule_kontakt</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_kontakt.tx_jsdmodule_kontakt_header">
+        <source>Überschrift:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_kontakt.tx_jsdmodule_kontakt_rtetext">
+        <source>Inhalt:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_kontakt.tx_jsdmodule_kontakt_cta_text">
+        <source>CTA-Button Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_kontakt.tx_jsdmodule_kontakt_cta_link">
+        <source>CTA-Button Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leichtsprache">
+        <source>tx_jsdmodule_leichtsprache</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leichtsprache.tx_jsdmodule_bodytext">
+        <source>Text:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leichtsprache.tx_jsdmodule_image">
+        <source>Bild (optional):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leichtsprache.tx_jsdmodule_image_option">
+        <source>Bild rechts im Text (default links):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leichtsprache.tx_jsdmodule_image_option.I.0">
+        <source>Bild rechts im Text anzeigen</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leistungen">
+        <source>tx_jsdmodule_leistungen</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leistungen.tx_jsdmodule_title">
+        <source>Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leistungen.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leistungen.tx_jsdmodule_link">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leistungen.tx_jsdmodule_link_text">
+        <source>Link-Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leitbilder">
+        <source>tx_jsdmodule_leitbilder</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_leitbilder.tx_jsdmodule_leitbild">
+        <source>Leitbild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste">
+        <source>tx_jsdmodule_linkliste</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_title">
+        <source>Titel:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_link_type">
+        <source>Link: Typ</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_link_text">
+        <source>Link: Teaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_link_type.I.0">
+        <source>Interner Link</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_linkliste.tx_jsdmodule_link_type.I.1">
+        <source>Externer Link</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation">
+        <source>tx_jsdmodule_navigation</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation.tx_jsdmodule_pidinrootline">
+        <source>Primäre Seiten-Id's (kommasepariert):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation.tx_jsdmodule_pages">
+        <source>Extra Seiten (kommasepariert):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation.tx_jsdmodule_image">
+        <source>Logo:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation.tx_jsdmodule_content_element">
+        <source>Inhaltselemente (nur bei globalem Menü):</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_navigation.tx_jsdmodule_navigation_loginsimplespeak">
+        <source>Leichte Sprache &amp; Mitarbeiterlogin Seiten Id's:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser">
+        <source>tx_jsdmodule_schnellzugriffsteaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_schnellzugriffsteaser.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser">
+        <source>tx_jsdmodule_teaser</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser.tx_jsdmodule_text">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_teaser.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise">
+        <source>tx_jsdmodule_warnhinweise</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_tickertext">
+        <source>Ticker-Teaser Text:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_header">
+        <source>Header:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_teaser">
+        <source>Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_button">
+        <source>CTA-Button:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_link">
+        <source>Link:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_warnhinweise.tx_jsdmodule_image">
+        <source>Bild:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zahltext">
+        <source>tx_jsdmodule_zahltext</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zahltext.tx_jsdmodule_zahl">
+        <source>Zahl:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zahltext.tx_jsdmodule_text">
+        <source>Text:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext">
+        <source>tx_jsdmodule_zitattext</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_shortversion">
+        <source>Zitat Format:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_zitat">
+        <source>Zitat:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_zitatcopy">
+        <source>Zitatgeber:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_options">
+        <source>Zitat-Anzeige:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_text">
+        <source>Text:</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_shortversion.I.0">
+        <source>Nur Zitat und Zitatgeber anzeigen (Fontsize 24px - Linehight 32px)</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_shortversion.I.1">
+        <source>Schriftgröße verkleinern (Fontsize 16px - Linehight 24px)</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_options.I.0">
+        <source>Zitat links im Text</source>
+      </trans-unit>
+      <trans-unit id="tx_jsdmodule_zitattext.tx_jsdmodule_options.I.1">
+        <source>Zitat rechts im Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_akkordeon">
+        <source>Akkordeon Elemente:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_bereichsteaser">
+        <source>Bereichsteaser:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_bild_text_teaser">
+        <source>Bild-Text-Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_bildergalerie">
+        <source>Bildergalerie:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_bilderkachel">
+        <source>Bilder-Kacheln:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_downloads">
+        <source>Dateien:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_footer">
+        <source>Footer Element (Global):</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_highlight_teaser">
+        <source>Highlight-Teaser:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_image_slider">
+        <source>Bild Slider:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_infobox">
+        <source>Vorteile:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_jsdmodgmapbvgyt">
+        <source>Neues Element anlegen:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_kontakt">
+        <source>Kontakt-Boxen:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_leichtsprache">
+        <source>Leichte Sprache Elemente:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_leistungen">
+        <source>Leistungen:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_leitbilder">
+        <source>tx_jsdmodule_leitbilder</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_linkliste">
+        <source>Linkliste:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_navigation">
+        <source>Navigation Header (global):</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_options">
+        <source>Anzeigeoption:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_schnellzugriffsteaser">
+        <source>Schnellzugriffsteaser:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_teaser">
+        <source>3-er-Teaser oder Fakten:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_zahltext">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_zitattext">
+        <source>Zitat und Text:</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_options.I.0">
+        <source>Bildergalerie</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_jsdmodule_options.I.1">
+        <source>Bildergalerie mit Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._jsdmodule_">
+        <source>jsd_module</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmod3erteaser">
+        <source>Modul: 3-er-Teaser / Fakten</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodakkordeon">
+        <source>Modul: Akkordeon</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodankerliste">
+        <source>Modul: Ankerliste</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbereichsteaser">
+        <source>Modul: Bereichsteaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbildergalerie">
+        <source>Modul: Bildergalerie / Bildergalerie mit Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbilderkachel">
+        <source>Modul: Bilder-Kachel</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbildslider">
+        <source>Modul: Bühne 1 Slider</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbildtextteaser">
+        <source>Modul: HIS Bild-Text-Teaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodbuehnedetailseite">
+        <source>Modul: Bühne 2 Detailseite</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmoddownload">
+        <source>Modul: Download</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodfooter">
+        <source>Modul: Footer (Global)</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodgmapbvgyoutube">
+        <source>Modul: Google Map / Youtube Video</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodhighlightteaser">
+        <source>Modul: Highlight-Teaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodinfobox">
+        <source>Modul: Infobox</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodkontakt">
+        <source>Modul: Kontakt</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodleistungen">
+        <source>Modul: Leistungen</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodlinkliste">
+        <source>Modul: Linkliste</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodnavigation">
+        <source>Modul: Navigation Header (global)</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodschnellzugriffsteaser">
+        <source>Modul: Schnellzugriffsteaser</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodseointrotext">
+        <source>Modul: SEO-Intro-Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodsimplespeak">
+        <source>Modul: Leichte Sprache</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodzahltext">
+        <source>Modul: Zahl-Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.jsdmodule_jsdmodzitattext">
+        <source>Modul: Zitat-Text</source>
+      </trans-unit>
+      <trans-unit id="tt_content.colPos.nestedContentColPos">
+        <source>Nested content (jsd_module)</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

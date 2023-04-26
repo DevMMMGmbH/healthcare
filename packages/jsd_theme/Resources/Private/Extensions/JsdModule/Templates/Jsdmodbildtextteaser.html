@@ -1,0 +1,55 @@
+<div class="mod_bild-text-teaser" id="c{data.uid}">
+    <div class="row slick" data-slick-class="slick-c{data.uid}">
+        <div class="col-xs-16">
+            <div class="row slick-c{data.uid}" data-slick='{"speed": 2000, "fade":true, "autoplay":false, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
+                <f:for each="{data_tx_jsdmodule_bild_text_teaser}" as="data_item" iteration="i">
+                    <div class="row">
+                        <div class="col-xs-16 col-md-12 offset-md-3 col-lg-10 offset-lg-5 col-xl-10 offset-xl-5">
+                            <f:for each="{data_item.data_tx_jsdmodule_image}" as="file" iteration="iteration_image">
+                                <f:if condition="{iteration_image.cycle}==1">
+                                    <f:then>
+                                        <f:render partial="MediaImage" arguments="{data_image:file, w-xs:320, cropVariant-xs:'specialMobileTwoOne', w-sm:384, cropVariant-sm:'specialMobileTwoOne', w-md:576, w-lg:640, w-xl:800}" />
+                                    </f:then>
+                                </f:if>
+                            </f:for>
+                        </div>
+                        <div class="col-xs-16 col-md-8 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 img-info">
+                            <div class="row">
+                                <div class="col-xs-16 icon-t icon-t-blue"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-14 offset-xs-1 txt">
+                                    <span class="flagline">{data_item.data.tx_jsdmodule_topline}</span>
+                                    <h3 class="title" id="header-{data.uid}_{i.cycle}"><f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">{data_item.data.tx_jsdmodule_header}</f:link.typolink></h3>
+                                    <p class="teaser-copy">{data_item.data.tx_jsdmodule_teaser}</p>
+                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}" class="btn button-dpurple css-trans_all" additionalAttributes="{role:'button', aria-labelledby:'header-{data.uid}_{i.cycle}'}">{data_item.data.tx_jsdmodule_button}</f:link.typolink>
+                                </div>
+                            </div>
+                            <div class="row ecke">
+                                <div class="col-xs-16 icon-b icon-b-blue {f:if(condition: '{data_tx_jsdmodule_bild_text_teaser -> f:count()} > 1', then: 'd-none d-md-block', else: '')}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </f:for>
+            </div>
+        </div>
+
+        <f:if condition="{data_tx_jsdmodule_bild_text_teaser -> f:count()} > 1">
+            <div class="carousel-control-prev-next d-xs-none d-md-block slick-c{data.uid}-navi">
+                <button class="carousel-control-prev-arrow btn button-dpurple_0-2 css-trans_all prev" title="{f:translate(key: 'page.prev',  extensionName='jsd_theme')}"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.prev',  extensionName='jsd_theme')}</span>
+                </button>
+                <span class="count">
+                    <b><span class="num"></span></b>/{data_tx_jsdmodule_bild_text_teaser -> f:count()}
+                </span>
+                <button class="carousel-control-next-arrow btn button-dpurple_0-2 css-trans_all next" title="{f:translate(key: 'page.next',  extensionName='jsd_theme')}"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">{f:translate(key: 'page.next',  extensionName='jsd_theme')}</span>
+                </button>
+            </div>
+            <div class="col-xs-12 offset-xs-2">
+                <div class="d-none d-xs-block d-md-none slick-dots-c{data.uid}"></div>
+            </div>
+            <div class="col-xs-16 {f:if(condition: '{data_tx_jsdmodule_bild_text_teaser -> f:count()} > 1', then: 'd-md-none d-xs-block', else: '')}">
+                <div class="col-xs-16 icon-b icon-b-blue"></div>
+            </div>
+        </f:if>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+lib.dynamicRecords = RECORDS
+lib.dynamicRecords {
+    tables = tx_jsdmodule_sprechstunden
+    source.current = 1
+    dontCheckPid = 1
+}

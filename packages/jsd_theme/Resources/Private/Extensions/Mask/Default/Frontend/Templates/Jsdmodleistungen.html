@@ -1,0 +1,32 @@
+<f:if condition="{data.header}">
+    {data.header}
+</f:if>
+<f:variable name="headerLayout" value="{data.header_layout}"/>
+<f:switch expression="{headerLayout}">
+</f:switch>
+<f:if condition="{data.header_link}">
+    <f:link.typolink parameter="{data.header_link}"></f:link.typolink>
+</f:if>
+<f:if condition="{data.subheader}">
+    {data.subheader}
+</f:if>
+<f:if condition="{data.tx_mask_leistungen}">
+    <ul>
+        <f:for each="{data.tx_mask_leistungen}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_title}">
+                    {data_item.tx_mask_title}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_teaser}">
+                    {data_item.tx_mask_teaser -> f:format.nl2br()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_link}">
+                    <f:link.typolink parameter="{data_item.tx_mask_link}"></f:link.typolink>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_link_text}">
+                    {data_item.tx_mask_link_text}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

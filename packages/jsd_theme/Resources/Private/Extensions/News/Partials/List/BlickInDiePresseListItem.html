@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers" data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/ListItem.html
+-->
+
+
+<div class="article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}">
+    <n:excludeDisplayedNews newsItem="{newsItem}" />
+
+    <!-- header -->
+    <div class="header">
+        <h3 class="title bold color_blue">
+            {newsItem.title ->f:format.crop(maxCharacters:'50', respectWordBoundaries:'1')}
+        </h3>
+        <!-- date -->
+        <span class="news-list-date color_lightblue">
+            <time datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
+                <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
+            </time>
+        </span>
+
+        <f:if condition="{newsItem.firstCategory}">
+            <!-- first category -->
+            <f:if condition="{newsItem.firstCategory.shortcut}">
+                <f:then>
+                    <f:link.page pageUid="{newsItem.firstCategory.shortcut}"
+                        title="{newsItem.firstCategory.description}">
+                        <span class="news-list-category color_lightblue flagline">{newsItem.firstCategory.title}</span>
+                    </f:link.page>
+                </f:then>
+                <f:else>
+                    <span class="news-list-category color_lightblue flagline">{newsItem.firstCategory.title}</span>
+                </f:else>
+            </f:if>
+        </f:if>
+    </div>
+
+    <!-- teaser -->
+    <n:removeMediaTags>
+        <f:if condition="{newsItem.teaser}">
+            <div>{newsItem.teaser ->f:format.crop(maxCharacters:'{settings.cropMaxCharacters}', respectWordBoundaries:'1') ->f:format.html()}</div>
+        </f:if>
+    </n:removeMediaTags>
+    <f:if condition="{newsItem.txJsdExendednewsExternalUrlTitle}">
+        <f:then>
+            <div class="link">
+                <p><f:link.external uri="{newsItem.externalurl}" class="external-link-new-window" target="_blank" title="{newsItem.txJsdExendednewsExternalUrlTitle}">Zum Beitrag</f:link.external></p>
+            </div>
+        </f:then>
+        <f:else><div class="link">{newsItem.bodytext ->f:format.crop(maxCharacters:'{settings.cropMaxCharacters}', respectWordBoundaries:'1') ->f:format.html()}</div></f:else>
+    </f:if>
+
+</div>
+
+</html>

@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:jsd_theme/Configuration/TypoScript/Extensions/jsd_module/mods/" extensions="typoscript">
+
+// get + set global settings
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jsd_theme/Configuration/TypoScript/constants.txt">
+
+tt_content.jsdmodule_jsdmodfooter.settings < glob_settings
+tt_content.jsdmodule_jsdmodfootereinrichtung.settings < glob_settings
+tt_content.jsdmodule_jsdmodbuehnedetailseite.settings < glob_settings
+tt_content.jsdmodule_jsdmodgmapbvgyoutube.settings < glob_settings
