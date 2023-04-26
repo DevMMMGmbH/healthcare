@@ -9,6 +9,7 @@ https://dev.jdi-healthcare.com
 * Site Configuration -> Error Handling Page
 * JS - matomo, googletagmanager, facebook, indeed
 * Share Icons (Footer)
+* TYPO Reorts: check Server Response Warnings
 
 ### Git Branches
 
