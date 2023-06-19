@@ -9671,3 +9671,10 @@ input::-webkit-datetime-edit-year-field {
     display: block;
     padding: 12px 30px;
 }
+
+
+@media only screen and (min-width: 768px)  and (max-width: 1024px) {
+    .mod_megamenu .sticky > div {
+        align-items: flex-start !important;
+    }
+}
