@@ -1,4 +1,5 @@
 <f:if condition="{data_tx_jsdmodule_image_slider}">
+    <f:variable name="slideCount">{data_tx_jsdmodule_image_slider -> f:count()}</f:variable>
 <div class="mod_bild-slider" id="c{data.uid}">
     <div class="slick" data-slick-class="slick-c{data.uid}">
         <div class="row slick-c{data.uid}" data-slick='{"speed": 1500, "autoplaySpeed": 1500, "fade":true, "autoplay":true, "prevArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .prev","nextArrow": "#c<f:format.raw>{data.uid}</f:format.raw> .next", "slidesToShow": 1,"slidesToScroll": 1,"responsive": [{"breakpoint": 768,"settings": {"dots": true,"arrows": false, "appendDots": ".slick-dots-c<f:format.raw>{data.uid}</f:format.raw>"}}]}'>
@@ -15,18 +16,36 @@
                         </f:for>
 
                         <div class="col-xs-16 col-md-8 offset-md-1 carousel-caption">
-                            <h2 class="header" id="slide-{data.uid}_{i.cycle}">
-                                <f:if condition="{data_item.data.tx_jsdmodule_link}">
-                                    <f:then>
-                                        <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
-                                            {data_item.data.tx_jsdmodule_header}
-                                        </f:link.typolink>
-                                    </f:then>
-                                    <f:else>
-                                        {data_item.data.tx_jsdmodule_header}
-                                    </f:else>
-                                </f:if>
-                            </h2>
+                            <f:if condition="{slideCount} == 1">
+                                <f:then>
+                                    <h1 class="header" id="slide-{data.uid}_{i.cycle}">
+                                        <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                                            <f:then>
+                                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
+                                                    {data_item.data.tx_jsdmodule_header}
+                                                </f:link.typolink>
+                                            </f:then>
+                                            <f:else>
+                                                {data_item.data.tx_jsdmodule_header}
+                                            </f:else>
+                                        </f:if>
+                                    </h1>
+                                </f:then>
+                                <f:else>
+                                    <h2 class="header" id="slide-{data.uid}_{i.cycle}">
+                                        <f:if condition="{data_item.data.tx_jsdmodule_link}">
+                                            <f:then>
+                                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_link}">
+                                                    {data_item.data.tx_jsdmodule_header}
+                                                </f:link.typolink>
+                                            </f:then>
+                                            <f:else>
+                                                {data_item.data.tx_jsdmodule_header}
+                                            </f:else>
+                                        </f:if>
+                                    </h2>
+                                </f:else>
+                            </f:if>
                             <p class="teaser-copy">
                                 {data_item.data.tx_jsdmodule_teaser}
                             </p>
