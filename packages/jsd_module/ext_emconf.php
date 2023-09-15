@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "jsd_module".
  *
- * Auto generated 15-03-2023 19:09
+ * Auto generated 15-09-2023 08:11
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next

@@ -248,20 +248,22 @@ return [
                     ],
                 ],
                 'appearance' => [
-                    'useSortable' => false,
+                    'useSortable' => 1,
                     'headerThumbnail' => [
                         'field' => 'uid_local',
                         'height' => '45m',
                     ],
                     'enabledControls' => [
-                        'info' => true,
+                        'info' => 1,
                         'new' => false,
-                        'dragdrop' => true,
-                        'sort' => false,
-                        'hide' => true,
-                        'delete' => true,
+                        'dragdrop' => 1,
+                        'sort' => 0,
+                        'hide' => 1,
+                        'delete' => 1,
+                        'localize' => 1,
                     ],
-                    'fileUploadAllowed' => true,
+                    'elementBrowserEnabled' => 1,
+                    'fileUploadAllowed' => 1,
                 ],
                 'maxitems' => '3',
                 'minitems' => '0',
@@ -289,7 +291,7 @@ return [
         ],
         'tx_jsdmodule_footer_menu_b_title' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'trim',
                 'type' => 'input',
             ],
             'label' => 'LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tx_jsdmodule_footer.tx_jsdmodule_footer_menu_b_title',
@@ -297,7 +299,7 @@ return [
         ],
         'tx_jsdmodule_footer_menu_b_link' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'trim',
                 'placeholder' => 'Pflege & Wohnen',
                 'type' => 'input',
             ],
@@ -306,7 +308,7 @@ return [
         ],
         'tx_jsdmodule_footer_menu_c_title' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'trim',
                 'type' => 'input',
             ],
             'label' => 'LLL:EXT:jsd_module/Resources/Private/Language/locallang_db.xlf:tx_jsdmodule_footer.tx_jsdmodule_footer_menu_c_title',
@@ -314,7 +316,7 @@ return [
         ],
         'tx_jsdmodule_footer_menu_c_link' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'trim',
                 'placeholder' => 'Soziales & Integration',
                 'type' => 'input',
             ],
@@ -323,7 +325,7 @@ return [
         ],
         'tx_jsdmodule_footer_menu_d_link' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'trim',
                 'placeholder' => '23,45,2456',
                 'type' => 'input',
             ],
@@ -396,20 +398,22 @@ return [
                     ],
                 ],
                 'appearance' => [
-                    'useSortable' => false,
+                    'useSortable' => 1,
                     'headerThumbnail' => [
                         'field' => 'uid_local',
                         'height' => '45m',
                     ],
                     'enabledControls' => [
-                        'info' => true,
+                        'info' => 1,
                         'new' => false,
-                        'dragdrop' => true,
-                        'sort' => false,
-                        'hide' => true,
-                        'delete' => true,
+                        'dragdrop' => 1,
+                        'sort' => 0,
+                        'hide' => 1,
+                        'delete' => 1,
+                        'localize' => 1,
                     ],
-                    'fileUploadAllowed' => true,
+                    'elementBrowserEnabled' => 1,
+                    'fileUploadAllowed' => 1,
                 ],
                 'maxitems' => '6',
                 'minitems' => '0',
@@ -420,7 +424,7 @@ return [
         ],
         'tx_jsdmodule_footer_gb_link_a' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'required',
                 'placeholder' => 'Datenschutz',
                 'renderType' => 'inputLink',
                 'type' => 'input',
@@ -430,7 +434,7 @@ return [
         ],
         'tx_jsdmodule_footer_gb_link_b' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'required',
                 'placeholder' => 'Impressum',
                 'renderType' => 'inputLink',
                 'type' => 'input',
@@ -440,7 +444,7 @@ return [
         ],
         'tx_jsdmodule_footer_gb_link_c' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'required',
                 'placeholder' => 'Inhaltsverzeichnis',
                 'renderType' => 'inputLink',
                 'type' => 'input',
@@ -450,7 +454,7 @@ return [
         ],
         'tx_jsdmodule_footer_gb_link_d' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'required',
                 'placeholder' => 'Leichte Sprache',
                 'renderType' => 'inputLink',
                 'type' => 'input',
@@ -460,7 +464,7 @@ return [
         ],
         'tx_jsdmodule_footer_gb_link_e' => [
             'config' => [
-                'eval' => 'required,trim',
+                'eval' => 'required',
                 'placeholder' => 'Mitarbeiter-Login',
                 'renderType' => 'inputLink',
                 'type' => 'input',

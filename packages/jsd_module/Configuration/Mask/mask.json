@@ -968,9 +968,19 @@
                 "config": {
                     "appearance": {
                         "enabledControls": {
-                            "dragdrop": "1"
+                            "delete": 1,
+                            "dragdrop": "1",
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "new": 1,
+                            "sort": 1
                         },
-                        "levelLinksPosition": "top"
+                        "levelLinksPosition": "top",
+                        "showAllLocalizationLink": 1,
+                        "showNewRecordLink": 1,
+                        "showPossibleLocalizationRecords": 1,
+                        "useSortable": 1
                     },
                     "foreign_field": "parentid",
                     "foreign_sortby": "sorting",
@@ -1888,7 +1898,7 @@
         "tca": {
             "tx_mask_footer_gb_link_a": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "required",
                     "placeholder": "Datenschutz",
                     "renderType": "inputLink",
                     "type": "input"
@@ -1897,12 +1907,12 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_gb_link_a",
                 "label": "Abbinder Link 1 (Datenschutz):",
-                "order": 12,
+                "order": 10,
                 "type": "link"
             },
             "tx_mask_footer_gb_link_b": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "required",
                     "placeholder": "Impressum",
                     "renderType": "inputLink",
                     "type": "input"
@@ -1911,12 +1921,12 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_gb_link_b",
                 "label": "Abbinder Link 2 (Impressum):",
-                "order": 13,
+                "order": 11,
                 "type": "link"
             },
             "tx_mask_footer_gb_link_c": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "required",
                     "placeholder": "Inhaltsverzeichnis",
                     "renderType": "inputLink",
                     "type": "input"
@@ -1925,12 +1935,12 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_gb_link_c",
                 "label": "Abbinder Link 3 (Inhaltsverzeichnis):",
-                "order": 14,
+                "order": 12,
                 "type": "link"
             },
             "tx_mask_footer_gb_link_d": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "required",
                     "placeholder": "Leichte Sprache",
                     "renderType": "inputLink",
                     "type": "input"
@@ -1939,12 +1949,12 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_gb_link_d",
                 "label": "Abbinder Link 4 (Leichte Sprache):",
-                "order": 15,
+                "order": 13,
                 "type": "link"
             },
             "tx_mask_footer_gb_link_e": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "required",
                     "placeholder": "Mitarbeiter-Login",
                     "renderType": "inputLink",
                     "type": "input"
@@ -1953,7 +1963,7 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_gb_link_e",
                 "label": "Abbinder Link 5 (Mitarbeiter-Login):",
-                "order": 16,
+                "order": 14,
                 "type": "link"
             },
             "tx_mask_footer_menu_a_link": {
@@ -1965,7 +1975,7 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_a_link",
                 "label": "Men\u00fcspalte 1 - Seiten Id:",
-                "order": 5,
+                "order": 3,
                 "type": "string"
             },
             "tx_mask_footer_menu_a_title": {
@@ -1978,12 +1988,12 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_a_title",
                 "label": "Men\u00fcspalte 1 - \u00dcberschrift:",
-                "order": 4,
+                "order": 2,
                 "type": "string"
             },
             "tx_mask_footer_menu_b_link": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "trim",
                     "placeholder": "Pflege & Wohnen",
                     "type": "input"
                 },
@@ -1991,24 +2001,24 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_b_link",
                 "label": "Men\u00fcspalte 2 - Seiten Id:",
-                "order": 7,
+                "order": 5,
                 "type": "string"
             },
             "tx_mask_footer_menu_b_title": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "trim",
                     "type": "input"
                 },
                 "fullKey": "tx_mask_footer_menu_b_title",
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_b_title",
                 "label": "Men\u00fcspalte 2 - \u00dcberschrift:",
-                "order": 6,
+                "order": 4,
                 "type": "string"
             },
             "tx_mask_footer_menu_c_link": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "trim",
                     "placeholder": "Soziales & Integration",
                     "type": "input"
                 },
@@ -2016,24 +2026,24 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_c_link",
                 "label": "Men\u00fcspalte 3 - Seiten Id:",
-                "order": 9,
+                "order": 7,
                 "type": "string"
             },
             "tx_mask_footer_menu_c_title": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "trim",
                     "type": "input"
                 },
                 "fullKey": "tx_mask_footer_menu_c_title",
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_c_title",
                 "label": "Men\u00fcspalte 3 - \u00dcberschrift:",
-                "order": 8,
+                "order": 6,
                 "type": "string"
             },
             "tx_mask_footer_menu_d_link": {
                 "config": {
-                    "eval": "required,trim",
+                    "eval": "trim",
                     "placeholder": "23,45,2456",
                     "type": "input"
                 },
@@ -2041,11 +2051,24 @@
                 "inlineParent": "tx_mask_footer",
                 "key": "footer_menu_d_link",
                 "label": "Men\u00fcspalte 4 - Mehrere Seiten Id's (kommagetrennt):",
-                "order": 10,
+                "order": 8,
                 "type": "string"
             },
             "tx_mask_footer_sm_icons": {
                 "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
                     "foreign_table": "sys_file_reference",
                     "maxitems": "6",
                     "minitems": "0",
@@ -2057,11 +2080,24 @@
                 "key": "footer_sm_icons",
                 "l10n_mode": "copy",
                 "label": "Social Media Icons (max. 6):",
-                "order": 11,
+                "order": 9,
                 "type": "file"
             },
             "tx_mask_footer_teaser": {
                 "config": {
+                    "appearance": {
+                        "elementBrowserEnabled": 1,
+                        "enabledControls": {
+                            "delete": 1,
+                            "dragdrop": 1,
+                            "hide": 1,
+                            "info": 1,
+                            "localize": 1,
+                            "sort": 0
+                        },
+                        "fileUploadAllowed": 1,
+                        "useSortable": 1
+                    },
                     "foreign_table": "sys_file_reference",
                     "maxitems": "3",
                     "minitems": "0",
@@ -2073,7 +2109,7 @@
                 "key": "footer_teaser",
                 "l10n_mode": "copy",
                 "label": "Teaser (max. 3):",
-                "order": 3,
+                "order": 1,
                 "type": "file"
             }
         }

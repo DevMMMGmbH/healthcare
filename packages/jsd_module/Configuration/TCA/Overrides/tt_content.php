@@ -167,9 +167,19 @@ $tempColumns = [
         'config' => [
             'appearance' => [
                 'enabledControls' => [
+                    'delete' => 1,
                     'dragdrop' => '1',
+                    'hide' => 1,
+                    'info' => 1,
+                    'localize' => 1,
+                    'new' => 1,
+                    'sort' => 1,
                 ],
                 'levelLinksPosition' => 'top',
+                'showAllLocalizationLink' => 1,
+                'showNewRecordLink' => 1,
+                'showPossibleLocalizationRecords' => 1,
+                'useSortable' => 1,
             ],
             'foreign_field' => 'parentid',
             'foreign_sortby' => 'sorting',
