@@ -1,60 +1,66 @@
 page {
+    includeJSLibs {
+        JS-10 = EXT:jsd_theme/Resources/Public/JavaScript/jquery/jquery-3.4.1.min.js
+        // JS-10.excludeFromConcatenation = 1
+        // JS-10.disableCompression = 1
+    }
+    
     # JavaScript file inclusion (footer)
     includeJSFooter {
 
-        JS-10 = EXT:jsd_theme/Resources/Public/JavaScript/jquery/jquery-3.4.1.min.js
-        JS-10.excludeFromConcatenation = 1
-        JS-10.disableCompression = 1
+        // JS-10 = EXT:jsd_theme/Resources/Public/JavaScript/jquery/jquery-3.4.1.min.js
+        // JS-10.excludeFromConcatenation = 1
+        // JS-10.disableCompression = 1
 
         JS-11 = EXT:jsd_theme/Resources/Public/JavaScript/jquery/jquery-ui-1.12.1.min.js
-        JS-11.excludeFromConcatenation = 0
-        JS-11.disableCompression = 0
+        // JS-11.excludeFromConcatenation = 0
+        // JS-11.disableCompression = 0
 
         JS-19 = EXT:jsd_theme/Resources/Public/JavaScript/popper.min.js
-        JS-19.excludeFromConcatenation = 0
-        JS-19.disableCompression = 0
+        // JS-19.excludeFromConcatenation = 0
+        // JS-19.disableCompression = 0
 
         JS-20 = EXT:jsd_theme/Resources/Public/Bootstrap/js/bootstrap.min.js
-        JS-20.excludeFromConcatenation = 0
-        JS-20.disableCompression = 0
+        // JS-20.excludeFromConcatenation = 0
+        // JS-20.disableCompression = 0
 
         JS-30 = EXT:jsd_theme/Resources/Public/JavaScript/slick/slick.min.js
-        JS-30.excludeFromConcatenation = 0
-        JS-30.disableCompression = 0
+        // JS-30.excludeFromConcatenation = 0
+        // JS-30.disableCompression = 0
 
         JS-40 = EXT:jsd_theme/Resources/Public/JavaScript/featherlight/featherlight.min.js
-        JS-40.excludeFromConcatenation = 0
-        JS-40.disableCompression = 0
+        // JS-40.excludeFromConcatenation = 0
+        // JS-40.disableCompression = 0
 
         JS-50 = EXT:jsd_theme/Resources/Public/JavaScript/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js
-        JS-50.excludeFromConcatenation = 0
-        JS-50.disableCompression = 0
+        // JS-50.excludeFromConcatenation = 0
+        // JS-50.disableCompression = 0
 
         JS-60 = EXT:jsd_theme/Resources/Public/JavaScript/selectBoxIt/jquery.selectBoxIt.min.js
-        JS-60.excludeFromConcatenation = 0
-        JS-60.disableCompression = 0
+        // JS-60.excludeFromConcatenation = 0
+        // JS-60.disableCompression = 0
 
         JS-61 = EXT:jsd_theme/Resources/Public/JavaScript/sebastian.js
-        JS-61.excludeFromConcatenation = 0
-        JS-61.disableCompression = 0
+        // JS-61.excludeFromConcatenation = 0
+        // JS-61.disableCompression = 0
 
         JS-65 = EXT:jsd_theme/Resources/Public/JavaScript/main.js
-        JS-65.excludeFromConcatenation = 0
-        JS-65.disableCompression = 0
+        // JS-65.excludeFromConcatenation = 0
+        // JS-65.disableCompression = 0
 
         JS-66 = EXT:jsd_theme/Resources/Public/JavaScript/forms.js
-        JS-66.excludeFromConcatenation = 0
-        JS-66.disableCompression = 0
+        // JS-66.excludeFromConcatenation = 0
+        // JS-66.disableCompression = 0
 
         JS-70 = EXT:jsd_theme/Resources/Public/JavaScript/markus.js
-        JS-70.excludeFromConcatenation = 0
-        JS-70.disableCompression = 0
+        // JS-70.excludeFromConcatenation = 0
+        // JS-70.disableCompression = 0
 
 		    JS-84 = EXT:jsd_theme/Resources/Public/JavaScript/multiselect/jquery.multiselect.js
 
         JS-190 = EXT:jsd_theme/Resources/Public/JavaScript/jquery.marquee.min.js
-        JS-190.excludeFromConcatenation = 0
-        JS-190.disableCompression = 0
+        // JS-190.excludeFromConcatenation = 0
+        // JS-190.disableCompression = 0
     }
 }
 
