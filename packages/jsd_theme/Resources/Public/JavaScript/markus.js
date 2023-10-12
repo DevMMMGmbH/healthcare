@@ -85,34 +85,34 @@ jQuery(document).ready(function () {
             jQuery('.mod_megamenu .mm').removeClass('offeneebenen1');
         }
     });
-    jQuery( '#mMcycleId-2 a' ).click(function(e){
-        e.preventDefault();
-        jQuery('.mm_open').click();
-        jQuery( '.mainmenu .active' ).removeClass( 'active' );
-        jQuery( '.mainmenu .current' ).removeClass( 'current' );
-        jQuery( '.mainmenu .offen' ).removeClass( 'offen' );
-        jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).parent().addClass( 'offen' );
-        jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).addClass( 'active' );
-        if( jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).parent().hasClass( 'submenu' ) ){
-            jQuery('.mod_megamenu .mm').addClass('offeneebenen1');
-        } else {
-            jQuery('.mod_megamenu .mm').removeClass('offeneebenen1');
-        }
-    });
-    jQuery( '#mMcycleId-3 a' ).click(function(e){
-        e.preventDefault();
-        jQuery('.mm_open').click();
-        jQuery( '.mainmenu .active' ).removeClass( 'active' );
-        jQuery( '.mainmenu .current' ).removeClass( 'current' );
-        jQuery( '.mainmenu .offen' ).removeClass( 'offen' );
-        jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).parent().addClass( 'offen' );
-        jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).addClass( 'active' );
-        if( jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).parent().hasClass( 'submenu' ) ){
-            jQuery('.mod_megamenu .mm').addClass('offeneebenen1');
-        } else {
-            jQuery('.mod_megamenu .mm').removeClass('offeneebenen1');
-        }
-    });
+    // jQuery( '#mMcycleId-2 a' ).click(function(e){
+    //     e.preventDefault();
+    //     jQuery('.mm_open').click();
+    //     jQuery( '.mainmenu .active' ).removeClass( 'active' );
+    //     jQuery( '.mainmenu .current' ).removeClass( 'current' );
+    //     jQuery( '.mainmenu .offen' ).removeClass( 'offen' );
+    //     jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).parent().addClass( 'offen' );
+    //     jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).addClass( 'active' );
+    //     if( jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-2' ).parent().hasClass( 'submenu' ) ){
+    //         jQuery('.mod_megamenu .mm').addClass('offeneebenen1');
+    //     } else {
+    //         jQuery('.mod_megamenu .mm').removeClass('offeneebenen1');
+    //     }
+    // });
+    // jQuery( '#mMcycleId-3 a' ).click(function(e){
+    //     e.preventDefault();
+    //     jQuery('.mm_open').click();
+    //     jQuery( '.mainmenu .active' ).removeClass( 'active' );
+    //     jQuery( '.mainmenu .current' ).removeClass( 'current' );
+    //     jQuery( '.mainmenu .offen' ).removeClass( 'offen' );
+    //     jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).parent().addClass( 'offen' );
+    //     jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).addClass( 'active' );
+    //     if( jQuery( '.mainmenu ul.lvl-0 li a.aha-lvl-0-cycle-3' ).parent().hasClass( 'submenu' ) ){
+    //         jQuery('.mod_megamenu .mm').addClass('offeneebenen1');
+    //     } else {
+    //         jQuery('.mod_megamenu .mm').removeClass('offeneebenen1');
+    //     }
+    // });
 /* Selectbox Verhalten ausgeklammert, da das Grundsätzliche Verhalten schon falsch ist und hier scheinbar die Struktur angepasst werden muss
     jQuery('select.powermail_select').change( function() {
         if( jQuery( this ).parent().hasClass( 'parsley-error' ) ){
