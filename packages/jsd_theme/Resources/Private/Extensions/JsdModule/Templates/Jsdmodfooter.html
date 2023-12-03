@@ -27,27 +27,34 @@
             </div>
         </f:if>
 
-        <div class="row menu">
+        <div class="row menu py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-16 col-md-12 offset-md-2">
+                    <div class="col-12 offset-2">
                         <div class="row">
                             <div class="col-xs-16">
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'list', level: 1, class: 'header bold'}" />
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'directory', level: 1, class: 'content d-none d-md-block'}" />
+                                <f:link.typolink parameter="1" class="header bold d-inline-block mr-4 py-xs-3" />
+                                <f:link.typolink parameter="43" class="header bold d-inline-block mr-4 py-xs-3" />
+                                <f:link.typolink parameter="64" class="header bold d-inline-block mr-4 py-xs-3" />
+                                <f:link.typolink parameter="67" class="header bold d-inline-block mr-4 py-xs-3" />
+                                <f:link.typolink parameter="65" class="header bold d-inline-block py-xs-3" />
                             </div>
                             <f:comment>
-                            <div class="col-xs-16 col-md-4">
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'list', class: 'header bold'}" />
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'directory', class: 'content'}" />
-                            </div>
-                            <div class="col-xs-16 col-md-4">
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'list', class: 'header bold'}" />
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'directory', class: 'content'}" />
-                            </div>
-                            <div class="col-xs-16 col-md-4">
-                                <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_d_link, type: 'list', level: 1, class: 'content extra'}" />
-                            </div>
+                                <div class="col-xs-16">
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'list', level: 1, class: 'header bold'}" />
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_a_link, type: 'directory', level: 1, class: 'content d-none d-md-block'}" />
+                                </div>
+                                <div class="col-xs-16 col-md-4">
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'list', class: 'header bold'}" />
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_b_link, type: 'directory', class: 'content'}" />
+                                </div>
+                                <div class="col-xs-16 col-md-4">
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'list', class: 'header bold'}" />
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_c_link, type: 'directory', class: 'content'}" />
+                                </div>
+                                <div class="col-xs-16 col-md-4">
+                                    <f:cObject typoscriptObjectPath="lib.dynamicMenu" data="{uid: data_item.data.tx_jsdmodule_footer_menu_d_link, type: 'list', level: 1, class: 'content extra'}" />
+                                </div>
                             </f:comment>
                         </div>
                     </div>
@@ -82,19 +89,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 offset-xs-2 col-md-14 offset-md-1 col-xl-12 offset-xl-2">
-                        <div class="row justify-content-between">
-                            <div class="col-md-6 col-lg-4">
+                        <div class="row">
+                            <div class="col-12 col-lg-auto mr-lg-4">
                                 <f:link.typolink parameter="{settings.page.uid}" title="{settings.page.title}"><span class="d-block">© <f:cObject typoscriptObjectPath="lib.dynamicYear" /> {settings.page.title}</span></f:link.typolink>
                             </div>
-                            <div class="col-md-10 col-lg-12 d-lg-flex justify-content-lg-between">
-                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_a}" title="{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}">{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}</f:link.typolink>
-                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_b}" title="{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}">{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}</f:link.typolink>
-                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_c}" title="{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}">{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}</f:link.typolink>
-                                <f:comment>
-                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_d}" title="{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}" class="simple-speak">{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}</f:link.typolink>
-                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_e}" title="{f:translate(key: 'footer.login',  extensionName='jsd_theme')}" class="login">{f:translate(key: 'footer.login',  extensionName='jsd_theme')}</f:link.typolink>
-                                </f:comment>
-                            </div>
+                            <f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_a}">
+                                <div class="col-12 col-lg-auto mr-lg-4">
+                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_a}" title="{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}">{f:translate(key: 'footer.dsgvo',  extensionName='jsd_theme')}</f:link.typolink>
+                                </div>
+                            </f:if>
+                            <f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_b}">
+                                <div class="col-12 col-lg-auto">
+                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_b}" title="{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}">{f:translate(key: 'footer.imprint',  extensionName='jsd_theme')}</f:link.typolink>
+                                </div>
+                            </f:if>
+                            <f:comment>
+                            <f:if condition="{data_item.data.tx_jsdmodule_footer_gb_link_c}">
+                                <div class="col-6 col-lg-auto">
+                                    <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_c}" title="{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}">{f:translate(key: 'footer.compliance',  extensionName='jsd_theme')}</f:link.typolink>
+                                </div>
+                            </f:if>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_d}" title="{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}" class="simple-speak">{f:translate(key: 'footer.simplespeak',  extensionName='jsd_theme')}</f:link.typolink>
+                                <f:link.typolink parameter="{data_item.data.tx_jsdmodule_footer_gb_link_e}" title="{f:translate(key: 'footer.login',  extensionName='jsd_theme')}" class="login">{f:translate(key: 'footer.login',  extensionName='jsd_theme')}</f:link.typolink>
+                            </f:comment>
                         </div>
                     </div>
                 </div>
